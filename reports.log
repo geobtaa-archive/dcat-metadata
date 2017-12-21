@@ -1,0 +1,498 @@
+================================================================================
+Jul 21, 2017, 1:13:49 PM
+~/Desktop/maintenance/Json2Csv.py
+--------------------------------------------------------------------------------
+04c-02 http://gis-baltimore.opendata.arcgis.com/data.json
+34 items harvested from 04c-02!
+34 new_items harvested from 04c-02!
+report complete for 04c-02!
+
+
+================================================================================
+Aug 3, 2017, 11:52:57 AM
+~/Desktop/maintenance/JSONmetadata_comparison.py
+
+Compares July 17, 2017 to August 3, 2017
+--------------------------------------------------------------------------------
+04a-01 http://data.imap.maryland.gov/data.json
+1 deleted_items added to 04a-01!
+26 new_items added to 04a-01!
+
+04c-01 http://opendata.dc.gov/data.json
+1 deleted_items added to 04c-01!
+6 new_items added to 04c-01!
+
+04c-02 http://gis-baltimore.opendata.arcgis.com/data.json
+04c-02 has no deleted_items
+04c-02 has no new_items
+
+07e-01 http://maps-semcog.opendata.arcgis.com/data.json
+07e-01 has no deleted_items
+1 new_items added to 07e-01!
+================================================================================
+Aug 18, 2017, 1:30:15 PM
+~/Desktop/maintenance/JSONmetadata_comparison.py
+--------------------------------------------------------------------------------
+
+04a-01 http://data.imap.maryland.gov/data.json
+04a-01 has no deleted_items
+30 new_items added to 04a-01!
+
+04c-01 http://opendata.dc.gov/data.json
+2 deleted_items added to 04c-01!
+9 new_items added to 04c-01!
+
+04c-02 http://gis-baltimore.opendata.arcgis.com/data.json
+04c-02 has no deleted_items
+04c-02 has no new_items
+
+
+07e-01 http://maps-semcog.opendata.arcgis.com/data.json
+07e-01 has no deleted_items
+1 new_items added to 07e-01!
+================================================================================
+Aug 18, 2017, 1:36:11 PM
+~/Desktop/maintenance/JSONmetadata_comparison.py
+--------------------------------------------------------------------------------
+06a-02 http://gis-midnr.opendata.arcgis.com/data.json
+14 deleted_items added to 06a-02!
+47 new_items added to 06a-02!
+================================================================================
+Aug 18, 2017, 1:38:22 PM
+~/Desktop/maintenance/JSONmetadata_comparison.py
+--------------------------------------------------------------------------------
+06a-01 http://gis-michigan.opendata.arcgis.com/data.json
+165 deleted_items added to 06a-01!
+254 new_items added to 06a-01!
+================================================================================
+Aug 29, 2017, 10:48:11 AM
+~/Desktop/maintenance/JSONmetadata_comparison.py
+--------------------------------------------------------------------------------
+03a-02 http://public.iowadot.opendata.arcgis.com/data.json
+10 deleted_items added to 03a-02!
+3 new_items added to 03a-02!
+
+04a-01 http://data.imap.maryland.gov/data.json
+11 deleted_items added to 04a-01!
+17 new_items added to 04a-01!
+
+04c-01 http://opendata.dc.gov/data.json
+04c-01 has no deleted_items
+2 new_items added to 04c-01!
+
+04c-02 http://gis-baltimore.opendata.arcgis.com/data.json
+04c-02 has no deleted_items
+04c-02 has no new_items
+
+06a-01 http://gis-michigan.opendata.arcgis.com/data.json
+06a-01 has no deleted_items
+2 new_items added to 06a-01!
+
+06a-02 http://gis-midnr.opendata.arcgis.com/data.json
+06a-02 has no deleted_items
+1 new_items added to 06a-02!
+
+07e-01 http://maps-semcog.opendata.arcgis.com/data.json
+07e-01 has no deleted_items
+2 new_items added to 07e-01!
+
+================================================================================
+Oct 12, 2017, 10:45:27 AM
+~/Desktop/maintenance/JSONmetadata_comparison.py
+--------------------------------------------------------------------------------
+01c-02 http://data1-indygis.opendata.arcgis.com/data.json
+01c-02 has no deleted_items
+1 new_items added to 01c-02!
+03a-02 http://public.iowadot.opendata.arcgis.com/data.json
+19 deleted_items added to 03a-02!
+17 new_items added to 03a-02!
+04a-01 http://data.imap.maryland.gov/data.json
+2 deleted_items added to 04a-01!
+7 new_items added to 04a-01!
+04c-01 http://opendata.dc.gov/data.json
+04c-01 has no deleted_items
+2 new_items added to 04c-01!
+04c-02 http://gis-baltimore.opendata.arcgis.com/data.json
+04c-02 has no deleted_items
+04c-02 has no new_items
+06a-01 http://gis-michigan.opendata.arcgis.com/data.json
+6 deleted_items added to 06a-01!
+27 new_items added to 06a-01!
+06a-02 http://gis-midnr.opendata.arcgis.com/data.json
+6 deleted_items added to 06a-02!
+20 new_items added to 06a-02!
+07e-01 http://maps-semcog.opendata.arcgis.com/data.json
+4 deleted_items added to 07e-01!
+3 new_items added to 07e-01!
+================================================================================
+Oct 12, 2017, 10:56:25 AM
+~/Desktop/maintenance/Json2Csv.py
+--------------------------------------------------------------------------------
+01c-02 http://data1-indygis.opendata.arcgis.com/data.json
+125 items harvested from 01c-02!
+125 new_items harvested from 01c-02!
+report complete for 01c-02!
+03a-02 http://public.iowadot.opendata.arcgis.com/data.json
+338 items harvested from 03a-02!
+338 new_items harvested from 03a-02!
+report complete for 03a-02!
+04a-01 http://data.imap.maryland.gov/data.json
+692 items harvested from 04a-01!
+692 new_items harvested from 04a-01!
+report complete for 04a-01!
+04c-01 http://opendata.dc.gov/data.json
+926 items harvested from 04c-01!
+926 new_items harvested from 04c-01!
+report complete for 04c-01!
+04c-02 http://gis-baltimore.opendata.arcgis.com/data.json
+34 items harvested from 04c-02!
+34 new_items harvested from 04c-02!
+report complete for 04c-02!
+06a-01 http://gis-michigan.opendata.arcgis.com/data.json
+279 items harvested from 06a-01!
+279 new_items harvested from 06a-01!
+report complete for 06a-01!
+06a-02 http://gis-midnr.opendata.arcgis.com/data.json
+173 items harvested from 06a-02!
+173 new_items harvested from 06a-02!
+report complete for 06a-02!
+07e-01 http://maps-semcog.opendata.arcgis.com/data.json
+48 items harvested from 07e-01!
+48 new_items harvested from 07e-01!
+report complete for 07e-01!
+================================================================================
+Oct 13, 2017, 9:45:56 AM
+~/Desktop/maintenance/Json2Csv.py
+--------------------------------------------------------------------------------
+06a-03 http://gis-mdot.opendata.arcgis.com/data.json
+67 items harvested from 06a-03!
+67 new_items harvested from 06a-03!
+report complete for 06a-03!
+================================================================================
+Oct 16, 2017, 12:33:33 PM
+~/Desktop/maintenance/Json2Csv.py
+--------------------------------------------------------------------------------
+06a-03 http://ogrip-geohio.opendata.arcgis.com/data.json
+961 items harvested from 06a-03!
+961 new_items harvested from 06a-03!
+report complete for 06a-03!
+================================================================================
+
+Oct 16, 2017, 12:48:33 PM
+~/Desktop/maintenance/Json2Csv.py
+--------------------------------------------------------------------------------
+11b-01 http://data-cuyahoga.opendata.arcgis.com/data.json
+44 items harvested from 11b-01!
+44 new_items harvested from 11b-01!
+report complete for 11b-01!
+================================================================================
+Oct 16, 2017, 12:52:04 PM
+~/Desktop/maintenance/Json2Csv.py
+--------------------------------------------------------------------------------
+11b-02 http://data-columbus.opendata.arcgis.com/data.json
+72 items harvested from 11b-02!
+72 new_items harvested from 11b-02!
+report complete for 11b-02!
+================================================================================
+Oct 16, 2017, 12:55:46 PM
+~/Desktop/maintenance/Json2Csv.py
+--------------------------------------------------------------------------------
+11c-01 http://data-columbus.opendata.arcgis.com/data.json
+72 items harvested from 11c-01!
+72 new_items harvested from 11c-01!
+report complete for 11c-01!
+================================================================================
+
+Oct 17, 2017, 2:34:45 PM
+~/Desktop/maintenance/Json2Csv.py
+--------------------------------------------------------------------------------
+05b-03 http://data-carver.opendata.arcgis.com/data.json
+54 items harvested from 05b-03!
+54 new_items harvested from 05b-03!
+report complete for 05b-03!
+05b-06 http://gis-hennepin.opendata.arcgis.com/data.json
+40 items harvested from 05b-06!
+40 new_items harvested from 05b-06!
+report complete for 05b-06!
+05b-09 http://stlouiscountymndata-slcgis.opendata.arcgis.com/data.json
+7 items harvested from 05b-09!
+7 new_items harvested from 05b-09!
+report complete for 05b-09!
+05b-10 http://opendata.gis.co.scott.mn.us/data.json
+62 items harvested from 05b-10!
+62 new_items harvested from 05b-10!
+report complete for 05b-10!
+05b-12 http://data-wcmn.opendata.arcgis.com/data.json
+25 items harvested from 05b-12!
+25 new_items harvested from 05b-12!
+report complete for 05b-12!
+================================================================================
+Oct 19, 2017, 1:31:08 PM
+~/Desktop/maintenance/Json2Csv.py
+--------------------------------------------------------------------------------
+05b-03 http://data-carver.opendata.arcgis.com/data.json
+54 items harvested from 05b-03!
+54 new_items harvested from 05b-03!
+report complete for 05b-03!
+05b-06 http://gis-hennepin.opendata.arcgis.com/data.json
+40 items harvested from 05b-06!
+40 new_items harvested from 05b-06!
+report complete for 05b-06!
+05b-09 http://stlouiscountymndata-slcgis.opendata.arcgis.com/data.json
+7 items harvested from 05b-09!
+7 new_items harvested from 05b-09!
+report complete for 05b-09!
+05b-10 http://opendata.gis.co.scott.mn.us/data.json
+62 items harvested from 05b-10!
+62 new_items harvested from 05b-10!
+report complete for 05b-10!
+05b-12 http://data-wcmn.opendata.arcgis.com/data.json
+25 items harvested from 05b-12!
+25 new_items harvested from 05b-12!
+report complete for 05b-12!
+================================================================================
+Oct 19, 2017, 1:31:30 PM
+~/Desktop/maintenance/Json2Csv.py
+--------------------------------------------------------------------------------
+05c-01 http://opendata.minneapolismn.gov/data.json
+94 items harvested from 05c-01!
+94 new_items harvested from 05c-01!
+report complete for 05c-01!
+================================================================================
+
+================================================================================
+Oct 31, 2017, 4:57:50 PM
+~/Desktop/maintenance/testJSON.py
+--------------------------------------------------------------------------------
+  File "/Users/majew030/Desktop/maintenance/testJSON.py", line 14
+
+                                         ^
+SyntaxError: invalid syntax
+================================================================================
+Oct 31, 2017, 4:58:52 PM
+~/Desktop/maintenance/testJSON.py
+--------------------------------------------------------------------------------
+Why didn't i get a json from geodata? Maybe it wasn't a json...
+What is it then? It seems is a <type 'unicode'> whose length is 829
+================================================================================
+
+================================================================================
+Oct 31, 2017, 5:55:12 PM
+~/Desktop/maintenance/Json2Csv.py
+--------------------------------------------------------------------------------
+01c-02 http://data1-indygis.opendata.arcgis.com/data.json
+118 items harvested from 01c-02!
+118 new_items harvested from 01c-02!
+report complete for 01c-02!
+================================================================================
+Oct 31, 2017, 5:57:17 PM
+~/Desktop/maintenance/fixed_script.py
+--------------------------------------------------------------------------------
+iowaGeodata http://geodata.iowa.gov/data.json
+Traceback (most recent call last):
+  File "/Users/majew030/Desktop/maintenance/fixed_script.py", line 83, in <module>
+    newdata=json.load(response)
+  File "/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 287, in load
+    return loads(fp.read(),
+AttributeError: 'str' object has no attribute 'read'
+================================================================================
+Oct 31, 2017, 6:02:48 PM
+~/Desktop/maintenance/fixed_script.py
+--------------------------------------------------------------------------------
+  File "/Users/majew030/Desktop/maintenance/fixed_script.py", line 87
+    new_ids = {}
+    ^
+IndentationError: unexpected indent
+================================================================================
+
+================================================================================
+Oct 31, 2017, 6:59:15 PM
+~/Desktop/maintenance/ConvertJson2CsvFromLocalFile.py
+--------------------------------------------------------------------------------
+26  items harvested
+report complete
+================================================================================
+Nov 3, 2017, 11:54:46 AM
+~/Desktop/maintenance/JSONmetadata_comparison.py
+--------------------------------------------------------------------------------
+01c-02 http://data1-indygis.opendata.arcgis.com/data.json
+01c-02 has no deleted_items
+01c-02 has no new_items
+03a-02 http://public.iowadot.opendata.arcgis.com/data.json
+1 deleted_items added to 03a-02!
+1 new_items added to 03a-02!
+04a-01 http://data.imap.maryland.gov/data.json
+04a-01 has no deleted_items
+14 new_items added to 04a-01!
+04c-01 http://opendata.dc.gov/data.json
+40 deleted_items added to 04c-01!
+6 new_items added to 04c-01!
+04c-02 http://gis-baltimore.opendata.arcgis.com/data.json
+04c-02 has no deleted_items
+04c-02 has no new_items
+06a-01 http://gis-michigan.opendata.arcgis.com/data.json
+2 deleted_items added to 06a-01!
+4 new_items added to 06a-01!
+06a-02 http://gis-midnr.opendata.arcgis.com/data.json
+1 deleted_items added to 06a-02!
+4 new_items added to 06a-02!
+07e-01 http://maps-semcog.opendata.arcgis.com/data.json
+07e-01 has no deleted_items
+07e-01 has no new_items
+11a-01 http://ogrip-geohio.opendata.arcgis.com/data.json
+There is no comparison json for 11a-01
+================================================================================
+Nov 3, 2017, 12:02:05 PM
+~/Desktop/maintenance/Json2Csv.py
+--------------------------------------------------------------------------------
+05b-13 http://data-carltoncounty.opendata.arcgis.com/data.json
+3 items harvested from 05b-13!
+3 new_items harvested from 05b-13!
+report complete for 05b-13!
+================================================================================
+Nov 3, 2017, 2:11:23 PM
+~/Desktop/maintenance/Json2Csv.py
+--------------------------------------------------------------------------------
+================================================================================
+Nov 3, 2017, 2:12:09 PM
+~/Desktop/maintenance/Json2Csv.py
+--------------------------------------------------------------------------------
+05b-14 https://getdata-hubbardcounty.opendata.arcgis.com/data.json
+3 items harvested from 05b-14!
+3 new_items harvested from 05b-14!
+report complete for 05b-14!
+================================================================================
+Nov 13, 2017, 12:19:30 PM
+~/Desktop/maintenance/SocrataToCSV.py
+--------------------------------------------------------------------------------
+06b-01 http://portal.datadrivendetroit.org/data.json
+There is no comparison json for 06b-01
+================================================================================
+
+================================================================================
+Nov 13, 2017, 12:25:49 PM
+~/Desktop/maintenance/Json2Csv.py
+--------------------------------------------------------------------------------
+06b-01 http://portal.datadrivendetroit.org/data.json
+336 items harvested from 06b-01!
+336 new_items harvested from 06b-01!
+report complete for 06b-01!
+================================================================================
+Nov 13, 2017, 4:27:55 PM
+~/Desktop/maintenance/Json2Csv.py
+--------------------------------------------------------------------------------
+06b-01 http://data-southbend.opendata.arcgis.com/data.json
+59 items harvested from 06b-01!
+59 new_items harvested from 06b-01!
+report complete for 06b-01!
+09c-01 http://accessoakland.oakgov.com/data.json
+124 items harvested from 09c-01!
+124 new_items harvested from 09c-01!
+report complete for 09c-01!
+================================================================================
+Nov 20, 2017, 2:55:02 PM
+~/Desktop/maintenance/Json2Csv.py
+--------------------------------------------------------------------------------
+11a-01 http://ogrip-geohio.opendata.arcgis.com/data.json
+999 items harvested from 11a-01!
+999 new_items harvested from 11a-01!
+report complete for 11a-01!
+================================================================================
+Nov 20, 2017, 5:03:00 PM
+~/Desktop/maintenance/Json2Csv.py
+--------------------------------------------------------------------------------
+widnr https://data-wi-dnr.opendata.arcgis.com/data.json
+91 items harvested from widnr!
+91 new_items harvested from widnr!
+report complete for widnr!
+================================================================================
+Nov 27, 2017, 10:02:39 AM
+~/Desktop/maintenance/JSONmetadata_comparison.py
+--------------------------------------------------------------------------------
+01c-02 http://data1-indygis.opendata.arcgis.com/data.json
+01c-02 has no deleted_items
+01c-02 has no new_items
+03a-02 http://public.iowadot.opendata.arcgis.com/data.json
+2 deleted_items added to 03a-02!
+15 new_items added to 03a-02!
+04a-01 http://data.imap.maryland.gov/data.json
+1 deleted_items added to 04a-01!
+04a-01 has no new_items
+04c-01 http://opendata.dc.gov/data.json
+9 deleted_items added to 04c-01!
+56 new_items added to 04c-01!
+04c-02 http://gis-baltimore.opendata.arcgis.com/data.json
+04c-02 has no deleted_items
+04c-02 has no new_items
+06a-01 http://gis-michigan.opendata.arcgis.com/data.json
+12 deleted_items added to 06a-01!
+10 new_items added to 06a-01!
+06a-02 http://gis-midnr.opendata.arcgis.com/data.json
+10 deleted_items added to 06a-02!
+2 new_items added to 06a-02!
+07e-01 http://maps-semcog.opendata.arcgis.com/data.json
+07e-01 has no deleted_items
+07e-01 has no new_items
+11a-01 http://ogrip-geohio.opendata.arcgis.com/data.json
+8 deleted_items added to 11a-01!
+45 new_items added to 11a-01!
+06b-01 http://data-southbend.opendata.arcgis.com/data.json
+There is no comparison json for 06b-01
+09c-01 http://accessoakland.oakgov.com/data.json
+There is no comparison json for 09c-01
+
+================================================================================
+Dec 13, 2017, 11:34:55 AM
+~/Desktop/maintenance/ConvertJson2CsvFromLocalFile.py
+--------------------------------------------------------------------------------
+435  items harvested
+report complete
+
+================================================================================
+Dec 21, 2017, 12:30:03 PM
+~/Desktop/dcat_maintenance/JSONmetadata_comparison.py
+--------------------------------------------------------------------------------
+01c-02 http://data1-indygis.opendata.arcgis.com/data.json
+01c-02 has no deleted_items
+01c-02 has no new_items
+
+03a-02 http://public.iowadot.opendata.arcgis.com/data.json
+1 deleted_items added to 03a-02!
+3 new_items added to 03a-02!
+
+04a-01 http://data.imap.maryland.gov/data.json
+1 deleted_items added to 04a-01!
+9 new_items added to 04a-01!
+
+04c-01 http://opendata.dc.gov/data.json
+225 deleted_items added to 04c-01!
+3 new_items added to 04c-01!
+
+04c-02 http://gis-baltimore.opendata.arcgis.com/data.json
+
+04c-02 has no deleted_items
+1 new_items added to 04c-02!
+
+06a-01 http://gis-michigan.opendata.arcgis.com/data.json
+13 deleted_items added to 06a-01!
+105 new_items added to 06a-01!
+
+06a-02 http://gis-midnr.opendata.arcgis.com/data.json
+13 deleted_items added to 06a-02!
+105 new_items added to 06a-02!
+
+07e-01 http://maps-semcog.opendata.arcgis.com/data.json
+07e-01 has no deleted_items
+07e-01 has no new_items
+
+11a-01 http://ogrip-geohio.opendata.arcgis.com/data.json
+14 deleted_items added to 11a-01!
+14 new_items added to 11a-01!
+
+06b-01 http://data-southbend.opendata.arcgis.com/data.json
+06b-01 has no deleted_items
+06b-01 has no new_items
+
+09c-01 http://accessoakland.oakgov.com/data.json
+09c-01 has no deleted_items
+50 new_items added to 09c-01!
