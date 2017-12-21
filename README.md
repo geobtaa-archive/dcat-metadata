@@ -18,21 +18,22 @@ This script will compare previously harvested JSON files with a hosted one. It w
 This script is for testing harvesting problems if the JSON is not being recognized
 
 ## CSV Lists
-The scripts that harvest from hosted JSONS require accompanying lists of where to harvest from. These are referenced in the section of the script commented as "Manual items to change!"
+These list the collection code and the portal URL. The scripts that harvest from hosted JSONS require accompanying lists of where to harvest from. These are referenced in the section of the script commented as "Manual items to change!"
 
 ### ArcPortals.csv
 ### Mn Portals.csv
 ### SocrataPortals.csv
-### temp.csv - useful for adding one or two portal addresses to harvest at a time.
+### temp.csv
+useful for adding one or two portal addresses to harvest at a time.
 
 
 
-### Folders
+## Folders
 
-## Jsons
+### Jsons
 This holds all harvested Jsons with the naming convention of collectioncode_YYYYMMDD.json
 
-## Reports
+### Reports
 This holds all CSV reports of new and deleted items.
 
 
