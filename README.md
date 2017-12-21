@@ -25,14 +25,6 @@ These list the collection code and the portal URL. The scripts that harvest from
 * Mn Portals.csv
 * SocrataPortals.csv
 * temp.csv - useful for adding one or two portal addresses to harvest at a time.
-=======
-* ArcPortals.csv
-* Mn Portals.csv
-* SocrataPortals.csv
-* temp.csv
-useful for adding one or two portal addresses to harvest at a time.
-
-
 
 
 ## Folders
