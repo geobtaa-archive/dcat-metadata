@@ -510,3 +510,18 @@ There is no comparison json for 05b-13
 05b-14 https://getdata-hubbardcounty.opendata.arcgis.com/data.json
 05b-14 has no deleted_items
 05b-14 has no new_items
+
+
+Dec 29, 2017, 2:23:13 PM
+~/GitHUB/dcat-metadata/Json2Csv.py
+--------------------------------------------------------------------------------
+08e-01 https://dvrpc-dvrpcgis.opendata.arcgis.com/data.json
+68 items harvested from 08e-01!
+68 new_items harvested from 08e-01!
+report complete for 08e-01!
+
+08c-02 http://data-phl.opendata.arcgis.com/data.json
+212 items harvested from 08c-02!
+212 new_items harvested from 08c-02!
+report complete for 08c-02!
+

@@ -20,11 +20,11 @@ from HTMLParser import HTMLParser
 ### Manual items to change!
 
 ## Set the date download of the older and newer jsons
-PreviousActionDate = '20171127'
-ActionDate = '20171221'
+PreviousActionDate = '20171012'
+ActionDate = '20171222'
 
 ## names of the main directory containing folders named "Jsons" and "Reports"
-directory = r' '
+directory = r'/Users/majew030/GitHUB/dcat-metadata/'
 
 ##list of metadata fields from the DCAT json schema for open data portals desired in the final report
 fields = ["identifier", "title", "description", "issued", "modified", "landingPage", "webService", "spatial"]
@@ -61,7 +61,7 @@ def printReport (report_type, dictionary, fields):
 
 
 ### Opens a list of portals and urls ending in data/json from PortalList.csv with column headers 'portalName' and 'URL'
-with open(directory + 'ArcPortals.csv') as f:
+with open(directory + 'MnPortals.csv') as f:
     reader = csv.DictReader(f)
     for row in reader:
         portalName = row['portalName']
