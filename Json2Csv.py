@@ -16,10 +16,10 @@ from HTMLParser import HTMLParser
 
 ### Manual items to change!
 
-ActionDate = '20171120'
+ActionDate = '20171222'
 
 ## names of the main directory containing folders named "Jsons" and "Reports"
-directory = r''
+directory = r'/Users/majew030/GitHUB/dcat-metadata'
 
 ##list of metadata fields from the DCAT json schema for open data portals desired in the final report
 fields = ["identifier", "title", "description", "issued", "modified", "landingPage", "webService", "spatial"]
