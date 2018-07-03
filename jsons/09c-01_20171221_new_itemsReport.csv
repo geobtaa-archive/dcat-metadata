@@ -1,0 +1,477 @@
+identifier,title,description,issued,modified,landingPage,webService,spatial
+http://accessoakland.oakgov.com/datasets/eee188d13bc84abf9dbddc4b2fd62ae2,Bloomfield2015,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE. This
+MrSID file was derived from the 2015 raster dataset, which consists of 8-bit,
+4-band (R, G, B, NIR) color orthoimagery. A digital orthoimage is a raster
+image processed from vertical aerial images in which displacement in the image
+due to sensor orientation and terrain relief have been removed. Orthoimagery
+combines the image characteristics of an image with the geometric qualities of
+a map. Unlike planimetric maps which depict natural and manmade features by
+means of lines, point symbols, texts and polygons, orthoimagery illustrates the
+actual images of features and are thus more easily interpreted than regular
+maps. The normal orientation of data in an orthoimage is by lines (rows) and
+samples (columns). Each line contains a series of pixels ordered from west to
+east with the order of the lines from north to south. Each image tile is stored
+in industry standard TIFF (tagged interchange file format) with an associated
+TIFF world file. Aerial imagery was acquired between April 12 and 15 2015 from
+flying heights of approximately 1400-1640 feet above ground level (AGL). Each
+orthoimage tile is 2500feet X 2500feet in dimension, edge-tied with the
+adjacent tiles (no gap and no overlap). This dataset is published in
+NAD_1983_HARN_StatePlane_Michigan_South_FIPS_2111_Feet_Intl_feet.",2016-12-09T20:07:41.000Z,2017-12-05T18:26:43.000Z,http://accessoakland.oakgov.com/datasets/eee188d13bc84abf9dbddc4b2fd62ae2,http://ocgispublic.s3.amazonaws.com/Imagery2015/Bloomfield2015.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/eee188d13bc84abf9dbddc4b2fd62ae2
+http://accessoakland.oakgov.com/datasets/2ef1bd06dc7b42c495be872b64772da9,Oxford 2017,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE. This MrSID Gen 4 file? was derived from the 2017 orthogonal imagery produced from nadir images captured by Pictometry International during the Spring of 2017. Automatic aerial triangulation (AAT) was performed. The triangulated frames were rectified to an Oakland County-provided LiDAR derived DEM. Mosaicing was performed using an automatic seaming algorithm and manually edited to eliminate seams through elevated features where possible.",2017-12-05T21:02:44.000Z,2017-12-06T18:44:38.000Z,http://accessoakland.oakgov.com/datasets/2ef1bd06dc7b42c495be872b64772da9,http://ocgispublic.s3.amazonaws.com/Imagery2017/Oxford2017.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/2ef1bd06dc7b42c495be872b64772da9
+http://accessoakland.oakgov.com/datasets/9d32404d1eb84978b5a8a0c43ff698fd,WhiteLake2015,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE.?This
+MrSID file was derived from the 2015 raster dataset, which consists of 8-bit,
+4-band (R, G, B, NIR) color orthoimagery. A digital orthoimage is a raster
+image processed from vertical aerial images in which displacement in the image
+due to sensor orientation and terrain relief have been removed. Orthoimagery
+combines the image characteristics of an image with the geometric qualities of
+a map. Unlike planimetric maps which depict natural and manmade features by
+means of lines, point symbols, texts and polygons, orthoimagery illustrates the
+actual images of features and are thus more easily interpreted than regular
+maps. The normal orientation of data in an orthoimage is by lines (rows) and
+samples (columns). Each line contains a series of pixels ordered from west to
+east with the order of the lines from north to south. Each image tile is stored
+in industry standard TIFF (tagged interchange file format) with an associated
+TIFF world file. Aerial imagery was acquired between April 12 and 15 2015 from
+flying heights of approximately 1400-1640 feet above ground level (AGL). Each
+orthoimage tile is 2500feet X 2500feet in dimension, edge-tied with the
+adjacent tiles (no gap and no overlap). This dataset is published in
+NAD_1983_HARN_StatePlane_Michigan_South_FIPS_2111_Feet_Intl_feet.",2016-12-12T17:24:33.000Z,2017-12-05T18:16:49.000Z,http://accessoakland.oakgov.com/datasets/9d32404d1eb84978b5a8a0c43ff698fd,http://ocgispublic.s3.amazonaws.com/Imagery2015/WhiteLake2015.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/9d32404d1eb84978b5a8a0c43ff698fd
+http://accessoakland.oakgov.com/datasets/d189ace9906541a8a75273d67eea5988,Springfield 2017,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE. This MrSID Gen 4 file? was derived from the 2017 orthogonal imagery produced from nadir images captured by Pictometry International during the Spring of 2017. Automatic aerial triangulation (AAT) was performed. The triangulated frames were rectified to an Oakland County-provided LiDAR derived DEM. Mosaicing was performed using an automatic seaming algorithm and manually edited to eliminate seams through elevated features where possible.",2017-12-05T20:18:05.000Z,2017-12-06T18:47:50.000Z,http://accessoakland.oakgov.com/datasets/d189ace9906541a8a75273d67eea5988,http://ocgispublic.s3.amazonaws.com/Imagery2017/Springfield2017.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/d189ace9906541a8a75273d67eea5988
+http://accessoakland.oakgov.com/datasets/dd559e2e01d247e18a577a33568a31aa,Oxford2015,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE. This
+MrSID file was derived from the 2015 raster dataset, which consists of 8-bit,
+4-band (R, G, B, NIR) color orthoimagery. A digital orthoimage is a raster
+image processed from vertical aerial images in which displacement in the image
+due to sensor orientation and terrain relief have been removed. Orthoimagery
+combines the image characteristics of an image with the geometric qualities of
+a map. Unlike planimetric maps which depict natural and manmade features by
+means of lines, point symbols, texts and polygons, orthoimagery illustrates the
+actual images of features and are thus more easily interpreted than regular
+maps. The normal orientation of data in an orthoimage is by lines (rows) and
+samples (columns). Each line contains a series of pixels ordered from west to
+east with the order of the lines from north to south. Each image tile is stored
+in industry standard TIFF (tagged interchange file format) with an associated
+TIFF world file. Aerial imagery was acquired between April 12 and 15 2015 from
+flying heights of approximately 1400-1640 feet above ground level (AGL). Each
+orthoimage tile is 2500feet X 2500feet in dimension, edge-tied with the
+adjacent tiles (no gap and no overlap). This dataset is published in
+NAD_1983_HARN_StatePlane_Michigan_South_FIPS_2111_Feet_Intl_feet.",2016-12-09T20:58:32.000Z,2017-12-05T18:22:13.000Z,http://accessoakland.oakgov.com/datasets/dd559e2e01d247e18a577a33568a31aa,http://ocgispublic.s3.amazonaws.com/Imagery2015/Oxford2015.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/dd559e2e01d247e18a577a33568a31aa
+http://accessoakland.oakgov.com/datasets/29170198965649b3a052d29503f6b48c,White Lake 2017,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE. This MrSID Gen 4 file? was derived from the 2017 orthogonal imagery produced from nadir images captured by Pictometry International during the Spring of 2017. Automatic aerial triangulation (AAT) was performed. The triangulated frames were rectified to an Oakland County-provided LiDAR derived DEM. Mosaicing was performed using an automatic seaming algorithm and manually edited to eliminate seams through elevated features where possible.",2017-12-05T19:18:13.000Z,2017-12-06T18:50:11.000Z,http://accessoakland.oakgov.com/datasets/29170198965649b3a052d29503f6b48c,http://ocgispublic.s3.amazonaws.com/Imagery2017/WhiteLake2017.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/29170198965649b3a052d29503f6b48c
+http://accessoakland.oakgov.com/datasets/17bd4cf1889e4687a8e4e176a55ee8ac,Orion 2017,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE. This MrSID Gen 4 file? was derived from the 2017 orthogonal imagery produced from nadir images captured by Pictometry International during the Spring of 2017. Automatic aerial triangulation (AAT) was performed. The triangulated frames were rectified to an Oakland County-provided LiDAR derived DEM. Mosaicing was performed using an automatic seaming algorithm and manually edited to eliminate seams through elevated features where possible.",2017-12-05T21:03:42.000Z,2017-12-06T18:44:00.000Z,http://accessoakland.oakgov.com/datasets/17bd4cf1889e4687a8e4e176a55ee8ac,http://ocgispublic.s3.amazonaws.com/Imagery2017/Orion2017.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/17bd4cf1889e4687a8e4e176a55ee8ac
+http://accessoakland.oakgov.com/datasets/72dfbbe1c6e54f7cb3f9295011bed5bf,Lyon2015,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE.?This
+MrSID file was derived from the 2015 raster dataset, which consists of 8-bit,
+4-band (R, G, B, NIR) color orthoimagery. A digital orthoimage is a raster
+image processed from vertical aerial images in which displacement in the image
+due to sensor orientation and terrain relief have been removed. Orthoimagery
+combines the image characteristics of an image with the geometric qualities of
+a map. Unlike planimetric maps which depict natural and manmade features by
+means of lines, point symbols, texts and polygons, orthoimagery illustrates the
+actual images of features and are thus more easily interpreted than regular
+maps. The normal orientation of data in an orthoimage is by lines (rows) and
+samples (columns). Each line contains a series of pixels ordered from west to
+east with the order of the lines from north to south. Each image tile is stored
+in industry standard TIFF (tagged interchange file format) with an associated
+TIFF world file. Aerial imagery was acquired between April 12 and 15 2015 from
+flying heights of approximately 1400-1640 feet above ground level (AGL). Each
+orthoimage tile is 2500feet X 2500feet in dimension, edge-tied with the
+adjacent tiles (no gap and no overlap). This dataset is published in
+NAD_1983_HARN_StatePlane_Michigan_South_FIPS_2111_Feet_Intl_feet.",2016-12-09T20:26:27.000Z,2017-12-05T18:24:01.000Z,http://accessoakland.oakgov.com/datasets/72dfbbe1c6e54f7cb3f9295011bed5bf,http://ocgispublic.s3.amazonaws.com/Imagery2015/Lyon2015.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/72dfbbe1c6e54f7cb3f9295011bed5bf
+http://accessoakland.oakgov.com/datasets/3c26e857e36e45bfb065f10ec2555bbf,Waterford 2017,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE. This MrSID Gen 4 file? was derived from the 2017 orthogonal imagery produced from nadir images captured by Pictometry International during the Spring of 2017. Automatic aerial triangulation (AAT) was performed. The triangulated frames were rectified to an Oakland County-provided LiDAR derived DEM. Mosaicing was performed using an automatic seaming algorithm and manually edited to eliminate seams through elevated features where possible.",2017-12-05T20:17:24.000Z,2017-12-06T18:49:08.000Z,http://accessoakland.oakgov.com/datasets/3c26e857e36e45bfb065f10ec2555bbf,http://ocgispublic.s3.amazonaws.com/Imagery2017/Waterford2017.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/3c26e857e36e45bfb065f10ec2555bbf
+http://accessoakland.oakgov.com/datasets/966081b67cd941079f95cd79cf3de17e,Brandon2015,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE. This
+MrSID file was derived from the 2015 raster dataset, which consists of 8-bit,
+4-band (R, G, B, NIR) color orthoimagery. A digital orthoimage is a raster
+image processed from vertical aerial images in which displacement in the image
+due to sensor orientation and terrain relief have been removed. Orthoimagery
+combines the image characteristics of an image with the geometric qualities of
+a map. Unlike planimetric maps which depict natural and manmade features by
+means of lines, point symbols, texts and polygons, orthoimagery illustrates the
+actual images of features and are thus more easily interpreted than regular
+maps. The normal orientation of data in an orthoimage is by lines (rows) and
+samples (columns). Each line contains a series of pixels ordered from west to
+east with the order of the lines from north to south. Each image tile is stored
+in industry standard TIFF (tagged interchange file format) with an associated
+TIFF world file. Aerial imagery was acquired between April 12 and 15 2015 from
+flying heights of approximately 1400-1640 feet above ground level (AGL). Each
+orthoimage tile is 2500feet X 2500feet in dimension, edge-tied with the
+adjacent tiles (no gap and no overlap). This dataset is published in
+NAD_1983_HARN_StatePlane_Michigan_South_FIPS_2111_Feet_Intl_feet.",2016-12-09T20:10:13.000Z,2017-12-05T18:26:24.000Z,http://accessoakland.oakgov.com/datasets/966081b67cd941079f95cd79cf3de17e,http://ocgispublic.s3.amazonaws.com/Imagery2015/Brandon2015.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/966081b67cd941079f95cd79cf3de17e
+http://accessoakland.oakgov.com/datasets/39d0e51d42ee455fac6850ed4cf77d2a,Oakland2015,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE. This
+MrSID file was derived from the 2015 raster dataset, which consists of 8-bit,
+4-band (R, G, B, NIR) color orthoimagery. A digital orthoimage is a raster
+image processed from vertical aerial images in which displacement in the image
+due to sensor orientation and terrain relief have been removed. Orthoimagery
+combines the image characteristics of an image with the geometric qualities of
+a map. Unlike planimetric maps which depict natural and manmade features by
+means of lines, point symbols, texts and polygons, orthoimagery illustrates the
+actual images of features and are thus more easily interpreted than regular
+maps. The normal orientation of data in an orthoimage is by lines (rows) and
+samples (columns). Each line contains a series of pixels ordered from west to
+east with the order of the lines from north to south. Each image tile is stored
+in industry standard TIFF (tagged interchange file format) with an associated
+TIFF world file. Aerial imagery was acquired between April 12 and 15 2015 from
+flying heights of approximately 1400-1640 feet above ground level (AGL). Each
+orthoimage tile is 2500feet X 2500feet in dimension, edge-tied with the
+adjacent tiles (no gap and no overlap). This dataset is published in
+NAD_1983_HARN_StatePlane_Michigan_South_FIPS_2111_Feet_Intl_feet.",2016-12-09T20:53:32.000Z,2017-12-05T18:22:57.000Z,http://accessoakland.oakgov.com/datasets/39d0e51d42ee455fac6850ed4cf77d2a,http://ocgispublic.s3.amazonaws.com/Imagery2015/Oakland2015.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/39d0e51d42ee455fac6850ed4cf77d2a
+http://accessoakland.oakgov.com/datasets/245f3d82208046ea891fec893a50988a,Commerce 2017,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE. This MrSID Gen 4 file? was derived from the 2017 orthogonal imagery produced from nadir images captured by Pictometry International during the Spring of 2017. Automatic aerial triangulation (AAT) was performed. The triangulated frames were rectified to an Oakland County-provided LiDAR derived DEM. Mosaicing was performed using an automatic seaming algorithm and manually edited to eliminate seams through elevated features where possible.",2017-12-06T14:39:42.000Z,2017-12-06T14:47:50.000Z,http://accessoakland.oakgov.com/datasets/245f3d82208046ea891fec893a50988a,http://ocgispublic.s3.amazonaws.com/Imagery2017/Commerce2017.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/245f3d82208046ea891fec893a50988a
+http://accessoakland.oakgov.com/datasets/2c74741799e0452e8df62cb70b40225d,Brandon 2017,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE. This MrSID Gen 4 file? was derived from the 2017 orthogonal imagery produced from nadir images captured by Pictometry International during the Spring of 2017. Automatic aerial triangulation (AAT) was performed. The triangulated frames were rectified to an Oakland County-provided LiDAR derived DEM. Mosaicing was performed using an automatic seaming algorithm and manually edited to eliminate seams through elevated features where possible.",2017-12-06T14:40:37.000Z,2017-12-06T14:44:30.000Z,http://accessoakland.oakgov.com/datasets/2c74741799e0452e8df62cb70b40225d,http://ocgispublic.s3.amazonaws.com/Imagery2017/Brandon2017.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/2c74741799e0452e8df62cb70b40225d
+http://accessoakland.oakgov.com/datasets/caaee5ac43ba49eab21e53cadb60fbcf,Commerce2015,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE. This
+MrSID file was derived from the 2015 raster dataset, which consists of 8-bit,
+4-band (R, G, B, NIR) color orthoimagery. A digital orthoimage is a raster
+image processed from vertical aerial images in which displacement in the image
+due to sensor orientation and terrain relief have been removed. Orthoimagery
+combines the image characteristics of an image with the geometric qualities of
+a map. Unlike planimetric maps which depict natural and manmade features by
+means of lines, point symbols, texts and polygons, orthoimagery illustrates the
+actual images of features and are thus more easily interpreted than regular
+maps. The normal orientation of data in an orthoimage is by lines (rows) and
+samples (columns). Each line contains a series of pixels ordered from west to
+east with the order of the lines from north to south. Each image tile is stored
+in industry standard TIFF (tagged interchange file format) with an associated
+TIFF world file. Aerial imagery was acquired between April 12 and 15 2015 from
+flying heights of approximately 1400-1640 feet above ground level (AGL). Each
+orthoimage tile is 2500feet X 2500feet in dimension, edge-tied with the
+adjacent tiles (no gap and no overlap). This dataset is published in
+NAD_1983_HARN_StatePlane_Michigan_South_FIPS_2111_Feet_Intl_feet.",2016-12-09T20:11:52.000Z,2017-12-05T18:26:06.000Z,http://accessoakland.oakgov.com/datasets/caaee5ac43ba49eab21e53cadb60fbcf,http://ocgispublic.s3.amazonaws.com/Imagery2015/Commerce2015.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/caaee5ac43ba49eab21e53cadb60fbcf
+http://accessoakland.oakgov.com/datasets/f35f0abc60094bdc923b4d9f9c69aee8,Highland 2017,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE. This MrSID Gen 4 file? was derived from the 2017 orthogonal imagery produced from nadir images captured by Pictometry International during the Spring of 2017. Automatic aerial triangulation (AAT) was performed. The triangulated frames were rectified to an Oakland County-provided LiDAR derived DEM. Mosaicing was performed using an automatic seaming algorithm and manually edited to eliminate seams through elevated features where possible.",2017-12-06T14:38:34.000Z,2017-12-06T14:55:09.000Z,http://accessoakland.oakgov.com/datasets/f35f0abc60094bdc923b4d9f9c69aee8,http://ocgispublic.s3.amazonaws.com/Imagery2017/Highland2017.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/f35f0abc60094bdc923b4d9f9c69aee8
+http://accessoakland.oakgov.com/datasets/50ddbd67cbdd482a9d0be0f520aefc68,Groveland 2017,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE. This MrSID Gen 4 file? was derived from the 2017 orthogonal imagery produced from nadir images captured by Pictometry International during the Spring of 2017. Automatic aerial triangulation (AAT) was performed. The triangulated frames were rectified to an Oakland County-provided LiDAR derived DEM. Mosaicing was performed using an automatic seaming algorithm and manually edited to eliminate seams through elevated features where possible.",2017-12-06T14:39:03.000Z,2017-12-06T14:54:29.000Z,http://accessoakland.oakgov.com/datasets/50ddbd67cbdd482a9d0be0f520aefc68,http://ocgispublic.s3.amazonaws.com/Imagery2017/Groveland2017.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/50ddbd67cbdd482a9d0be0f520aefc68
+http://accessoakland.oakgov.com/datasets/aa907241baf54b0a80826b7a00539d25,Milford 2017,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE. This MrSID Gen 4 file? was derived from the 2017 orthogonal imagery produced from nadir images captured by Pictometry International during the Spring of 2017. Automatic aerial triangulation (AAT) was performed. The triangulated frames were rectified to an Oakland County-provided LiDAR derived DEM. Mosaicing was performed using an automatic seaming algorithm and manually edited to eliminate seams through elevated features where possible.",2017-12-05T21:16:26.000Z,2017-12-06T14:57:46.000Z,http://accessoakland.oakgov.com/datasets/aa907241baf54b0a80826b7a00539d25,http://ocgispublic.s3.amazonaws.com/Imagery2017/Milford2017.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/aa907241baf54b0a80826b7a00539d25
+http://accessoakland.oakgov.com/datasets/2cccc6b6b3cd4ea29a7ffabfbba9928f,Addison2015,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE. This
+MrSID file was derived from the 2015 raster dataset, which consists of 8-bit,
+4-band (R, G, B, NIR) color orthoimagery. A digital orthoimage is a raster
+image processed from vertical aerial images in which displacement in the image
+due to sensor orientation and terrain relief have been removed. Orthoimagery
+combines the image characteristics of an image with the geometric qualities of
+a map. Unlike planimetric maps which depict natural and manmade features by
+means of lines, point symbols, texts and polygons, orthoimagery illustrates the
+actual images of features and are thus more easily interpreted than regular
+maps. The normal orientation of data in an orthoimage is by lines (rows) and
+samples (columns). Each line contains a series of pixels ordered from west to
+east with the order of the lines from north to south. Each image tile is stored
+in industry standard TIFF (tagged interchange file format) with an associated
+TIFF world file. Aerial imagery was acquired between April 12 and 15 2015 from
+flying heights of approximately 1400-1640 feet above ground level (AGL). Each
+orthoimage tile is 2500feet X 2500feet in dimension, edge-tied with the
+adjacent tiles (no gap and no overlap). This dataset is published in
+NAD_1983_HARN_StatePlane_Michigan_South_FIPS_2111_Feet_Intl_feet.
+
+ ",2016-12-09T19:28:39.000Z,2017-12-05T18:27:20.000Z,http://accessoakland.oakgov.com/datasets/2cccc6b6b3cd4ea29a7ffabfbba9928f,http://ocgispublic.s3.amazonaws.com/Imagery2015/Addison2015.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/2cccc6b6b3cd4ea29a7ffabfbba9928f
+http://accessoakland.oakgov.com/datasets/6ee7098defa0447db66d4685621aecdf,Novi 2017,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE. This MrSID Gen 4 file? was derived from the 2017 orthogonal imagery produced from nadir images captured by Pictometry International during the Spring of 2017. Automatic aerial triangulation (AAT) was performed. The triangulated frames were rectified to an Oakland County-provided LiDAR derived DEM. Mosaicing was performed using an automatic seaming algorithm and manually edited to eliminate seams through elevated features where possible.",2017-12-05T21:04:17.000Z,2017-12-06T14:58:41.000Z,http://accessoakland.oakgov.com/datasets/6ee7098defa0447db66d4685621aecdf,http://ocgispublic.s3.amazonaws.com/Imagery2017/Novi2017.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/6ee7098defa0447db66d4685621aecdf
+http://accessoakland.oakgov.com/datasets/4043f10fa3e349858ce1fb371cf3b00d,Holly2015,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE.?This
+MrSID file was derived from the 2015 raster dataset, which consists of 8-bit,
+4-band (R, G, B, NIR) color orthoimagery. A digital orthoimage is a raster
+image processed from vertical aerial images in which displacement in the image
+due to sensor orientation and terrain relief have been removed. Orthoimagery
+combines the image characteristics of an image with the geometric qualities of
+a map. Unlike planimetric maps which depict natural and manmade features by
+means of lines, point symbols, texts and polygons, orthoimagery illustrates the
+actual images of features and are thus more easily interpreted than regular
+maps. The normal orientation of data in an orthoimage is by lines (rows) and
+samples (columns). Each line contains a series of pixels ordered from west to
+east with the order of the lines from north to south. Each image tile is stored
+in industry standard TIFF (tagged interchange file format) with an associated
+TIFF world file. Aerial imagery was acquired between April 12 and 15 2015 from
+flying heights of approximately 1400-1640 feet above ground level (AGL). Each
+orthoimage tile is 2500feet X 2500feet in dimension, edge-tied with the
+adjacent tiles (no gap and no overlap). This dataset is published in
+NAD_1983_HARN_StatePlane_Michigan_South_FIPS_2111_Feet_Intl_feet.",2016-12-09T20:21:50.000Z,2017-12-05T18:24:41.000Z,http://accessoakland.oakgov.com/datasets/4043f10fa3e349858ce1fb371cf3b00d,http://ocgispublic.s3.amazonaws.com/Imagery2015/Holly2015.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/4043f10fa3e349858ce1fb371cf3b00d
+http://accessoakland.oakgov.com/datasets/42069f8ec37c4a42b576623158ad270a,Lyon 2017,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE. This MrSID Gen 4 file? was derived from the 2017 orthogonal imagery produced from nadir images captured by Pictometry International during the Spring of 2017. Automatic aerial triangulation (AAT) was performed. The triangulated frames were rectified to an Oakland County-provided LiDAR derived DEM. Mosaicing was performed using an automatic seaming algorithm and manually edited to eliminate seams through elevated features where possible.",2017-12-05T21:16:47.000Z,2017-12-06T14:57:06.000Z,http://accessoakland.oakgov.com/datasets/42069f8ec37c4a42b576623158ad270a,http://ocgispublic.s3.amazonaws.com/Imagery2017/Lyon2017.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/42069f8ec37c4a42b576623158ad270a
+http://accessoakland.oakgov.com/datasets/37c86fb46a344963a3970323bbe54ee2,Waterford2015,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE.?This
+MrSID file was derived from the 2015 raster dataset, which consists of 8-bit,
+4-band (R, G, B, NIR) color orthoimagery. A digital orthoimage is a raster
+image processed from vertical aerial images in which displacement in the image
+due to sensor orientation and terrain relief have been removed. Orthoimagery
+combines the image characteristics of an image with the geometric qualities of
+a map. Unlike planimetric maps which depict natural and manmade features by
+means of lines, point symbols, texts and polygons, orthoimagery illustrates the
+actual images of features and are thus more easily interpreted than regular
+maps. The normal orientation of data in an orthoimage is by lines (rows) and
+samples (columns). Each line contains a series of pixels ordered from west to
+east with the order of the lines from north to south. Each image tile is stored
+in industry standard TIFF (tagged interchange file format) with an associated
+TIFF world file. Aerial imagery was acquired between April 12 and 15 2015 from
+flying heights of approximately 1400-1640 feet above ground level (AGL). Each
+orthoimage tile is 2500feet X 2500feet in dimension, edge-tied with the
+adjacent tiles (no gap and no overlap). This dataset is published in
+NAD_1983_HARN_StatePlane_Michigan_South_FIPS_2111_Feet_Intl_feet.",2016-12-12T17:04:30.000Z,2017-12-05T18:18:37.000Z,http://accessoakland.oakgov.com/datasets/37c86fb46a344963a3970323bbe54ee2,http://ocgispublic.s3.amazonaws.com/Imagery2015/Waterford2015.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/37c86fb46a344963a3970323bbe54ee2
+http://accessoakland.oakgov.com/datasets/e5b41ff318fe41cabd3798147e3f35fb,Addison 2017,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE. This MrSID Gen 4 file? was derived from the 2017 orthogonal imagery produced from nadir images captured by Pictometry International during the Spring of 2017. Automatic aerial triangulation (AAT) was performed. The triangulated frames were rectified to an Oakland County-provided LiDAR derived DEM. Mosaicing was performed using an automatic seaming algorithm and manually edited to eliminate seams through elevated features where possible.",2017-12-06T14:43:31.000Z,2017-12-06T14:45:02.000Z,http://accessoakland.oakgov.com/datasets/e5b41ff318fe41cabd3798147e3f35fb,http://ocgispublic.s3.amazonaws.com/Imagery2017/Addison2017.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/e5b41ff318fe41cabd3798147e3f35fb
+http://accessoakland.oakgov.com/datasets/51e80c088c35494a8529648ec214f89a,Groveland2015,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE.?This
+MrSID file was derived from the 2015 raster dataset, which consists of 8-bit,
+4-band (R, G, B, NIR) color orthoimagery. A digital orthoimage is a raster
+image processed from vertical aerial images in which displacement in the image
+due to sensor orientation and terrain relief have been removed. Orthoimagery
+combines the image characteristics of an image with the geometric qualities of
+a map. Unlike planimetric maps which depict natural and manmade features by
+means of lines, point symbols, texts and polygons, orthoimagery illustrates the
+actual images of features and are thus more easily interpreted than regular
+maps. The normal orientation of data in an orthoimage is by lines (rows) and
+samples (columns). Each line contains a series of pixels ordered from west to
+east with the order of the lines from north to south. Each image tile is stored
+in industry standard TIFF (tagged interchange file format) with an associated
+TIFF world file. Aerial imagery was acquired between April 12 and 15 2015 from
+flying heights of approximately 1400-1640 feet above ground level (AGL). Each
+orthoimage tile is 2500feet X 2500feet in dimension, edge-tied with the
+adjacent tiles (no gap and no overlap). This dataset is published in? NAD_1983_HARN_StatePlane_Michigan_South_FIPS_2111_Feet_Intl_feet.",2016-12-09T20:17:33.000Z,2017-12-05T18:25:26.000Z,http://accessoakland.oakgov.com/datasets/51e80c088c35494a8529648ec214f89a,http://ocgispublic.s3.amazonaws.com/Imagery2015/Groveland2015.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/51e80c088c35494a8529648ec214f89a
+http://accessoakland.oakgov.com/datasets/d84cead8df734f0c88a6960a4f7de596,Bloomfield 2017,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE. This MrSID Gen 4 file? was derived from the 2017 orthogonal imagery produced from nadir images captured by Pictometry International during the Spring of 2017. Automatic aerial triangulation (AAT) was performed. The triangulated frames were rectified to an Oakland County-provided LiDAR derived DEM. Mosaicing was performed using an automatic seaming algorithm and manually edited to eliminate seams through elevated features where possible.",2017-12-06T14:40:03.000Z,2017-12-06T14:46:56.000Z,http://accessoakland.oakgov.com/datasets/d84cead8df734f0c88a6960a4f7de596,http://ocgispublic.s3.amazonaws.com/Imagery2017/Bloomfield2017.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/d84cead8df734f0c88a6960a4f7de596
+http://accessoakland.oakgov.com/datasets/aab141b189dc47a5aae409f18194158d,Southfield 2017,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE. This MrSID Gen 4 file? was derived from the 2017 orthogonal imagery produced from nadir images captured by Pictometry International during the Spring of 2017. Automatic aerial triangulation (AAT) was performed. The triangulated frames were rectified to an Oakland County-provided LiDAR derived DEM. Mosaicing was performed using an automatic seaming algorithm and manually edited to eliminate seams through elevated features where possible.",2017-12-05T20:18:58.000Z,2017-12-06T18:47:16.000Z,http://accessoakland.oakgov.com/datasets/aab141b189dc47a5aae409f18194158d,http://ocgispublic.s3.amazonaws.com/Imagery2017/Southfield2017.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/aab141b189dc47a5aae409f18194158d
+http://accessoakland.oakgov.com/datasets/e98e67dcbc694251899648da5ebc990c,Pontiac2015,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE.?This
+MrSID file was derived from the 2015 raster dataset, which consists of 8-bit,
+4-band (R, G, B, NIR) color orthoimagery. A digital orthoimage is a raster
+image processed from vertical aerial images in which displacement in the image
+due to sensor orientation and terrain relief have been removed. Orthoimagery
+combines the image characteristics of an image with the geometric qualities of
+a map. Unlike planimetric maps which depict natural and manmade features by
+means of lines, point symbols, texts and polygons, orthoimagery illustrates the
+actual images of features and are thus more easily interpreted than regular
+maps. The normal orientation of data in an orthoimage is by lines (rows) and
+samples (columns). Each line contains a series of pixels ordered from west to
+east with the order of the lines from north to south. Each image tile is stored
+in industry standard TIFF (tagged interchange file format) with an associated
+TIFF world file. Aerial imagery was acquired between April 12 and 15 2015 from
+flying heights of approximately 1400-1640 feet above ground level (AGL). Each
+orthoimage tile is 2500feet X 2500feet in dimension, edge-tied with the
+adjacent tiles (no gap and no overlap). This dataset is published in
+NAD_1983_HARN_StatePlane_Michigan_South_FIPS_2111_Feet_Intl_feet.",2016-12-09T21:01:45.000Z,2017-12-05T18:21:51.000Z,http://accessoakland.oakgov.com/datasets/e98e67dcbc694251899648da5ebc990c,http://ocgispublic.s3.amazonaws.com/Imagery2015/Pontiac2015.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/e98e67dcbc694251899648da5ebc990c
+http://accessoakland.oakgov.com/datasets/a5d4021c14894940a229a25d553543b2,Royal Oak 2017,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE. This MrSID Gen 4 file? was derived from the 2017 orthogonal imagery produced from nadir images captured by Pictometry International during the Spring of 2017. Automatic aerial triangulation (AAT) was performed. The triangulated frames were rectified to an Oakland County-provided LiDAR derived DEM. Mosaicing was performed using an automatic seaming algorithm and manually edited to eliminate seams through elevated features where possible.",2017-12-05T21:01:34.000Z,2017-12-06T18:46:35.000Z,http://accessoakland.oakgov.com/datasets/a5d4021c14894940a229a25d553543b2,http://ocgispublic.s3.amazonaws.com/Imagery2017/RoyalOak2017.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/a5d4021c14894940a229a25d553543b2
+http://accessoakland.oakgov.com/datasets/2c534f042de74d028c5fd919e3f77f72,Farmington2015,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE.?This
+MrSID file was derived from the 2015 raster dataset, which consists of 8-bit,
+4-band (R, G, B, NIR) color orthoimagery. A digital orthoimage is a raster
+image processed from vertical aerial images in which displacement in the image
+due to sensor orientation and terrain relief have been removed. Orthoimagery
+combines the image characteristics of an image with the geometric qualities of
+a map. Unlike planimetric maps which depict natural and manmade features by
+means of lines, point symbols, texts and polygons, orthoimagery illustrates the
+actual images of features and are thus more easily interpreted than regular
+maps. The normal orientation of data in an orthoimage is by lines (rows) and
+samples (columns). Each line contains a series of pixels ordered from west to
+east with the order of the lines from north to south. Each image tile is stored
+in industry standard TIFF (tagged interchange file format) with an associated
+TIFF world file. Aerial imagery was acquired between April 12 and 15 2015 from
+flying heights of approximately 1400-1640 feet above ground level (AGL). Each
+orthoimage tile is 2500feet X 2500feet in dimension, edge-tied with the
+adjacent tiles (no gap and no overlap). This dataset is published in
+NAD_1983_HARN_StatePlane_Michigan_South_FIPS_2111_Feet_Intl_feet.",2016-12-09T20:15:08.000Z,2017-12-05T18:25:48.000Z,http://accessoakland.oakgov.com/datasets/2c534f042de74d028c5fd919e3f77f72,http://ocgispublic.s3.amazonaws.com/Imagery2015/Farmington2015.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/2c534f042de74d028c5fd919e3f77f72
+http://accessoakland.oakgov.com/datasets/4a5cb39e7f324d48bd4712740753bac9,Avon 2017,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE. This MrSID Gen 4 file? was derived from the 2017 orthogonal imagery produced from nadir images captured by Pictometry International during the Spring of 2017. Automatic aerial triangulation (AAT) was performed. The triangulated frames were rectified to an Oakland County-provided LiDAR derived DEM. Mosaicing was performed using an automatic seaming algorithm and manually edited to eliminate seams through elevated features where possible.",2017-12-06T14:40:20.000Z,2017-12-06T14:45:41.000Z,http://accessoakland.oakgov.com/datasets/4a5cb39e7f324d48bd4712740753bac9,http://ocgispublic.s3.amazonaws.com/Imagery2017/Avon2017.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/4a5cb39e7f324d48bd4712740753bac9
+http://accessoakland.oakgov.com/datasets/4e43d4cebbb949e1923f27185429fecb,WestBloomfield2015,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE.?This
+MrSID file was derived from the 2015 raster dataset, which consists of 8-bit,
+4-band (R, G, B, NIR) color orthoimagery. A digital orthoimage is a raster
+image processed from vertical aerial images in which displacement in the image
+due to sensor orientation and terrain relief have been removed. Orthoimagery
+combines the image characteristics of an image with the geometric qualities of
+a map. Unlike planimetric maps which depict natural and manmade features by
+means of lines, point symbols, texts and polygons, orthoimagery illustrates the
+actual images of features and are thus more easily interpreted than regular
+maps. The normal orientation of data in an orthoimage is by lines (rows) and
+samples (columns). Each line contains a series of pixels ordered from west to
+east with the order of the lines from north to south. Each image tile is stored
+in industry standard TIFF (tagged interchange file format) with an associated
+TIFF world file. Aerial imagery was acquired between April 12 and 15 2015 from
+flying heights of approximately 1400-1640 feet above ground level (AGL). Each
+orthoimage tile is 2500feet X 2500feet in dimension, edge-tied with the
+adjacent tiles (no gap and no overlap). This dataset is published in
+NAD_1983_HARN_StatePlane_Michigan_South_FIPS_2111_Feet_Intl_feet.",2016-12-12T17:23:28.000Z,2017-12-05T18:18:02.000Z,http://accessoakland.oakgov.com/datasets/4e43d4cebbb949e1923f27185429fecb,http://ocgispublic.s3.amazonaws.com/Imagery2015/WestBloomfield2015.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/4e43d4cebbb949e1923f27185429fecb
+http://accessoakland.oakgov.com/datasets/d09a959836f149558d6e228be0b0d2f9,Independence 2017,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE. This MrSID Gen 4 file? was derived from the 2017 orthogonal imagery produced from nadir images captured by Pictometry International during the Spring of 2017. Automatic aerial triangulation (AAT) was performed. The triangulated frames were rectified to an Oakland County-provided LiDAR derived DEM. Mosaicing was performed using an automatic seaming algorithm and manually edited to eliminate seams through elevated features where possible.",2017-12-06T14:37:48.000Z,2017-12-06T14:56:22.000Z,http://accessoakland.oakgov.com/datasets/d09a959836f149558d6e228be0b0d2f9,http://ocgispublic.s3.amazonaws.com/Imagery2017/Independence2017.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/d09a959836f149558d6e228be0b0d2f9
+http://accessoakland.oakgov.com/datasets/6a8f00ea696d4d8a8c6ef041d5ca3ad3,Troy 2017,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE. This MrSID Gen 4 file? was derived from the 2017 orthogonal imagery produced from nadir images captured by Pictometry International during the Spring of 2017. Automatic aerial triangulation (AAT) was performed. The triangulated frames were rectified to an Oakland County-provided LiDAR derived DEM. Mosaicing was performed using an automatic seaming algorithm and manually edited to eliminate seams through elevated features where possible.",2017-12-05T20:17:47.000Z,2017-12-06T18:48:35.000Z,http://accessoakland.oakgov.com/datasets/6a8f00ea696d4d8a8c6ef041d5ca3ad3,http://ocgispublic.s3.amazonaws.com/Imagery2017/Troy2017.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/6a8f00ea696d4d8a8c6ef041d5ca3ad3
+http://accessoakland.oakgov.com/datasets/da163f2dc0be435298e4ba85b55fe4a8,Pontiac 2017,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE. This MrSID Gen 4 file? was derived from the 2017 orthogonal imagery produced from nadir images captured by Pictometry International during the Spring of 2017. Automatic aerial triangulation (AAT) was performed. The triangulated frames were rectified to an Oakland County-provided LiDAR derived DEM. Mosaicing was performed using an automatic seaming algorithm and manually edited to eliminate seams through elevated features where possible.",2017-12-05T21:02:18.000Z,2017-12-06T18:45:16.000Z,http://accessoakland.oakgov.com/datasets/da163f2dc0be435298e4ba85b55fe4a8,http://ocgispublic.s3.amazonaws.com/Imagery2017/Pontiac2017.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/da163f2dc0be435298e4ba85b55fe4a8
+http://accessoakland.oakgov.com/datasets/ac89259510244ac08806c81535305489,Orion2015,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE.?This
+MrSID file was derived from the 2015 raster dataset, which consists of 8-bit,
+4-band (R, G, B, NIR) color orthoimagery. A digital orthoimage is a raster
+image processed from vertical aerial images in which displacement in the image
+due to sensor orientation and terrain relief have been removed. Orthoimagery
+combines the image characteristics of an image with the geometric qualities of
+a map. Unlike planimetric maps which depict natural and manmade features by
+means of lines, point symbols, texts and polygons, orthoimagery illustrates the
+actual images of features and are thus more easily interpreted than regular
+maps. The normal orientation of data in an orthoimage is by lines (rows) and
+samples (columns). Each line contains a series of pixels ordered from west to
+east with the order of the lines from north to south. Each image tile is stored
+in industry standard TIFF (tagged interchange file format) with an associated
+TIFF world file. Aerial imagery was acquired between April 12 and 15 2015 from
+flying heights of approximately 1400-1640 feet above ground level (AGL). Each
+orthoimage tile is 2500feet X 2500feet in dimension, edge-tied with the
+adjacent tiles (no gap and no overlap). This dataset is published in
+NAD_1983_HARN_StatePlane_Michigan_South_FIPS_2111_Feet_Intl_feet.",2016-12-09T20:56:24.000Z,2017-12-05T18:22:33.000Z,http://accessoakland.oakgov.com/datasets/ac89259510244ac08806c81535305489,http://ocgispublic.s3.amazonaws.com/Imagery2015/Orion2015.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/ac89259510244ac08806c81535305489
+http://accessoakland.oakgov.com/datasets/f40c7207b47c4bfc8537b8c4ba73a246,Rose 2017,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE. This MrSID Gen 4 file? was derived from the 2017 orthogonal imagery produced from nadir images captured by Pictometry International during the Spring of 2017. Automatic aerial triangulation (AAT) was performed. The triangulated frames were rectified to an Oakland County-provided LiDAR derived DEM. Mosaicing was performed using an automatic seaming algorithm and manually edited to eliminate seams through elevated features where possible.",2017-12-05T21:01:59.000Z,2017-12-06T18:45:54.000Z,http://accessoakland.oakgov.com/datasets/f40c7207b47c4bfc8537b8c4ba73a246,http://ocgispublic.s3.amazonaws.com/Imagery2017/Rose2017.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/f40c7207b47c4bfc8537b8c4ba73a246
+http://accessoakland.oakgov.com/datasets/0726c0b2a8bc4612bfff250a7c8dea82,Independence2015,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE.?This
+MrSID file was derived from the 2015 raster dataset, which consists of 8-bit,
+4-band (R, G, B, NIR) color orthoimagery. A digital orthoimage is a raster
+image processed from vertical aerial images in which displacement in the image
+due to sensor orientation and terrain relief have been removed. Orthoimagery
+combines the image characteristics of an image with the geometric qualities of
+a map. Unlike planimetric maps which depict natural and manmade features by
+means of lines, point symbols, texts and polygons, orthoimagery illustrates the
+actual images of features and are thus more easily interpreted than regular
+maps. The normal orientation of data in an orthoimage is by lines (rows) and
+samples (columns). Each line contains a series of pixels ordered from west to
+east with the order of the lines from north to south. Each image tile is stored
+in industry standard TIFF (tagged interchange file format) with an associated
+TIFF world file. Aerial imagery was acquired between April 12 and 15 2015 from
+flying heights of approximately 1400-1640 feet above ground level (AGL). Each
+orthoimage tile is 2500feet X 2500feet in dimension, edge-tied with the
+adjacent tiles (no gap and no overlap). This dataset is published in
+NAD_1983_HARN_StatePlane_Michigan_South_FIPS_2111_Feet_Intl_feet.",2016-12-09T20:23:21.000Z,2017-12-05T18:24:20.000Z,http://accessoakland.oakgov.com/datasets/0726c0b2a8bc4612bfff250a7c8dea82,http://ocgispublic.s3.amazonaws.com/Imagery2015/Independence2015.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/0726c0b2a8bc4612bfff250a7c8dea82
+http://accessoakland.oakgov.com/datasets/caf31bea2a2a4f51968f32fbc7599e50,Highland2015,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE.?This
+MrSID file was derived from the 2015 raster dataset, which consists of 8-bit,
+4-band (R, G, B, NIR) color orthoimagery. A digital orthoimage is a raster
+image processed from vertical aerial images in which displacement in the image
+due to sensor orientation and terrain relief have been removed. Orthoimagery
+combines the image characteristics of an image with the geometric qualities of
+a map. Unlike planimetric maps which depict natural and manmade features by
+means of lines, point symbols, texts and polygons, orthoimagery illustrates the
+actual images of features and are thus more easily interpreted than regular
+maps. The normal orientation of data in an orthoimage is by lines (rows) and
+samples (columns). Each line contains a series of pixels ordered from west to
+east with the order of the lines from north to south. Each image tile is stored
+in industry standard TIFF (tagged interchange file format) with an associated
+TIFF world file. Aerial imagery was acquired between April 12 and 15 2015 from
+flying heights of approximately 1400-1640 feet above ground level (AGL). Each
+orthoimage tile is 2500feet X 2500feet in dimension, edge-tied with the
+adjacent tiles (no gap and no overlap). This dataset is published in
+NAD_1983_HARN_StatePlane_Michigan_South_FIPS_2111_Feet_Intl_feet.",2016-12-09T20:20:19.000Z,2017-12-05T18:25:01.000Z,http://accessoakland.oakgov.com/datasets/caf31bea2a2a4f51968f32fbc7599e50,http://ocgispublic.s3.amazonaws.com/Imagery2015/Highland2015.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/caf31bea2a2a4f51968f32fbc7599e50
+http://accessoakland.oakgov.com/datasets/b74e6ababae0452d8a3c5fa4661d3ecd,Southfield2015,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE.?This
+MrSID file was derived from the 2015 raster dataset, which consists of 8-bit,
+4-band (R, G, B, NIR) color orthoimagery. A digital orthoimage is a raster
+image processed from vertical aerial images in which displacement in the image
+due to sensor orientation and terrain relief have been removed. Orthoimagery
+combines the image characteristics of an image with the geometric qualities of
+a map. Unlike planimetric maps which depict natural and manmade features by
+means of lines, point symbols, texts and polygons, orthoimagery illustrates the
+actual images of features and are thus more easily interpreted than regular
+maps. The normal orientation of data in an orthoimage is by lines (rows) and
+samples (columns). Each line contains a series of pixels ordered from west to
+east with the order of the lines from north to south. Each image tile is stored
+in industry standard TIFF (tagged interchange file format) with an associated
+TIFF world file. Aerial imagery was acquired between April 12 and 15 2015 from
+flying heights of approximately 1400-1640 feet above ground level (AGL). Each
+orthoimage tile is 2500feet X 2500feet in dimension, edge-tied with the
+adjacent tiles (no gap and no overlap). This dataset is published in
+NAD_1983_HARN_StatePlane_Michigan_South_FIPS_2111_Feet_Intl_feet.",2016-12-12T16:28:17.000Z,2017-12-05T18:20:46.000Z,http://accessoakland.oakgov.com/datasets/b74e6ababae0452d8a3c5fa4661d3ecd,http://ocgispublic.s3.amazonaws.com/Imagery2015/Southfield2015.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/b74e6ababae0452d8a3c5fa4661d3ecd
+http://accessoakland.oakgov.com/datasets/cc242a5f0a984fca87dc05d399c8fe47,Avon2015,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE. This
+MrSID file was derived from the 2015 raster dataset, which consists of 8-bit,
+4-band (R, G, B, NIR) color orthoimagery. A digital orthoimage is a raster
+image processed from vertical aerial images in which displacement in the image
+due to sensor orientation and terrain relief have been removed. Orthoimagery
+combines the image characteristics of an image with the geometric qualities of
+a map. Unlike planimetric maps which depict natural and manmade features by
+means of lines, point symbols, texts and polygons, orthoimagery illustrates the
+actual images of features and are thus more easily interpreted than regular
+maps. The normal orientation of data in an orthoimage is by lines (rows) and
+samples (columns). Each line contains a series of pixels ordered from west to
+east with the order of the lines from north to south. Each image tile is stored
+in industry standard TIFF (tagged interchange file format) with an associated
+TIFF world file. Aerial imagery was acquired between April 12 and 15 2015 from
+flying heights of approximately 1400-1640 feet above ground level (AGL). Each
+orthoimage tile is 2500feet X 2500feet in dimension, edge-tied with the
+adjacent tiles (no gap and no overlap). This dataset is published in
+NAD_1983_HARN_StatePlane_Michigan_South_FIPS_2111_Feet_Intl_feet.",2016-12-09T19:57:54.000Z,2017-12-05T18:27:00.000Z,http://accessoakland.oakgov.com/datasets/cc242a5f0a984fca87dc05d399c8fe47,http://ocgispublic.s3.amazonaws.com/Imagery2015/Avon2015.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/cc242a5f0a984fca87dc05d399c8fe47
+http://accessoakland.oakgov.com/datasets/be9d7f112bcf405f9eff35d6172d72df,Novi2015,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE.?This
+MrSID file was derived from the 2015 raster dataset, which consists of 8-bit,
+4-band (R, G, B, NIR) color orthoimagery. A digital orthoimage is a raster
+image processed from vertical aerial images in which displacement in the image
+due to sensor orientation and terrain relief have been removed. Orthoimagery
+combines the image characteristics of an image with the geometric qualities of
+a map. Unlike planimetric maps which depict natural and manmade features by
+means of lines, point symbols, texts and polygons, orthoimagery illustrates the
+actual images of features and are thus more easily interpreted than regular
+maps. The normal orientation of data in an orthoimage is by lines (rows) and
+samples (columns). Each line contains a series of pixels ordered from west to
+east with the order of the lines from north to south. Each image tile is stored
+in industry standard TIFF (tagged interchange file format) with an associated
+TIFF world file. Aerial imagery was acquired between April 12 and 15 2015 from
+flying heights of approximately 1400-1640 feet above ground level (AGL). Each
+orthoimage tile is 2500feet X 2500feet in dimension, edge-tied with the
+adjacent tiles (no gap and no overlap). This dataset is published in
+NAD_1983_HARN_StatePlane_Michigan_South_FIPS_2111_Feet_Intl_feet.",2016-12-09T20:43:34.000Z,2017-12-05T18:23:21.000Z,http://accessoakland.oakgov.com/datasets/be9d7f112bcf405f9eff35d6172d72df,http://ocgispublic.s3.amazonaws.com/Imagery2015/Novi2015.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/be9d7f112bcf405f9eff35d6172d72df
+http://accessoakland.oakgov.com/datasets/23a3eac082a14555af5d0597f6a35304,Milford2015,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE.?This
+MrSID file was derived from the 2015 raster dataset, which consists of 8-bit,
+4-band (R, G, B, NIR) color orthoimagery. A digital orthoimage is a raster
+image processed from vertical aerial images in which displacement in the image
+due to sensor orientation and terrain relief have been removed. Orthoimagery
+combines the image characteristics of an image with the geometric qualities of
+a map. Unlike planimetric maps which depict natural and manmade features by
+means of lines, point symbols, texts and polygons, orthoimagery illustrates the
+actual images of features and are thus more easily interpreted than regular
+maps. The normal orientation of data in an orthoimage is by lines (rows) and
+samples (columns). Each line contains a series of pixels ordered from west to
+east with the order of the lines from north to south. Each image tile is stored
+in industry standard TIFF (tagged interchange file format) with an associated
+TIFF world file. Aerial imagery was acquired between April 12 and 15 2015 from
+flying heights of approximately 1400-1640 feet above ground level (AGL). Each
+orthoimage tile is 2500feet X 2500feet in dimension, edge-tied with the
+adjacent tiles (no gap and no overlap). This dataset is published in
+NAD_1983_HARN_StatePlane_Michigan_South_FIPS_2111_Feet_Intl_feet.",2016-12-09T20:42:18.000Z,2017-12-05T18:23:40.000Z,http://accessoakland.oakgov.com/datasets/23a3eac082a14555af5d0597f6a35304,http://ocgispublic.s3.amazonaws.com/Imagery2015/Milford2015.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/23a3eac082a14555af5d0597f6a35304
+http://accessoakland.oakgov.com/datasets/82633674bf9b4c93a5c50e0d6939841c,Springfield2015,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE. This
+MrSID file was derived from the 2015 raster dataset, which consists of 8-bit,
+4-band (R, G, B, NIR) color orthoimagery. A digital orthoimage is a raster
+image processed from vertical aerial images in which displacement in the image
+due to sensor orientation and terrain relief have been removed. Orthoimagery
+combines the image characteristics of an image with the geometric qualities of
+a map. Unlike planimetric maps which depict natural and manmade features by
+means of lines, point symbols, texts and polygons, orthoimagery illustrates the
+actual images of features and are thus more easily interpreted than regular
+maps. The normal orientation of data in an orthoimage is by lines (rows) and
+samples (columns). Each line contains a series of pixels ordered from west to
+east with the order of the lines from north to south. Each image tile is stored
+in industry standard TIFF (tagged interchange file format) with an associated
+TIFF world file. Aerial imagery was acquired between April 12 and 15 2015 from
+flying heights of approximately 1400-1640 feet above ground level (AGL). Each
+orthoimage tile is 2500feet X 2500feet in dimension, edge-tied with the
+adjacent tiles (no gap and no overlap). This dataset is published in
+NAD_1983_HARN_StatePlane_Michigan_South_FIPS_2111_Feet_Intl_feet.",2016-12-12T16:29:32.000Z,2017-12-05T18:20:16.000Z,http://accessoakland.oakgov.com/datasets/82633674bf9b4c93a5c50e0d6939841c,http://ocgispublic.s3.amazonaws.com/Imagery2015/Springfield2015.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/82633674bf9b4c93a5c50e0d6939841c
+http://accessoakland.oakgov.com/datasets/b0c8be8d4f924fa6ac5be520a449637b,Troy2015,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE. This
+MrSID file was derived from the 2015 raster dataset, which consists of 8-bit,
+4-band (R, G, B, NIR) color orthoimagery. A digital orthoimage is a raster
+image processed from vertical aerial images in which displacement in the image
+due to sensor orientation and terrain relief have been removed. Orthoimagery
+combines the image characteristics of an image with the geometric qualities of
+a map. Unlike planimetric maps which depict natural and manmade features by
+means of lines, point symbols, texts and polygons, orthoimagery illustrates the
+actual images of features and are thus more easily interpreted than regular
+maps. The normal orientation of data in an orthoimage is by lines (rows) and
+samples (columns). Each line contains a series of pixels ordered from west to
+east with the order of the lines from north to south. Each image tile is stored
+in industry standard TIFF (tagged interchange file format) with an associated
+TIFF world file. Aerial imagery was acquired between April 12 and 15 2015 from
+flying heights of approximately 1400-1640 feet above ground level (AGL). Each
+orthoimage tile is 2500feet X 2500feet in dimension, edge-tied with the
+adjacent tiles (no gap and no overlap). This dataset is published in
+NAD_1983_HARN_StatePlane_Michigan_South_FIPS_2111_Feet_Intl_feet.",2016-12-12T16:58:30.000Z,2017-12-05T18:19:04.000Z,http://accessoakland.oakgov.com/datasets/b0c8be8d4f924fa6ac5be520a449637b,http://ocgispublic.s3.amazonaws.com/Imagery2015/Troy2015.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/b0c8be8d4f924fa6ac5be520a449637b
+http://accessoakland.oakgov.com/datasets/7d044bcd3c384a64882b9829337cf6d4,RoyalOak2015,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE.?This
+MrSID file was derived from the 2015 raster dataset, which consists of 8-bit,
+4-band (R, G, B, NIR) color orthoimagery. A digital orthoimage is a raster
+image processed from vertical aerial images in which displacement in the image
+due to sensor orientation and terrain relief have been removed. Orthoimagery
+combines the image characteristics of an image with the geometric qualities of
+a map. Unlike planimetric maps which depict natural and manmade features by
+means of lines, point symbols, texts and polygons, orthoimagery illustrates the
+actual images of features and are thus more easily interpreted than regular
+maps. The normal orientation of data in an orthoimage is by lines (rows) and
+samples (columns). Each line contains a series of pixels ordered from west to
+east with the order of the lines from north to south. Each image tile is stored
+in industry standard TIFF (tagged interchange file format) with an associated
+TIFF world file. Aerial imagery was acquired between April 12 and 15 2015 from
+flying heights of approximately 1400-1640 feet above ground level (AGL). Each
+orthoimage tile is 2500feet X 2500feet in dimension, edge-tied with the
+adjacent tiles (no gap and no overlap). This dataset is published in
+NAD_1983_HARN_StatePlane_Michigan_South_FIPS_2111_Feet_Intl_feet.",2016-12-12T15:20:50.000Z,2017-12-05T18:21:06.000Z,http://accessoakland.oakgov.com/datasets/7d044bcd3c384a64882b9829337cf6d4,http://ocgispublic.s3.amazonaws.com/Imagery2015/RoyalOak2015.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/7d044bcd3c384a64882b9829337cf6d4
+http://accessoakland.oakgov.com/datasets/4a4ee8126f6f4984be483fc7ae1acba2,West Bloomfield 2017,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE. This MrSID Gen 4 file? was derived from the 2017 orthogonal imagery produced from nadir images captured by Pictometry International during the Spring of 2017. Automatic aerial triangulation (AAT) was performed. The triangulated frames were rectified to an Oakland County-provided LiDAR derived DEM. Mosaicing was performed using an automatic seaming algorithm and manually edited to eliminate seams through elevated features where possible.",2017-12-05T20:16:14.000Z,2017-12-06T18:49:37.000Z,http://accessoakland.oakgov.com/datasets/4a4ee8126f6f4984be483fc7ae1acba2,http://ocgispublic.s3.amazonaws.com/Imagery2017/WestBloomfield2017.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/4a4ee8126f6f4984be483fc7ae1acba2
+http://accessoakland.oakgov.com/datasets/1fdb90d0ba8b445a98ecc6543f74ef8f,Farmington 2017,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE. This MrSID Gen 4 file? was derived from the 2017 orthogonal imagery produced from nadir images captured by Pictometry International during the Spring of 2017. Automatic aerial triangulation (AAT) was performed. The triangulated frames were rectified to an Oakland County-provided LiDAR derived DEM. Mosaicing was performed using an automatic seaming algorithm and manually edited to eliminate seams through elevated features where possible.",2017-12-06T14:39:23.000Z,2017-12-06T14:53:59.000Z,http://accessoakland.oakgov.com/datasets/1fdb90d0ba8b445a98ecc6543f74ef8f,http://ocgispublic.s3.amazonaws.com/Imagery2017/Farmington2017.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/1fdb90d0ba8b445a98ecc6543f74ef8f
+http://accessoakland.oakgov.com/datasets/559e2746681a462eb75fdae467829f44,Oakland 2017,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE. This MrSID Gen 4 file? was derived from the 2017 orthogonal imagery produced from nadir images captured by Pictometry International during the Spring of 2017. Automatic aerial triangulation (AAT) was performed. The triangulated frames were rectified to an Oakland County-provided LiDAR derived DEM. Mosaicing was performed using an automatic seaming algorithm and manually edited to eliminate seams through elevated features where possible.",2017-12-05T21:03:59.000Z,2017-12-06T14:59:30.000Z,http://accessoakland.oakgov.com/datasets/559e2746681a462eb75fdae467829f44,http://ocgispublic.s3.amazonaws.com/Imagery2017/Oakland2017.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/559e2746681a462eb75fdae467829f44
+http://accessoakland.oakgov.com/datasets/095d76e5951746ce89701d5ad0bd2cdf,Holly 2017,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE. This MrSID Gen 4 file? was derived from the 2017 orthogonal imagery produced from nadir images captured by Pictometry International during the Spring of 2017. Automatic aerial triangulation (AAT) was performed. The triangulated frames were rectified to an Oakland County-provided LiDAR derived DEM. Mosaicing was performed using an automatic seaming algorithm and manually edited to eliminate seams through elevated features where possible.",2017-12-06T14:38:07.000Z,2017-12-06T14:55:44.000Z,http://accessoakland.oakgov.com/datasets/095d76e5951746ce89701d5ad0bd2cdf,http://ocgispublic.s3.amazonaws.com/Imagery2017/Holly2017.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/095d76e5951746ce89701d5ad0bd2cdf
+http://accessoakland.oakgov.com/datasets/dbfc94240f6b43f6b512839046150a96,Rose2015,"BY USING THIS WEBSITE OR THE CONTENT THEREIN, YOU AGREE TO THE?TERMS OF USE.?This
+MrSID file was derived from the 2015 raster dataset, which consists of 8-bit,
+4-band (R, G, B, NIR) color orthoimagery. A digital orthoimage is a raster
+image processed from vertical aerial images in which displacement in the image
+due to sensor orientation and terrain relief have been removed. Orthoimagery
+combines the image characteristics of an image with the geometric qualities of
+a map. Unlike planimetric maps which depict natural and manmade features by
+means of lines, point symbols, texts and polygons, orthoimagery illustrates the
+actual images of features and are thus more easily interpreted than regular
+maps. The normal orientation of data in an orthoimage is by lines (rows) and
+samples (columns). Each line contains a series of pixels ordered from west to
+east with the order of the lines from north to south. Each image tile is stored
+in industry standard TIFF (tagged interchange file format) with an associated
+TIFF world file. Aerial imagery was acquired between April 12 and 15 2015 from
+flying heights of approximately 1400-1640 feet above ground level (AGL). Each
+orthoimage tile is 2500feet X 2500feet in dimension, edge-tied with the
+adjacent tiles (no gap and no overlap). This dataset is published in
+NAD_1983_HARN_StatePlane_Michigan_South_FIPS_2111_Feet_Intl_feet.",2016-12-09T21:03:44.000Z,2017-12-05T18:21:26.000Z,http://accessoakland.oakgov.com/datasets/dbfc94240f6b43f6b512839046150a96,http://ocgispublic.s3.amazonaws.com/Imagery2015/Rose2015.zip,"-180.0,-90.0,180.0,90.0",http://accessoakland.oakgov.com/datasets/dbfc94240f6b43f6b512839046150a96

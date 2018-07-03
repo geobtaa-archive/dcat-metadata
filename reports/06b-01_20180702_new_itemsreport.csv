@@ -1,0 +1,12 @@
+publisher,keyword,identifier,title,description,issued,modified,landingPage,webService,spatial
+"Oakland County, Michigan","[u'Water points', u'Contour', u'First Return', u'Intensity return', u'Overlap points', u'Ground points', u'LAS', u'Digital Elevation Model DEM', u'Digital Terrain Model DTM', u'point cloud', u'mapping', u'Bare Earth', u'ALS70', u'IMG', u'Grid', u'Digital Surface Model DSM', u'Unclassified points', u'LiDAR']",http://accessoakland.oakgov.com/datasets/304f61084a5446128454ab065d68cfe0,Enterprise DEM 2017 Image Service,"To acquire detailed surface elevation data for use in conservation planning, design, research, floodplain mapping, dam safety assessments, and hydrologic modeling. LAS and bare earth DEM data products are suitable for 1 foot contour generation. USGS LiDAR Base Specification 1.2, QL2. 19.6 cm NVA.This metadata record describes the hydro-flattened bare earth 
+digital elevation model (DEM) derived from the classified LiDAR data for
+ the 2017 Michigan LiDAR project covering approximately 907 square 
+miles, in which its extents cover Oakland County.This data is for planning purposes only and should not be used for
+ legal or cadastral purposes. Any conclusions drawn from analysis of 
+this information are not the responsibility of Sanborn Map Company. 
+Users should be aware that temporal changes may have occurred since this
+ dataset was collected and some parts of this dataset may no longer 
+represent actual surface conditions. Users should not use these data for
+ critical applications without a full awareness of its limitations. 
+Contact: State of MichiganDue to the large size of the data, downloading the entire county may not be possible. It is recommended to use the live service directly within ArcMap or ArcGIS Pro. For further questions, contact the Oakland County Service Center at 248-858-8812, servicecenter@oakgov.com. ",2018-05-04T21:52:07.000Z,2018-05-30T19:38:06.000Z,http://accessoakland.oakgov.com/datasets/304f61084a5446128454ab065d68cfe0,https://gisservices.oakgov.com/arcgis/rest/services/ImageServices/EnterpriseDEM2017ImageService/ImageServer,"-83.7031,42.4256,-83.0637,42.8975"

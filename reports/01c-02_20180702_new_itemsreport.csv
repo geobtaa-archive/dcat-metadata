@@ -1,0 +1,16 @@
+publisher,keyword,identifier,title,description,issued,modified,landingPage,webService,spatial
+City of Indianapolis and Marion County - IndyGIS,"[u'IMPD', u'IMPD BEATS', u'IMPD POLICE BEATS']",http://data1-indygis.opendata.arcgis.com/datasets/5fef516f08da46ffb59f61569b08cf10_0,IndyPoliceBeats,"Polygon file representing the police beat boundaries in Indianapolis and Marion County, Indiana.? Data projection: NAD 1983 StatePlane Indiana East FIPS 1301 (US Feet)",2018-03-19T16:47:30.000Z,2018-05-17T11:40:38.434Z,http://data1-indygis.opendata.arcgis.com/datasets/5fef516f08da46ffb59f61569b08cf10_0,https://services5.arcgis.com/xBsPUWYKO89lShIO/arcgis/rest/services/IndyPoliceBeats/FeatureServer/0,"-86.32915745118385,39.63217782625945,-85.93689821940872,39.92785118598905"
+City of Indianapolis and Marion County - IndyGIS,"[u'Indianapolis', u'Marion County', u'IMPD', u'UCR', u'Crime Statistics', u'Disclose Indy']",http://data1-indygis.opendata.arcgis.com/datasets/fb9936ff422e4fe98366790f69fbee7e_20,IMPD UCR 2017 Data,"
+
+The Uniform Crime
+Report is a program administered by the federal government in which crime
+statistics from across the country are reported to the FBI in a uniform manner
+based on crime definitions determined by the FBI. UCR Part 1 crime groups are
+murder, rape, robbery, aggravated assault, burglary, larceny, and vehicle
+theft.? 
+
+Additional
+information? regarding the downloadable files is available in .pdf
+format.
+
+",2018-05-09T13:13:43.000Z,2018-05-09T13:19:11.701Z,http://data1-indygis.opendata.arcgis.com/datasets/fb9936ff422e4fe98366790f69fbee7e_20,http://xmaps.indy.gov/arcgis/rest/services/OpenData/OpenData_NonSpatial/MapServer/20,"-180.0,-90.0,180.0,90.0"

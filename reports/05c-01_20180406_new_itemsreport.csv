@@ -1,0 +1,1532 @@
+publisher,keyword,identifier,title,description,issued,modified,landingPage,webService,spatial
+MapIT Minneapolis,"[u'Open Data', u' Minneapolis', u' Public Works', u' Planimetric', u' Lines']",http://opendata.minneapolismn.gov/datasets/a35dcee707854e5194fa86056a0a665a_0,PW Planimetric Lines,"For questions about this
+data please contact?PublicWorksOpenData@minneapolismn.gov
+?
+
+Attribute Overview:
+
+Alley Edge, Creek Edge, River Edge, Lake Edge, Pond Edge,
+Fence, Pool Edge, Sign Overhead, Wall, Bridge Edge, Curb and Gutter Edge, Curb
+and Gutter Obscured, Driveway Private Edge, Pavement Edge , ?Unpaved Edge, Parking Lot Edge, Boulevard
+Edge, Sidewalk Edge, Sidewalk Private Edge, Trail Edge, Woods Edge. ?
+
+Fields:
+
+
+ 
+  
+  Field
+  Name
+  
+  
+  Field
+  Type
+  
+  
+  Field
+  Description
+  
+ 
+ 
+  
+  OBJECTID
+  
+  
+  Object
+  ID
+  
+  
+  Unique
+  ID
+  
+ 
+ 
+  
+  PLAN_LN_REVD
+  
+  
+  Date
+  
+  
+  Graphic
+  revision date
+  
+ 
+ 
+  
+  SOURCE
+  
+  
+  Text
+  
+  
+  Source
+  of data
+  
+ 
+ 
+  
+  SOURCE_DATE
+  
+  
+  Date
+  
+  
+  Source
+  date
+  
+ 
+ 
+  
+  PLAN_LN_CREATED
+  
+  
+  Date
+  
+  
+  Graphic
+  creation date
+  
+ 
+ 
+  
+  SYMBOL_NAME
+  
+  
+  Text
+  
+  
+  Graphic
+  symbol name
+  
+ 
+ 
+  
+  Shape
+  
+  
+  Geometry
+  
+  
+  Geometry
+  
+ 
+ 
+  
+  Shape.STLength()
+  
+  
+  Double
+  
+  
+  Graphic
+  length
+  
+ 
+Symbol Name Attributes
+ 
+ 
+ 
+  Symbol
+  Name
+  Definition
+ 
+ 
+  ALLEY_EDGE
+  Roadway Alley Edge
+ 
+ 
+  BLVD_WALK_EDGE
+  Sidewalk Boulevard
+  Edge
+ 
+ 
+  BRDG_EDGE
+  Bridge Edge
+ 
+ 
+  CREEK_EDGE
+  Creek Edge
+ 
+ 
+  CURB_GUTTER
+  Curb and Gutter Edge
+ 
+ 
+  CURB_OBSC
+  Curb and Gutter
+  Obscured
+ 
+ 
+  DRIVE_EDGE_PVT
+  Driveway Privage Edge
+ 
+ 
+  FENCE
+  Fence
+ 
+ 
+  LAKE_EDGE
+  Lake Edge
+ 
+ 
+  POND_EDGE
+  Pond Edge
+ 
+ 
+  POOL_EDGE
+  Pool Edge
+ 
+ 
+  PRKG_LOT_EDGE
+  Parking Lot Edge
+ 
+ 
+  RIVE_EDGE
+  River Edge
+ 
+ 
+  ROAD_EDGE_PVMT
+  Roadway Edge Pavement
+ 
+ 
+  ROAD_EDGE_UPVD
+  Roadway Edge Unpaved
+ 
+ 
+  SWLK_EDGE
+  Sidewalk Edge
+ 
+ 
+  SWLK_EDGE_PVT
+  Sidewalk Private Edge
+ 
+ 
+  TRAIL_EDGE
+  Trail Edge
+ 
+ 
+  WALL
+  Wall
+ 
+ 
+  WOODS_EDGE
+  Woods Edge
+ ",2018-02-21T21:40:03.000Z,2018-02-21T22:06:15.307Z,http://opendata.minneapolismn.gov/datasets/a35dcee707854e5194fa86056a0a665a_0,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/PW_Planimetric_Lines/FeatureServer/0,"-93.33155805421657,44.88825057666085,-93.18518016069753,45.05184178694021"
+MapIT Minneapolis,"[u'Open Data', u' Minneapolis', u' Public Works', u' Centerline', u' Trails', u' Bikes']",http://opendata.minneapolismn.gov/datasets/7076d964eeab481bb37632b28b8cdcbd_0,PW Bike Trails,"For questions about this
+data please contact?PublicWorksOpenData@minneapolismn.gov
+?
+
+Attribute Overview :
+
+Bike Trail centerline, Text.
+
+Fields:
+
+
+ 
+ 
+ 
+ 
+  Field
+  Name
+  Field Type
+  Field
+  Description
+ 
+ 
+  OBJECTID
+  Object ID
+  Unique ID
+ 
+ 
+  TRAIL_NAME
+  Text
+  Trail
+  name
+ 
+ 
+  SYMBOL_NAME
+  Text
+  Graphic
+  symbol name
+ 
+ 
+  SEGMENT_LENGTH
+  Double
+  Graphic
+  length
+ 
+ 
+  BIKE_TRAIL_CLINE_CREATED
+  Date
+  Graphic
+  creation date
+ 
+ 
+  BIKE_TRAIL_CLINE_REVD
+  Date
+  Graphic
+  revision date
+ 
+ 
+  TRAIL_F_NAME
+  Text
+  Trail
+  from name
+ 
+ 
+  TRAIL_T_NAME
+  Text
+  Trail
+  to name
+ 
+ 
+  Shape
+  Geometry
+  Geometry
+ 
+ 
+  Shape.STLength()
+  Double
+  Graphic
+  length
+ Symbol Name Definitions:
+ 
+  
+  Symbol
+  Name
+  
+  
+  Definition
+  
+ 
+ 
+  
+  TRAIL_BIKE
+  
+  
+  Bike
+  Trail Centerline
+  
+ 
+",2018-02-21T20:38:14.000Z,2018-02-21T21:30:08.030Z,http://opendata.minneapolismn.gov/datasets/7076d964eeab481bb37632b28b8cdcbd_0,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/PW_Bike_Trails/FeatureServer/0,"-93.329074333923,44.90153658175143,-93.19781133928889,45.05127217202352"
+MapIT Minneapolis,"[u'Open Data', u' Minneapolis', u' Public Works', u' Centerline', u' Planimetric']",http://opendata.minneapolismn.gov/datasets/ae864fe030134ceb8115aa95b4e97378_0,PW Planimetric Points,"For questions about this
+data please contact?PublicWorksOpenData@minneapolismn.gov
+?
+
+Attribute Overview:
+
+Lighting Pole, Post, Power Pole, Lighting, Parking Meter,
+Traffic Sign, Water Hydrant, Hedge, Shrub, Tree Coniferous, Tree Deciduous.
+
+Fields:
+
+
+ 
+  
+  Field
+  Name
+  
+  
+  Field
+  Type
+  
+  
+  Field
+  Description
+  
+ 
+ 
+  
+  OBJECTID
+  
+  
+  Object
+  ID
+  
+  
+  Unique
+  ID
+  
+ 
+ 
+  
+  PLAN_PT_REVD
+  
+  
+  Date
+  
+  
+  Graphic
+  revision date
+  
+ 
+ 
+  
+  SOURCE
+  
+  
+  Text
+  
+  
+  Source
+  of data
+  
+ 
+ 
+  
+  SOURCE_DATE
+  
+  
+  Date
+  
+  
+  Source
+  date
+  
+ 
+ 
+  
+  PLAN_PT_CREATED
+  
+  
+  Date
+  
+  
+  Graphic
+  creation date
+  
+ 
+ 
+  
+  SYMBOL_NAME
+  
+  
+  Text
+  
+  
+  Graphic
+  symbol name
+  
+ 
+ 
+  
+  Shape
+  
+  
+  Geometry
+  
+  
+  Geometry
+  
+ 
+Symbol Name Definitions
+ 
+ 
+ 
+  Symbol
+  Name
+  Definition
+ 
+ 
+  HYDRANT
+  Water Hydrant
+ 
+ 
+  POST
+  Post
+ 
+ 
+  POWER_POLE
+  Power Pole
+ 
+ 
+  PRKG_METER
+  Traffic Parking Meter
+ 
+ 
+  STREET_LIGHT
+  Traffic Lighting
+ 
+ 
+  STREET_SIGN
+  Traffic Sign
+ 
+ 
+  TREE_CONIF
+  Tree Coniferous
+ 
+ 
+  TREE_DECID
+  Tree Deciduous
+ ",2018-02-21T22:16:22.000Z,2018-02-21T22:18:59.665Z,http://opendata.minneapolismn.gov/datasets/ae864fe030134ceb8115aa95b4e97378_0,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/PW_Planimetric_Points/FeatureServer/0,"-95.29964988381013,44.50062247207475,-93.18973664225038,45.05168478048493"
+MapIT Minneapolis,"[u'Open Data', u' Minneapolis', u' Public Works', u' Centerline', u' Alleys']",http://opendata.minneapolismn.gov/datasets/05d277839b8f49c68e3f8f7a411a505a_0,PW Alleys,"For questions about this
+data please contact?PublicWorksOpenData@minneapolismn.gov
+?
+
+Attribute Overview :
+
+Alley centerline, Alley Right of Way only centerline, Text.
+
+Fields:
+
+
+ 
+  
+  Field
+  Name
+  
+  
+  Field
+  Type
+  
+  
+  Field
+  Description
+  
+ 
+ 
+  
+  OBJECTID
+  
+  
+  Object
+  ID
+  
+  
+  Unique
+  ID
+  
+ 
+ 
+  
+  SYMBOL_NAME
+  
+  
+  Text
+  
+  
+  Graphic
+  symbol name
+  
+ 
+ 
+  
+  SEGMENT_ID
+  
+  
+  Text
+  
+  
+  Alley
+  segment ID
+  
+ 
+ 
+  
+  SECTION_ID
+  
+  
+  Text
+  
+  
+  Alley
+  section ID
+  
+ 
+ 
+  
+  PAVED
+  
+  
+  Text
+  
+  
+  Alley
+  paved or unpaved
+  
+ 
+ 
+  
+  MAINTENANCE_DISTRICT
+  
+  
+  Long
+  Integer
+  
+  
+  Street
+  maintenance district
+  
+ 
+ 
+  
+  PLOW_ROUTE
+  
+  
+  Text
+  
+  
+  Alley
+  plow route number
+  
+ 
+ 
+  
+  WARD
+  
+  
+  Text
+  
+  
+  Council
+  ward
+  
+ 
+ 
+  
+  SEGMENT_LENGTH
+  
+  
+  Double
+  
+  
+  Graphic
+  length
+  
+ 
+ 
+  
+  COMMENTS
+  
+  
+  Text
+  
+  
+  Comments
+  
+ 
+ 
+  
+  SOURCE
+  
+  
+  Text
+  
+  
+  Source
+  of data
+  
+ 
+ 
+  
+  SOURCE_DATE
+  
+  
+  Date
+  
+  
+  Source
+  date
+  
+ 
+ 
+  
+  ALLEY_CLINE_CREATED
+  
+  
+  Date
+  
+  
+  Graphic
+  creation date
+  
+ 
+ 
+  
+  ALLEY_CLINE_REVD
+  
+  
+  Date
+  
+  
+  Graphic
+  revision date
+  
+ 
+ 
+  
+  LEGAL_SOURCE
+  
+  
+  Text
+  
+  
+  Legal
+  source
+  
+ 
+ 
+  
+  Shape
+  
+  
+  Geometry
+  
+  
+  Geometry
+  
+ 
+ 
+  
+  Shape.STLength()
+  
+  
+  Double
+  
+  
+  Graphic
+  length
+  
+ 
+Symbol Name Definitions:
+ 
+  
+  Symbol
+  Name
+  
+  
+  Definition
+  
+ 
+ 
+  
+  ALLEY_RWAY
+  
+  
+  Alley
+  Centerline Right-of-Way Only
+  
+ 
+ 
+  
+  ALLLEYDL
+  
+  
+  Drivable
+  Alley Centerline
+  
+ 
+",2018-02-21T20:35:02.000Z,2018-02-21T21:12:50.032Z,http://opendata.minneapolismn.gov/datasets/05d277839b8f49c68e3f8f7a411a505a_0,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/PW_Alleys/FeatureServer/0,"-93.32910949990311,44.89076790145205,-93.19958128733002,45.05111748817871"
+MapIT Minneapolis,"[u'Open Data', u' Minneapolis', u' Hydrants', u' Public Works', u' Water']",http://opendata.minneapolismn.gov/datasets/4d7fc1675df843c7bbf3b63f77bc19dc_0,Hydrants,"For questions about this dataset
+please contact?PublicWorksOpenData@minneapolismn.gov?
+
+The
+hydrant data is created using engineering drawings (as-builts), field
+measurements, GPS (survey shots-0.5 inch accuracy) or ortho photos (6 in
+accuracy). The data is updated weekly.",2018-03-27T14:11:30.000Z,2018-03-27T14:20:15.813Z,http://opendata.minneapolismn.gov/datasets/4d7fc1675df843c7bbf3b63f77bc19dc_0,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/Hydrants/FeatureServer/0,"-93.3290581254651,44.883637575638254,-93.18707903149718,45.05435028527272"
+MapIT Minneapolis,"[u'Open Data', u' Minneapolis', u' Public Works', u' Centerline', u' Planimetric']",http://opendata.minneapolismn.gov/datasets/de15d2f88b4a42b4b951fc35606320a4_0,PW Planimetric Polygons,"For questions about this
+data please contact?PublicWorksOpenData@minneapolismn.gov
+?
+
+Attribute Overview:
+
+Sport Court, Driveway Apron, Sport ?Field, Sport ?Infield, Playground, Building.
+
+Fields:
+
+
+ 
+  
+  Field
+  Name
+  
+  
+  Field
+  Type
+  
+  
+  Field
+  Description
+  
+ 
+ 
+  
+  OBJECTID
+  
+  
+  Object
+  ID
+  
+  
+  Unique
+  ID
+  
+ 
+ 
+  
+  PLAN_POLY_REVD
+  
+  
+  Date
+  
+  
+  Graphic
+  revision date
+  
+ 
+ 
+  
+  SOURCE
+  
+  
+  Text
+  
+  
+  Source
+  of data
+  
+ 
+ 
+  
+  SOURCE_DATE
+  
+  
+  Date
+  
+  
+  Source
+  date
+  
+ 
+ 
+  
+  PLAN_POLY_CREATED
+  
+  
+  Date
+  
+  
+  Graphic
+  creation date
+  
+ 
+ 
+  
+  SYMBOL_NAME
+  
+  
+  Text
+  
+  
+  Graphic
+  symbol name
+  
+ 
+ 
+  
+  Shape
+  
+  
+  Geometry
+  
+  
+  Geometry
+  
+ 
+ 
+  
+  Shape.STArea()
+  
+  
+  Double
+  
+  
+  Graphic
+  area
+  
+ 
+ 
+  
+  Shape.STLength()
+  
+  
+  Double
+  
+  
+  Graphic
+  perimeter
+  
+ 
+Symbol Name Definitions
+ 
+ 
+ 
+  Symbol
+  Name
+  Definition
+ 
+ 
+  BUILDING
+  Building
+ 
+ 
+  DRIVE_APRON
+  Roadway Driveway
+  Apron
+ 
+ 
+  PLAYGROUND
+  Sports 
+  Recreation Playground
+ 
+ 
+  SPORT_COURT
+  Sports 
+  Recreation Court
+ 
+ 
+  SPORT_FIELD
+  Sports 
+  Recreation Field
+ 
+ 
+  SPORT_INFIELD
+  Sports 
+  Recreation Infield
+ ",2018-02-21T22:00:52.000Z,2018-02-21T22:10:01.368Z,http://opendata.minneapolismn.gov/datasets/de15d2f88b4a42b4b951fc35606320a4_0,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/PW_Planimetric_Polygons/FeatureServer/0,"-93.33032561579398,44.88925368789623,-93.18517406651611,45.05169166543586"
+MapIT Minneapolis,"[u'Open Data', u' Minneapolis', u' Public Works', u' Centerline', u' Streets']",http://opendata.minneapolismn.gov/datasets/ec28f7083c9346bf8a9fe44f8546c055_0,PW Street Centerline,"For questions about this
+data please contact?PublicWorksOpenData@minneapolismn.gov
+?
+
+Attribute Overview:
+
+Ramp county centerline, Ramp Interstate centerline, Ramp
+State centerline, Roadway County centerline, Roadway Interstate centerline,
+Roadway Military centerline, Roadway Municipal centerline, Roadway Non-Existing
+centerline, Roadway Park Board centerline, Roadway Private centerline, Roadway
+Right-of-Way centerline, Roadway State centerline, Roadway State Frontage Road
+centerline, Roadway University of Minnesota centerline, Tunnel Interstate
+centerline, Text.
+
+Fields:
+
+
+ 
+  
+  Field
+  Name
+  
+  
+  Field
+  Type
+  
+  
+  Field
+  Description
+  
+ 
+ 
+  
+  OBJECTID
+  
+  
+  Object
+  ID
+  
+  
+  Unique
+  ID
+  
+ 
+ 
+  
+  ALT_STREET_NAME2
+  
+  
+  Text
+  
+  
+  Alternate
+  street name option 2
+  
+ 
+ 
+  
+  ALT_STREET_NAME1
+  
+  
+  Text
+  
+  
+  Alternate
+  street name option 1
+  
+ 
+ 
+  
+  STREET_CLINE_REVD
+  
+  
+  Date
+  
+  
+  Graphic
+  revision date
+  
+ 
+ 
+  
+  STREET_CLINE_CREATED
+  
+  
+  Date
+  
+  
+  Graphic
+  creation date
+  
+ 
+ 
+  
+  SOURCE_DATE
+  
+  
+  Date
+  
+  
+  Source
+  date
+  
+ 
+ 
+  
+  DIGITIZING_SOURCE
+  
+  
+  Text
+  
+  
+  Source
+  of data
+  
+ 
+ 
+  
+  TRAFFIC_DIR
+  
+  
+  Text
+  
+  
+  One
+  way street code
+  
+ 
+ 
+  
+  SPEED_LIM
+  
+  
+  Long
+  Integer
+  
+  
+  Speed
+  Limit
+  
+ 
+ 
+  
+  FUNC_CLASS
+  
+  
+  Text
+  
+  
+  Functional
+  classification
+  
+ 
+ 
+  
+  TRUCK_ROUTE_TYPE
+  
+  
+  Text
+  
+  
+  Truck
+  route type
+  
+ 
+ 
+  
+  BUS_ROUTE
+  
+  
+  Text
+  
+  
+  Bus
+  route Y/N
+  
+ 
+ 
+  
+  SNOW_EMERGENCY_ROUTE
+  
+  
+  Text
+  
+  
+  Snow
+  emergency route Y/N
+  
+ 
+ 
+  
+  POTHOLE_MAINTENANCE
+  
+  
+  Text
+  
+  
+  Pothole
+  maintenance responsibility
+  
+ 
+ 
+  
+  STREET_MAINT_DIST
+  
+  
+  Text
+  
+  
+  Street
+  maintenance district
+  
+ 
+ 
+  
+  BRIDGE
+  
+  
+  Text
+  
+  
+  Y/N
+  column if segment contains bridge(s) 
+  
+ 
+ 
+  
+  TURNBACK
+  
+  
+  Text
+  
+  
+  Type
+  of turn back
+  
+ 
+ 
+  
+  SYSTEM_MILEAGE
+  
+  
+  Text
+  
+  
+  Y/N
+  column to include segment in system mileage 
+  
+ 
+ 
+  
+  SEGMENT_LENGTH
+  
+  
+  Double
+  
+  
+  Graphic
+  length
+  
+ 
+ 
+  
+  JURISDICTION
+  
+  
+  Text
+  
+  
+  Jurisdiction
+  of street segment
+  
+ 
+ 
+  
+  US_ROUTE_NO2
+  
+  
+  Text
+  
+  
+  US
+  route number option 1
+  
+ 
+ 
+  
+  US_ROUTE_NO1
+  
+  
+  Text
+  
+  
+  US
+  route number option 2
+  
+ 
+ 
+  
+  ROUTE_TYPE
+  
+  
+  Text
+  
+  
+  Funding
+  source route type
+  
+ 
+ 
+  
+  ROUTE_NO
+  
+  
+  Text
+  
+  
+  Route
+  number
+  
+ 
+ 
+  
+  STREET_O_NAME
+  
+  
+  Text
+  
+  
+  Street
+  on name
+  
+ 
+ 
+  
+  STREET_F_NAME
+  
+  
+  Text
+  
+  
+  Street
+  from name
+  
+ 
+ 
+  
+  STREET_T_NAME
+  
+  
+  Text
+  
+  
+  Street
+  to name
+  
+ 
+ 
+  
+  OFT
+  
+  
+  Text
+  
+  
+  Street
+  On-From-To code
+  
+ 
+ 
+  
+  SYMBOL_NAME
+  
+  
+  Text
+  
+  
+  Graphic
+  symbol name
+  
+ 
+ 
+  
+  AADT_ID
+  
+  
+  Long
+  Integer
+  
+  
+  Annual
+  average daily traffic ID
+  
+ 
+ 
+  
+  Shape
+  
+  
+  Geometry
+  
+  
+  Geometry
+  
+ 
+ 
+  
+  Sahpe.STLength()
+  
+  
+  Double
+  
+  
+  Graphic
+  length
+  
+ 
+Symbol Name Definitions
+ 
+ 
+ 
+  Symbol
+  Name
+  Definition
+ 
+ 
+  RAMP_CNTY
+  Centerline Ramp
+  County
+ 
+ 
+  RAMP_INTST
+  Centerline Ramp
+  Interstate
+ 
+ 
+  RAMP_STATE
+  Centerline Ramp State
+ 
+ 
+  ROAD_CNTY
+  Centerline Roadway
+  County
+ 
+ 
+  ROAD_INTST
+  Centerline Roadway
+  Interstate
+ 
+ 
+  ROAD_MIL
+  Centerline Roadway
+  Military
+ 
+ 
+  ROAD_MUNI
+  Centerline Roadway
+  Municipal
+ 
+ 
+  ROAD_NONEX
+  Centerline Roadway
+  Non-Existing
+ 
+ 
+  ROAD_PKBD
+  Centerline Roadway
+  Park Board
+ 
+ 
+  ROAD_PRVT
+  Centerline Roadway
+  Private
+ 
+ 
+  ROAD_RWAY
+  Centerline Roadway
+  Right-of-Way
+ 
+ 
+  ROAD_STATE
+  Centerline Roadway
+  State
+ 
+ 
+  ROAD_STATE_FR
+  Centerline Roadway
+  State Frontage
+ 
+ 
+  ROAD_STATE_UNSIGNED
+  Centerline Roadway
+  State Unsigned Trunck Highway
+ 
+ 
+  ROAD_UMN
+  Centerline Roadway
+  University of Minnesota
+ ",2018-02-21T21:07:15.000Z,2018-02-21T21:30:39.742Z,http://opendata.minneapolismn.gov/datasets/ec28f7083c9346bf8a9fe44f8546c055_0,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/PW_Street_Centerline/FeatureServer/0,"-93.32920297531744,44.885909479674076,-93.19760439967172,45.051115967541364"
+MapIT Minneapolis,"[u'Open Data', u' Minneapolis', u' Public Works', u' Centerline', u' Railroad']",http://opendata.minneapolismn.gov/datasets/8c73c329d6fa42b3b2069dbe64c7cdfc_0,PW Railroads,"For questions about this
+data please contact?PublicWorksOpenData@minneapolismn.gov
+?
+
+Attribute Overview:
+
+Light Rail Transit Main centerline, Light Rail Transit Spur
+centerline, Light Rail Transit Yard centerline, Railroad Abandoned centerline,
+Railroad Main centerline, Railroad Spur centerline, Railroad Yard centerline,
+Streetcar Main centerline, Streetcar Spur centerline, Streetcar Yard centerline,
+Text.
+
+Fields:
+
+
+ 
+ 
+ 
+ 
+  Field Name
+  Field
+  Type
+  Field
+  Description
+ 
+ 
+  OBJECTID
+  Object ID
+  Unique ID
+ 
+ 
+  RAIL_CLINE_REVD
+  Date
+  Graphic
+  revision date
+ 
+ 
+  RAIL_CLINE_CREATED
+  Date
+  Graphic
+  creation date
+ 
+ 
+  SYMBOL_NAME
+  Text
+  Graphic
+  symbol name
+ 
+ 
+  RR_ABBR
+  Text
+  Railroad
+  abbreviated name
+ 
+ 
+  RR_NAME
+  Text
+  Railroad
+  name
+ 
+ 
+  Shape
+  Geometry
+  Geometry
+ 
+ 
+  Shape.STLength()
+  Double
+  Graphic
+  length
+ Symbol Name Definitions
+ 
+  
+  Symbol Name
+  
+  
+  Definition
+  
+ 
+ 
+  
+  RAIL_LRT_MAIN
+  
+  
+  Centerline Railway Light Rail
+  Transit Main
+  
+ 
+ 
+  
+  RAIL_LRT_SPUR
+  
+  
+  Centerline Railway Light Rail
+  Transit Spur
+  
+ 
+ 
+  
+  RAIL_RR_MAIN
+  
+  
+  Centerline Railway Railroad Main
+  
+ 
+ 
+  
+  RAIL_RR_SPUR
+  
+  
+  Centerline Railway Railroad Spur
+  
+ 
+ 
+  
+  RAIL_STCAR_MAIN
+  
+  
+  Centerline Railway Streetcar Main
+  
+ 
+ 
+  
+  RAIL_STCAR_SPUR
+  
+  
+  Centerline Railway Streetcar Spur
+  
+ 
+",2018-02-21T21:04:54.000Z,2018-02-21T21:31:06.572Z,http://opendata.minneapolismn.gov/datasets/8c73c329d6fa42b3b2069dbe64c7cdfc_0,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/PW_Railroads/FeatureServer/0,"-93.32975866922365,44.88991135450575,-93.20181178277872,45.04312172054722"
+MapIT Minneapolis,"[u'Minneapolis', u' Zoning', u' Planning']",http://opendata.minneapolismn.gov/datasets/f780d0fe4edc44cd8c4c9e0a4d9efccd_0,Planning Primary Zoning,"This is a map service showing the latest Primary Zoning
+information for the City of Minneapolis. ?Please refer to the City's?Zoning?Code?webpage for more details about
+what each of the zoning codes mean and the type of uses allowed in each of the
+designated areas. ?This information will be updated as changes are made to
+the underlying data.",2018-03-27T13:43:20.000Z,2018-04-06T07:09:33.111Z,http://opendata.minneapolismn.gov/datasets/f780d0fe4edc44cd8c4c9e0a4d9efccd_0,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/Planning_Primary_Zoning/FeatureServer/0,"-93.32905589636214,44.89062114629647,-93.19432851939406,45.05124736577345"

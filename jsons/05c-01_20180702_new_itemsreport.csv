@@ -1,0 +1,282 @@
+publisher,keyword,identifier,title,description,issued,modified,landingPage,webService,spatial
+MapIT Minneapolis,"[u'Minneapolis', u' Fire Stations']",http://opendata.minneapolismn.gov/datasets/e697e12884fd4421abaf4a71b513f509_0,Fire Stations,There is no description available.,2018-05-11T18:45:40.000Z,2018-05-11T19:52:42.000Z,http://opendata.minneapolismn.gov/datasets/e697e12884fd4421abaf4a71b513f509_0,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/MFD_FireStations/FeatureServer/0,"-93.32043696904616,44.90491534463523,-93.2238579304305,45.0396951125582"
+MapIT Minneapolis,"[u'Minneapolis', u' Fire Department', u' Fire', u' MFD', u' Station Areas']",http://opendata.minneapolismn.gov/datasets/0180b00a373f49cdb1ac85ec47a70e86_0,Fire Stations Areas,There is no description available.,2018-05-11T20:11:46.000Z,2018-06-29T16:42:43.821Z,http://opendata.minneapolismn.gov/datasets/0180b00a373f49cdb1ac85ec47a70e86_0,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/MFD_FireStationsAreas/FeatureServer/0,"-93.32910836426294,44.89015200184134,-93.18961599873607,45.051246260236795"
+MapIT Minneapolis,"[u'Minneapolis', u' Neighborhoods']",http://opendata.minneapolismn.gov/datasets/7f88316841ce471faa33c89035fb69e8_0,Neighborhoods,"Feature layer showing the 87 neighborhoods that are within the City of 
+Minneapolis.? Questions about this data, please email the?GIS office.",2018-05-10T20:52:15.000Z,2018-06-05T20:16:14.724Z,http://opendata.minneapolismn.gov/datasets/7f88316841ce471faa33c89035fb69e8_0,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/CoM_Neighborhoods/FeatureServer/0,"-93.32910837144946,44.89058850767777,-93.19432851939406,45.051246259602145"
+MapIT Minneapolis,"[u'Minneapolis', u'assessor']",http://opendata.minneapolismn.gov/datasets/1eb6569c647e4e95ad9ab69c930f15ca_0,Assessor Parcel Data,"Field Definitions
+ 
+ 
+ 
+  PIN
+  13 digit tax ID
+  for parcel
+ 
+ 
+  ANUMBER
+  Address number
+ 
+ 
+  ANUMBERSUF
+  Address number suffix
+ 
+ 
+  ST_PRE_DIR
+  Street direction that
+  comes before street name
+ 
+ 
+  ST_NAME
+  Street name
+ 
+ 
+  ST_TYPE
+  Type of street (Ave,
+  St, Ln etc.)
+ 
+ 
+  ST_POST_DIR
+  Street direction that
+  comes after the street name
+ 
+ 
+  AUNIT
+  Unit number of
+  address
+ 
+ 
+  ZIPCODE
+  Postal code
+ 
+ 
+  FORMATTED_ADDRESS
+  Full mailing address
+ 
+ 
+  OWNERNAME
+  Name of property
+  owner
+ 
+ 
+  TAXPAYER1
+  Taxpayer name
+ 
+ 
+  TAXPAYER2
+  Taxpayer name and
+  address
+ 
+ 
+  TAXPAYER3
+  Taxpayer name and
+  address continued
+ 
+ 
+  TAXPAYER4
+  Taxpayer name and
+  address continued
+ 
+ 
+  ASSESSMENT_YEAR
+  Year for which the
+  property value is assessed
+ 
+ 
+  TAX_YEAR
+  Year for which the
+  property taxes are due
+ 
+ 
+  PLAT
+  Plat number
+ 
+ 
+  PROPERTY_TYPE
+  Type of property
+ 
+ 
+  MAIN_PT
+  Property type on
+  primary use of parcel
+ 
+ 
+  SUB_PT1
+  Property type of
+  secondary use of parcel
+ 
+ 
+  SUB_PT2
+  Property type of
+  tertiary use of parcel
+ 
+ 
+  SUB_PT3
+  Property type of
+  quaternary use of parcel
+ 
+ 
+  MULTIPLE_USES
+  Indicates whether
+  parcel has multiple uses or not
+ 
+ 
+  TAX_EXEMPT
+  Indicates whether
+  parcel is tax exempt
+ 
+ 
+  EXEMPTCD1
+  Exempt code for first
+  tax exempt portion
+ 
+ 
+  EXEMPTCD2
+  Exempt code for
+  second tax exempt portion
+ 
+ 
+  EXEMPTCD3
+  Exempt code for third
+  tax exempt portion
+ 
+ 
+  EXEMPTCD4
+  Exempt code for
+  fourth tax exempt portion
+ 
+ 
+  PARCEL_AREA_SQFT
+  Land area of parcel
+  in square feet
+ 
+ 
+  X
+  X coordinate of
+  parcel centroid (uses NAD 83 HARN Hennepin County coordinate system)
+ 
+ 
+  Y
+  Y coordinate of
+  parcel centroid (uses NAD 83 HARN Hennepin County coordinate system)
+ 
+ 
+  NEIGHBORHOOD
+  Name of neighborhood
+  the property is in
+ 
+ 
+  COMMUNITY
+  Name of community the
+  property is in
+ 
+ 
+  WARD
+  Name of ward the
+  property is in
+ 
+ 
+  ZONING
+  Name of zoning
+  district the property is in
+ 
+ 
+  LANDUSE
+  Property's land use
+  designation
+ 
+ 
+  LANDVALUE
+  Property's assessed
+  land value as of January 2 of its assessment year
+ 
+ 
+  BUILDINGVALUE
+  Property's assessed
+  building value as of January 2 of its assessment year
+ 
+ 
+  TOTALVALUE
+  Property's total
+  assessed value as of January 2 of its assessment year
+ 
+ 
+  EXEMPTSTATUS
+  Indicates the status
+  of property (if exempt)
+ 
+ 
+  HOMESTEAD
+  Indicates whether
+  property is homesteaded
+ 
+ 
+  BLDG_ID
+  Unique identifier for
+  buildings
+ 
+ 
+  BUILDINGUSE
+  Use classification of
+  building
+ 
+ 
+  YEARBUILT
+  Year that the
+  building was constructed
+ 
+ 
+  BELOWGROUNDAREA
+  Total square footage
+  below grade
+ 
+ 
+  ABOVEGROUNDAREA
+  Total square footage
+  above grade
+ 
+ 
+  NUM_STORIES
+  Number of stories in
+  building
+ 
+ 
+  GARAGE_PRESENT
+  Indicates whether
+  property has a garage
+ 
+ 
+  PRIMARYHEATING
+  Primary type of
+  heating in building
+ 
+ 
+  CONSTRUCTIONTYPE
+  Style of construction
+ 
+ 
+  EXTERIORTYPE
+  Exterior finish of
+  building
+ 
+ 
+  ROOF
+  Style of roof
+ 
+ 
+  TOTAL_UNITS
+  Total number of units
+ 
+ 
+  FIREPLACES
+  Number of fireplaces
+ 
+ 
+  BATHROOMS
+  Number of bathrooms
+ 
+ 
+  BEDROOMS
+  Number of bedrooms
+ ",2018-05-23T19:21:25.000Z,2018-05-23T19:25:57.572Z,http://opendata.minneapolismn.gov/datasets/1eb6569c647e4e95ad9ab69c930f15ca_0,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/AssessorsProperty/FeatureServer/0,"-180.0,-90.0,180.0,90.0"
+MapIT Minneapolis,"[u'Minneapolis', u' Open Data', u' Police', u' Public Safety']",http://opendata.minneapolismn.gov/datasets/055e662af18c4488b54dcbd496f897b7_0,Police Incidents 2018 PIMS,"Police Incidents for 2018 from the Police Information Management System (PIMS) starting in June 2018.  This data set is updated 
+
+daily.  The reportedDateTime field is shown in UTC.",2018-06-29T19:03:19.000Z,2018-07-02T13:45:33.935Z,http://opendata.minneapolismn.gov/datasets/055e662af18c4488b54dcbd496f897b7_0,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/Police_Incidents_2018_PIMS/FeatureServer/0,"-93.3276367504527,0.0,0.0,45.05022593217273"

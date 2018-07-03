@@ -1,0 +1,5 @@
+Delaware Valley resources:
+  April, 2018: Changed to collection code '04f-01' from '08f-01'
+SEMCOG resources:
+  April, 2018: Changed to collection code '06f-01' from '07f-01'
+               and changed provenance to 'Michigan State' from 'Michigan'.

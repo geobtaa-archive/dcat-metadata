@@ -1,0 +1,83 @@
+Python 2.7.13 (v2.7.13:a06454b1afa1, Dec 17 2016, 20:53:40) [MSC v.1500 64 bit (AMD64)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> 
+ RESTART: C:\Work\ORGANIZATION\Monthly_Resource_Auditing\ArcGIS_Portals\ScriptRun\JsonComparison_EditAPS.py 
+01c-02 http://data1-indygis.opendata.arcgis.com/data.json
+2 deleted_items added to 01c-02!
+5 new_items added to 01c-02!
+
+03a-02 http://public.iowadot.opendata.arcgis.com/data.json
+03a-02 has no deleted_items
+6 new_items added to 03a-02!
+
+04a-01 http://data.imap.maryland.gov/data.json
+4 deleted_items added to 04a-01!
+5 new_items added to 04a-01!
+
+04c-01 http://opendata.dc.gov/data.json
+3 deleted_items added to 04c-01!
+32 new_items added to 04c-01!
+
+04c-02 http://gis-baltimore.opendata.arcgis.com/data.json
+04c-02 has no deleted_items
+04c-02 has no new_items
+
+04f-01 http://dvrpc-dvrpcgis.opendata.arcgis.com/data.json
+04f-01 has no deleted_items
+04f-01 has no new_items
+
+05b-03 http://data-carver.opendata.arcgis.com/data.json
+05b-03 has no deleted_items
+05b-03 has no new_items
+
+05b-06 http://gis-hennepin.opendata.arcgis.com/data.json
+05b-06 has no deleted_items
+05b-06 has no new_items
+
+05b-09 http://stlouiscountymndata-slcgis.opendata.arcgis.com/data.json
+05b-09 has no deleted_items
+05b-09 has no new_items
+
+05b-10 http://opendata.gis.co.scott.mn.us/data.json
+05b-10 has no deleted_items
+05b-10 has no new_items
+
+05b-12 http://data-wcmn.opendata.arcgis.com/data.json
+05b-12 has no deleted_items
+2 new_items added to 05b-12!
+
+05b-13 http://data-carltoncounty.opendata.arcgis.com/data.json
+05b-13 has no deleted_items
+05b-13 has no new_items
+
+05b-14 https://getdata-hubbardcounty.opendata.arcgis.com/data.json
+05b-14 has no deleted_items
+05b-14 has no new_items
+
+05c-01 http://opendata.minneapolismn.gov/data.json
+1 deleted_items added to 05c-01!
+4 new_items added to 05c-01!
+
+06a-01 http://gis-michigan.opendata.arcgis.com/data.json
+2 deleted_items added to 06a-01!
+26 new_items added to 06a-01!
+
+06a-02 http://gis-midnr.opendata.arcgis.com/data.json
+2 deleted_items added to 06a-02!
+26 new_items added to 06a-02!
+
+06b-01 http://accessoakland.oakgov.com/data.json
+06b-01 has no deleted_items
+3 new_items added to 06b-01!
+
+06f-01 http://maps-semcog.opendata.arcgis.com/data.json
+06f-01 has no deleted_items
+1 new_items added to 06f-01!
+
+09c-01 http://data-southbend.opendata.arcgis.com/data.json
+09c-01 has no deleted_items
+09c-01 has no new_items
+
+11a-01 http://ogrip-geohio.opendata.arcgis.com/data.json
+12 deleted_items added to 11a-01!
+17 new_items added to 11a-01!

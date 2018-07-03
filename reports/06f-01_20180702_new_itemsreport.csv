@@ -1,0 +1,2 @@
+publisher,keyword,identifier,title,description,issued,modified,landingPage,webService,spatial
+Southeast Michigan Council of Governments,[u'land'],http://maps-semcog.opendata.arcgis.com/datasets/ff498b1c85bd4b49aa730eb7a8c8c683_0,ParkData,Tabular data containing park amenities.?,2018-05-11T12:01:05.000Z,2018-05-11T12:06:07.000Z,http://maps-semcog.opendata.arcgis.com/datasets/ff498b1c85bd4b49aa730eb7a8c8c683_0,https://services1.arcgis.com/xUx8EjNc6egUPYWh/arcgis/rest/services/ParkData/FeatureServer/0,"-180.0,-90.0,180.0,90.0"

@@ -1,0 +1,25 @@
+publisher,keyword,identifier,title,description,issued,modified,landingPage,webService,spatial
+http://gis-michigan.opendata.arcgis.com/datasets/d824ce9bdb4e456694bcca3b74f39448_2,Oil  Gas Test Well Bottom Hole Locations,"S Bottom hole locations for all oil and gas test wells whether directionally drilled or straight (vertical) holes.?D Bottom Hole Location - Bottom hole locations for all oil and gas test wells whether directionally drilled or straight (vertical) holes. For a straight (vertical) hole the bottom hole location will be the same as the surface location. These are extracted from the Michigan DEQ Oil, Gas  Minerals RBDMS database on a nightly basis.More Metadata",2017-08-09T12:07:58.000Z,2018-03-07T13:43:36.000Z,http://gis-michigan.opendata.arcgis.com/datasets/d824ce9bdb4e456694bcca3b74f39448_2,https://gisago.mcgi.state.mi.us/arcgis/rest/services/OpenData/geology/MapServer/2,"-90.328,41.709,-82.426,47.469"
+http://gis-michigan.opendata.arcgis.com/datasets/4d499b5d1c664372a1c0c66a3752bb3a_45,MDOT Carpool Lots,"
+
+The
+Michigan Carpool Parking Lot Program (sometimes referred to as Park and Ride)
+began as a pilot program in 1974 with 11 carpool parking lots. Today there are
+over 240 carpool parking lots located across the state providing nearly 9,000
+parking spaces. In addition to lots owned and maintained by MDOT, the Meijer
+Corporation has partnered with MDOT to provide carpool parking at several of
+their stores. Please see the?MDOT Metadata Form?for additional information.
+
+Update
+Cycle:?Carpool
+lots are added and updated as needed when new lots are constructed or removed.
+
+Coverage: This inventory shows all
+MDOT owned and operated carpool lots in Michigan along with several Meijer
+parking lots that provide carpool parking in partnership with MDOT.
+
+Contact: Kelcy Williams
+
+",2016-03-28T12:20:11.000Z,2018-02-23T16:42:06.258Z,http://gis-michigan.opendata.arcgis.com/datasets/4d499b5d1c664372a1c0c66a3752bb3a_45,http://gisago.mcgi.state.mi.us/arcgis/rest/services/MDOT/mdot_opendata/MapServer/45,"-90.403,41.7586,-82.1604,47.3071"
+http://gis-michigan.opendata.arcgis.com/datasets/9c5e71bc214e42939476817ffda4c509_7,Federal Land Open to Hunting,"Federal Lands Open to Hunting includes lands managed by the US Forest Service, National Park Service, and the US Fish and Wildlife Service that are open to public hunting.  Please double check with the appropriate federal agency for specific rules and regulations.",2015-12-10T15:46:35.000Z,2017-11-08T20:09:32.000Z,http://gis-michigan.opendata.arcgis.com/datasets/9c5e71bc214e42939476817ffda4c509_7,https://gisago.mcgi.state.mi.us/arcgis/rest/services/DNR/dnrHuntableLands/MapServer/7,"-90.367,41.7112,-82.8147,48.2615"
+http://gis-michigan.opendata.arcgis.com/datasets/312ced4e958541128ef6c0f01b290632_3,Oil  Gas Test Well Surface Hole Locations,"S Surface Location - Surface locations (wellhead) of all oil  gas test wells whether directionally drilled or straight (vertical) holes.?D Surface locations (wellhead) of all oil  gas test wells whether directionally drilled or straight (vertical) holes. These are extracted from the Michigan DEQ Oil, Gas  Minerals RBDMS database on a nightly basis.More Metadata",2017-08-09T13:12:39.000Z,2018-03-08T12:43:08.779Z,http://gis-michigan.opendata.arcgis.com/datasets/312ced4e958541128ef6c0f01b290632_3,https://gisago.mcgi.state.mi.us/arcgis/rest/services/OpenData/geology/MapServer/3,"-90.328,41.709,-82.426,47.469"

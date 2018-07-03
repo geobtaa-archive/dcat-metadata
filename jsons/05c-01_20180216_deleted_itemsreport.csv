@@ -1,0 +1,2 @@
+publisher,keyword,identifier,title,description,issued,modified,landingPage,webService,spatial
+http://opendata.minneapolismn.gov/datasets/1071443b0a234917983410070764bfef_0,NEIGHBORHOOD CRIME STATS,Summary of Crimes by Neighborhood.,2017-10-03T20:23:32.000Z,2017-12-04T15:52:52.000Z,http://opendata.minneapolismn.gov/datasets/1071443b0a234917983410070764bfef_0,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/NEIGHBORHOOD_CRIME_STATS/FeatureServer/0,"-180.0,-90.0,180.0,90.0"

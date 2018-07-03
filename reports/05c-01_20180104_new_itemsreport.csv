@@ -1,0 +1,1118 @@
+publisher,keyword,identifier,title,description,issued,modified,landingPage,webService,spatial
+MapIT Minneapolis,"[u'Minneapolis', u' Rental Licenses', u' RLIC', u' Open Data', u' Regulatory Services']",http://opendata.minneapolismn.gov/datasets/baf5f14d67704668884275686e3db867_0,Active Rental Licenses,"For questions about this data please
+contact?RegulatoryServicesOpenData@minneapolismn.gov
+
+?
+
+Rental Property
+
+Minneapolis requires that every rental dwelling, including
+single-family rental dwellings and rental units in owner-occupied duplexes, and
+rooming and shared-bath units (unless they are in a licensed lodging house)
+must have a rental license.?The
+number of locations shown on the map above reflects the unique amount of
+dwellings in the City of Minneapolis with rental licenses, not the unique
+amount of rental licenses.
+
+Why License Rental
+Properties?
+
+The intent of the rental license ordinance is to:
+
+
+ Promote the health, safety, and
+     welfare of the general public.
+ Assure preservation of the
+     existing housing supply.
+ Help maintain property values.
+ Work toward eliminating
+     substandard and deteriorating rental housing.
+ Maintain a living environment
+     that contributes to healthful individual and family living.
+
+
+For more information on the licensing process, call 311 or outside
+Minneapolis city limits call (612) 673-3000.
+
+?
+
+Note: All owner and applicant information is provided from
+the rental license application submitted by the applicant. 
+
+?
+
+
+ 
+  
+  Title
+  
+  
+  Dataset Information (I.E DEFINITIONS)
+  
+ 
+ 
+  
+  APN
+  
+  
+  Parcel identification number
+  
+ 
+ 
+  
+  LicenseNumber
+  
+  
+  This is the designated rental license
+  identification number
+  
+ 
+ 
+  
+  Tier
+  
+  
+  This is the designated Tier for the rental
+  license.
+  
+ 
+ 
+  
+  IssueDate
+  
+  
+  The date that the rental license was
+  issued.
+  
+ 
+ 
+  
+  ExpirationDate
+  
+  
+  This is the date that the rental license is
+  set to expire.? The applicant of the rental license must renew the
+  rental license before this date.
+  
+ 
+ 
+  
+  Licensed
+  Address
+  
+  
+  The address of the rental licensed
+  property. The suite,?if?applicable, is included in the address.
+  
+ 
+ 
+  
+  Property
+  Owner Name
+  
+  
+  The
+  Owner of the rental licensed property. 
+  
+ 
+ 
+  
+  OwnerAddress1
+  
+  
+  The
+  address of the owner of the licensed property. 
+  
+ 
+ 
+  
+  OwnerAddress2
+  
+  
+  Additional
+  owner address information.
+  
+ 
+ 
+  
+  OwnerCity
+  
+  
+  The
+  city of the owners address.
+  
+ 
+ 
+  
+  OwnerState
+  
+  
+  The
+  state of the owners address.
+  
+ 
+ 
+  
+  OwnerZip
+  
+  
+  The
+  zip code of the owners address.
+  
+ 
+ 
+  
+  OwnerPhone
+  
+  
+  The
+  telephone number of the owner.
+  
+ 
+ 
+  
+  OwnerEmail
+  
+  
+  The
+  email address of the owner.
+  
+ 
+ 
+  
+  License
+  Applicant Name
+  
+  
+  The applicant of the rental license.?
+  This is the person primarily responsible for the rental licensed property.
+  
+ 
+ 
+  
+  ApplicantAddress
+  
+  
+  The address of the applicant.
+  
+ 
+ 
+  
+  ApplicantAddress2
+  
+  
+  Additional
+  applicant address information.
+  
+ 
+ 
+  
+  ApplicantCity
+  
+  
+  The city of the applicant?s address.
+  
+ 
+ 
+  
+  ApplicantState
+  
+  
+  The
+  state of the applicants address.
+  
+ 
+ 
+  
+  ApplicantZip
+  
+  
+  The
+  zip code of the applicants address.
+  
+ 
+ 
+  
+  ApplicantPhone
+  
+  
+  The
+  telephone number of the applicant.
+  
+ 
+ 
+  
+  ApplicantEmail
+  
+  
+  The
+  email address of the applicant.
+  
+ 
+ 
+  
+  LicensedUnits
+  
+  
+  This is the number of paid units registered
+  with the rental license.
+  
+ 
+ 
+  
+  Ward
+  
+  
+  This is the ward that the rental licensed
+  property is located.
+  
+ 
+ 
+  
+  Community
+  Desc
+  
+  
+  This is the community that the rental
+  licensed property is located.
+  
+ 
+ 
+  
+  Neighborhood
+  Desc
+  
+  
+  This is the neighborhood that the rental
+  licensed property is located.
+  
+ 
+ 
+  
+  PolicePrecinct
+  
+  
+  This is the police precinct that the rental
+  licensed property is located.
+  
+ 
+ 
+  
+  Latitude
+  
+  
+  The geographic latitude of the property.
+  
+ 
+ 
+  
+  Longitude
+  
+  
+  The geographic longitude of the property.
+  
+ 
+ 
+  
+  X_WebMercator
+  
+  
+  The X-coordinate for the geographic
+  location of the property?(Web Mercator).
+  
+ 
+ 
+  
+  Y_WebMercator
+  
+  
+  The Y-coordinate of the geographic location
+  for the property (Web Mercator).
+  
+ 
+",2017-12-07T16:56:29.000Z,2017-12-30T00:45:39.490Z,http://opendata.minneapolismn.gov/datasets/baf5f14d67704668884275686e3db867_0,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/Active_Rental_Licenses/FeatureServer/0,"-93.32878159489181,0.0,0.0,45.051087223932214"
+MapIT Minneapolis,"[u'open data', u' Minneapolis', u' Planning']",http://opendata.minneapolismn.gov/datasets/d4f231795f0a4414ae8e2d8db2a45cda_10,Transitional Parking,"An overlay district is any of several additional districts
+established by the zoning regulations that may be more or less restrictive than
+the primary zoning district. Where a property is located within an overlay
+district, it is subject to the provisions of both the primary zoning district
+and the overlay district. Where the provisions are in conflict, the overlay
+district governs. In the city?s municipal code, these districts are described
+in chapter 551: https://www.municode.com/library/mn/minneapolis/codes/code_of_ordinances?nodeId=MICOOR_TIT20ZOCO_CH551OVDI
+
+?
+
+?
+
+
+ 
+  
+  FID
+  
+  
+  Auto-generated unique identifier for individual features.
+  
+ 
+ 
+  
+  Shape
+  
+  
+  Auto-generated field indicating feature type
+  
+ 
+ 
+  
+  NAME
+  
+  
+  Abbreviated code indicating the type of overlay district
+  represented by the feature.
+  
+ 
+ 
+  
+  SYMBOL_NAM
+  
+  
+  Indicates the type of overlay district represented by the
+  feature.
+  
+ 
+",2015-07-16T17:11:23.000Z,2017-12-15T18:32:52.330Z,http://opendata.minneapolismn.gov/datasets/d4f231795f0a4414ae8e2d8db2a45cda_10,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/PlanningOverlayDistricts/FeatureServer/10,"-93.365,44.877,-93.19,45.108"
+MapIT Minneapolis,"[u'open data', u' Minneapolis', u' Planning']",http://opendata.minneapolismn.gov/datasets/d4f231795f0a4414ae8e2d8db2a45cda_6,Linden Hills,"An overlay district is any of several additional districts
+established by the zoning regulations that may be more or less restrictive than
+the primary zoning district. Where a property is located within an overlay
+district, it is subject to the provisions of both the primary zoning district
+and the overlay district. Where the provisions are in conflict, the overlay
+district governs. In the city?s municipal code, these districts are described
+in chapter 551: https://www.municode.com/library/mn/minneapolis/codes/code_of_ordinances?nodeId=MICOOR_TIT20ZOCO_CH551OVDI
+
+?
+
+?
+
+
+ 
+  
+  FID
+  
+  
+  Auto-generated unique identifier for individual features.
+  
+ 
+ 
+  
+  Shape
+  
+  
+  Auto-generated field indicating feature type
+  
+ 
+ 
+  
+  NAME
+  
+  
+  Abbreviated code indicating the type of overlay district
+  represented by the feature.
+  
+ 
+ 
+  
+  SYMBOL_NAM
+  
+  
+  Indicates the type of overlay district represented by the
+  feature.
+  
+ 
+",2015-07-16T17:11:23.000Z,2018-01-04T05:06:14.943Z,http://opendata.minneapolismn.gov/datasets/d4f231795f0a4414ae8e2d8db2a45cda_6,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/PlanningOverlayDistricts/FeatureServer/6,"-93.365,44.877,-93.19,45.108"
+MapIT Minneapolis,"[u'open data', u' Minneapolis', u' Planning']",http://opendata.minneapolismn.gov/datasets/d4f231795f0a4414ae8e2d8db2a45cda_13,Airport,"An overlay district is any of several additional districts
+established by the zoning regulations that may be more or less restrictive than
+the primary zoning district. Where a property is located within an overlay
+district, it is subject to the provisions of both the primary zoning district
+and the overlay district. Where the provisions are in conflict, the overlay
+district governs. In the city?s municipal code, these districts are described
+in chapter 551: https://www.municode.com/library/mn/minneapolis/codes/code_of_ordinances?nodeId=MICOOR_TIT20ZOCO_CH551OVDI
+
+?
+
+?
+
+
+ 
+  
+  FID
+  
+  
+  Auto-generated unique identifier for individual features.
+  
+ 
+ 
+  
+  Shape
+  
+  
+  Auto-generated field indicating feature type
+  
+ 
+ 
+  
+  NAME
+  
+  
+  Abbreviated code indicating the type of overlay district
+  represented by the feature.
+  
+ 
+ 
+  
+  SYMBOL_NAM
+  
+  
+  Indicates the type of overlay district represented by the
+  feature.
+  
+ 
+",2015-07-16T17:11:23.000Z,2017-12-15T18:32:53.682Z,http://opendata.minneapolismn.gov/datasets/d4f231795f0a4414ae8e2d8db2a45cda_13,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/PlanningOverlayDistricts/FeatureServer/13,"-93.365,44.877,-93.19,45.108"
+MapIT Minneapolis,"[u'open data', u' Minneapolis', u' Planning']",http://opendata.minneapolismn.gov/datasets/d4f231795f0a4414ae8e2d8db2a45cda_3,Downtown Shelter,"An overlay district is any of several additional districts
+established by the zoning regulations that may be more or less restrictive than
+the primary zoning district. Where a property is located within an overlay
+district, it is subject to the provisions of both the primary zoning district
+and the overlay district. Where the provisions are in conflict, the overlay
+district governs. In the city?s municipal code, these districts are described
+in chapter 551: https://www.municode.com/library/mn/minneapolis/codes/code_of_ordinances?nodeId=MICOOR_TIT20ZOCO_CH551OVDI
+
+?
+
+?
+
+
+ 
+  
+  FID
+  
+  
+  Auto-generated unique identifier for individual features.
+  
+ 
+ 
+  
+  Shape
+  
+  
+  Auto-generated field indicating feature type
+  
+ 
+ 
+  
+  NAME
+  
+  
+  Abbreviated code indicating the type of overlay district
+  represented by the feature.
+  
+ 
+ 
+  
+  SYMBOL_NAM
+  
+  
+  Indicates the type of overlay district represented by the
+  feature.
+  
+ 
+",2015-07-16T17:11:23.000Z,2017-12-15T18:53:16.253Z,http://opendata.minneapolismn.gov/datasets/d4f231795f0a4414ae8e2d8db2a45cda_3,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/PlanningOverlayDistricts/FeatureServer/3,"-93.365,44.877,-93.19,45.108"
+MapIT Minneapolis,"[u'open data', u' Minneapolis', u' Planning']",http://opendata.minneapolismn.gov/datasets/d4f231795f0a4414ae8e2d8db2a45cda_9,Pedestrian Oriented,"An overlay district is any of several additional districts
+established by the zoning regulations that may be more or less restrictive than
+the primary zoning district. Where a property is located within an overlay
+district, it is subject to the provisions of both the primary zoning district
+and the overlay district. Where the provisions are in conflict, the overlay
+district governs. In the city?s municipal code, these districts are described
+in chapter 551: https://www.municode.com/library/mn/minneapolis/codes/code_of_ordinances?nodeId=MICOOR_TIT20ZOCO_CH551OVDI
+
+?
+
+?
+
+
+ 
+  
+  FID
+  
+  
+  Auto-generated unique identifier for individual features.
+  
+ 
+ 
+  
+  Shape
+  
+  
+  Auto-generated field indicating feature type
+  
+ 
+ 
+  
+  NAME
+  
+  
+  Abbreviated code indicating the type of overlay district
+  represented by the feature.
+  
+ 
+ 
+  
+  SYMBOL_NAM
+  
+  
+  Indicates the type of overlay district represented by the
+  feature.
+  
+ 
+",2015-07-16T17:11:23.000Z,2017-12-15T18:32:52.143Z,http://opendata.minneapolismn.gov/datasets/d4f231795f0a4414ae8e2d8db2a45cda_9,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/PlanningOverlayDistricts/FeatureServer/9,"-93.365,44.877,-93.19,45.108"
+MapIT Minneapolis,"[u'open data', u' Minneapolis', u' Planning']",http://opendata.minneapolismn.gov/datasets/d4f231795f0a4414ae8e2d8db2a45cda_8,North Phillips,"An overlay district is any of several additional districts
+established by the zoning regulations that may be more or less restrictive than
+the primary zoning district. Where a property is located within an overlay
+district, it is subject to the provisions of both the primary zoning district
+and the overlay district. Where the provisions are in conflict, the overlay
+district governs. In the city?s municipal code, these districts are described
+in chapter 551: https://www.municode.com/library/mn/minneapolis/codes/code_of_ordinances?nodeId=MICOOR_TIT20ZOCO_CH551OVDI
+
+?
+
+?
+
+
+ 
+  
+  FID
+  
+  
+  Auto-generated unique identifier for individual features.
+  
+ 
+ 
+  
+  Shape
+  
+  
+  Auto-generated field indicating feature type
+  
+ 
+ 
+  
+  NAME
+  
+  
+  Abbreviated code indicating the type of overlay district
+  represented by the feature.
+  
+ 
+ 
+  
+  SYMBOL_NAM
+  
+  
+  Indicates the type of overlay district represented by the
+  feature.
+  
+ 
+",2015-07-16T17:11:23.000Z,2017-12-15T18:32:51.941Z,http://opendata.minneapolismn.gov/datasets/d4f231795f0a4414ae8e2d8db2a45cda_8,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/PlanningOverlayDistricts/FeatureServer/8,"-93.365,44.877,-93.19,45.108"
+MapIT Minneapolis,"[u'open data', u' Minneapolis', u' Planning']",http://opendata.minneapolismn.gov/datasets/d4f231795f0a4414ae8e2d8db2a45cda_5,Industrial Living,"An overlay district is any of several additional districts
+established by the zoning regulations that may be more or less restrictive than
+the primary zoning district. Where a property is located within an overlay
+district, it is subject to the provisions of both the primary zoning district
+and the overlay district. Where the provisions are in conflict, the overlay
+district governs. In the city?s municipal code, these districts are described
+in chapter 551: https://www.municode.com/library/mn/minneapolis/codes/code_of_ordinances?nodeId=MICOOR_TIT20ZOCO_CH551OVDI
+
+?
+
+?
+
+
+ 
+  
+  FID
+  
+  
+  Auto-generated unique identifier for individual features.
+  
+ 
+ 
+  
+  Shape
+  
+  
+  Auto-generated field indicating feature type
+  
+ 
+ 
+  
+  NAME
+  
+  
+  Abbreviated code indicating the type of overlay district
+  represented by the feature.
+  
+ 
+ 
+  
+  SYMBOL_NAM
+  
+  
+  Indicates the type of overlay district represented by the
+  feature.
+  
+ 
+",2015-07-16T17:11:23.000Z,2017-12-15T18:32:51.471Z,http://opendata.minneapolismn.gov/datasets/d4f231795f0a4414ae8e2d8db2a45cda_5,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/PlanningOverlayDistricts/FeatureServer/5,"-93.365,44.877,-93.19,45.108"
+MapIT Minneapolis,"[u'Minneapolis', u' Open Data', u' Police', u' Public Safety']",http://opendata.minneapolismn.gov/datasets/bd582e458df740de87601ea5e6136cdc_0,Police Officer Involved Shootings,"*Please note that the
+datetimes shown are in UTC time (not local time).
+
+Field Descriptions? ? ? ? ? ? ? ??IncidentDate = the date of when the officer involved shooting occurred in UTC,
+(not local time).
+
+???????????????
+CaseNumber = a concatenation of the 2 digit year in which the incident was
+created, followed by a dash and then a 6 digit number of sequence for the
+agency.
+
+???????????????
+OfficerYearsOfService = the number of years of service to MPD by the officer as
+of the incident date
+
+???????????????
+Officer = Officer identifier starts with O and follows with a digit to indicate
+the number of officers in each incident
+
+???????????????
+OfficerWeaponUsed = the description of the weapon used by the officer in the
+incident
+
+???????????????
+OfficerInjuries = the description of the injury to the officer
+
+???????????????
+SubjectOfForce = Subject identifier starts with S and follows with a digit to
+indicate the number of subjects in each incident
+
+???????????????
+SubjectOfForceRace = the determined racial makeup of the subject of the
+incident
+
+???????????????
+SubjectOfForceGender = the determined gender of the subject of the incident
+
+???????????????
+SubjectOfForceAge = the determined age of the subject as of the date of the
+incident
+
+???????????????
+SubjectFatal = Yes/No identifier for subject fatality
+
+???????????????
+SubjectOfForceInjury = the description of the injury to the subject
+
+???????????????
+SubjectOfForceeapon = the description of the weapon used by the subject in the
+incident
+
+CenterLatitude = the anonymized latitude of where the incident took
+place
+
+???????????????
+CenterLongitude = the anonymized longitude of where the incident took place
+
+???????????????
+CenterX = the anonymized Web Mercator X coordinate of where the incident took
+place
+
+???????????????
+CenterY = the anonymized Web Mercator Y coordinate of where the incident took
+place",2017-11-08T21:17:36.000Z,2017-11-08T21:20:00.551Z,http://opendata.minneapolismn.gov/datasets/bd582e458df740de87601ea5e6136cdc_0,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/Police_Officer_Involved_Shootings/FeatureServer/0,"-93.31788199957968,44.894932798591114,-93.02965100003635,45.19629800027545"
+MapIT Minneapolis,"[u'open data', u' Minneapolis', u' Planning']",http://opendata.minneapolismn.gov/datasets/d4f231795f0a4414ae8e2d8db2a45cda_12,Shoreland,"An overlay district is any of several additional districts
+established by the zoning regulations that may be more or less restrictive than
+the primary zoning district. Where a property is located within an overlay
+district, it is subject to the provisions of both the primary zoning district
+and the overlay district. Where the provisions are in conflict, the overlay
+district governs. In the city?s municipal code, these districts are described
+in chapter 551: https://www.municode.com/library/mn/minneapolis/codes/code_of_ordinances?nodeId=MICOOR_TIT20ZOCO_CH551OVDI
+
+?
+
+?
+
+
+ 
+  
+  FID
+  
+  
+  Auto-generated unique identifier for individual features.
+  
+ 
+ 
+  
+  Shape
+  
+  
+  Auto-generated field indicating feature type
+  
+ 
+ 
+  
+  NAME
+  
+  
+  Abbreviated code indicating the type of overlay district
+  represented by the feature.
+  
+ 
+ 
+  
+  SYMBOL_NAM
+  
+  
+  Indicates the type of overlay district represented by the
+  feature.
+  
+ 
+",2015-07-16T17:11:23.000Z,2017-12-15T18:32:53.493Z,http://opendata.minneapolismn.gov/datasets/d4f231795f0a4414ae8e2d8db2a45cda_12,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/PlanningOverlayDistricts/FeatureServer/12,"-93.365,44.877,-93.19,45.108"
+MapIT Minneapolis,"[u'Minneapolis', u' Open Data', u' Police', u' Public Safety']",http://opendata.minneapolismn.gov/datasets/6d8110617c4b4971a270ff0834971b89_0,Police Use of Force,"*Please note that the responseDate is shown in UTC time, not local time.",2017-11-08T22:06:35.000Z,2018-01-04T14:47:05.988Z,http://opendata.minneapolismn.gov/datasets/6d8110617c4b4971a270ff0834971b89_0,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/Police_Use_of_Force/FeatureServer/0,"-93.32841700465062,0.0,0.0,45.05124498017507"
+MapIT Minneapolis,"[u'open data', u' Minneapolis', u' Planning']",http://opendata.minneapolismn.gov/datasets/d4f231795f0a4414ae8e2d8db2a45cda_2,Downtown Parking,"An overlay district is any of several additional districts
+established by the zoning regulations that may be more or less restrictive than
+the primary zoning district. Where a property is located within an overlay
+district, it is subject to the provisions of both the primary zoning district
+and the overlay district. Where the provisions are in conflict, the overlay
+district governs. In the city?s municipal code, these districts are described
+in chapter 551: https://www.municode.com/library/mn/minneapolis/codes/code_of_ordinances?nodeId=MICOOR_TIT20ZOCO_CH551OVDI
+
+?
+
+?
+
+
+ 
+  
+  FID
+  
+  
+  Auto-generated unique identifier for individual features.
+  
+ 
+ 
+  
+  Shape
+  
+  
+  Auto-generated field indicating feature type
+  
+ 
+ 
+  
+  NAME
+  
+  
+  Abbreviated code indicating the type of overlay district
+  represented by the feature.
+  
+ 
+ 
+  
+  SYMBOL_NAM
+  
+  
+  Indicates the type of overlay district represented by the
+  feature.
+  
+ 
+",2015-07-16T17:11:23.000Z,2017-12-15T18:52:46.117Z,http://opendata.minneapolismn.gov/datasets/d4f231795f0a4414ae8e2d8db2a45cda_2,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/PlanningOverlayDistricts/FeatureServer/2,"-93.365,44.877,-93.19,45.108"
+MapIT Minneapolis,"[u'open data', u' Minneapolis', u' Planning']",http://opendata.minneapolismn.gov/datasets/d4f231795f0a4414ae8e2d8db2a45cda_1,Downtown Housing,"An overlay district is any of several additional districts
+established by the zoning regulations that may be more or less restrictive than
+the primary zoning district. Where a property is located within an overlay
+district, it is subject to the provisions of both the primary zoning district
+and the overlay district. Where the provisions are in conflict, the overlay
+district governs. In the city?s municipal code, these districts are described
+in chapter 551: https://www.municode.com/library/mn/minneapolis/codes/code_of_ordinances?nodeId=MICOOR_TIT20ZOCO_CH551OVDI
+
+?
+
+?
+
+
+ 
+  
+  FID
+  
+  
+  Auto-generated unique identifier for individual features.
+  
+ 
+ 
+  
+  Shape
+  
+  
+  Auto-generated field indicating feature type
+  
+ 
+ 
+  
+  NAME
+  
+  
+  Abbreviated code indicating the type of overlay district
+  represented by the feature.
+  
+ 
+ 
+  
+  SYMBOL_NAM
+  
+  
+  Indicates the type of overlay district represented by the
+  feature.
+  
+ 
+",2015-07-16T17:11:23.000Z,2017-12-15T18:52:15.755Z,http://opendata.minneapolismn.gov/datasets/d4f231795f0a4414ae8e2d8db2a45cda_1,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/PlanningOverlayDistricts/FeatureServer/1,"-93.365,44.877,-93.19,45.108"
+MapIT Minneapolis,"[u'open data', u' Minneapolis', u' Planning']",http://opendata.minneapolismn.gov/datasets/d4f231795f0a4414ae8e2d8db2a45cda_14,University Area,"An overlay district is any of several additional districts
+established by the zoning regulations that may be more or less restrictive than
+the primary zoning district. Where a property is located within an overlay
+district, it is subject to the provisions of both the primary zoning district
+and the overlay district. Where the provisions are in conflict, the overlay
+district governs. In the city?s municipal code, these districts are described
+in chapter 551: https://www.municode.com/library/mn/minneapolis/codes/code_of_ordinances?nodeId=MICOOR_TIT20ZOCO_CH551OVDI
+
+?
+
+?
+
+
+ 
+  
+  FID
+  
+  
+  Auto-generated unique identifier for individual features.
+  
+ 
+ 
+  
+  Shape
+  
+  
+  Auto-generated field indicating feature type
+  
+ 
+ 
+  
+  NAME
+  
+  
+  Abbreviated code indicating the type of overlay district
+  represented by the feature.
+  
+ 
+ 
+  
+  SYMBOL_NAM
+  
+  
+  Indicates the type of overlay district represented by the
+  feature.
+  
+ 
+",2015-07-16T17:11:23.000Z,2017-12-15T18:32:53.901Z,http://opendata.minneapolismn.gov/datasets/d4f231795f0a4414ae8e2d8db2a45cda_14,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/PlanningOverlayDistricts/FeatureServer/14,"-93.365,44.877,-93.19,45.108"
+MapIT Minneapolis,"[u'open data', u' Minneapolis', u' Planning']",http://opendata.minneapolismn.gov/datasets/d4f231795f0a4414ae8e2d8db2a45cda_7,Nicollet Mall,"An overlay district is any of several additional districts
+established by the zoning regulations that may be more or less restrictive than
+the primary zoning district. Where a property is located within an overlay
+district, it is subject to the provisions of both the primary zoning district
+and the overlay district. Where the provisions are in conflict, the overlay
+district governs. In the city?s municipal code, these districts are described
+in chapter 551: https://www.municode.com/library/mn/minneapolis/codes/code_of_ordinances?nodeId=MICOOR_TIT20ZOCO_CH551OVDI
+
+?
+
+?
+
+
+ 
+  
+  FID
+  
+  
+  Auto-generated unique identifier for individual features.
+  
+ 
+ 
+  
+  Shape
+  
+  
+  Auto-generated field indicating feature type
+  
+ 
+ 
+  
+  NAME
+  
+  
+  Abbreviated code indicating the type of overlay district
+  represented by the feature.
+  
+ 
+ 
+  
+  SYMBOL_NAM
+  
+  
+  Indicates the type of overlay district represented by the
+  feature.
+  
+ 
+",2015-07-16T17:11:23.000Z,2017-12-15T18:32:51.768Z,http://opendata.minneapolismn.gov/datasets/d4f231795f0a4414ae8e2d8db2a45cda_7,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/PlanningOverlayDistricts/FeatureServer/7,"-93.365,44.877,-93.19,45.108"
+MapIT Minneapolis,"[u'open data', u' Minneapolis', u' Planning']",http://opendata.minneapolismn.gov/datasets/d4f231795f0a4414ae8e2d8db2a45cda_11,West Broadway,"An overlay district is any of several additional districts
+established by the zoning regulations that may be more or less restrictive than
+the primary zoning district. Where a property is located within an overlay
+district, it is subject to the provisions of both the primary zoning district
+and the overlay district. Where the provisions are in conflict, the overlay
+district governs. In the city?s municipal code, these districts are described
+in chapter 551: https://www.municode.com/library/mn/minneapolis/codes/code_of_ordinances?nodeId=MICOOR_TIT20ZOCO_CH551OVDI
+
+?
+
+?
+
+
+ 
+  
+  FID
+  
+  
+  Auto-generated unique identifier for individual features.
+  
+ 
+ 
+  
+  Shape
+  
+  
+  Auto-generated field indicating feature type
+  
+ 
+ 
+  
+  NAME
+  
+  
+  Abbreviated code indicating the type of overlay district
+  represented by the feature.
+  
+ 
+ 
+  
+  SYMBOL_NAM
+  
+  
+  Indicates the type of overlay district represented by the
+  feature.
+  
+ 
+",2015-07-16T17:11:23.000Z,2017-12-15T18:32:52.487Z,http://opendata.minneapolismn.gov/datasets/d4f231795f0a4414ae8e2d8db2a45cda_11,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/PlanningOverlayDistricts/FeatureServer/11,"-93.365,44.877,-93.19,45.108"
+MapIT Minneapolis,"[u'open data', u' Minneapolis', u' Planning']",http://opendata.minneapolismn.gov/datasets/d4f231795f0a4414ae8e2d8db2a45cda_15,Mississippi River,"An overlay district is any of several additional districts
+established by the zoning regulations that may be more or less restrictive than
+the primary zoning district. Where a property is located within an overlay
+district, it is subject to the provisions of both the primary zoning district
+and the overlay district. Where the provisions are in conflict, the overlay
+district governs. In the city?s municipal code, these districts are described
+in chapter 551: https://www.municode.com/library/mn/minneapolis/codes/code_of_ordinances?nodeId=MICOOR_TIT20ZOCO_CH551OVDI
+
+?
+
+?
+
+
+ 
+  
+  FID
+  
+  
+  Auto-generated unique identifier for individual features.
+  
+ 
+ 
+  
+  Shape
+  
+  
+  Auto-generated field indicating feature type
+  
+ 
+ 
+  
+  NAME
+  
+  
+  Abbreviated code indicating the type of overlay district
+  represented by the feature.
+  
+ 
+ 
+  
+  SYMBOL_NAM
+  
+  
+  Indicates the type of overlay district represented by the
+  feature.
+  
+ 
+",2015-07-16T17:11:23.000Z,2017-12-15T18:32:54.121Z,http://opendata.minneapolismn.gov/datasets/d4f231795f0a4414ae8e2d8db2a45cda_15,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/PlanningOverlayDistricts/FeatureServer/15,"-93.365,44.877,-93.19,45.108"
+MapIT Minneapolis,"[u'open data', u' Minneapolis', u' Planning']",http://opendata.minneapolismn.gov/datasets/d4f231795f0a4414ae8e2d8db2a45cda_4,Harmon Area,"An overlay district is any of several additional districts
+established by the zoning regulations that may be more or less restrictive than
+the primary zoning district. Where a property is located within an overlay
+district, it is subject to the provisions of both the primary zoning district
+and the overlay district. Where the provisions are in conflict, the overlay
+district governs. In the city?s municipal code, these districts are described
+in chapter 551: https://www.municode.com/library/mn/minneapolis/codes/code_of_ordinances?nodeId=MICOOR_TIT20ZOCO_CH551OVDI
+
+?
+
+?
+
+
+ 
+  
+  FID
+  
+  
+  Auto-generated unique identifier for individual features.
+  
+ 
+ 
+  
+  Shape
+  
+  
+  Auto-generated field indicating feature type
+  
+ 
+ 
+  
+  NAME
+  
+  
+  Abbreviated code indicating the type of overlay district
+  represented by the feature.
+  
+ 
+ 
+  
+  SYMBOL_NAM
+  
+  
+  Indicates the type of overlay district represented by the
+  feature.
+  
+ 
+",2015-07-16T17:11:23.000Z,2017-12-15T18:53:47.654Z,http://opendata.minneapolismn.gov/datasets/d4f231795f0a4414ae8e2d8db2a45cda_4,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/PlanningOverlayDistricts/FeatureServer/4,"-93.365,44.877,-93.19,45.108"

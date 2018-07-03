@@ -1,0 +1,33 @@
+publisher,keyword,identifier,title,description,issued,modified,landingPage,webService,spatial
+State of Michigan,"[u'2017', u'oil', u'gas', u'lease', u'auction', u'Mineral']",http://gis-michigan.opendata.arcgis.com/datasets/f399a66559c64761942406d46a9b9099_1,2017 October Lease Auction Results Table,The 2017 October Oil and Gas Lease Auction data contains Quarter Quarter Sections related to the lease auction results data table.??,2018-03-20T17:50:25.000Z,2018-03-30T18:30:11.065Z,http://gis-michigan.opendata.arcgis.com/datasets/f399a66559c64761942406d46a9b9099_1,https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/pub_auction_results_2017Oct/FeatureServer/1,"-85.75890985295325,42.40558370138644,-83.92324148661514,44.15316691668827"
+State of Michigan,"[u'2017', u'oil', u'gas', u'lease', u'auction', u'Mineral']",http://gis-michigan.opendata.arcgis.com/datasets/f399a66559c64761942406d46a9b9099_0,2017 October Lease Auction Qtr-Qtr Section Grid,The 2017 October Oil and Gas Lease Auction data contains Quarter Quarter Sections related to the lease auction results data table.??,2018-03-20T17:50:25.000Z,2018-03-30T18:29:48.939Z,http://gis-michigan.opendata.arcgis.com/datasets/f399a66559c64761942406d46a9b9099_0,https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/pub_auction_results_2017Oct/FeatureServer/0,"-85.75890985295325,42.40558370138644,-83.92324148661514,44.15316691668827"
+State of Michigan,"[u'doq', u'1998', u'1992', u'imagery', u'ortho', u'aerial', u'doqq', u'ArcGIS', u'Service Definition', u'sd']",http://gis-michigan.opendata.arcgis.com/datasets/86b2406087e043ea8f93bb9f6db9625f_0,1992  1998 Aerial Imagery (DOQ) Grid,Digital Ortho-Quadrangle grid for 1992  1998 aerial imagery acquisitions.,2018-03-14T20:24:48.000Z,2018-04-02T15:59:11.677Z,http://gis-michigan.opendata.arcgis.com/datasets/86b2406087e043ea8f93bb9f6db9625f_0,https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DOQ_Extents/FeatureServer/0,"-90.08355531478438,41.622600908620235,-82.01635288901753,48.26535920249876"
+State of Michigan,"[u'fuelwood', u'firewood']",http://gis-michigan.opendata.arcgis.com/datasets/124b5e9d4a774795918a0c9eac82bb95_0,Fuelwood/Firewood Collection (Townships-PDF Map Extents),PDF maps are created based on township boundaries.? This layer contains links to the PDF Maps found in the Fuelwood/Firewood Collection map.? More information at?MI.gov/fuelwood.,2018-03-28T16:01:14.000Z,2018-03-30T20:24:44.556Z,http://gis-michigan.opendata.arcgis.com/datasets/124b5e9d4a774795918a0c9eac82bb95_0,https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/pub_FuelwoodLocator/FeatureServer/0,"-86.1866,43.4434,-83.2335,45.829"
+State of Michigan,"[u'fuelwood', u'firewood']",http://gis-michigan.opendata.arcgis.com/datasets/fb48f839442c4ef58ca827da8e9d8fca_1,Fuelwood/Firewood Collection (2018 State Forest Land),Data for the Fuelwood/Firewood Collection map.? More information at?www.michigan.gov/fuelwood,2018-03-26T20:13:58.000Z,2018-03-28T21:47:05.454Z,http://gis-michigan.opendata.arcgis.com/datasets/fb48f839442c4ef58ca827da8e9d8fca_1,https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/pub_FuelwoodLocator/FeatureServer/1,"-90.4888,43.3932,-83.1318,47.4969"
+State of Michigan,"[u'DEQ', u'michigan', u'geology', u'oil  gas']",http://gis-michigan.opendata.arcgis.com/datasets/dacfb14600d146bcb9830366cd803f36_2,Oil  Gas Test Well Bottom Hole Locations,"S Bottom hole locations for all oil and gas test wells whether directionally drilled or straight (vertical) holes.
+
+D Bottom Hole Location - Bottom hole locations for all oil and gas test wells whether directionally drilled or straight (vertical) holes. For a straight (vertical) hole the bottom hole location will be the same as the surface location. These are extracted from the Michigan DEQ Oil, Gas  Minerals RBDMS database on a nightly basis.More Metadata",2018-03-30T19:15:40.000Z,2018-04-02T11:26:12.000Z,http://gis-michigan.opendata.arcgis.com/datasets/dacfb14600d146bcb9830366cd803f36_2,http://gisago.mcgi.state.mi.us/arcgis/rest/services/OpenData/geology/MapServer/2,"-90.33,41.71,-82.43,47.47"
+State of Michigan,"[u'mi', u'michigan', u'mdot', u'transportation', u'open data', u'carpool', u'park', u'facilities']",http://gis-michigan.opendata.arcgis.com/datasets/4d499b5d1c664372a1c0c66a3752bb3a_0,MDOT Carpool Lots,"
+
+The
+Michigan Carpool Parking Lot Program (sometimes referred to as Park and Ride)
+began as a pilot program in 1974 with 11 carpool parking lots. Today there are
+over 240 carpool parking lots located across the state providing nearly 9,000
+parking spaces. In addition to lots owned and maintained by MDOT, the Meijer
+Corporation has partnered with MDOT to provide carpool parking at several of
+their stores. Please see the?MDOT Metadata Form?for additional information.
+
+Update
+Cycle:?Carpool
+lots are added and updated as needed when new lots are constructed or removed.
+
+Coverage: This inventory shows all
+MDOT owned and operated carpool lots in Michigan along with several Meijer
+parking lots that provide carpool parking in partnership with MDOT.
+
+Contact: Kelcy Williams
+
+",2016-03-28T12:20:11.000Z,2018-03-28T12:00:55.000Z,http://gis-michigan.opendata.arcgis.com/datasets/4d499b5d1c664372a1c0c66a3752bb3a_0,https://gisago.mcgi.state.mi.us/arcgis/rest/services/MDOT/MdotCarpoolLot/FeatureServer/0,"-90.403,41.7586,-82.1604,47.3071"
+State of Michigan,"[u'michigan', u'geology', u'oil  gas', u'deq']",http://gis-michigan.opendata.arcgis.com/datasets/74cfedd60b2b47a59c6dd9a9c9af0f2e_3,Oil  Gas Test Well Surface Hole Locations,"S Surface Location - Surface locations (wellhead) of all oil  gas test wells whether directionally drilled or straight (vertical) holes. 
+
+D Surface locations (wellhead) of all oil  gas test wells whether directionally drilled or straight (vertical) holes. These are extracted from the Michigan DEQ Oil, Gas  Minerals RBDMS database on a nightly basis.More Metadata",2018-03-22T15:20:14.000Z,2018-04-03T18:54:37.849Z,http://gis-michigan.opendata.arcgis.com/datasets/74cfedd60b2b47a59c6dd9a9c9af0f2e_3,https://gisago.mcgi.state.mi.us/arcgis/rest/services/OpenData/geology/MapServer/3,"-89.9288,41.7086,-82.3909,47.948"

@@ -1,0 +1,26 @@
+02c-01 https://data.cityofchicago.org/data.json
+3 modified_items added to 02c-01!
+modified_items report complete for 02c-01!
+02c-01 has no deleted_items
+9 new_items added to 02c-01!
+new_items report complete for 02c-01!
+
+07c-01 https://data.detroitmi.gov/data.json
+10 modified_items added to 07c-01!
+modified_items report complete for 07c-01!
+2 deleted_items added to 07c-01!
+deleted_items report complete for 07c-01!
+8 new_items added to 07c-01!
+new_items report complete for 07c-01!
+
+04c-03 https://data.baltimorecity.gov/data.json
+04c-03 has no modified_items
+04c-03 has no deleted_items
+04c-03 has no new_items
+
+12b-01 https://datacatalog.cookcountyil.gov/data.json
+1 modified_items added to 12b-01!
+modified_items report complete for 12b-01!
+12b-01 has no deleted_items
+25 new_items added to 12b-01!
+new_items report complete for 12b-01!

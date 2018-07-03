@@ -1,0 +1,56 @@
+identifier,title,description,issued,modified,landingPage,webService,spatial
+http://public-iowadot.opendata.arcgis.com/datasets/49d5a3a6a90643938257baca35ea62fc_0,Cost Center Mile Post Break Points,"These are custom made milepost locations to be used as reference points at primary route intersections, breaks in cost center locations and many county lines.",2016-06-17T13:44:20.000Z,2017-05-19T16:08:46.000Z,http://public-iowadot.opendata.arcgis.com/datasets/49d5a3a6a90643938257baca35ea62fc_0,https://gis.iowadot.gov/public/rest/services/Maintenance/Cost_Center_Break_Points/FeatureServer/0,"-96.6695,40.3572,-90.0866,43.5389",http://public-iowadot.opendata.arcgis.com/datasets/49d5a3a6a90643938257baca35ea62fc_0
+http://public-iowadot.opendata.arcgis.com/datasets/a5fa1284394e49059e5da1aa804d3a33_0,RAMS - Traffic ATR Location,Traffic ATR Location data maintained inside the Roadway Asset Management System (RAMS).,2016-12-06T20:48:55.000Z,2017-05-19T16:46:17.000Z,http://public-iowadot.opendata.arcgis.com/datasets/a5fa1284394e49059e5da1aa804d3a33_0,https://gis.iowadot.gov/public/rest/services/RAMS/Traffic_ATR_Location/FeatureServer/0,"-96.5893,40.445,-90.2563,43.4897",http://public-iowadot.opendata.arcgis.com/datasets/a5fa1284394e49059e5da1aa804d3a33_0
+http://public-iowadot.opendata.arcgis.com/datasets/307b8c6f2226461e96bf3d147096ba5f,AVL DB (High Availability Feature Collection),"AVL DB InformationThis layer contains all active Iowa DOT vehicles that are traveling more than 3 MPH. This data is updated every 2 minutes; 24 hours a day, 7 days a week.?Note: This is an Esri Feature Collection which is different than an Esri Feature Service. Feature Collections allow for high-availability. There are unique characteristics that need to be considered when using this data type:?It is a file-based data type so there is no REST endpoint. However, there is JSON that can be parsed out. See link at the bottom of this page.You cannot set a refresh interval in the map document, you must use the Info Summary Widget inside an application or hard-code the refresh in a custom application.The rotation setting gets wiped out each time the dataset is updated. When you add a feature collection to a new map, you will have to set the rotation. If you have an existing saved map this doesn?t apply to you.?",2017-06-12T13:19:52.000Z,2017-10-02T11:20:18.496Z,http://public-iowadot.opendata.arcgis.com/datasets/307b8c6f2226461e96bf3d147096ba5f,http://iowadot.maps.arcgis.com/sharing/rest/content/items/8d32316ba4e245318356b6be13ae909b/data,"-96.783,40.259,-90.059,43.593",http://public-iowadot.opendata.arcgis.com/datasets/307b8c6f2226461e96bf3d147096ba5f
+http://public-iowadot.opendata.arcgis.com/datasets/b726ff52662d46839e3d509a582f34ef_0,Winter Road Conditions - Midwest Region,"Looking for other road conditions services?Iowa: Feature Collection or Feature Service | Surrounding States: Feature Collection or Feature Service
+
+Conditions are updated every 10 minutes during the winter season (October 15 to April 15) and on an as-needed basis during the non-winter months. Layer and service is maintained by the Iowa DOT GIS team on behalf of the Office of Traffic Operations. 
+This data is provided as is through this value added REST service. All conditions have been remapped to the best of our ability to meet the condition reporting criteria as defined by the Iowa DOT. Some discrepancies may appear. This data service should only be used for reference only. For the most accurate information, please utilize the authoritative state 511 sites below.
+
+
+  
+    State 511 Sites
+    511 Vendor 
+    Disclaimers
+  
+  
+    North Dakota
+    Iteris 
+    The data is provided as is and without liability from the North Dakota Department of Transportation (NDDOT). The NDDOT does not guarantee this data to be free from errors, or inaccuracies, and disclaims any responsibility or liability for interpretations or decisions based on this data. Additional Disclaimer
+  
+  
+    South Dakota
+    Iteris 
+    Disclaimer
+  
+  
+    Nebraska
+    Castle Rock 
+    Disclaimer
+  
+  
+    Kansas
+     
+    Disclaimer
+  
+  
+    Missouri
+     
+    Disclaimer
+  
+  
+    Illinois
+     
+    The conditions reported on this page only represent conditions of routes maintained by the Illinois Department of Transportation. Conditions on roads maintained by cities, counties, townships or other entities may be different than what is reported here. The Illinois Department of Transportation and the State of Illinois hereby give notice to all users that these maps and the data included hereon, lack the accuracy required for site-specific uses. Since all boundaries and all data are based on information derived from multiple sources within and outside the Illinois Department of Transportation, the Department of Transportation and the State of Illinois make no representation, guarantee, or warrant, either express or implied, regarding the accuracy of these maps or the data furnished thereon, including, but not limited to, the condition of this product, this product's merchantability, or this product's fitness for any particular purpose or use.
+  
+  
+    Wisconsin
+     
+    Access to and use of the Wisconsin Department of Transportation (WisDOT) 511wi website is provided subject to these terms and conditions. Please read these terms at WisDOT Legal Notices link.
+  
+  
+    Minnesota
+    Castle Rock 
+    Disclaimer
+  
+",2017-01-12T23:22:49.000Z,2017-06-09T21:28:08.112Z,http://public-iowadot.opendata.arcgis.com/datasets/b726ff52662d46839e3d509a582f34ef_0,https://services.arcgis.com/8lRhdTsQyJpO52F1/arcgis/rest/services/511_NonIA_Road_Conditions/FeatureServer/0,"-104.05589279518986,35.9991999997359,-86.97951999961055,49.00056871680307",http://public-iowadot.opendata.arcgis.com/datasets/b726ff52662d46839e3d509a582f34ef_0

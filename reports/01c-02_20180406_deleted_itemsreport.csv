@@ -1,0 +1,8 @@
+publisher,keyword,identifier,title,description,issued,modified,landingPage,webService,spatial
+http://data1-indygis.opendata.arcgis.com/datasets/21980b5286b94cd797f0dbe799b86dda_5,Registered Community Organizations,"Indianapolis maintains a database of all community organizations that have been registered with the Department of Metropolitan Development. The purpose of registering an organization with the Department of Metropolitan 
+Development is to receive notification of public hearings regarding re-zonings, 
+variances, special exceptions, approvals, administrative appeals, plat 
+approvals/vacations, street and alley vacations, and liquor licensing 
+activities. Information provided by organizations that voluntarily register is 
+shared with any interested party(ies), including other public and private 
+agencies, organizations and individuals.Data projection: NAD 1983 StatePlane Indiana East FIPS 1301 (US Feet)",2015-08-11T12:30:16.000Z,2016-12-06T18:18:33.546Z,http://data1-indygis.opendata.arcgis.com/datasets/21980b5286b94cd797f0dbe799b86dda_5,http://imaps.indy.gov/arcgis/rest/services/OpenData_Boundaries/FeatureServer/5,"-86.3768,39.6319,-85.9277,39.929"

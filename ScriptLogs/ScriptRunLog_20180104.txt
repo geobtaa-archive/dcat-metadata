@@ -1,0 +1,93 @@
+20180104 JsonComparison script run
+
+20171012 ArcPortals
+
+01c-02 http://data1-indygis.opendata.arcgis.com/data.json
+01c-02 has no deleted_items
+01c-02 has no new_items
+
+03a-02 http://public.iowadot.opendata.arcgis.com/data.json
+4 deleted_items added to 03a-02!
+19 new_items added to 03a-02!
+
+04a-01 http://data.imap.maryland.gov/data.json
+1 deleted_items added to 04a-01!
+23 new_items added to 04a-01!
+
+04c-01 http://opendata.dc.gov/data.json
+17 deleted_items added to 04c-01!
+25 new_items added to 04c-01!
+
+04c-02 http://gis-baltimore.opendata.arcgis.com/data.json
+04c-02 has no deleted_items
+1 new_items added to 04c-02!
+
+06a-01 http://gis-michigan.opendata.arcgis.com/data.json
+18 deleted_items added to 06a-01!
+110 new_items added to 06a-01!
+
+06a-02 http://gis-midnr.opendata.arcgis.com/data.json
+15 deleted_items added to 06a-02!
+102 new_items added to 06a-02!
+
+07f-01 http://maps-semcog.opendata.arcgis.com/data.json
+07f-01 has no deleted_items
+07f-01 has no new_items
+
+11a-01 http://ogrip-geohio.opendata.arcgis.com/data.json
+There is no comparison json for 11a-01
+
+06b-01 http://data-southbend.opendata.arcgis.com/data.json
+06b-01 has no deleted_items
+06b-01 has no new_items
+
+06a-03 http://gis-mdot.opendata.arcgis.com/data.json
+3 deleted_items added to 06a-03!
+260 new_items added to 06a-03!
+
+09c-01 http://accessoakland.oakgov.com/data.json
+09c-01 has no deleted_items
+50 new_items added to 09c-01!
+
+20171012 MnPortals
+
+05b-03 http://data-carver.opendata.arcgis.com/data.json
+1 deleted_items added to 05b-03!
+2 new_items added to 05b-03!
+
+05b-06 http://gis-hennepin.opendata.arcgis.com/data.json
+05b-06 has no deleted_items
+05b-06 has no new_items
+
+05b-09 http://stlouiscountymndata-slcgis.opendata.arcgis.com/data.json
+05b-09 has no deleted_items
+05b-09 has no new_items
+
+05b-10 http://opendata.gis.co.scott.mn.us/data.json
+3 deleted_items added to 05b-10!
+2 new_items added to 05b-10!
+
+05b-12 http://data-wcmn.opendata.arcgis.com/data.json
+05b-12 has no deleted_items
+2 new_items added to 05b-12!
+
+05b-13 http://data-carltoncounty.opendata.arcgis.com/data.json
+There is no comparison json for 05b-13
+
+05b-14 https://getdata-hubbardcounty.opendata.arcgis.com/data.json
+05b-14 has no deleted_items
+05b-14 has no new_items
+
+05c-01 http://opendata.minneapolismn.gov/data.json
+1 deleted_items added to 05c-01!
+18 new_items added to 05c-01!
+
+20171103 Portals (1Mn, 1Arc)
+
+05b-13 http://data-carltoncounty.opendata.arcgis.com/data.json
+05b-13 has no deleted_items
+05b-13 has no new_items
+
+11a-01 http://ogrip-geohio.opendata.arcgis.com/data.json
+20 deleted_items added to 11a-01!
+57 new_items added to 11a-01!

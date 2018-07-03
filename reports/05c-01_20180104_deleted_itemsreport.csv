@@ -1,0 +1,68 @@
+identifier,title,description,issued,modified,landingPage,webService,spatial
+http://opendata.minneapolismn.gov/datasets/c9b871eb925a4178a862f45310460510_0,Active Rental Licenses,"For questions about this data please contact?RegulatoryServicesOpenData@minneapolismn.govRental PropertyMinneapolis
+ requires that every rental dwelling, including single-family rental 
+dwellings and rental units in owner-occupied duplexes, and rooming and 
+shared-bath units (unless they are in a licensed lodging house) must 
+have a rental license.?The
+number of locations shown on the map above reflects the unique amount of
+dwellings in the City of Minneapolis with rental licenses, not the unique
+amount of rental licenses.Why License Rental Properties?The intent of the rental license ordinance is to:Promote the health, safety, and welfare of the general public.Assure preservation of the existing housing supply.Help maintain property values.Work toward eliminating substandard and deteriorating rental housing.Maintain a living environment that contributes to healthful individual and family living.For more information on the licensing process, call 311 or outside Minneapolis city limits call (612) 673-3000.
+
+Dataset
+Information
+
+APN- Parcel
+identification number
+
+License Number- This is the
+designated rental license identification number
+
+Tier ? This is the designated Tier
+for the rental license.
+
+Licensed Units ? This is the number of
+paid units registered with the rental license.
+
+Issue date- The date that
+the rental license was issued.
+
+Expiration Date- This is the
+date that the rental license is set to expire.? The applicant of the
+rental license must renew the rental license before this date.
+
+Address- The address of
+the rental licensed property. The suite, if applicable,
+is included in the address.
+
+Applicant - The applicant
+of the rental license.? This is the person primarily responsible for the
+rental licensed property.
+
+Applicant Address ? The address of the applicant.
+
+Applicant City ? The city of the applicant?s
+address.
+
+Ward- This is the
+ward that the rental licensed property is located.
+
+Community- This is the
+community that the rental licensed property is located.
+
+Neighborhood- This is the
+neighborhood that the rental licensed property is located.
+
+Police Precinct- This is the
+police precinct that the rental licensed property is located.
+
+Latitude ? The geographic
+latitude of the property.
+
+Longitude ? The geographic longitude of the
+property.
+
+X-WebMercator- The
+X-coordinate for the geographic location of the property (Web Mercator).
+
+Y-WebMercator- The
+Y-coordinate of the geographic location for the property (Web Mercator).",2017-03-16T17:57:38.000Z,2017-09-29T23:45:42.186Z,http://opendata.minneapolismn.gov/datasets/c9b871eb925a4178a862f45310460510_0,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/Active_Rental_Licenses/FeatureServer/0,"-93.32878159489181,0.0,0.0,45.051087223932214",http://opendata.minneapolismn.gov/datasets/c9b871eb925a4178a862f45310460510_0

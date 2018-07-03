@@ -1,0 +1,7 @@
+publisher,keyword,identifier,title,description,issued,modified,landingPage,webService,spatial
+http://gis-michigan.opendata.arcgis.com/datasets/b30f092aadb14517bdab590824d10490_0,Prescribed Burn Point Locations (2016),"The DNR Prescribed Burn Point Locations are from the Prescribed Burn database managed by DTMB-CSSTP.
+
+These represent ?prescribed burns greater than 10 acres.",2015-05-13T02:26:11.000Z,2018-03-30T18:29:54.626Z,http://gis-michigan.opendata.arcgis.com/datasets/b30f092aadb14517bdab590824d10490_0,https://services3.arcgis.com/Jdnp1TjADvSDxMAX/ArcGIS/rest/services/pub_MiMorels/FeatureServer/0,"-88.5925,41.7211,-82.2767,46.6233"
+http://gis-michigan.opendata.arcgis.com/datasets/5b7e1cb0e5b84b9baacc7ac516d4f5b0_1,Wildfire Point Locations (2016),"Points generated from the FireMaster table x/y coordinates.
+
+These represent wildfires greater than 10 acres occuring on DNR Land.",2015-05-13T02:24:49.000Z,2018-03-30T18:29:54.620Z,http://gis-michigan.opendata.arcgis.com/datasets/5b7e1cb0e5b84b9baacc7ac516d4f5b0_1,https://services3.arcgis.com/Jdnp1TjADvSDxMAX/ArcGIS/rest/services/pub_MiMorels/FeatureServer/1,"-103.6568,40.6431,-82.1436,48.5396"

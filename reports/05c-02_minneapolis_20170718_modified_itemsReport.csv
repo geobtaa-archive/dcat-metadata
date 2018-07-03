@@ -1,0 +1,603 @@
+identifier,title,description,issued,modified,landingPage,webService,spatial
+http://opendata.minneapolismn.gov/datasets/9ec6339588bf433589b6ea77a9a01514_0,311 Incidents 2016,"For questions about this data please contact?311OpenData@minneapolismn.govThe
+ data provided are public-facing service requests that were taken by 311
+ contact center agents, or through online and mobile applications, and 
+entered the Lagan CRM system during 2016. The two main identifiers of 
+data, with which users of the open data should converse with 311, are 
+the Case ID and the Type Name field. Type name is the common used title 
+for a service request among city staff, 311, and the community at large.Attribute DescriptionsCase ID - Gives a unique identifying number associated with each case.?Subject
+ - This is the top level hierarchy definition of a service request. It 
+is most closely associated with a department designation.?Enquiry Type ID - An additional identification number .Reason
+ - This is the 2nd level classification of a service request and 
+reflects a program name or a division assigned to perform the service 
+request.?Type - This is 
+the 3rd level classification describing what the service request 
+specifically is for. It is the most common designation description used 
+in the city.?Title - Similar to the Type column, this describes more details about the incident.?Open
+ Date Time - This is the date and time stamp when the department, 
+program, or division assigned to complete the task in a service request 
+starts working that service request.?Case
+ Status - If case status = 0, it means the case is closed. If case 
+status = 1, the case is still considered open. All cases with a case 
+status of 1 should not have a closed date.Closed Date Time - The date a resolving department, division or program completed the service request.?XCoord
+  YCoord - This is the coordinate the city provides of where the 
+service request occurred in the WGS 84 web Mercator auxilliary sphere 
+coordinate system.Service Request Definition ListAbandoned Vehicle ??a
+ vehicle parked in a public right of way (street) that appears to have 
+been left by its owner in excess of 72 consecutive hours or lacking 
+vital component parts (City Ordinance 478.250).Abandoned Vehicle ? Open311?? vehicle reported abandoned via the Minneapolis Mobile Application.Abandoned/Illegally Parked Bicycle ??This is a report of an abandoned (or missing parts) bike by owner or someone elseAir Pollution Complaint ??air contaminants, fumes, or other offensive odors that occur outdoors and impacts the environment.Animal Complaint ? Livability ??nuisance conditions such as barking dog, stray petsAnimal Complaint ? Public Health ? abandoned, mistreated or uncared for animal, excessive feces in yard causing health risks.Barricade Pickup/Placement ??request for City staff to deploy or remove barricades from city street and or sidewalks.Bicycle Lane Issue??
+ complaint for users of bike paths to report off-street bike path trail 
+issues such as pavement, lighting, fencing, signs, debris, overgrown 
+vegetation, etc. phones or other nuisance conditions on city bicycle 
+paths.Bridge Complaint ??structural issue that needs attentionChemical Spill?? chemical contaminant spilled in any non-authorized location in the city.Commercial Food Safety/Sanitation Complaint ??unclean or unhealthy conditions suspected at an eating establishmentDebris in the Street or Alley?? branches, appliances, or general objects that are blocking an alleyway or street.Debris Alley/Street ? Open 311?? Debris in street or alley reported via the Minneapolis Mobile Application.Emergency Pollution Complaint?same as land, air, water but emergency requiring contact with 911Exterior Nuisance Complaint ??nuisance conditions located on the exterior of a building, such as long grass, debris or trash, or long weeds.Exterior Nuisance ? Self Service?? nuisance conditions reportable on the 311 online applications on the websiteFence or Guardrail Maintenance?? report about a fence or guardrail along a city street that may be in disrepairFire Hydrant Snow Issue ??snow is impeding the normal operation of a fire hydrant?.needs to be shoveled out.General Street Complaint?? non-specific problem with a street that does not fit in any other type of street complaintGraffiti complaint/reporting?? tagger or gang graffiti on properties, public signs, or any surfaceGraffiti ? Open 311?? graffiti complaint made via Minneapolis Mobile ApplicationHydrant Issue?? hydrant out of service, leaking water, damaged, etcIllegal Dumping Complaint?? report of waste being disposed at a location other than where it was generated and there is proof of the dumpingLand Pollution Complaint?? contaminant suspected in land that may require environmental remediation to restoreLicensing Complaint?? complaints or concerns about a business either licensed by Minneapolis, or operating without a license.Newspaper Box Complaint ??newspaper
+ boxes for community newspapers, shoppers, or even major dailies in a 
+state of disrepair, or not used, or obstructing the public right of way.Noise Pollution Complaint?? excessive noise that disrupts peace and tranquility of neighborhoods.Parking Meter Citation Issue?report that a defective meter/pay station may have cause the vehicle owner to get a ticketParking Meter Problem?? parking meter in need of attention or maintenance?possibly malfunctioningParking Meter ? Open311?? parking meter problem reported via Minneapolis Mobile Application.Parking Ramp/Lot Issue?? problem with ramp such as lights out affecting safety, mechanical problems with equipment, cluttered or unsafe stairwells.Parking Violation Complaint?? someone parked in a no parking zone, fire lane, etc.Parking Violation ? Open311 ??parking violation made via Minneapolis Mobile ApplicationPermitted Work -?report of concerns about construction work being done on private property after a permit has been obtainedPothole?? report of pavement depression/defectPothole ? Open311?? pothole reported via Minneapolis Mobile ApplicationResidential Conditions Complaint??
+ a structural problem with a residential property with 1-3 dwelling 
+units, such as stairwell needing repair, or a chimney in disrepair, or a
+ broken window.?Residential Conditions Complaint HOD (High Occupancy Dwelling) ??a
+ conditions complaint for properties with 4 or more residential dwelling
+ units, or a mixed commercial and residential building, or a commercial 
+building complaint.Residential Conditions Complaint Tenant ??a
+ complaint in which the tenant of a 1-3 unit residential dwelling unit 
+is adversely affected by a condition in a property, such as nuisance 
+conditions like pests, or heat issues, or malfunctioning equipment.Residential Conditions Complaint HOD Tenant -?this
+ is a tenant complaint in a residential building with 4 or more units, a
+ mixed commercial and residential building, or a commercial building 
+complaint.Residential Disability Zone ??a vehicle parked in a zone reserved for disabled citizens illegally, or periodically can be reported here.Sand Barrell ??request to have a sand barrel placed at a location in the City of MinneapolisSewer Issues ??report of sewer issues such as missing grate,?odor, plugged basin, manhole cover issue, sewer backup, etc.Sidewalk Obstruction Complaint ??an object or overhanging bush or tree that prevents public right of way on the sidewalkSidewalk Snow  Ice Complaint ??sidewalk that has not been maintained after a snow event or in a melt refreeze cycle.Sidewalk Snow and Ice ? SS ??sidewalk snow and ice complaint that is reported on the 311 website.Sidewalk Snow  Ice ? Open311 ??sidewalk snow  ice report via Minneapolis Mobile ApplicationSidewalk Structural Complaint ??a sidewalk that is uneven, or fractured can be reported on this service request.Sidewalk Structural ? Open311?? a sidewalk structural complaint made via Minneapolis Mobile ApplicationSign Complaint?? a sign that is not permitted in the city, like a bandit sign for real estate purchasing companies, or other unwanted signs.Snow ? Illegal Dumping?? complaint about snow being shoveled and dumped back into the street or public right of way.Snow  Ice Complaint?? this is a snow and ice complaint in a city street or alleySpecial Sweep?? customer can request a street sweep of their street due to dirt or loose debris in the streetSpeed Wagon?? a request for a speed indicator to be deployed on a city right of way (street) to indicate vehicle speedsSports Equipment in Street?? items that create obstructions for right of way in streets like portable basketball hoops.Street Light ? New?? a request for the city to deploy a new street light in a given city street/alleyStreet Light Trouble?? street lights no longer working that need to be replacedStreet Light Trouble ? Open311 ??street light issues reported via Minneapolis Mobile ApplicationStreets Snow  Ice ? Open311?? snow and ice complaint via Minneapolis Mobile ApplicationTraffic Sign ? New ??request for a new traffic sign at an intersection, or somewhere in??or near the public right of wayTraffic Sign ? Removal?? request for an existing traffic sign to be removedTraffic Sign ? Repair ??request for a sign in some level of reported disrepair to be repaired or restored to fully functional conditionTraffic Sign Repair ? Open311?? sign repair requested via Minneapolis Mobile ApplicationTraffic Signal ? New/Modification?? a request for a new traffic light at an intersectionTraffic Signal Timing Issue??
+ a problem with a light that causes delays or spillover traffic in other
+ intersections due to poorly or disproportionate time given to one right
+ of way over another.Traffic Signal Trouble?? signal has lights out or is malfunctioning in some wayTraffic Signal Trouble ? Open311 ??traffic signal trouble reported via Minneapolis Mobile ApplicationTrees Down?? report about a tree or tree branch that is obstruction the public right of wayUnpermitted Work??
+ report that indicates concern that a citizen or contractor is 
+performing work on properties that requires a city of Minneapolis permitUrgent Pollution Complaint ??land, air, water pollution complaints that need immediate attentionWater Main Break ??Report about water leaking or gushing from a main water pipeWater Pollution Complaint?? can report concerns about suspected water pollutionWater Quality Issues ??reports about water having color, or fishy taste, or some other concern about the quality of water.Water Service Issue ??report about frozen water pipes, leaks, low pressure, no water, etc.Zoning Ordinance Complaint?? complaints about zoning regulations",2017-02-08T21:29:57.000Z,2017-06-14T21:21:37.244Z,http://opendata.minneapolismn.gov/datasets/9ec6339588bf433589b6ea77a9a01514_0,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/Public_311_2016/FeatureServer/0,"-93.32910360948014,44.89008092751924,-93.19858414791535,45.05124483103548",http://opendata.minneapolismn.gov/datasets/9ec6339588bf433589b6ea77a9a01514_0
+http://opendata.minneapolismn.gov/datasets/33c3db3ad6bc49599f1fc81c1a3ba499_0,HPC Landmarks,"Field Descriptions
+
+HIST_NAME = historic name
+
+HIST_USE = historic use;
+
+CUR_NAME = current name;
+
+CUR_USE = current use;
+
+CONST_YEAR = year
+constructed (if known);
+
+ARCHITECTS = architects who
+designed project;
+
+CONTRACTOR = contractor who
+worked on project;
+
+STYLE = architectural styleLOCAL_DESI = year
+locally designated
+
+SIGNIFICAN = historic
+criteria in which it is significant
+
+For
+questions about this data please contact?CPEDOpenData@minneapolismn.gov",2017-03-15T20:55:37.000Z,2017-07-14T07:04:03.609Z,http://opendata.minneapolismn.gov/datasets/33c3db3ad6bc49599f1fc81c1a3ba499_0,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/HPC_Landmarks/FeatureServer/0,"-93.32531046508946,44.906107464698934,-93.20861505678116,45.047734827761666",http://opendata.minneapolismn.gov/datasets/33c3db3ad6bc49599f1fc81c1a3ba499_0
+http://opendata.minneapolismn.gov/datasets/c9b871eb925a4178a862f45310460510_0,Active Rental Licenses,"For questions about this data please contact?RegulatoryServicesOpenData@minneapolismn.govRental PropertyMinneapolis
+ requires that every rental dwelling, including single-family rental 
+dwellings and rental units in owner-occupied duplexes, and rooming and 
+shared-bath units (unless they are in a licensed lodging house) must 
+have a rental license.?The
+number of locations shown on the map above reflects the unique amount of
+dwellings in the City of Minneapolis with rental licenses, not the unique
+amount of rental licenses.Why License Rental Properties?The intent of the rental license ordinance is to:Promote the health, safety, and welfare of the general public.Assure preservation of the existing housing supply.Help maintain property values.Work toward eliminating substandard and deteriorating rental housing.Maintain a living environment that contributes to healthful individual and family living.For more information on the licensing process, call 311 or outside Minneapolis city limits call (612) 673-3000.
+
+Dataset
+Information
+
+APN- Parcel
+identification number
+
+License Number- This is the
+designated rental license identification number
+
+Tier ? This is the designated Tier
+for the rental license.
+
+Licensed Units ? This is the number of
+paid units registered with the rental license.
+
+Issue date- The date that
+the rental license was issued.
+
+Expiration Date- This is the
+date that the rental license is set to expire.? The applicant of the
+rental license must renew the rental license before this date.
+
+Address- The address of
+the rental licensed property. The suite, if applicable,
+is included in the address.
+
+Applicant - The applicant
+of the rental license.? This is the person primarily responsible for the
+rental licensed property.
+
+Applicant Address ? The address of the applicant.
+
+Applicant City ? The city of the applicant?s
+address.
+
+Ward- This is the
+ward that the rental licensed property is located.
+
+Community- This is the
+community that the rental licensed property is located.
+
+Neighborhood- This is the
+neighborhood that the rental licensed property is located.
+
+Police Precinct- This is the
+police precinct that the rental licensed property is located.
+
+Latitude ? The geographic
+latitude of the property.
+
+Longitude ? The geographic longitude of the
+property.
+
+X-WebMercator- The
+X-coordinate for the geographic location of the property (Web Mercator).
+
+Y-WebMercator- The
+Y-coordinate of the geographic location for the property (Web Mercator).",2017-03-16T17:57:38.000Z,2017-06-30T23:45:37.341Z,http://opendata.minneapolismn.gov/datasets/c9b871eb925a4178a862f45310460510_0,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/Active_Rental_Licenses/FeatureServer/0,"-93.32878159489181,0.0,0.0,45.051087223932214",http://opendata.minneapolismn.gov/datasets/c9b871eb925a4178a862f45310460510_0
+http://opendata.minneapolismn.gov/datasets/04284cb2bc4448df83527ae3e33d5ac9_0,Off Sale Liquor,"Current off-sale liquor licenses
+active in the city.",2017-04-11T13:39:35.000Z,2017-06-30T23:46:23.187Z,http://opendata.minneapolismn.gov/datasets/04284cb2bc4448df83527ae3e33d5ac9_0,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/Off_Sale_Liquor/FeatureServer/0,"-93.32846771724336,0.0,0.0,45.031045254136046",http://opendata.minneapolismn.gov/datasets/04284cb2bc4448df83527ae3e33d5ac9_0
+http://opendata.minneapolismn.gov/datasets/6ad67d5110a34e8eb63c4def6e02fb6b_0,Building Inspection Districts,"This layer displays the Building Inspection Districts from Construction 
+Codes Services 
+Division of the Community Planning  Economic Developement (CPED) 
+Department. ?Questions regarding this layer should be directed to:Construction Code ServicesPublic Service Center250 S. 4th St., Suite 300Minneapolis, MN 55415311 or (612) 673-3000",2017-03-13T20:50:16.000Z,2017-07-14T07:02:38.037Z,http://opendata.minneapolismn.gov/datasets/6ad67d5110a34e8eb63c4def6e02fb6b_0,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/Building_Inspection_Districts/FeatureServer/0,"-93.32910837188332,44.89058850804173,-93.19432851980172,45.051246260272634",http://opendata.minneapolismn.gov/datasets/6ad67d5110a34e8eb63c4def6e02fb6b_0
+http://opendata.minneapolismn.gov/datasets/869e3780fe284ca29527f1df7a469593_0,HPC Districts,"For questions about this data please
+contact?CPEDOpenData@minneapolismn.gov.Map service showing the?Heritage Preservation Commission Districts?in Minneapolis.",2017-03-15T20:39:41.000Z,2017-07-14T07:03:14.543Z,http://opendata.minneapolismn.gov/datasets/869e3780fe284ca29527f1df7a469593_0,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/HPC_Districts/FeatureServer/0,"-93.32024010083043,44.905386147341964,-93.19450937932285,45.03767223317753",http://opendata.minneapolismn.gov/datasets/869e3780fe284ca29527f1df7a469593_0
+http://opendata.minneapolismn.gov/datasets/fb78f39deee143019f6ed26719d13e58_0,Great Streets Eligible Areas,"This dataset indicates areas designated as eligible for
+resources provided through the Great Streets Neighborhood Business District
+Program. Eligible areas were designated in The Minneapolis Plan for Sustainable
+Growth and consist of Activity Centers, Commercial Nodes, Commercial Corridors,
+and LRT Station Areas. Exact parcel boundaries of Activity Centers and
+Commercial Nodes are identified in The Minneapolis Plan. Commercial Corridor
+areas are generally defined as a one block radius from designated corridors.
+LRT Station Areas are defined as a ? mile radius from each LRT station outside
+of downtown. Some staff discretion was used in determining precise boundaries
+for Commercial Corridors and LRT Station Areas in cases where roadways or other
+natural boundaries made exact definitions unclear.
+
+?
+
+Each area is categorized based on a number of metrics used
+to determine its economic health and opportunity. Varying levels of Great
+Streets program resources are available, based on this categorization. These
+categories are defined as:
+
+?
+
+Intervene: Areas that are experiencing weak development
+interest or significant obstacles to attaining the City?s commercial
+development or business investment goals.
+
+Support: Areas showing signs of strength, but that remain
+fragile and have some barriers to market development and business investment.
+
+Monitor: Areas with strong market development and business
+activity.
+
+?
+
+For more information, please see the City of Minneapolis
+Great Streets Program website: http://www.ci.minneapolis.mn.us/cped/ba/cped_great_streets_home
+
+?
+
+
+ 
+  
+  Sector
+  
+  
+  Location within the city. Program resources are
+  administered by different City staff based on Sector.
+  
+ 
+ 
+  
+  Category
+  
+  
+  Categorical classification of area?s economic health and
+  opportunity.
+  
+ 
+ 
+  
+  AreaType
+  
+  
+  Geographic type, based on Minneapolis Plan designations.
+  
+ 
+ 
+  
+  Name
+  
+  
+  Name of specific geographic area.
+  
+ 
+",2015-07-09T13:44:19.000Z,2015-12-02T16:28:13.183Z,http://opendata.minneapolismn.gov/datasets/fb78f39deee143019f6ed26719d13e58_0,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/Great_Streets_Eligible_Areas/FeatureServer/0,"-93.32978983880656,44.89038925047747,-93.19929847631708,45.03914088634092",http://opendata.minneapolismn.gov/datasets/fb78f39deee143019f6ed26719d13e58_0
+http://opendata.minneapolismn.gov/datasets/ccee069bb5424150b3d3a79fbdc35a9e_0,Future Land Use,"For questions about this data please contact?CPEDOpenData@minneapolismn.govParcel level future land use guidance from City's adopted
+comprehensive plan. ??This dataset provides
+guidance for future land use and development, along with land use features. 
+
+?
+
+Field Descriptions
+
+RULEID is future land use classification 
+
+FLU is the abbreviation of the classification",2014-12-04T20:33:27.000Z,2017-07-13T14:26:14.452Z,http://opendata.minneapolismn.gov/datasets/ccee069bb5424150b3d3a79fbdc35a9e_0,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/Future_LandUse/FeatureServer/0,"-93.32907718470406,44.890617336784125,-93.19530719534433,45.051159818084415",http://opendata.minneapolismn.gov/datasets/ccee069bb5424150b3d3a79fbdc35a9e_0
+http://opendata.minneapolismn.gov/datasets/b2fad8490dcb43b18185c380c8caf4cc_0,311 Incidents 2015,"For questions about this data please contact?311OpenData@minneapolismn.govThe
+ data provided are public-facing service requests that were taken by 311
+ contact center agents, or through online and mobile applications, and 
+entered the Lagan CRM system during 2015. The two main identifiers of 
+data, with which users of the open data should converse with 311, are 
+the Case ID and the Type Name field. Type name is the common used title 
+for a service request among city staff, 311, and the community at large.Attribute DescriptionsCase ID - Gives a unique identifying number associated with each case.?Subject
+ - This is the top level hierarchy definition of a service request. It 
+is most closely associated with a department designation.?Enquiry Type ID - An additional identification number .Reason
+ - This is the 2nd level classification of a service request and 
+reflects a program name or a division assigned to perform the service 
+request.?Type - This is 
+the 3rd level classification describing what the service request 
+specifically is for. It is the most common designation description used 
+in the city.?Title - Similar to the Type column, this describes more details about the incident.?Open
+ Date Time - This is the date and time stamp when the department, 
+program, or division assigned to complete the task in a service request 
+starts working that service request.?Case
+ Status - If case status = 0, it means the case is closed. If case 
+status = 1, the case is still considered open. All cases with a case 
+status of 1 should not have a closed date.Closed Date Time - The date a resolving department, division or program completed the service request.?XCoord
+  YCoord - This is the coordinate the city provides of where the 
+service request occurred in the WGS 84 web Mercator auxilliary sphere 
+coordinate system.Service Request Definition ListAbandoned Vehicle ??a
+ vehicle parked in a public right of way (street) that appears to have 
+been left by its owner in excess of 72 consecutive hours or lacking 
+vital component parts (City Ordinance 478.250).Abandoned Vehicle ? Open311?? vehicle reported abandoned via the Minneapolis Mobile Application.Abandoned/Illegally Parked Bicycle ??This is a report of an abandoned (or missing parts) bike by owner or someone elseAir Pollution Complaint ??air contaminants, fumes, or other offensive odors that occur outdoors and impacts the environment.Animal Complaint ? Livability ??nuisance conditions such as barking dog, stray petsAnimal Complaint ? Public Health ? abandoned, mistreated or uncared for animal, excessive feces in yard causing health risks.Barricade Pickup/Placement ??request for City staff to deploy or remove barricades from city street and or sidewalks.Bicycle Lane Issue??
+ complaint for users of bike paths to report off-street bike path trail 
+issues such as pavement, lighting, fencing, signs, debris, overgrown 
+vegetation, etc. phones or other nuisance conditions on city bicycle 
+paths.Bridge Complaint ??structural issue that needs attentionChemical Spill?? chemical contaminant spilled in any non-authorized location in the city.Commercial Food Safety/Sanitation Complaint ??unclean or unhealthy conditions suspected at an eating establishmentDebris in the Street or Alley?? branches, appliances, or general objects that are blocking an alleyway or street.Debris Alley/Street ? Open 311?? Debris in street or alley reported via the Minneapolis Mobile Application.Emergency Pollution Complaint?same as land, air, water but emergency requiring contact with 911Exterior Nuisance Complaint ??nuisance conditions located on the exterior of a building, such as long grass, debris or trash, or long weeds.Exterior Nuisance ? Self Service?? nuisance conditions reportable on the 311 online applications on the websiteFence or Guardrail Maintenance?? report about a fence or guardrail along a city street that may be in disrepairFire Hydrant Snow Issue ??snow is impeding the normal operation of a fire hydrant?.needs to be shoveled out.General Street Complaint?? non-specific problem with a street that does not fit in any other type of street complaintGraffiti complaint/reporting?? tagger or gang graffiti on properties, public signs, or any surfaceGraffiti ? Open 311?? graffiti complaint made via Minneapolis Mobile ApplicationHydrant Issue?? hydrant out of service, leaking water, damaged, etcIllegal Dumping Complaint?? report of waste being disposed at a location other than where it was generated and there is proof of the dumpingLand Pollution Complaint?? contaminant suspected in land that may require environmental remediation to restoreLicensing Complaint?? complaints or concerns about a business either licensed by Minneapolis, or operating without a license.Newspaper Box Complaint ??newspaper
+ boxes for community newspapers, shoppers, or even major dailies in a 
+state of disrepair, or not used, or obstructing the public right of way.Noise Pollution Complaint?? excessive noise that disrupts peace and tranquility of neighborhoods.Parking Meter Citation Issue?report that a defective meter/pay station may have cause the vehicle owner to get a ticketParking Meter Problem?? parking meter in need of attention or maintenance?possibly malfunctioningParking Meter ? Open311?? parking meter problem reported via Minneapolis Mobile Application.Parking Ramp/Lot Issue?? problem with ramp such as lights out affecting safety, mechanical problems with equipment, cluttered or unsafe stairwells.Parking Violation Complaint?? someone parked in a no parking zone, fire lane, etc.Parking Violation ? Open311 ??parking violation made via Minneapolis Mobile ApplicationPermitted Work -?report of concerns about construction work being done on private property after a permit has been obtainedPothole?? report of pavement depression/defectPothole ? Open311?? pothole reported via Minneapolis Mobile ApplicationResidential Conditions Complaint??
+ a structural problem with a residential property with 1-3 dwelling 
+units, such as stairwell needing repair, or a chimney in disrepair, or a
+ broken window.?Residential Conditions Complaint HOD (High Occupancy Dwelling) ??a
+ conditions complaint for properties with 4 or more residential dwelling
+ units, or a mixed commercial and residential building, or a commercial 
+building complaint.Residential Conditions Complaint Tenant ??a
+ complaint in which the tenant of a 1-3 unit residential dwelling unit 
+is adversely affected by a condition in a property, such as nuisance 
+conditions like pests, or heat issues, or malfunctioning equipment.Residential Conditions Complaint HOD Tenant -?this
+ is a tenant complaint in a residential building with 4 or more units, a
+ mixed commercial and residential building, or a commercial building 
+complaint.Residential Disability Zone ??a vehicle parked in a zone reserved for disabled citizens illegally, or periodically can be reported here.Sand Barrell ??request to have a sand barrel placed at a location in the City of MinneapolisSewer Issues ??report of sewer issues such as missing grate,?odor, plugged basin, manhole cover issue, sewer backup, etc.Sidewalk Obstruction Complaint ??an object or overhanging bush or tree that prevents public right of way on the sidewalkSidewalk Snow  Ice Complaint ??sidewalk that has not been maintained after a snow event or in a melt refreeze cycle.Sidewalk Snow and Ice ? SS ??sidewalk snow and ice complaint that is reported on the 311 website.Sidewalk Snow  Ice ? Open311 ??sidewalk snow  ice report via Minneapolis Mobile ApplicationSidewalk Structural Complaint ??a sidewalk that is uneven, or fractured can be reported on this service request.Sidewalk Structural ? Open311?? a sidewalk structural complaint made via Minneapolis Mobile ApplicationSign Complaint?? a sign that is not permitted in the city, like a bandit sign for real estate purchasing companies, or other unwanted signs.Snow ? Illegal Dumping?? complaint about snow being shoveled and dumped back into the street or public right of way.Snow  Ice Complaint?? this is a snow and ice complaint in a city street or alleySpecial Sweep?? customer can request a street sweep of their street due to dirt or loose debris in the streetSpeed Wagon?? a request for a speed indicator to be deployed on a city right of way (street) to indicate vehicle speedsSports Equipment in Street?? items that create obstructions for right of way in streets like portable basketball hoops.Street Light ? New?? a request for the city to deploy a new street light in a given city street/alleyStreet Light Trouble?? street lights no longer working that need to be replacedStreet Light Trouble ? Open311 ??street light issues reported via Minneapolis Mobile ApplicationStreets Snow  Ice ? Open311?? snow and ice complaint via Minneapolis Mobile ApplicationTraffic Sign ? New ??request for a new traffic sign at an intersection, or somewhere in??or near the public right of wayTraffic Sign ? Removal?? request for an existing traffic sign to be removedTraffic Sign ? Repair ??request for a sign in some level of reported disrepair to be repaired or restored to fully functional conditionTraffic Sign Repair ? Open311?? sign repair requested via Minneapolis Mobile ApplicationTraffic Signal ? New/Modification?? a request for a new traffic light at an intersectionTraffic Signal Timing Issue??
+ a problem with a light that causes delays or spillover traffic in other
+ intersections due to poorly or disproportionate time given to one right
+ of way over another.Traffic Signal Trouble?? signal has lights out or is malfunctioning in some wayTraffic Signal Trouble ? Open311 ??traffic signal trouble reported via Minneapolis Mobile ApplicationTrees Down?? report about a tree or tree branch that is obstruction the public right of wayUnpermitted Work??
+ report that indicates concern that a citizen or contractor is 
+performing work on properties that requires a city of Minneapolis permitUrgent Pollution Complaint ??land, air, water pollution complaints that need immediate attentionWater Main Break ??Report about water leaking or gushing from a main water pipeWater Pollution Complaint?? can report concerns about suspected water pollutionWater Quality Issues ??reports about water having color, or fishy taste, or some other concern about the quality of water.Water Service Issue ??report about frozen water pipes, leaks, low pressure, no water, etc.Zoning Ordinance Complaint?? complaints about zoning regulations",2016-10-19T19:42:59.000Z,2017-06-14T21:16:38.062Z,http://opendata.minneapolismn.gov/datasets/b2fad8490dcb43b18185c380c8caf4cc_0,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/311_Public_2015/FeatureServer/0,"-93.32911205364384,44.89008092751924,-93.19858414791535,45.05121674836554",http://opendata.minneapolismn.gov/datasets/b2fad8490dcb43b18185c380c8caf4cc_0
+http://opendata.minneapolismn.gov/datasets/f978834f53bc43e88a294bb404360a64_0,Public 311 2017,"For
+questions about this data please contact?311OpenData@minneapolismn.gov
+
+
+**Updated Daily**
+
+The data provided are public-facing
+service requests that were taken by 311 contact center agents, or through
+online and mobile applications, and entered the Lagan CRM system during 2016.
+The two main identifiers of data, with which users of the open data should
+converse with 311, are the Case ID and the Type Name field. Type name is the
+common used title for a service request among city staff, 311, and the
+community at large.
+
+?
+
+Attribute Descriptions
+
+Case ID - Gives a unique identifying
+number associated with each case.?
+
+Subject - This is the top level
+hierarchy definition of a service request. It is most closely associated with a
+department designation.?
+
+Enquiry Type ID - An additional
+identification number .
+
+Reason - This is the 2nd level
+classification of a service request and reflects a program name or a division
+assigned to perform the service request.?
+
+Type - This is the 3rd level
+classification describing what the service request specifically is for. It is
+the most common designation description used in the city.?
+
+Title - Similar to the Type column,
+this describes more details about the incident.?
+
+Open Date Time - This is the date
+and time stamp when the department, program, or division assigned to complete
+the task in a service request starts working that service request.?
+
+Case Status - If case status =
+0, it means the case is closed. If case status = 1, the
+case is still considered open. All cases with a case status of 1
+should not have a closed date.
+
+Closed Date Time - The date a
+resolving department, division or program completed the service request.?
+
+XCoord  YCoord - This is the
+coordinate the city provides of where the service request occurred in the WGS
+84 web Mercator auxilliary sphere coordinate system.
+
+?
+
+Service Request Definition List
+
+Abandoned Vehicle ??a vehicle parked in a public right of way (street) that
+appears to have been left by its owner in excess of 72 consecutive hours or
+lacking vital component parts (City Ordinance 478.250).
+
+Abandoned Vehicle ? Open311?? vehicle reported abandoned via the Minneapolis
+Mobile Application.
+
+Abandoned/Illegally Parked Bicycle
+??This is a report of an abandoned (or
+missing parts) bike by owner or someone else
+
+Air Pollution Complaint ??air contaminants, fumes, or other offensive odors that occur
+outdoors and impacts the environment.
+
+Animal Complaint ? Livability
+??nuisance conditions such as barking
+dog, stray pets
+
+Animal Complaint ? Public Health ? abandoned, mistreated or uncared for animal, excessive
+feces in yard causing health risks.
+
+Barricade Pickup/Placement ??request for City staff to deploy or remove barricades from
+city street and or sidewalks.
+
+Bicycle Lane Issue?? complaint for users of bike paths to report
+off-street bike path trail issues such as pavement, lighting, fencing, signs,
+debris, overgrown vegetation, etc. phones or other nuisance conditions on city
+bicycle paths.
+
+Bridge Complaint ??structural issue that needs attention
+
+Chemical Spill?? chemical contaminant spilled in any non-authorized
+location in the city.
+
+Commercial Food Safety/Sanitation
+Complaint ??unclean or unhealthy conditions
+suspected at an eating establishment
+
+Debris in the Street or Alley?? branches, appliances, or general objects that are
+blocking an alleyway or street.
+
+Debris Alley/Street ? Open 311?? Debris in street or alley reported via the Minneapolis
+Mobile Application.
+
+Emergency Pollution Complaint?same as land, air, water but emergency requiring contact
+with 911
+
+Exterior Nuisance Complaint ??nuisance conditions located on the exterior of a building,
+such as long grass, debris or trash, or long weeds.
+
+Exterior Nuisance ? Self
+Service?? nuisance conditions reportable on
+the 311 online applications on the website
+
+Fence or Guardrail Maintenance?? report about a fence or guardrail along a city street that
+may be in disrepair
+
+Fire Hydrant Snow Issue ??snow is impeding the normal operation of a fire
+hydrant?.needs to be shoveled out.
+
+General Street Complaint?? non-specific problem with a street that does not fit
+in any other type of street complaint
+
+Graffiti complaint/reporting?? tagger or gang graffiti on properties, public signs,
+or any surface
+
+Graffiti ? Open 311?? graffiti complaint made via Minneapolis Mobile
+Application
+
+Hydrant Issue?? hydrant out of service, leaking water, damaged, etc
+
+Illegal Dumping Complaint?? report of waste being disposed at a location other
+than where it was generated and there is proof of the dumping
+
+Land Pollution Complaint?? contaminant suspected in land that may require
+environmental remediation to restore
+
+Licensing Complaint?? complaints or concerns about a business either
+licensed by Minneapolis, or operating without a license.
+
+Newspaper Box Complaint ??newspaper boxes for community newspapers, shoppers, or even
+major dailies in a state of disrepair, or not used, or obstructing the public
+right of way.
+
+Noise Pollution Complaint?? excessive noise that disrupts peace and tranquility
+of neighborhoods.
+
+Parking Meter Citation Issue?report that a defective meter/pay station may have
+cause the vehicle owner to get a ticket
+
+Parking Meter Problem?? parking meter in need of attention or maintenance?possibly
+malfunctioning
+
+Parking Meter ? Open311?? parking meter problem reported via Minneapolis
+Mobile Application.
+
+Parking Ramp/Lot Issue?? problem with ramp such as lights out affecting
+safety, mechanical problems with equipment, cluttered or unsafe stairwells.
+
+Parking Violation Complaint?? someone parked in a no parking zone, fire lane, etc.
+
+Parking Violation ? Open311 ??parking violation made via Minneapolis Mobile Application
+
+Permitted Work -?report of concerns about construction work being done on
+private property after a permit has been obtained
+
+Pothole?? report of pavement depression/defect
+
+Pothole ? Open311?? pothole reported via Minneapolis Mobile Application
+
+Residential Conditions Complaint?? a structural problem with a residential property
+with 1-3 dwelling units, such as stairwell needing repair, or a chimney in
+disrepair, or a broken window.?
+
+Residential Conditions Complaint HOD
+(High Occupancy Dwelling) ??a
+conditions complaint for properties with 4 or more residential dwelling units,
+or a mixed commercial and residential building, or a commercial building
+complaint.
+
+Residential Conditions Complaint
+Tenant ??a complaint in which the tenant of a
+1-3 unit residential dwelling unit is adversely affected by a condition in a
+property, such as nuisance conditions like pests, or heat issues, or
+malfunctioning equipment.
+
+Residential Conditions Complaint HOD
+Tenant -?this is a tenant complaint in
+a residential building with 4 or more units, a mixed commercial and residential
+building, or a commercial building complaint.
+
+Residential Disability Zone ??a vehicle parked in a zone reserved for disabled citizens
+illegally, or periodically can be reported here.
+
+Sand Barrell ??request to have a sand barrel placed at a location in the
+City of Minneapolis
+
+Sewer Issues ??report of sewer issues such as missing grate,?odor,
+plugged basin, manhole cover issue, sewer backup, etc.
+
+Sidewalk Obstruction Complaint
+??an object or overhanging bush or
+tree that prevents public right of way on the sidewalk
+
+Sidewalk Snow  Ice Complaint
+??sidewalk that has not been
+maintained after a snow event or in a melt refreeze cycle.
+
+Sidewalk Snow and Ice ? SS ??sidewalk snow and ice complaint that is reported on the 311
+website.
+
+Sidewalk Snow  Ice ? Open311
+??sidewalk snow  ice report via
+Minneapolis Mobile Application
+
+Sidewalk Structural Complaint ??a sidewalk that is uneven, or fractured can be
+reported on this service request.
+
+Sidewalk Structural ? Open311?? a sidewalk structural complaint made via Minneapolis
+Mobile Application
+
+Sign Complaint?? a sign that is not permitted in the city, like a
+bandit sign for real estate purchasing companies, or other unwanted signs.
+
+Snow ? Illegal Dumping?? complaint about snow being shoveled and dumped back into
+the street or public right of way.
+
+Snow  Ice Complaint?? this is a snow and ice complaint in a city street or
+alley
+
+Special Sweep?? customer can request a street sweep of their street
+due to dirt or loose debris in the street
+
+Speed Wagon?? a request for a speed indicator to be deployed on a city
+right of way (street) to indicate vehicle speeds
+
+Sports Equipment in Street?? items that create obstructions for right of way in streets
+like portable basketball hoops.
+
+Street Light ? New?? a request for the city to deploy a new street light in a
+given city street/alley
+
+Street Light Trouble?? street lights no longer working that need to be
+replaced
+
+Street Light Trouble ? Open311
+??street light issues reported via
+Minneapolis Mobile Application
+
+Streets Snow  Ice ? Open311?? snow and ice complaint via Minneapolis Mobile
+Application
+
+Traffic Sign ? New ??request for a new traffic sign at an intersection, or
+somewhere in??or near the public right of way
+
+Traffic Sign ? Removal?? request for an existing traffic sign to be removed
+
+Traffic Sign ? Repair ??request for a sign in some level of reported disrepair to be
+repaired or restored to fully functional condition
+
+Traffic Sign Repair ? Open311?? sign repair requested via Minneapolis Mobile
+Application
+
+Traffic Signal ? New/Modification?? a request for a new traffic light at an intersection
+
+Traffic Signal Timing Issue?? a problem with a light that causes delays or
+spillover traffic in other intersections due to poorly or disproportionate time
+given to one right of way over another.
+
+Traffic Signal Trouble?? signal has lights out or is malfunctioning in some
+way
+
+Traffic Signal Trouble ? Open311
+??traffic signal trouble reported via
+Minneapolis Mobile Application
+
+Trees Down?? report about a tree or tree branch that is
+obstruction the public right of way
+
+Unpermitted Work?? report that indicates concern that a citizen or contractor
+is performing work on properties that requires a city of Minneapolis permit
+
+Urgent Pollution Complaint ??land, air, water pollution complaints that need immediate
+attention
+
+Water Main Break ??Report about water leaking or gushing from a main
+water pipe
+
+Water Pollution Complaint?? can report concerns about suspected water pollution
+
+Water Quality Issues ??reports about water having color, or fishy taste, or some
+other concern about the quality of water.
+
+Water Service Issue ??report about frozen water pipes, leaks, low pressure, no
+water, etc.
+
+Zoning Ordinance Complaint?? complaints about zoning regulations",2017-03-08T22:01:40.000Z,2017-07-18T03:01:29.838Z,http://opendata.minneapolismn.gov/datasets/f978834f53bc43e88a294bb404360a64_0,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/Public_311_2017/FeatureServer/0,"-93.35418605371547,1.2993166702849876e-05,14.883456275015646,5.079609011485896",http://opendata.minneapolismn.gov/datasets/f978834f53bc43e88a294bb404360a64_0
+http://opendata.minneapolismn.gov/datasets/899b95d03f104c19bb2b1d17c07073cd_0,Police Incidents 2017,Police Incidents for 2017,2017-03-14T13:32:12.000Z,2017-07-18T03:00:37.201Z,http://opendata.minneapolismn.gov/datasets/899b95d03f104c19bb2b1d17c07073cd_0,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/Police_Incidents_2017/FeatureServer/0,"-93.32910910177979,0.0,0.0,45.050599558242766",http://opendata.minneapolismn.gov/datasets/899b95d03f104c19bb2b1d17c07073cd_0
+http://opendata.minneapolismn.gov/datasets/a62c59fbc8144245a7af35d4c10dde4a_0,Primary Zoning,"This is a map service showing the latest Primary Zoning information for the City of Minneapolis. ?Please refer to the City's?Zoning?Code?webpage
+ for more details about what each of the zoning codes mean and the type 
+of uses allowed in each of the designated areas. ?This information will 
+be updated as changes are made to the underlying data.",2017-03-13T20:16:33.000Z,2017-07-14T07:05:03.212Z,http://opendata.minneapolismn.gov/datasets/a62c59fbc8144245a7af35d4c10dde4a_0,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/Primary_Zoning/FeatureServer/0,"-93.32905589636214,44.89062114629647,-93.19432851939406,45.05124736577345",http://opendata.minneapolismn.gov/datasets/a62c59fbc8144245a7af35d4c10dde4a_0
+http://opendata.minneapolismn.gov/datasets/92f705ededd64abc94964867b38a4c32_0,City Boundary,"If there are
+any issues with the data in this map, service, or shp file please contact the
+Minneapolis?GIS office.",2012-03-09T14:37:02.000Z,2017-07-06T18:39:49.467Z,http://opendata.minneapolismn.gov/datasets/92f705ededd64abc94964867b38a4c32_0,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/Minneapolis_City_Limits/FeatureServer/0,"-93.3291357676986,44.8904714467841,-93.1938489001448,45.0512511622199",http://opendata.minneapolismn.gov/datasets/92f705ededd64abc94964867b38a4c32_0
+http://opendata.minneapolismn.gov/datasets/3838861508ef4fe2a3d2ceccf54d7474_0,Small Area Plans,"
+
+For questions about this data please contact?CPEDOpenData@minneapolismn.gov
+
+ 
+
+? 
+
+Designated
+land use features from the City's adopted comprehensive plan. ",2017-03-15T21:01:12.000Z,2017-07-14T07:05:56.072Z,http://opendata.minneapolismn.gov/datasets/3838861508ef4fe2a3d2ceccf54d7474_0,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/Small_Area_Plans/FeatureServer/0,"-93.32913541882435,44.88981659846916,-93.19416204989382,45.05113814791353",http://opendata.minneapolismn.gov/datasets/3838861508ef4fe2a3d2ceccf54d7474_0
+http://opendata.minneapolismn.gov/datasets/963eddc1a4894a3c807307dd0fad2127_0,On Sale Liquor,For questions about this data please contact?RegulatoryServicesOpenData@minneapolismn.gov,2017-04-11T15:09:00.000Z,2017-06-30T23:47:02.873Z,http://opendata.minneapolismn.gov/datasets/963eddc1a4894a3c807307dd0fad2127_0,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/On_Sale_Liquor/FeatureServer/0,"-93.32873743461076,0.0,0.0,45.03871994522696",http://opendata.minneapolismn.gov/datasets/963eddc1a4894a3c807307dd0fad2127_0

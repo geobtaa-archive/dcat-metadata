@@ -1,0 +1,2 @@
+publisher,keyword,identifier,title,description,issued,modified,landingPage,webService,spatial
+http://maps-semcog.opendata.arcgis.com/datasets/3dc3b01e5e094f9d9da9093df7c01c0e_0,2015 Land Use,The 2015 land use class was derived from assessing codes.,2018-02-13T20:00:01.000Z,2018-02-26T14:17:20.000Z,http://maps-semcog.opendata.arcgis.com/datasets/3dc3b01e5e094f9d9da9093df7c01c0e_0,https://arcgisserver.semcog.org/arcgis/rest/services/OpenData/LandUse/MapServer/0,"-84.1616,41.7089,-82.4123,43.1839"

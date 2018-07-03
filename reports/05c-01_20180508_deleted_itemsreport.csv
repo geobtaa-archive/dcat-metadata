@@ -1,0 +1,4 @@
+publisher,keyword,identifier,title,description,issued,modified,landingPage,webService,spatial
+http://opendata.minneapolismn.gov/datasets/92f705ededd64abc94964867b38a4c32_0,City Boundary,"If there are
+any issues with the data in this map, service, or shp file please contact the
+Minneapolis?GIS office.",2012-03-09T14:37:02.000Z,2015-12-02T21:56:39.349Z,http://opendata.minneapolismn.gov/datasets/92f705ededd64abc94964867b38a4c32_0,https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/Minneapolis_City_Limits/FeatureServer/0,"-93.3291357676986,44.8904714467841,-93.1938489001448,45.0512511622199"
