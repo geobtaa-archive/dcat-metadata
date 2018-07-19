@@ -21,12 +21,12 @@ from collections import namedtuple
 ## names of the main directory containing folders named "Jsons" and "Reports"
 directory = r''
 
-localJson = "data.json"
-outputCSV = "data.csv"
+localJson = "iowageodata.json"
+outputCSV = "iowageodata.csv"
 
 ##list of metadata fields from the DCAT json schema for open data portals desired in the final report
 
-fields = ["identifier", "title", "description", "issued", "modified"]
+fields = ["identifier", "title", "description", "issued", "modified", "spatial"]
 
 
 #######################################
