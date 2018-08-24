@@ -16,13 +16,13 @@ from HTMLParser import HTMLParser
 
 ### Manual items to change!
 
-ActionDate = '20180212'
+ActionDate = '20180817'
 
 ## names of the main directory containing folders named "Jsons" and "Reports"
 directory = r'/Users/majew030/GitHUB/dcat-metadata'
 
 ##list of metadata fields from the DCAT json schema for open data portals desired in the final report
-fields = ["identifier", "title", "description", "issued", "modified", "landingPage", "webService", "spatial"]
+fields = ["identifier", "title", "description", "issued", "landingPage", "webService", "spatial"]
 ##fields = ["identifier", "title", "description", "issued", "modified", "landingPage"]
 
 #######################################
@@ -57,7 +57,7 @@ def printReport (report_type, dictionary, fields):
 
 
 ### Opens a list of portals and urls ending in data/json from PortalList.csv with column headers 'portalName' and 'URL'
-with open(directory + '/MnPortals.csv') as f:
+with open(directory + '/NewPortals.csv') as f:
     reader = csv.DictReader(f)
     for row in reader:
         portalName = row['portalName']
