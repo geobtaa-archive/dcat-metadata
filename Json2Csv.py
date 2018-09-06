@@ -16,7 +16,7 @@ from HTMLParser import HTMLParser
 
 ### Manual items to change!
 
-ActionDate = '20180817'
+ActionDate = '20180831'
 
 ## names of the main directory containing folders named "Jsons" and "Reports"
 directory = r'/Users/majew030/GitHUB/dcat-metadata'
@@ -57,7 +57,7 @@ def printReport (report_type, dictionary, fields):
 
 
 ### Opens a list of portals and urls ending in data/json from PortalList.csv with column headers 'portalName' and 'URL'
-with open(directory + '/NewPortals.csv') as f:
+with open(directory + '/NewPortals2.csv') as f:
     reader = csv.DictReader(f)
     for row in reader:
         portalName = row['portalName']
