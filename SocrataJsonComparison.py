@@ -24,14 +24,14 @@ from HTMLParser import HTMLParser
 ### Manual items to change!
 
 ## Set the date download of the older and newer jsons
-PreviousActionDate = '20170510'
-ActionDate = '20170725'
+previousActionDate = 'yyyymmdd'
+actionDate = 'yyyymmdd'
 
 ## names of the main directory containing folders named "Jsons" and "Reports"
 directory = r' '
 
 ##list of metadata fields desired for the final report
-fields = ["identifier", "title", "description", "issued", "modified", "landingPage"]
+fields = ["identifier", "title", "description", "issued", "landingPage"]
 
 #######################################
 
@@ -53,7 +53,7 @@ def strip_tags(html):
 
 ### function that checks if there are items added to a dictionary (ie. new, modified, or deleted items). If there are, prints results to a csv file with metadata elements as field names
 def printReport (report_type, dictionary, fields):
-    report = directory + "/%s_%s_%sReport.csv" % (portalName, ActionDate, report_type)
+    report = directory + "/%s_%s_%sReport.csv" % (portalName, actionDate, report_type)
     with open(report, 'wb') as outfile:
         csvout = csv.writer(outfile)
         csvout.writerow(fields)
@@ -76,8 +76,8 @@ with open(directory + '/SocrataPortalList.csv') as f:
         ## for each socrata data portal in the csv list...
         ## renames file paths based on portalName and manually provided dates
 
-        oldjson = directory + '/Socrata/%s_%s.json' % (portalName, PreviousActionDate)
-        newjson = directory + '/Socrata/%s_%s.json' % (portalName, ActionDate)
+        oldjson = directory + '/Socrata/%s_%s.json' % (portalName, previousActionDate)
+        newjson = directory + '/Socrata/%s_%s.json' % (portalName, actionDate)
 
 
         ## Opens the url for an open data portal json and loads it into the script
