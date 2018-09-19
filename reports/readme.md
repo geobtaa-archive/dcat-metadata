@@ -1,0 +1,1 @@
+This folder contains CSV records named by code, date of harvest, and report type.
