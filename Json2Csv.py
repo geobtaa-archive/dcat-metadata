@@ -16,10 +16,10 @@ from HTMLParser import HTMLParser
 
 ### Manual items to change!
 
-actionDate = 'yyyymmdd'
+actionDate = '20180923'
 
 ## names of the main directory containing folders named "jsons" and "reports"
-directory = r''
+directory = r'C:\Users\ruetz007\Documents\GitHub\dcat-metadata'
 
 #######################################
 
