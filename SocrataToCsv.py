@@ -24,10 +24,10 @@ from HTMLParser import HTMLParser
 ### Manual items to change!
 
 ## Set the date download of the older and newer jsons
-ActionDate = '20171213'
+ActionDate = '20180921'
 
 ## names of the main directory containing folders named "Jsons" and "Reports"
-directory = r' '
+directory = r'/Users/majew030/GitHUB/dcat-metadata'
 
 ##list of metadata fields desired for the final report
 fields = ["identifier", "title", "description", "issued", "modified", "landingPage"]
