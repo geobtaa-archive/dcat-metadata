@@ -57,7 +57,7 @@ def printReport (report_type, dictionary, fields):
 
 
 ### Opens a list of portals and urls ending in data/json from PortalList.csv with column headers 'portalName' and 'URL'
-with open(directory + '/ArcPortals.csv') as f:
+with open(directory + '/temp.csv') as f:
     reader = csv.DictReader(f)
     for row in reader:
         portalName = row['portalName']
