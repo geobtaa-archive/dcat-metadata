@@ -6,7 +6,8 @@ The scripts can also be used for any site with DCAT enabled, including some DKAN
 * ConvertJson2CsvFromLocalFile.py
 This script will transform a local DCAT JSON file into a CSV.
 
-* Json2Csv.py
+* Json2Csv_Py3.ipynb should be opened with Anaconda3 Jupyter Notebook.  Script is in-progress user input version of the Python 2.x Json2Csv.py script.  Further Markdown within Jupyter Notebook cells.
+
 * Socrata2Csv.py
 These scripts will harvest full hosted DCAT JSON files and convert them to CSV
 
