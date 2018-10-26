@@ -1,2 +1,2 @@
 portalName,URL
-02c-01,https://data-evanston.opendata.arcgis.com/data.json
+testing,http://opendata.dc.gov/data.json?$limit=10000
