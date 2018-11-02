@@ -3,6 +3,7 @@
 Created on Wed Mar 15 09:18:12 2017
 
 @author: kerni016
+@author: majew030
 """
 ## To run this script you need a csv (ArcPortals.csv) with two columns (portalName and URL) with the names of ESRI open data portals to be checked for new and modified records.
 ## Need to define PreviousActionDate and ActionDate, directory path (containing ArcPortals.csv and folders "Jsons" and "Reports"), and list of fields desired in the printed report
@@ -14,14 +15,16 @@ import csv
 import urllib
 import os.path
 from HTMLParser import HTMLParser
+from glob import glob
 
 ######################################
 
 ### Manual items to change!
 
 ## Set the date download of the older and newer jsons
-PreviousActionDate = '20171012'
-ActionDate = '20171222'
+ActionDate = '201811102'
+PreviousActionDate = '20181004'
+
 
 ## names of the main directory containing folders named "Jsons" and "Reports"
 directory = r'/Users/majew030/GitHUB/dcat-metadata/'
@@ -61,7 +64,7 @@ def printReport (report_type, dictionary, fields):
 
 
 ### Opens a list of portals and urls ending in data/json from PortalList.csv with column headers 'portalName' and 'URL'
-with open(directory + 'MnPortals.csv') as f:
+with open(directory + 'temp.csv') as f:
     reader = csv.DictReader(f)
     for row in reader:
         portalName = row['portalName']
@@ -136,4 +139,17 @@ with open(directory + 'MnPortals.csv') as f:
             else:
                 print "%s has no %s" % (portalName, key)
 
+#combines all deleted items CSV into one report
+csvFile = directory + "allDeletedItems_%s.csv" %  (ActionDate)
+with open(csvFile, 'a') as singleFile:
+    for csvFile in glob('*_deleted_itemsreport.csv'):
+        for line in open(csvFile, 'r'):
+            singleFile.write(line)
 
+#combines all new items CSV into one report
+csvFile = directory + "allNewItems_%s.csv" %  (ActionDate)
+from glob import glob
+with open(csvFile, 'a') as singleFile:
+    for csvFile in glob('*_new_itemsreport.csv'):
+        for line in open(csvFile, 'r'):
+            singleFile.write(line)
