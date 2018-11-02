@@ -22,8 +22,8 @@ from glob import glob
 ### Manual items to change!
 
 ## Set the date download of the older and newer jsons
-ActionDate = '201811102'
-PreviousActionDate = '20181004'
+ActionDate = '20181102'
+PreviousActionDate = '20181005'
 
 
 ## names of the main directory containing folders named "Jsons" and "Reports"
@@ -31,6 +31,10 @@ directory = r'/Users/majew030/GitHUB/dcat-metadata/'
 
 ##list of metadata fields from the DCAT json schema for open data portals desired in the final report
 fields = ["identifier", "title", "description", "issued", "modified", "landingPage", "webService", "spatial"]
+
+##list of metadata fields from the DCAT json schema for open data portals desired in the final report
+fieldnames = ["publisher","keyword", "identifier", "title", "description", "issued", "modified", "landingPage", "webService", "spatial"]
+
 
 #######################################
 
@@ -55,7 +59,8 @@ def printReport (report_type, dictionary, fields):
     report = directory + "%s_%s_%sreport.csv" % (portalName, ActionDate, report_type)
     with open(report, 'wb') as outfile:
         csvout = csv.writer(outfile)
-        csvout.writerow(fields)
+        csvout.writerow(fieldnames)
+#         csvout.writerow(fields)
         for keys in dictionary:
             allvalues = dictionary[keys]
             allvalues.append(keys)
@@ -64,7 +69,7 @@ def printReport (report_type, dictionary, fields):
 
 
 ### Opens a list of portals and urls ending in data/json from PortalList.csv with column headers 'portalName' and 'URL'
-with open(directory + 'temp.csv') as f:
+with open(directory + 'ArcPortals.csv') as f:
     reader = csv.DictReader(f)
     for row in reader:
         portalName = row['portalName']
@@ -105,12 +110,30 @@ with open(directory + 'temp.csv') as f:
         newItemDict = {}
         modifiedItemDict = {}
         deletedItemDict = {}
+#         for y in range(len(newdata["dataset"])):
+#             identifier = newdata["dataset"][y]["identifier"]
+#             ### Makes a dictionary of identifiers in the newer json to be used to look for deleted items below
+#             new_ids[y] = identifier
+#             if identifier not in original_ids.values():
+#                 metadata = []
+#                 for field in fields:
+#                     fieldvalue = strip_tags(newdata["dataset"][y][field])
+#                     fieldvalue = fieldvalue.encode('ascii', 'replace')
+#                     metadata.append(fieldvalue)
+#                 newItemDict[identifier] = metadata
+
         for y in range(len(newdata["dataset"])):
             identifier = newdata["dataset"][y]["identifier"]
             ### Makes a dictionary of identifiers in the newer json to be used to look for deleted items below
             new_ids[y] = identifier
             if identifier not in original_ids.values():
+                publisher = newdata["dataset"][y]["publisher"]
+                keyword = newdata["dataset"][y]["keyword"]
+              ###  keyword = keyword.encode('ascii', 'replace')
+                name = publisher["name"]
                 metadata = []
+                metadata.append(name)
+                metadata.append(keyword)
                 for field in fields:
                     fieldvalue = strip_tags(newdata["dataset"][y][field])
                     fieldvalue = fieldvalue.encode('ascii', 'replace')
@@ -138,6 +161,10 @@ with open(directory + 'temp.csv') as f:
                 printReport(key, value, fields)
             else:
                 print "%s has no %s" % (portalName, key)
+
+#         for keys in dictionary:
+#             allvalues = dictionary[keys]
+#             csvout.writerow(allvalues)
 
 #combines all deleted items CSV into one report
 csvFile = directory + "allDeletedItems_%s.csv" %  (ActionDate)

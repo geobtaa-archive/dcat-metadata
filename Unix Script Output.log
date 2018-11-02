@@ -1,0 +1,423 @@
+================================================================================
+Aug 17, 2018 at 1:15:00 PM
+~/GitHUB/dcat-metadata/Json2Csv.py
+--------------------------------------------------------------------------------
+02a-02 https://illinoisepaopendata-illinois-epa.opendata.arcgis.com/data.json
+8 items harvested from 02a-02!
+8 new_items harvested from 02a-02!
+report complete for 02a-02!
+================================================================================
+Aug 17, 2018 at 1:58:27 PM
+~/GitHUB/dcat-metadata/Json2Csv.py
+--------------------------------------------------------------------------------
+02a-02 https://illinoisepaopendata-illinois-epa.opendata.arcgis.com/data.json
+8 items harvested from 02a-02!
+8 new_items harvested from 02a-02!
+report complete for 02a-02!
+12b-02 https://gisdata-dupage.opendata.arcgis.com/
+Traceback (most recent call last):
+  File "/Users/majew030/GitHUB/dcat-metadata/Json2Csv.py", line 76, in <module>
+    newdata = json.load(response)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 290, in load
+    **kw)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+================================================================================
+Aug 17, 2018 at 2:03:13 PM
+~/GitHUB/dcat-metadata/Json2Csv.py
+--------------------------------------------------------------------------------
+02a-02 https://illinoisepaopendata-illinois-epa.opendata.arcgis.com/data.json
+8 items harvested from 02a-02!
+8 new_items harvested from 02a-02!
+report complete for 02a-02!
+12b-02 https://gisdata-dupage.opendata.arcgis.com/data.json
+89 items harvested from 12b-02!
+89 new_items harvested from 12b-02!
+report complete for 12b-02!
+12b-03 https://data-lakecountyil.opendata.arcgis.com/data.json
+1000 items harvested from 12b-03!
+1000 new_items harvested from 12b-03!
+report complete for 12b-03!
+12b-05 https://data-peoriacountygis.opendata.arcgis.com/data.json
+80 items harvested from 12b-05!
+80 new_items harvested from 12b-05!
+report complete for 12b-05!
+================================================================================
+Aug 31, 2018 at 12:42:17 PM
+~/GitHUB/dcat-metadata/Json2Csv.py
+--------------------------------------------------------------------------------
+11b-03 https://data-athgis.opendata.arcgis.com/
+Traceback (most recent call last):
+  File "/Users/majew030/GitHUB/dcat-metadata/Json2Csv.py", line 76, in <module>
+    newdata = json.load(response)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 290, in load
+    **kw)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+================================================================================
+Aug 31, 2018 at 12:42:45 PM
+~/GitHUB/dcat-metadata/Json2Csv.py
+--------------------------------------------------------------------------------
+11b-03 https://data-athgis.opendata.arcgis.com/data.json
+17 items harvested from 11b-03!
+17 new_items harvested from 11b-03!
+report complete for 11b-03!
+11b-13 https://data-cuyahoga.opendata.arcgis.com/data.json
+47 items harvested from 11b-13!
+47 new_items harvested from 11b-13!
+report complete for 11b-13!
+11b-17 https://auditor-fca.opendata.arcgis.com/data.json
+42 items harvested from 11b-17!
+42 new_items harvested from 11b-17!
+report complete for 11b-17!
+11b-32 https://data-loraingis.opendata.arcgis.com/data.json
+186 items harvested from 11b-32!
+186 new_items harvested from 11b-32!
+report complete for 11b-32!
+11b-47 https://opendata-senecacountygis.opendata.arcgis.com/data.json
+0 items harvested from 11b-47!
+11b-47 has no new_items
+================================================================================
+Oct 5, 2018 at 11:16:59 AM
+~/GitHUB/dcat-metadata/Json2Csv.py
+--------------------------------------------------------------------------------
+05b-019 https://data-carver.opendata.arcgis.com/data.json
+57 items harvested from 05b-019!
+57 new_items harvested from 05b-019!
+report complete for 05b-019!
+05b-137 https://opendata.gis.co.scott.mn.us/data.json
+Traceback (most recent call last):
+  File "/Users/majew030/GitHUB/dcat-metadata/Json2Csv.py", line 75, in <module>
+    response = urllib.urlopen(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 87, in urlopen
+    return opener.open(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 213, in open
+    return getattr(self, name)(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 443, in open_https
+    h.endheaders(data)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 1049, in endheaders
+    self._send_output(message_body)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 893, in _send_output
+    self.send(msg)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 855, in send
+    self.connect()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 1274, in connect
+    server_hostname=server_hostname)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/ssl.py", line 352, in wrap_socket
+    _context=self)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/ssl.py", line 579, in __init__
+    self.do_handshake()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/ssl.py", line 816, in do_handshake
+    match_hostname(self.getpeercert(), self.server_hostname)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/ssl.py", line 271, in match_hostname
+    % (hostname, ', '.join(map(repr, dnsnames))))
+ssl.CertificateError: hostname 'opendata.gis.co.scott.mn.us' doesn't match either of '*.opendata.arcgis.com', 'opendata.arcgis.com'
+================================================================================
+Oct 5, 2018 at 11:20:37 AM
+~/GitHUB/dcat-metadata/Json2Csv.py
+--------------------------------------------------------------------------------
+05b-019 http://data-carver.opendata.arcgis.com/data.json
+57 items harvested from 05b-019!
+57 new_items harvested from 05b-019!
+report complete for 05b-019!
+05b-137 http://opendata.gis.co.scott.mn.us/data.json
+63 items harvested from 05b-137!
+63 new_items harvested from 05b-137!
+report complete for 05b-137!
+05b-017 http://data-carltoncounty.opendata.arcgis.com/data.json
+3 items harvested from 05b-017!
+3 new_items harvested from 05b-017!
+report complete for 05b-017!
+05b-143 http://stlouiscountymndata-slcgis.opendata.arcgis.com/data.json
+7 items harvested from 05b-143!
+7 new_items harvested from 05b-143!
+report complete for 05b-143!
+05b-163 http://data-wcmn.opendata.arcgis.com/data.json
+43 items harvested from 05b-163!
+43 new_items harvested from 05b-163!
+report complete for 05b-163!
+05b-057 https://getdata-hubbardcounty.opendata.arcgis.com/data.json
+5 items harvested from 05b-057!
+5 new_items harvested from 05b-057!
+report complete for 05b-057!
+05c-01 http://opendata.minneapolismn.gov/data.json
+127 items harvested from 05c-01!
+127 new_items harvested from 05c-01!
+report complete for 05c-01!
+04c-02 http://gis-baltimore.opendata.arcgis.com/data.json
+39 items harvested from 04c-02!
+39 new_items harvested from 04c-02!
+report complete for 04c-02!
+06c-01 http://accessoakland.oakgov.com/data.json
+177 items harvested from 06c-01!
+177 new_items harvested from 06c-01!
+report complete for 06c-01!
+01c-02 http://data1-indygis.opendata.arcgis.com/data.json
+124 items harvested from 01c-02!
+124 new_items harvested from 01c-02!
+report complete for 01c-02!
+06f-01 http://maps-semcog.opendata.arcgis.com/data.json
+45 items harvested from 06f-01!
+45 new_items harvested from 06f-01!
+report complete for 06f-01!
+04a-01 http://data.imap.maryland.gov/data.json
+920 items harvested from 04a-01!
+920 new_items harvested from 04a-01!
+report complete for 04a-01!
+05b-053 http://gis-hennepin.opendata.arcgis.com/data.json
+46 items harvested from 05b-053!
+46 new_items harvested from 05b-053!
+report complete for 05b-053!
+03a-02 http://public.iowadot.opendata.arcgis.com/data.json
+281 items harvested from 03a-02!
+281 new_items harvested from 03a-02!
+report complete for 03a-02!
+09c-01 http://data-southbend.opendata.arcgis.com/data.json
+60 items harvested from 09c-01!
+60 new_items harvested from 09c-01!
+report complete for 09c-01!
+06a-01 http://gis-michigan.opendata.arcgis.com/data.json
+298 items harvested from 06a-01!
+298 new_items harvested from 06a-01!
+report complete for 06a-01!
+05b-121 https://data-popecounty.opendata.arcgis.com//data.json
+18 items harvested from 05b-121!
+18 new_items harvested from 05b-121!
+report complete for 05b-121!
+05b-139 https://data-sherburnegis.opendata.arcgis.com/data.json
+8 items harvested from 05b-139!
+8 new_items harvested from 05b-139!
+report complete for 05b-139!
+05b-119 https://data-pcg.opendata.arcgis.com/data.json
+12 items harvested from 05b-119!
+12 new_items harvested from 05b-119!
+report complete for 05b-119!
+05b-027 http://data-claycountymn.opendata.arcgis.com//data.json
+11 items harvested from 05b-027!
+11 new_items harvested from 05b-027!
+report complete for 05b-027!
+04c-01 http://opendata.dc.gov/data.json
+1000 items harvested from 04c-01!
+1000 new_items harvested from 04c-01!
+report complete for 04c-01!
+12b-02 https://gisdata-dupage.opendata.arcgis.com//data.json
+91 items harvested from 12b-02!
+91 new_items harvested from 12b-02!
+report complete for 12b-02!
+12b-05 https://data-peoriacountygis.opendata.arcgis.com//data.json
+80 items harvested from 12b-05!
+80 new_items harvested from 12b-05!
+report complete for 12b-05!
+12b-03 https://data-lakecountyil.opendata.arcgis.com//data.json
+1000 items harvested from 12b-03!
+1000 new_items harvested from 12b-03!
+report complete for 12b-03!
+02a-02 https://illinoisepaopendata-illinois-epa.opendata.arcgis.com//data.json
+8 items harvested from 02a-02!
+8 new_items harvested from 02a-02!
+report complete for 02a-02!
+11a-01 http://ogrip-geohio.opendata.arcgis.com/data.json
+1000 items harvested from 11a-01!
+1000 new_items harvested from 11a-01!
+report complete for 11a-01!
+11b-17 https://auditor-fca.opendata.arcgis.com//data.json
+42 items harvested from 11b-17!
+42 new_items harvested from 11b-17!
+report complete for 11b-17!
+11b-32 https://data-loraingis.opendata.arcgis.com//data.json
+186 items harvested from 11b-32!
+186 new_items harvested from 11b-32!
+report complete for 11b-32!
+11b-03 https://data-athgis.opendata.arcgis.com//data.json
+17 items harvested from 11b-03!
+17 new_items harvested from 11b-03!
+report complete for 11b-03!
+11b-13 https://data-cuyahoga.opendata.arcgis.com//data.json
+47 items harvested from 11b-13!
+47 new_items harvested from 11b-13!
+report complete for 11b-13!
+04b-04 https://data2018-mcgov-gis.opendata.arcgis.com//data.json
+50 items harvested from 04b-04!
+50 new_items harvested from 04b-04!
+report complete for 04b-04!
+04b-05 http://data-carrollco-md.opendata.arcgis.com//data.json
+25 items harvested from 04b-05!
+25 new_items harvested from 04b-05!
+report complete for 04b-05!
+04b-09 https://planning-harfordgis.opendata.arcgis.com//data.json
+90 items harvested from 04b-09!
+90 new_items harvested from 04b-09!
+report complete for 04b-09!
+04b-07 http://data-calvertgis.opendata.arcgis.com//data.json
+10 items harvested from 04b-07!
+10 new_items harvested from 04b-07!
+report complete for 04b-07!
+08b-01 http://gisdata-centrecountygov.opendata.arcgis.com//data.json
+82 items harvested from 08b-01!
+82 new_items harvested from 08b-01!
+report complete for 08b-01!
+01c-03 http://dev-evansvilleapc.opendata.arcgis.com//data.json
+57 items harvested from 01c-03!
+57 new_items harvested from 01c-03!
+report complete for 01c-03!
+05b-123 https://openramsey-ramseygis.opendata.arcgis.com//data.json
+39 items harvested from 05b-123!
+39 new_items harvested from 05b-123!
+report complete for 05b-123!
+04f-01 https://dvrpc-dvrpcgis.opendata.arcgis.com//data.json
+82 items harvested from 04f-01!
+82 new_items harvested from 04f-01!
+report complete for 04f-01!
+08b-02 https://data-dauphinco.opendata.arcgis.com//data.json
+28 items harvested from 08b-02!
+28 new_items harvested from 08b-02!
+report complete for 08b-02!
+08b-04 https://share-open-data-crawfordcountypa.opendata.arcgis.com//data.json
+48 items harvested from 08b-04!
+48 new_items harvested from 08b-04!
+report complete for 08b-04!
+================================================================================
+Oct 5, 2018 at 4:49:31 PM
+~/GitHUB/dcat-metadata/Json2Csv.py
+--------------------------------------------------------------------------------
+02c-01 https://data-evanston.opendata.arcgis.com/data.json
+42 items harvested from 02c-01!
+42 new_items harvested from 02c-01!
+report complete for 02c-01!
+================================================================================
+Nov 2, 2018 at 2:31:23 PM
+~/GitHUB/dcat-metadata/JsonComparison.py
+--------------------------------------------------------------------------------
+01c-02 http://data1-indygis.opendata.arcgis.com/data.json
+01c-02 has no deleted_items
+4 new_items added to 01c-02!
+01c-03 http://dev-evansvilleapc.opendata.arcgis.com//data.json
+01c-03 has no deleted_items
+01c-03 has no new_items
+02a-02 https://illinoisepaopendata-illinois-epa.opendata.arcgis.com//data.json
+02a-02 has no deleted_items
+02a-02 has no new_items
+02c-01 https://data-evanston.opendata.arcgis.com/data.json
+02c-01 has no deleted_items
+02c-01 has no new_items
+03a-02 http://public.iowadot.opendata.arcgis.com/data.json
+203 deleted_items added to 03a-02!
+138 new_items added to 03a-02!
+04a-01 http://data.imap.maryland.gov/data.json
+5 deleted_items added to 04a-01!
+6 new_items added to 04a-01!
+04b-009 http://data-calvertgis.opendata.arcgis.com//data.json
+04b-009 has no deleted_items
+04b-009 has no new_items
+04b-013 http://data-carrollco-md.opendata.arcgis.com//data.json
+04b-013 has no deleted_items
+04b-013 has no new_items
+04b-025 https://planning-harfordgis.opendata.arcgis.com//data.json
+04b-025 has no deleted_items
+04b-025 has no new_items
+04b-031 https://data2018-mcgov-gis.opendata.arcgis.com//data.json
+04b-031 has no deleted_items
+04b-031 has no new_items
+04c-01 http://opendata.dc.gov/data.json
+137 deleted_items added to 04c-01!
+137 new_items added to 04c-01!
+04c-02 http://gis-baltimore.opendata.arcgis.com/data.json
+04c-02 has no deleted_items
+04c-02 has no new_items
+04f-01 https://dvrpc-dvrpcgis.opendata.arcgis.com//data.json
+04f-01 has no deleted_items
+2 new_items added to 04f-01!
+05b-017 http://data-carltoncounty.opendata.arcgis.com/data.json
+05b-017 has no deleted_items
+05b-017 has no new_items
+05b-019 http://data-carver.opendata.arcgis.com/data.json
+05b-019 has no deleted_items
+05b-019 has no new_items
+05b-027 http://data-claycountymn.opendata.arcgis.com//data.json
+05b-027 has no deleted_items
+05b-027 has no new_items
+05b-053 http://gis-hennepin.opendata.arcgis.com/data.json
+05b-053 has no deleted_items
+05b-053 has no new_items
+05b-057 https://getdata-hubbardcounty.opendata.arcgis.com/data.json
+05b-057 has no deleted_items
+05b-057 has no new_items
+05b-119 https://data-pcg.opendata.arcgis.com/data.json
+05b-119 has no deleted_items
+05b-119 has no new_items
+05b-121 https://data-popecounty.opendata.arcgis.com//data.json
+05b-121 has no deleted_items
+05b-121 has no new_items
+05b-123 https://openramsey-ramseygis.opendata.arcgis.com//data.json
+05b-123 has no deleted_items
+05b-123 has no new_items
+05b-137 http://opendata.gis.co.scott.mn.us/data.json
+05b-137 has no deleted_items
+05b-137 has no new_items
+05b-139 https://data-sherburnegis.opendata.arcgis.com/data.json
+05b-139 has no deleted_items
+05b-139 has no new_items
+05b-143 http://stlouiscountymndata-slcgis.opendata.arcgis.com/data.json
+05b-143 has no deleted_items
+05b-143 has no new_items
+05b-163 http://data-wcmn.opendata.arcgis.com/data.json
+2 deleted_items added to 05b-163!
+5 new_items added to 05b-163!
+05c-01 http://opendata.minneapolismn.gov/data.json
+05c-01 has no deleted_items
+1 new_items added to 05c-01!
+06a-01 http://gis-michigan.opendata.arcgis.com/data.json
+5 deleted_items added to 06a-01!
+9 new_items added to 06a-01!
+06b-125 http://accessoakland.oakgov.com/data.json
+06b-125 has no deleted_items
+06b-125 has no new_items
+06f-01 http://maps-semcog.opendata.arcgis.com/data.json
+06f-01 has no deleted_items
+06f-01 has no new_items
+08b-027 http://gisdata-centrecountygov.opendata.arcgis.com//data.json
+08b-027 has no deleted_items
+08b-027 has no new_items
+08b-039 https://share-open-data-crawfordcountypa.opendata.arcgis.com//data.json
+08b-039 has no deleted_items
+08b-039 has no new_items
+08b-043 https://data-dauphinco.opendata.arcgis.com//data.json
+08b-043 has no deleted_items
+08b-043 has no new_items
+09c-01 http://data-southbend.opendata.arcgis.com/data.json
+09c-01 has no deleted_items
+09c-01 has no new_items
+11a-01 http://ogrip-geohio.opendata.arcgis.com/data.json
+174 deleted_items added to 11a-01!
+173 new_items added to 11a-01!
+11b-03 https://data-athgis.opendata.arcgis.com//data.json
+11b-03 has no deleted_items
+11b-03 has no new_items
+11b-13 https://data-cuyahoga.opendata.arcgis.com//data.json
+11b-13 has no deleted_items
+11b-13 has no new_items
+11b-17 https://auditor-fca.opendata.arcgis.com//data.json
+11b-17 has no deleted_items
+11b-17 has no new_items
+11b-32 https://data-loraingis.opendata.arcgis.com//data.json
+11b-32 has no deleted_items
+11b-32 has no new_items
+12b-043 https://gisdata-dupage.opendata.arcgis.com//data.json
+12b-043 has no deleted_items
+12b-043 has no new_items
+12b-097 https://data-lakecountyil.opendata.arcgis.com//data.json
+362 deleted_items added to 12b-097!
+362 new_items added to 12b-097!
+12b-143 https://data-peoriacountygis.opendata.arcgis.com//data.json
+12b-143 has no deleted_items
+12b-143 has no new_items

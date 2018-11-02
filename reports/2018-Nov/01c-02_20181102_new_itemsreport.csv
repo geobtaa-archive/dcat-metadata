@@ -1,0 +1,48 @@
+publisher,keyword,identifier,title,description,issued,modified,landingPage,webService,spatial
+City of Indianapolis and Marion County - IndyGIS,"[u'Election Results', u'Indy Election Results', u'Marion County Election Results', u'2004 Election Results', u'Election Results Archive']",http://data1-indygis.opendata.arcgis.com/datasets/cb62d4b431274870b026973734f7bba0,2004 Primary Election Results By Precinct,"2004 Primary Election Results By Precinct
+
+Contest and precinct results are presented here in an
+     Excel document. Marion County reduced its number of precincts from 917
+     to 590 in December 2007. Therefore, the precinct results for those
+     elections occurring after December 2007 are not comparable with those
+     elections?occurring before December 2007. Marion County increased the number of precincts from
+     590 to 600 in December 2011. Therefore, the precinct results for those
+     elections occurring after December 2011 are not comparable with those
+     election occurring between December 2007 through December 2011.",2018-10-23T14:28:14.000Z,2018-10-23T15:23:51.000Z,http://data1-indygis.opendata.arcgis.com/datasets/cb62d4b431274870b026973734f7bba0,https://xmaps.indy.gov/ODP/Download/Elections/2004PrimaryElectionByPrecinct.xls,"-180.0,-90.0,180.0,90.0",http://data1-indygis.opendata.arcgis.com/datasets/cb62d4b431274870b026973734f7bba0
+City of Indianapolis and Marion County - IndyGIS,"[u'Election Results', u'Indy Election Results', u'2004 Election Results', u'Marion County Election Results']",http://data1-indygis.opendata.arcgis.com/datasets/e49680d90fe3451caffa76f4cb2d9ecc,2004 General Election Results By Precinct,"
+
+2004 General Election Results By Precinct
+
+Contest and precinct results are presented here in an
+     Excel document. Marion County reduced its number of precincts from 917
+     to 590 in December 2007. Therefore, the precinct results for those
+     elections occurring after December 2007 are not comparable with those
+     elections?occurring before December 2007. Marion County increased the number of precincts from
+     590 to 600 in December 2011. Therefore, the precinct results for those
+     elections occurring after December 2011 are not comparable with those
+     election occurring between December 2007 through December 2011.",2018-10-23T13:28:37.000Z,2018-10-23T14:30:20.018Z,http://data1-indygis.opendata.arcgis.com/datasets/e49680d90fe3451caffa76f4cb2d9ecc,https://xmaps.indy.gov/ODP/Download/Elections/2004GeneralElectionByPrecinct.xls,"-180.0,-90.0,180.0,90.0",http://data1-indygis.opendata.arcgis.com/datasets/e49680d90fe3451caffa76f4cb2d9ecc
+City of Indianapolis and Marion County - IndyGIS,"[u'Election Results', u'Indy Election Results', u'2004 Election Results', u'Disclose Indy', u'Marion County Election Results']",http://data1-indygis.opendata.arcgis.com/datasets/3067754ce20c4c74b7e25dd72311b080,2004 General Election Results By Contest,"
+
+2004 General Election Results By
+Contest
+
+Contest and precinct results are presented here in an
+     Excel document. Marion County reduced its number of precincts from 917
+     to 590 in December 2007. Therefore, the precinct results for those
+     elections occurring after December 2007 are not comparable with those
+     elections?occurring before December 2007. Marion County increased the number of precincts from
+     590 to 600 in December 2011. Therefore, the precinct results for those
+     elections occurring after December 2011 are not comparable with those
+     election occurring between December 2007 through December 2011.
+
+",2018-10-23T13:09:22.000Z,2018-10-23T14:30:20.264Z,http://data1-indygis.opendata.arcgis.com/datasets/3067754ce20c4c74b7e25dd72311b080,https://xmaps.indy.gov/ODP/Download/Elections/2004GeneralElectionByContest.xls,"-180.0,-90.0,180.0,90.0",http://data1-indygis.opendata.arcgis.com/datasets/3067754ce20c4c74b7e25dd72311b080
+City of Indianapolis and Marion County - IndyGIS,"[u'Election Results', u'Indy Election Results', u'Marion County Election Results', u'2004 Election Results']",http://data1-indygis.opendata.arcgis.com/datasets/19db0e9357354e998b9555a368ea0a15,2004 Primary Election Results By Contest,"2004 Primary Election Results By Contest
+
+Contest and precinct results are presented here in an
+     Excel document. Marion County reduced its number of precincts from 917
+     to 590 in December 2007. Therefore, the precinct results for those
+     elections occurring after December 2007 are not comparable with those
+     elections?occurring before December 2007. Marion County increased the number of precincts from
+     590 to 600 in December 2011. Therefore, the precinct results for those
+     elections occurring after December 2011 are not comparable with those
+     election occurring between December 2007 through December 2011.",2018-10-23T14:25:23.000Z,2018-10-23T14:30:20.018Z,http://data1-indygis.opendata.arcgis.com/datasets/19db0e9357354e998b9555a368ea0a15,https://xmaps.indy.gov/ODP/Download/Elections/2004PrimaryElectionByContest.xls,"-180.0,-90.0,180.0,90.0",http://data1-indygis.opendata.arcgis.com/datasets/19db0e9357354e998b9555a368ea0a15
