@@ -143,5 +143,19 @@ with open(directory + '\All_ArcPortals.csv') as f:
                 printReport(key, value, fields)
             else:
                 print "%s has no %s" % (portalName, key)
+        
+#combines all deleted items CSV into one report
+csvFile = directory + "allDeletedItems_%s.csv" %  (ActionDate)
+with open(csvFile, 'a') as singleFile:
+    for csvFile in glob('*_deleted_itemsreport.csv'):
+        for line in open(csvFile, 'r'):
+            singleFile.write(line)
 
+#combines all new items CSV into one report
+csvFile = directory + "allNewItems_%s.csv" %  (ActionDate)
+from glob import glob
+with open(csvFile, 'a') as singleFile:
+    for csvFile in glob('*_new_itemsreport.csv'):
+        for line in open(csvFile, 'r'):
+            singleFile.write(line)
 
