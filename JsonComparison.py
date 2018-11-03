@@ -21,16 +21,19 @@ from HTMLParser import HTMLParser
 
 ## Set the date download of the older and newer jsons
 previousActionDate = '20181005'
-actionDate = '20181102'
+actionDate = '20181103'
 
 ## names of the main directory containing folders named "Jsons" and "Reports"
-directory = r'C:/Users/ruetz007/Documents/GitHub/dcat-metadata-KarenWorking' #play with these slashes
+directory = r'C:/Users/ruetz007/Documents/GitHub/dcat-metadata/' #play with these slashes
 
 ##list of metadata fields from the DCAT json schema for open data portals desired in the final report
 fields = ["identifier", "title", "description", "issued", "modified", "landingPage", "webService", "spatial"]
 
-##list of metadata fields to include in the deletedItems report
+##list of metadata fields to use for finding deleted items
 delFields = ["identifier"]
+
+##list of fields to use for the deletedItems report
+delFieldsReport = ['identifier','portalName']
 
 #######################################
 
@@ -58,13 +61,13 @@ def printReport (report_type, dictionary, fields):
         csvout.writerow(fields)
         for keys in dictionary:
             allvalues = dictionary[keys]
-            allvalues.append(keys)
+            #allvalues.append(keys)
             csvout.writerow(allvalues)
 #     print "%s report complete for %s!" % (report_type, portalName)
 
 
 ### Opens a list of portals and urls ending in data/json from PortalList.csv with column headers 'portalName' and 'URL'
-with open(directory + 'MnPortals.csv') as f:
+with open(directory + 'ArcPortals.csv') as f:
     reader = csv.DictReader(f)
     for row in reader:
         portalName = row['portalName']
@@ -126,6 +129,7 @@ with open(directory + 'MnPortals.csv') as f:
                     fieldvalue = strip_tags(data["dataset"][z][field])
                     fieldvalue = fieldvalue.encode('ascii', 'replace')
                     del_metadata.append(fieldvalue)
+                del_metadata.append(portalName)
                 deletedItemDict[identifier] = del_metadata
 
 
@@ -135,7 +139,10 @@ with open(directory + 'MnPortals.csv') as f:
         for key, value in reportTypedict.iteritems():
             if len(value) > 0:
                 print str(len(value)) + " %s added to %s!" % (key, portalName)
-                printReport(key, value, fields)
+                if key == 'deleted_items':
+                    printReport(key,value,delFieldsReport)
+                else:
+                    printReport(key, value, fields)
             else:
                 print "%s has no %s" % (portalName, key)
 
