@@ -20,14 +20,17 @@ from HTMLParser import HTMLParser
 ### Manual items to change!
 
 ## Set the date download of the older and newer jsons
-previousActionDate = 'yyyymmdd'
-actionDate = 'yyyymmdd'
+previousActionDate = '20181005'
+actionDate = '20181102'
 
 ## names of the main directory containing folders named "Jsons" and "Reports"
-directory = r''
+directory = r'C:/Users/ruetz007/Documents/GitHub/dcat-metadata-KarenWorking' #play with these slashes
 
 ##list of metadata fields from the DCAT json schema for open data portals desired in the final report
 fields = ["identifier", "title", "description", "issued", "modified", "landingPage", "webService", "spatial"]
+
+##list of metadata fields to include in the deletedItems report
+delFields = ["identifier"]
 
 #######################################
 
@@ -119,7 +122,7 @@ with open(directory + 'MnPortals.csv') as f:
             identifier = data["dataset"][z]["identifier"]
             if identifier not in new_ids.values():
                 del_metadata = []
-                for field in fields:
+                for field in delFields:
                     fieldvalue = strip_tags(data["dataset"][z][field])
                     fieldvalue = fieldvalue.encode('ascii', 'replace')
                     del_metadata.append(fieldvalue)
