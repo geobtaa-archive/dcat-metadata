@@ -25,18 +25,11 @@ from glob import glob
 ### Manual items to change!
 
 ### Set the date download of the older and newer jsons
-#ActionDate = 'YYYYMMDD'
-#PreviousActionDate = 'YYYYMMDD'
-#
+ActionDate = 'YYYYMMDD'
+PreviousActionDate = 'YYYYMMDD'
+
 ### names of the main directory containing folders named "Jsons" and "Reports"
-#directory = 'C:\BTAA\Maintenance'
-
-## Set the date download of the older and newer jsons
-ActionDate = '20181226'
-PreviousActionDate = '20170323'
-
-## names of the main directory containing folders named "Jsons" and "Reports"
-directory = 'C:\BTAA\Maintenance\maintenance\DecemberRev'
+directory = 'C:\BTAA\Maintenance'
 
 ##list of metadata fields from the DCAT json schema for open data portals desired in the final report
 fieldnames = ["identifier", "code", "title", "alternativeTitle", "description", "genre", "subject", "format", "type", "geometryType", "dateIssued", "temporalCoverage", "Date", "spatialCoverage", "spatial", "provenance", "isPartOf", "publisher",  "creator", "landingPage", "downloadURL", "webService", "metadataURL", "serverType", "keywords"]
