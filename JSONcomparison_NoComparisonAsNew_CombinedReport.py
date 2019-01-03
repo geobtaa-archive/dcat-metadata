@@ -20,6 +20,7 @@ import urllib
 import os
 import os.path
 from HTMLParser import HTMLParser
+import decimal
 
 ######################################
 
@@ -154,7 +155,21 @@ def metadataNewItems(newdata, newitem_ids):
         if formatElement == "":
             genre = 'Flagged'
             formatElement = '|'.join(format_types)
-            
+        
+        ### Checks for patterns in spatial coordinates that frequently indicate an error and, if found, changes the genre to "Suspicious coordinates"
+        bbox = []
+        spatial = cleanData(newdata["dataset"][y]['spatial'])
+        typeDmal = decimal.Decimal
+        fix4 = typeDmal("0.0001")    
+        for coord in spatial.split(","):
+            coordFix = typeDmal(coord).quantize(fix4)
+            bbox.append(str(coordFix))            
+        count = 0
+        for coord in bbox:
+            if coord == '0.0000':
+                count += 1
+        if count >= 2:
+            genre = 'Suspicious coordinates'     
         
         metadata.append(genre)
         subject = ""
@@ -169,7 +184,7 @@ def metadataNewItems(newdata, newitem_ids):
         dateElement = ""
         metadata.append(dateElement)
         metadata.append(spatialCoverage)
-        metadata.append(cleanData(newdata["dataset"][y]['spatial']))
+        metadata.append(spatial)
                     
         metadata.append(provenance)
         metadata.append(isPartOf)
