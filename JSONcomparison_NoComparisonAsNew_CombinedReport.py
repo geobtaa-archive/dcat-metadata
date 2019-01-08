@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Original created on Wed Mar 15 09:18:12 2017
-Edited Dec 28 2018
+Edited Dec 28 2018; January 8, 2019
 
 @author: kerni016
 """
@@ -38,6 +38,9 @@ fieldnames = ["identifier", "code", "title", "alternativeTitle", "description", 
 
 ##list of fields to use for the deletedItems report
 delFieldsReport = ['identifier', 'landingPage', 'portalName']
+
+##list of fields to use for the portal status report
+statusFieldsReport = ['portalName', 'total', 'new_items', 'deleted_items']
 #######################################
 
 
@@ -63,9 +66,8 @@ def cleanData (value):
     fieldvalue = fieldvalue.encode('ascii', 'replace')
     return fieldvalue
 
-### function that checks if there are items added to a dictionary (ie. newor deleted items). If there are, prints metadata elements from the dictionary to a csv file with as specified fields list as the header row 
-def printReport (report_type, dictionary, fields):
-    report = directory + "\Reports\%s_%s_%sReport.csv" % (portalName, ActionDate, report_type) 
+### function that checks if there are items added to a dictionary (ie. new or deleted items). If there are, prints metadata elements from the dictionary to a csv file with as specified fields list as the header row 
+def printReport (report, dictionary, fields):
     with open(report, 'wb') as outfile:
         csvout = csv.writer(outfile)
         csvout.writerow(fields)
@@ -218,7 +220,8 @@ def metadataNewItems(newdata, newitem_ids):
         newItemDict[identifier] = metadata
     ###Uncomment to print reports for individual portals                   
 #    if len(newItemDict) > 0:
-#        printReport('new_items', newItemDict, fieldnames)
+#        reportNew = directory + "\Reports\%s_%s_new_itemsReport.csv" % (portalName, ActionDate) 
+#        printReport(reportNew, newItemDict, fieldnames)
 #        print "new item report complete for %s!" % (portalName)                
     return newItemDict
 
@@ -226,6 +229,7 @@ def metadataNewItems(newdata, newitem_ids):
 ### Sets up lists to hold metadata information from each portal to be printed to a report 
 All_New_Items = []
 All_Deleted_Items = []
+Status_Report = {}
 
 ### Opens a list of portals and urls ending in /data.json from input CSV using column headers 'portalName' and 'URL'   
 with open(directory + '\\newAll.csv') as f:
@@ -258,6 +262,10 @@ with open(directory + '\\newAll.csv') as f:
             ### Prints a warning if there are more than 1000 resources in the data portal
             if len(newdata["dataset"]) == 999:
                 print "Warning! More than 1000 data resources in %s!" % (portalName)
+            
+            ### collects information about number of resources (total, new, and old) in each portal
+            status_metadata = []
+            status_metadata.append(portalName)
     
         #Opens older copy of data/json downloaded from the specified Esri Open Data Portal.  If this file does not exist, treats every item in the portal as new
         if os.path.exists(oldjson):
@@ -281,7 +289,10 @@ with open(directory + '\\newAll.csv') as f:
             ### creates a dictionary of metadata elements for each new data portal item. Includes an option to print a csv report of new items for each data portal
             ### Puts dictionary of identifiers (key), metadata elements (values) for each data portal into a list (to be used printing the combined report) [portal1{identifier:[metadataElement1, metadataElement2, ... ], portal2{identifier:[metadataElement1, metadataElement2, ... ], ...}
             All_New_Items.append(metadataNewItems(newdata, newitem_ids))
-                        
+            
+            ### collects information for the status report about the number of records currently in the portal and new items
+            status_metadata.append(len(newjson_ids))
+            status_metadata.append(len(newitem_ids))
             
             ### Compares identifiers in the older json to the list of identifiers from the newer json. If the record no longer exists, adds selected fields into a dictionary of deleted items (deletedItemDict)
             deletedItemDict = {}
@@ -298,9 +309,14 @@ with open(directory + '\\newAll.csv') as f:
             All_Deleted_Items.append(deletedItemDict)
             ###Uncomment to print reports for individual portals
 #            if len(deletedItemDict) > 0:
-#                printReport('deleted_items', deletedItemDict, delFieldsReport)
+#                reportDelete = directory + "\Reports\%s_%s_deleted_itemsReport.csv" % (portalName, ActionDate) 
+#                printReport(reportDelete, deletedItemDict, delFieldsReport)
 #                print "deleted items report complete for %s!" % (portalName)
         
+            ### collects information for the status report about the number of deleted items
+            status_metadata.append(len(deletedItemDict))
+            Status_Report [portalName] = status_metadata
+  
         ### if there is no older json for comparions....
         else:
             print "There is no comparison json for %s" % (portalName)
@@ -311,6 +327,12 @@ with open(directory + '\\newAll.csv') as f:
             ### Puts dictionary of identifiers (key), metadata elements (values) for each data portal into a list (to be used printing the combined report)   [portal1{identifier:[metadataElement1, metadataElement2, ... ], portal2{identifier:[metadataElement1, metadataElement2, ... ], ...}
             All_New_Items.append(metadataNewItems(newdata, newjson_ids))
 
+            ### collects information for the status report about the number of records currently in the portal, new items, and deleted items
+            status_metadata.append(len(newjson_ids))
+            status_metadata.append(len(newjson_ids))
+            status_metadata.append('0')
+            Status_Report [portalName] = status_metadata
+            
 ### prints two csv spreadsheets with all items that are new or deleted since the last time the data portals were harvested 
 report = directory + "\\allNewItems_%s.csv" %  (ActionDate)
 with open(report, 'wb') as outfile:
@@ -328,4 +350,7 @@ with open(report, 'wb') as outfile:
         for portal in All_Deleted_Items:
             for keys in portal:
                 allvalues = portal[keys]
-                csvout.writerow(allvalues)       
+                csvout.writerow(allvalues)
+                
+reportStatus = directory + "\Reports\portal_status_report_%s.csv" % (ActionDate) 
+printReport (reportStatus, Status_Report, statusFieldsReport)
