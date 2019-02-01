@@ -1,42 +1,43 @@
-portalName,URL
-01c-02,http://data1-indygis.opendata.arcgis.com/data.json
-01c-03,http://dev-evansvilleapc.opendata.arcgis.com//data.json
-02a-02,https://illinoisepaopendata-illinois-epa.opendata.arcgis.com//data.json
-02c-01,https://data-evanston.opendata.arcgis.com/data.json
-03a-02,http://public.iowadot.opendata.arcgis.com/data.json
-04a-01,http://data.imap.maryland.gov/data.json
-04b-009,http://data-calvertgis.opendata.arcgis.com//data.json
-04b-013,http://data-carrollco-md.opendata.arcgis.com//data.json
-04b-025,https://planning-harfordgis.opendata.arcgis.com//data.json
-04b-031,https://data2018-mcgov-gis.opendata.arcgis.com//data.json
-04c-01,http://opendata.dc.gov/data.json
-04c-02,http://gis-baltimore.opendata.arcgis.com/data.json
-04f-01,https://dvrpc-dvrpcgis.opendata.arcgis.com//data.json
-05b-017,http://data-carltoncounty.opendata.arcgis.com/data.json
-05b-019,http://data-carver.opendata.arcgis.com/data.json
-05b-027,http://data-claycountymn.opendata.arcgis.com//data.json
-05b-053,http://gis-hennepin.opendata.arcgis.com/data.json
-05b-057,https://getdata-hubbardcounty.opendata.arcgis.com/data.json
-05b-119,https://data-pcg.opendata.arcgis.com/data.json
-05b-121,https://data-popecounty.opendata.arcgis.com//data.json
-05b-123,https://openramsey-ramseygis.opendata.arcgis.com//data.json
-05b-137,http://opendata.gis.co.scott.mn.us/data.json
-05b-139,https://data-sherburnegis.opendata.arcgis.com/data.json
-05b-143,http://stlouiscountymndata-slcgis.opendata.arcgis.com/data.json
-05b-163,http://data-wcmn.opendata.arcgis.com/data.json
-05c-01,http://opendata.minneapolismn.gov/data.json
-06a-01,http://gis-michigan.opendata.arcgis.com/data.json
-06b-125,http://accessoakland.oakgov.com/data.json
-06f-01,http://maps-semcog.opendata.arcgis.com/data.json
-08b-027,http://gisdata-centrecountygov.opendata.arcgis.com//data.json
-08b-039,https://share-open-data-crawfordcountypa.opendata.arcgis.com//data.json
-08b-043,https://data-dauphinco.opendata.arcgis.com//data.json
-09c-01,http://data-southbend.opendata.arcgis.com/data.json
-11a-01,http://ogrip-geohio.opendata.arcgis.com/data.json
-11b-03,https://data-athgis.opendata.arcgis.com//data.json
-11b-13,https://data-cuyahoga.opendata.arcgis.com//data.json
-11b-17,https://auditor-fca.opendata.arcgis.com//data.json
-11b-32,https://data-loraingis.opendata.arcgis.com//data.json
-12b-043,https://gisdata-dupage.opendata.arcgis.com//data.json
-12b-097,https://data-lakecountyil.opendata.arcgis.com//data.json
-12b-143,https://data-peoriacountygis.opendata.arcgis.com//data.json
+portalName,URL,provenance,isPartOf,publisher,spatialCoverage
+01b-18163,http://dev-evansvilleapc.opendata.arcgis.com/data.json,Indiana,Municipalities Geospatial Data,"Vanderburgh County, Indiana","Vanderburgh County, Indiana, United States|Indiana, United States"
+01c-02,http://data1-indygis.opendata.arcgis.com/data.json,Indiana,Municipalities Geospatial Data,"City of Indianapolis, Indiana","City of Indianapolis, Indiana, United States|Indiana, United States"
+02a-02,https://illinoisepaopendata-illinois-epa.opendata.arcgis.com/data.json,Illinois,State Agencies Geospatial Data,State of Illinois,"Illinois, United States"
+02c-01,https://data-evanston.opendata.arcgis.com/data.json,Illinois,Municipalities Geospatial Data,"City of Evanston, Illinois","City of Evanston, Illinois, United States|Illinois, United States"
+03a-02,http://public.iowadot.opendata.arcgis.com/data.json,Iowa,State Agencies Geospatial Data,State of Iowa,"Iowa, United States"
+04a-01,http://data.imap.maryland.gov/data.json,Maryland,State Agencies Geospatial Data,State of Maryland,"Maryland, United States"
+04b-24009,http://data-calvertgis.opendata.arcgis.com/data.json,Maryland,Counties Geospatial Data,"Calvert County, Maryland","Calvert County, Maryland, United States|Maryland, United States"
+04b-24013,http://data-carrollco-md.opendata.arcgis.com/data.json,Maryland,Counties Geospatial Data,"Carroll County, Maryland","Carroll County, Maryland, United States|Maryland, United States"
+04b-24025,https://planning-harfordgis.opendata.arcgis.com/data.json,Maryland,Counties Geospatial Data,"Harford County, Maryland","Harford County, Maryland, United States|Maryland, United States"
+04b-24031,https://data2018-mcgov-gis.opendata.arcgis.com/data.json,Maryland,Counties Geospatial Data,"Montgomery County, Maryland","Montgomery County, Maryland, United States|Maryland, United States"
+04c-01,http://opendata.dc.gov/data.json,Maryland,Municipalities Geospatial Data,District of Columbia,Washington D.C
+04c-02,http://gis-baltimore.opendata.arcgis.com/data.json,Maryland,Municipalities Geospatial Data,"City of Baltimore, Maryland","City of Baltimore, Maryland, United States|Maryland, United States"
+04f-01,https://dvrpc-dvrpcgis.opendata.arcgis.com/data.json,Maryland,Regional & NGO Geospatial Data,Delaware Valley,"Delaware Valley, United States|Maryland, United States"
+05b-27017,http://data-carltoncounty.opendata.arcgis.com/data.json,Minnesota,Counties Geospatial Data,Carlton County Minnesota,"Carlton County, Minnesota, United States|Minnesota, United States"
+05b-27019,http://data-carver.opendata.arcgis.com/data.json,Minnesota,Counties Geospatial Data,"Carver County, Minnesota","Carver County, Minnesota, United States|Minnesota, United States"
+05b-27027,http://data-claycountymn.opendata.arcgis.com/data.json,Minnesota,Counties Geospatial Data,"Clay County, Minnesota","Clay County, Minnesota, United States|Minnesota, United States"
+05b-27053,http://gis-hennepin.opendata.arcgis.com/data.json,Minnesota,Counties Geospatial Data,"Hennepin County, Minnesota","Hennepin County, Minnesota, United States|Minnesota, United States"
+05b-27057,https://getdata-hubbardcounty.opendata.arcgis.com/data.json,Minnesota,Counties Geospatial Data,"Hubbard County, Minnesota","Hubbard County, Minnesota, United States|Minnesota, United States"
+05b-27119,https://data-pcg.opendata.arcgis.com/data.json,Minnesota,Counties Geospatial Data,"Polk County, Minnesota","Polk County, Minnesota, United States|Minnesota, United States"
+05b-27121,https://data-popecounty.opendata.arcgis.com/data.json,Minnesota,Counties Geospatial Data,"Pope County, Minnesota","Pope County, Minnesota, United States|Minnesota, United States"
+05b-27123,https://openramsey-ramseygis.opendata.arcgis.com/data.json,Minnesota,Counties Geospatial Data,"Ramsey County, Minnesota","Ramsey County, Minnesota, United States|Minnesota, United States"
+05b-27137,http://opendata.gis.co.scott.mn.us/data.json,Minnesota,Counties Geospatial Data,"Scott County, Minnesota","Scott County, Minnesota, United States|Minnesota, United States"
+05b-27139,https://data-sherburnegis.opendata.arcgis.com/data.json,Minnesota,Counties Geospatial Data,"Sherburne County, Minnesota","Sherburne County, Minnesota, United States|Minnesota, United States"
+05b-27143,http://stlouiscountymndata-slcgis.opendata.arcgis.com/data.json,Minnesota,Counties Geospatial Data,"St Louis County, Minnesota","St. Louis County, Minnesota, United States|Minnesota, United States"
+05b-27163,http://data-wcmn.opendata.arcgis.com/data.json,Minnesota,Counties Geospatial Data,"Washington County, Minnesota","Washington County, Minnesota, United States|Minnesota, United States"
+05c-01,http://opendata.minneapolismn.gov/data.json,Minnesota,Municipalities Geospatial Data,"City of Minneapolis, Minnesota","Minneapolis, Minnesota, United States|Minnesota, United States"
+06a-01,http://gis-michigan.opendata.arcgis.com/data.json,Michigan State,State Agencies Geospatial Data,State of Michigan,"Michigan, United States"
+06b-26125,http://accessoakland.oakgov.com/data.json,Michigan State,Counties Geospatial Data,"Oakland County, Michigan","Oakland County, Michigan, United States|Michigan, United States"
+06f-01,http://maps-semcog.opendata.arcgis.com/data.json,Michigan State,Regional & NGO Geospatial Data,"SEMCOG, Southeast Michigan Council of Governments","Michigan, United States"
+08b-42027,http://gisdata-centrecountygov.opendata.arcgis.com/data.json,Penn State,Counties Geospatial Data,"Centre County, Pennsylvania","Centre County, Pennsylvania, United States|Pennsylvania, United States"
+08b-42039,https://share-open-data-crawfordcountypa.opendata.arcgis.com/data.json,Penn State,Counties Geospatial Data,"Crawford County, Pennsylvania","Crawford County, Pennsylvania, United States|Pennsylvania, United States"
+08b-42043,https://data-dauphinco.opendata.arcgis.com/data.json,Penn State,Counties Geospatial Data,"Dauphin County, Pennsylvania","Dauphin County, Pennsylvania, United States|Pennsylvania, United States"
+08c-02,http://data-phl.opendata.arcgis.com/data.json,Penn State,Municipalities Geospatial Data,"City of Philadelphia, Pennsylvania","Philadelphia, Pennsylvania, United States|Pennsylvania, United States"
+09c-01,http://data-southbend.opendata.arcgis.com/data.json,Purdue,Municipalities Geospatial Data,"South Bend, Indiana","South Bend, Indiana, United States|Indiana, United States"
+11a-01,http://ogrip-geohio.opendata.arcgis.com/data.json,Ohio State,State Agencies Geospatial Data,State of Ohio,"Ohio, United States"
+11b-39009,https://data-athgis.opendata.arcgis.com/data.json,Ohio State,Counties Geospatial Data,"Athens County, Ohio","Athens County, Ohio, United States|Ohio, United States"
+11b-39035,https://data-cuyahoga.opendata.arcgis.com/data.json,Ohio State,Counties Geospatial Data,"Cuyahoga County, Ohio","Cuyahoga County, Ohio, United States|Ohio, United States"
+11b-39049,https://auditor-fca.opendata.arcgis.com/data.json,Ohio State,Counties Geospatial Data,"Franklin County, Ohio","Franklin County, Ohio, United States|Ohio, United States"
+11b-39093,https://data-loraingis.opendata.arcgis.com/data.json,Ohio State,Counties Geospatial Data,"Lorain County, Ohio","Lorain County, Ohio, United States|Ohio, United States"
+12b-17043,https://gisdata-dupage.opendata.arcgis.com/data.json,Chicago,Counties Geospatial Data,"DuPage County, Illinois","DuPage County, Illinois, United States|Illinois, United States"
+12b-17097,https://data-lakecountyil.opendata.arcgis.com/data.json,Chicago,Counties Geospatial Data,"Lake County, Illinois","Lake County, Illinois, United States|Illinois, United States"
+12b-17143,https://data-peoriacountygis.opendata.arcgis.com/data.json,Chicago,Counties Geospatial Data,"Peoria County, Illinois","Peoria County, Illinois, United States|Illinois, United States"

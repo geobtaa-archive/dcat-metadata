@@ -83,8 +83,8 @@ with open(directory + 'newAll.csv') as f:
 
         ## for each open data portal in the csv list...
         ## renames file paths based on portalName and manually provided dates
-        oldjson = directory + 'jsons/%s_%s.json' % (portalName, PreviousActionDate)
-        newjson = directory + 'jsons/%s_%s.json' % (portalName, ActionDate)
+        oldjson = directory + 'Jsons/%s_%s.json' % (portalName, PreviousActionDate)
+        newjson = directory + 'Jsons/%s_%s.json' % (portalName, ActionDate)
 
 
         ## Opens the url for the ESRI open data portal json and loads it into the script

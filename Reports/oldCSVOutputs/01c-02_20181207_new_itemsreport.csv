@@ -1,0 +1,195 @@
+identifier,title,description,issued,modified,landingPage,webService,spatial
+City of Indianapolis and Marion County - IndyGIS,"[u'Bids', u'Bids and Quotes', u'OFM', u'Bid Results', u'Nonspatial']",http://data1-indygis.opendata.arcgis.com/datasets/96f3426d78684354bf56bc42542311b8,2014 Bid Results,"The bid tabulations listed below reflect grand totals only of the valid bids received. They may not reflect any added or deducted alternatives. Evaluations will be made by the project manager or his representative for correct price extensions, meeting specifications, etc. Once those specifications are completed, the department?s governing board or commission will award the bid to the lowest, responsive, responsible bidder meeting the bid?s specifications. The bids listed may only be the top three responsive bids. Please click on the bid number below to review the results from that particular bid.",2018-12-04T14:57:16.000Z,2018-12-04T15:37:49.404Z,http://data1-indygis.opendata.arcgis.com/datasets/96f3426d78684354bf56bc42542311b8,https://xmaps.indy.gov/ODP/Download/OFM/BidResults/2014 Bid Results.zip,"-180.0,-90.0,180.0,90.0",01c-02,Indiana,Municipalities Geospatial Data,{u'name': u'City of Indianapolis and Marion County - IndyGIS'},"City of Indianapolis, Indiana, United States|Indiana, United States"
+City of Indianapolis and Marion County - IndyGIS,"[u'Bid Results', u'Bids', u'Bids and Quotes', u'OFM', u'Nonspatial']",http://data1-indygis.opendata.arcgis.com/datasets/d65c3da0b21246cc927036f251b791b2,2017 Bid Results,"The bid tabulations listed below reflect grand totals only of the valid bids received. They may not reflect any added or deducted alternatives. Evaluations will be made by the project manager or his representative for correct price extensions, meeting specifications, etc. Once those specifications are completed, the department?s governing board or commission will award the bid to the lowest, responsive, responsible bidder meeting the bid?s specifications. The bids listed may only be the top three responsive bids. Please click on the bid number below to review the results from that particular bid.",2018-12-04T15:36:09.000Z,2018-12-04T15:37:43.716Z,http://data1-indygis.opendata.arcgis.com/datasets/d65c3da0b21246cc927036f251b791b2,https://xmaps.indy.gov/ODP/Download/OFM/BidResults/2017 Bid Results.zip,"-180.0,-90.0,180.0,90.0",01c-02,Indiana,Municipalities Geospatial Data,{u'name': u'City of Indianapolis and Marion County - IndyGIS'},"City of Indianapolis, Indiana, United States|Indiana, United States"
+City of Indianapolis and Marion County - IndyGIS,"[u'Election Results', u'Election Results Archive', u'Marion County Election Results', u'Indy Election Results', u'2011 Election Results', u'Political']",http://data1-indygis.opendata.arcgis.com/datasets/745fe43f53c74d35b869d5812ab0c1c4,2012 General Election Results,"2012 General Election Results
+
+Contest and precinct results are presented here in an
+     Excel document. Marion County reduced its number of precincts from 917
+     to 590 in December 2007. Therefore, the precinct results for those
+     elections occurring after December 2007 are not comparable with those
+     elections?occurring before December 2007. Marion County increased the number of precincts from
+     590 to 600 in December 2011. Therefore, the precinct results for those
+     elections occurring after December 2011 are not comparable with those
+     election occurring between December 2007 through December 2011.",2018-11-15T20:53:04.000Z,2018-11-16T19:25:41.375Z,http://data1-indygis.opendata.arcgis.com/datasets/745fe43f53c74d35b869d5812ab0c1c4,https://xmaps.indy.gov/ODP/Download/Elections/2012GeneralElectionResults.xls,"-180.0,-90.0,180.0,90.0",01c-02,Indiana,Municipalities Geospatial Data,{u'name': u'City of Indianapolis and Marion County - IndyGIS'},"City of Indianapolis, Indiana, United States|Indiana, United States"
+City of Indianapolis and Marion County - IndyGIS,"[u'OFM', u'Bids', u'Bid Results', u'Bids and Quotes', u'Nonspatial']",http://data1-indygis.opendata.arcgis.com/datasets/a0412d93181d430a94d91fa9c4dcfa92,2012 Bid Results,"The bid tabulations listed below reflect grand totals only of the valid bids received. They may not reflect any added or deducted alternatives. Evaluations will be made by the project manager or his representative for correct price extensions, meeting specifications, etc. Once those specifications are completed, the department?s governing board or commission will award the bid to the lowest, responsive, responsible bidder meeting the bid?s specifications. The bids listed may only be the top three responsive bids. Please click on the bid number below to review the results from that particular bid.",2018-12-04T14:14:34.000Z,2018-12-04T15:37:49.151Z,http://data1-indygis.opendata.arcgis.com/datasets/a0412d93181d430a94d91fa9c4dcfa92,https://xmaps.indy.gov/ODP/Download/OFM/BidResults/2012 Bid Results.zip,"-180.0,-90.0,180.0,90.0",01c-02,Indiana,Municipalities Geospatial Data,{u'name': u'City of Indianapolis and Marion County - IndyGIS'},"City of Indianapolis, Indiana, United States|Indiana, United States"
+City of Indianapolis and Marion County - IndyGIS,"[u'Precincts', u'Precinct Splits', u'Voting Districts', u'voting', u'Political']",http://data1-indygis.opendata.arcgis.com/datasets/590ff845a0514a9c8865c8df968669ee_8,Precinct Splits,"Polygon file
+representing the precinct split boundaries in Indianapolis and Marion County,
+Indiana.
+Data projection: NAD 1983 StatePlane Indiana East FIPS 1301 (US Feet)",2018-11-27T15:13:03.000Z,2018-11-27T18:58:06.141Z,http://data1-indygis.opendata.arcgis.com/datasets/590ff845a0514a9c8865c8df968669ee_8,http://xmaps.indy.gov/arcgis/rest/services/OpenData/OpenData_Political/MapServer/8,"-86.3291,39.6322,-85.9363,39.9278",01c-02,Indiana,Municipalities Geospatial Data,{u'name': u'City of Indianapolis and Marion County - IndyGIS'},"City of Indianapolis, Indiana, United States|Indiana, United States"
+City of Indianapolis and Marion County - IndyGIS,"[u'Unit Addresses', u'Building Unit Addresses', u'Units']",http://data1-indygis.opendata.arcgis.com/datasets/f5b97f0c976a4e74a53810b63b53f54d_13,Building Unit Addresses,"Point file depicting unit addresses on a building, in Indianapolis and Marion County. Data projection: NAD 1983 StatePlane Indiana East FIPS 1301 (US Feet) ",2018-11-07T19:03:05.000Z,2018-11-07T19:07:49.000Z,http://data1-indygis.opendata.arcgis.com/datasets/f5b97f0c976a4e74a53810b63b53f54d_13,http://xmaps.indy.gov/arcgis/rest/services/OpenData/OpenData_Boundaries/MapServer/13,"-86.3281,39.6347,-85.942,39.9276",01c-02,Indiana,Municipalities Geospatial Data,{u'name': u'City of Indianapolis and Marion County - IndyGIS'},"City of Indianapolis, Indiana, United States|Indiana, United States"
+City of Indianapolis and Marion County - IndyGIS,"[u'Election Results', u'Election Results Archive', u'Marion County Election Results', u'2011 Election Results', u'Political', u'Indy Election Results']",http://data1-indygis.opendata.arcgis.com/datasets/79aca30b70004f0eb232ab8766e4b342,2011 Primary Election Results,"2011 General Election Results
+
+Contest and precinct results are presented here in an
+     Excel document. Marion County reduced its number of precincts from 917
+     to 590 in December 2007. Therefore, the precinct results for those
+     elections occurring after December 2007 are not comparable with those
+     elections?occurring before December 2007. Marion County increased the number of precincts from
+     590 to 600 in December 2011. Therefore, the precinct results for those
+     elections occurring after December 2011 are not comparable with those
+     election occurring between December 2007 through December 2011.",2018-11-15T20:46:48.000Z,2018-11-16T19:25:39.528Z,http://data1-indygis.opendata.arcgis.com/datasets/79aca30b70004f0eb232ab8766e4b342,https://xmaps.indy.gov/ODP/Download/Elections/2011PrimaryElectionResults.xls,"-180.0,-90.0,180.0,90.0",01c-02,Indiana,Municipalities Geospatial Data,{u'name': u'City of Indianapolis and Marion County - IndyGIS'},"City of Indianapolis, Indiana, United States|Indiana, United States"
+City of Indianapolis and Marion County - IndyGIS,"[u'Election Results', u'Election Results Archive', u'Marion County Election Results', u'2007 Election Results', u'Indy Election Results', u'Political']",http://data1-indygis.opendata.arcgis.com/datasets/287f27cd1478401caeac0d5e63509d79,2007 Primary Election Results,"2007 Primary Election Results
+
+Contest and precinct results are presented here in an
+     Excel document. Marion County reduced its number of precincts from 917
+     to 590 in December 2007. Therefore, the precinct results for those
+     elections occurring after December 2007 are not comparable with those
+     elections?occurring before December 2007. Marion County increased the number of precincts from
+     590 to 600 in December 2011. Therefore, the precinct results for those
+     elections occurring after December 2011 are not comparable with those
+     election occurring between December 2007 through December 2011.",2018-10-23T16:28:45.000Z,2018-11-16T19:25:41.471Z,http://data1-indygis.opendata.arcgis.com/datasets/287f27cd1478401caeac0d5e63509d79,https://xmaps.indy.gov/ODP/Download/Elections/2007PrimaryElectionResults.xls,"-180.0,-90.0,180.0,90.0",01c-02,Indiana,Municipalities Geospatial Data,{u'name': u'City of Indianapolis and Marion County - IndyGIS'},"City of Indianapolis, Indiana, United States|Indiana, United States"
+City of Indianapolis and Marion County - IndyGIS,"[u'Election Results', u'Election Results Archive', u'Marion County Election Results', u'Indy Election Results', u'2012 Election Results', u'Political']",http://data1-indygis.opendata.arcgis.com/datasets/fe6170d7e1234f44921129c66c2565f7,2012 Primary Election Results,"2012 Primary Election Results
+
+Contest and precinct results are presented here in an
+     Excel document. Marion County reduced its number of precincts from 917
+     to 590 in December 2007. Therefore, the precinct results for those
+     elections occurring after December 2007 are not comparable with those
+     elections?occurring before December 2007. Marion County increased the number of precincts from
+     590 to 600 in December 2011. Therefore, the precinct results for those
+     elections occurring after December 2011 are not comparable with those
+     election occurring between December 2007 through December 2011.",2018-11-15T21:07:48.000Z,2018-11-16T19:25:41.720Z,http://data1-indygis.opendata.arcgis.com/datasets/fe6170d7e1234f44921129c66c2565f7,https://xmaps.indy.gov/ODP/Download/Elections/2012PrimaryElectionResults.xls,"-180.0,-90.0,180.0,90.0",01c-02,Indiana,Municipalities Geospatial Data,{u'name': u'City of Indianapolis and Marion County - IndyGIS'},"City of Indianapolis, Indiana, United States|Indiana, United States"
+City of Indianapolis and Marion County - IndyGIS,"[u'Election Results Archive', u'Election Results', u'Marion County Election Results', u'Indy Election Results', u'2014 Election Results', u'Political']",http://data1-indygis.opendata.arcgis.com/datasets/d30059d443724825a1f3f481f7d140dc,2014 Primary Election Results,"2014 Primary Election Results
+
+Contest and precinct results are presented here in an
+     Excel document. Marion County reduced its number of precincts from 917
+     to 590 in December 2007. Therefore, the precinct results for those
+     elections occurring after December 2007 are not comparable with those
+     elections?occurring before December 2007. Marion County increased the number of precincts from
+     590 to 600 in December 2011. Therefore, the precinct results for those
+     elections occurring after December 2011 are not comparable with those
+     election occurring between December 2007 through December 2011.",2018-11-15T21:22:14.000Z,2018-11-16T19:25:39.833Z,http://data1-indygis.opendata.arcgis.com/datasets/d30059d443724825a1f3f481f7d140dc,https://xmaps.indy.gov/ODP/Download/Elections/2014PrimaryElectionResults.xls,"-180.0,-90.0,180.0,90.0",01c-02,Indiana,Municipalities Geospatial Data,{u'name': u'City of Indianapolis and Marion County - IndyGIS'},"City of Indianapolis, Indiana, United States|Indiana, United States"
+City of Indianapolis and Marion County - IndyGIS,"[u'DMD', u'Neighborhood Investment Analysis', u'Market Value Analysis', u'Zoning', u'Planning', u'Building Blocks']",http://data1-indygis.opendata.arcgis.com/datasets/3979013db55f43f2927e2240468fd442_11,Neighborhood Investment Analysis,DMD Neighborhood Investment Analysis or Market Value Analysis (MVA). Data projection: NAD 1983 StatePlane Indiana East FIPS 1301 (US Feet),2018-11-30T18:41:32.000Z,2018-12-06T19:37:41.000Z,http://data1-indygis.opendata.arcgis.com/datasets/3979013db55f43f2927e2240468fd442_11,http://xmaps.indy.gov/arcgis/rest/services/OpenData/OpenData_PlanningZoning/MapServer/11,"-86.3292,39.6322,-85.9362,39.9278",01c-02,Indiana,Municipalities Geospatial Data,{u'name': u'City of Indianapolis and Marion County - IndyGIS'},"City of Indianapolis, Indiana, United States|Indiana, United States"
+City of Indianapolis and Marion County - IndyGIS,"[u'Election Results', u'Election Results Archive', u'Marion County Election Results', u'Indy Election Results', u'2010 Election Results', u'Political']",http://data1-indygis.opendata.arcgis.com/datasets/daf706f0827644e1be3ee3e3a5b1273d,2010 Primary Election Results,"2010 Primary Election Results
+
+
+
+Contest and precinct results are presented here in an
+     Excel document. Marion County reduced its number of precincts from 917
+     to 590 in December 2007. Therefore, the precinct results for those
+     elections occurring after December 2007 are not comparable with those
+     elections?occurring before December 2007. Marion County increased the number of precincts from
+     590 to 600 in December 2011. Therefore, the precinct results for those
+     elections occurring after December 2011 are not comparable with those
+     election occurring between December 2007 through December 2011.",2018-10-23T20:13:23.000Z,2018-11-16T19:25:39.700Z,http://data1-indygis.opendata.arcgis.com/datasets/daf706f0827644e1be3ee3e3a5b1273d,https://xmaps.indy.gov/ODP/Download/Elections/2010PrimaryElectionResults.xls,"-180.0,-90.0,180.0,90.0",01c-02,Indiana,Municipalities Geospatial Data,{u'name': u'City of Indianapolis and Marion County - IndyGIS'},"City of Indianapolis, Indiana, United States|Indiana, United States"
+City of Indianapolis and Marion County - IndyGIS,"[u'IMPD', u'IMPD Discipline', u'Indianapolis', u'Marion County']",http://data1-indygis.opendata.arcgis.com/datasets/e19f689846e044ad884315450bb7d964_22,IMPD Discipline,IMPD Discipline for Officers Resulting from Citizen Complaints 2014 to Present,2018-11-09T19:12:54.000Z,2018-11-09T19:14:30.000Z,http://data1-indygis.opendata.arcgis.com/datasets/e19f689846e044ad884315450bb7d964_22,http://xmaps.indy.gov/arcgis/rest/services/OpenData/OpenData_NonSpatial/MapServer/22,"-180.0,-90.0,180.0,90.0",01c-02,Indiana,Municipalities Geospatial Data,{u'name': u'City of Indianapolis and Marion County - IndyGIS'},"City of Indianapolis, Indiana, United States|Indiana, United States"
+City of Indianapolis and Marion County - IndyGIS,"[u'Election Results', u'Election Results Archive', u'Indy Election Results', u'Marion County Election Results', u'2016 Election Results', u'Political']",http://data1-indygis.opendata.arcgis.com/datasets/69fc0ba63cac48818db71fc564400efb,2016 Primary Election Results,"2016 Primary Election Results
+
+Contest and precinct results are presented here in an
+     Excel document. Marion County reduced its number of precincts from 917
+     to 590 in December 2007. Therefore, the precinct results for those
+     elections occurring after December 2007 are not comparable with those
+     elections?occurring before December 2007. Marion County increased the number of precincts from
+     590 to 600 in December 2011. Therefore, the precinct results for those
+     elections occurring after December 2011 are not comparable with those
+     election occurring between December 2007 through December 2011.",2018-11-15T21:44:39.000Z,2018-11-16T19:25:40.969Z,http://data1-indygis.opendata.arcgis.com/datasets/69fc0ba63cac48818db71fc564400efb,https://xmaps.indy.gov/ODP/Download/Elections/2016PrimaryElectionResults.xls,"-180.0,-90.0,180.0,90.0",01c-02,Indiana,Municipalities Geospatial Data,{u'name': u'City of Indianapolis and Marion County - IndyGIS'},"City of Indianapolis, Indiana, United States|Indiana, United States"
+City of Indianapolis and Marion County - IndyGIS,"[u'Indianapolis', u'Marion County', u'Rezoning', u'Zoning', u'Planning', u'Building Blocks']",http://data1-indygis.opendata.arcgis.com/datasets/fa779039bc364f0fb79d07c7007127a2_8,Rezoning,"Polygon file representing the boundaries of rezoning cases in Indianapolis and Marion County, Indiana.? This layer works in conjunction with the zoning layer.City of Indianapolis Zoning WebsiteData projection: NAD 1983 StatePlane Indiana East FIPS 1301 (US Feet)",2015-12-01T20:02:02.000Z,2018-12-06T19:38:43.000Z,http://data1-indygis.opendata.arcgis.com/datasets/fa779039bc364f0fb79d07c7007127a2_8,http://xmaps.indy.gov/arcgis/rest/services/OpenData/OpenData_PlanningZoning/MapServer/8,"-86.3291,39.6322,-85.937,39.9278",01c-02,Indiana,Municipalities Geospatial Data,{u'name': u'City of Indianapolis and Marion County - IndyGIS'},"City of Indianapolis, Indiana, United States|Indiana, United States"
+City of Indianapolis and Marion County - IndyGIS,"[u'Election Results', u'Election Results Archive', u'Indy Election Results', u'Marion County Election Results', u'2015 Election Results', u'Political']",http://data1-indygis.opendata.arcgis.com/datasets/8048809fe09740bfa7d54a46d5f96755,2015 Primary Election Results,"2015 Primary Election Results
+
+Contest and precinct results are presented here in an
+     Excel document. Marion County reduced its number of precincts from 917
+     to 590 in December 2007. Therefore, the precinct results for those
+     elections occurring after December 2007 are not comparable with those
+     elections?occurring before December 2007. Marion County increased the number of precincts from
+     590 to 600 in December 2011. Therefore, the precinct results for those
+     elections occurring after December 2011 are not comparable with those
+     election occurring between December 2007 through December 2011.",2018-11-15T21:32:06.000Z,2018-11-16T19:25:40.207Z,http://data1-indygis.opendata.arcgis.com/datasets/8048809fe09740bfa7d54a46d5f96755,https://xmaps.indy.gov/ODP/Download/Elections/2015PrimaryElectionResults.xls,"-180.0,-90.0,180.0,90.0",01c-02,Indiana,Municipalities Geospatial Data,{u'name': u'City of Indianapolis and Marion County - IndyGIS'},"City of Indianapolis, Indiana, United States|Indiana, United States"
+City of Indianapolis and Marion County - IndyGIS,"[u'IMPD', u'IMPD Awards', u'Indianapolis', u'Marion County']",http://data1-indygis.opendata.arcgis.com/datasets/f59b2a2a852a4910894ebf5621592d31_21,IMPD Awards,IMPD Awards,2018-11-05T17:18:49.000Z,2018-11-05T17:29:11.000Z,http://data1-indygis.opendata.arcgis.com/datasets/f59b2a2a852a4910894ebf5621592d31_21,http://xmaps.indy.gov/arcgis/rest/services/OpenData/OpenData_NonSpatial/MapServer/21,"-180.0,-90.0,180.0,90.0",01c-02,Indiana,Municipalities Geospatial Data,{u'name': u'City of Indianapolis and Marion County - IndyGIS'},"City of Indianapolis, Indiana, United States|Indiana, United States"
+City of Indianapolis and Marion County - IndyGIS,"[u'Election Results', u'Election Results Archive', u'Indy Election Results', u'Marion County Election Results', u'2016 Election Results', u'Political']",http://data1-indygis.opendata.arcgis.com/datasets/81c7a0f763c54d49b639a58f8fb07261,2016 General Election Results,"2016 General Election Results
+
+Contest and precinct results are presented here in an
+     Excel document. Marion County reduced its number of precincts from 917
+     to 590 in December 2007. Therefore, the precinct results for those
+     elections occurring after December 2007 are not comparable with those
+     elections?occurring before December 2007. Marion County increased the number of precincts from
+     590 to 600 in December 2011. Therefore, the precinct results for those
+     elections occurring after December 2011 are not comparable with those
+     election occurring between December 2007 through December 2011.",2018-11-15T21:39:56.000Z,2018-11-16T19:25:41.431Z,http://data1-indygis.opendata.arcgis.com/datasets/81c7a0f763c54d49b639a58f8fb07261,https://xmaps.indy.gov/ODP/Download/Elections/2016GeneralElectionResults.xls,"-180.0,-90.0,180.0,90.0",01c-02,Indiana,Municipalities Geospatial Data,{u'name': u'City of Indianapolis and Marion County - IndyGIS'},"City of Indianapolis, Indiana, United States|Indiana, United States"
+City of Indianapolis and Marion County - IndyGIS,"[u'Indianapolis', u'Marion County', u'Federal Promise Zone', u'Planning', u'Zoning']",http://data1-indygis.opendata.arcgis.com/datasets/ee753d4c3a14459db2e158a90e0921a2_4,Federal Promise Zone,"Polygon file representing the Federal Promise Zone in Indianapolis and Marion County, Indiana.Data projection: NAD 1983 StatePlane Indiana East FIPS 1301 (US Feet)",2015-11-24T20:20:50.000Z,2018-03-09T14:20:33.000Z,http://data1-indygis.opendata.arcgis.com/datasets/ee753d4c3a14459db2e158a90e0921a2_4,http://xmaps.indy.gov/arcgis/rest/services/OpenData/OpenData_PlanningZoning/MapServer/4,"-86.1432,39.7477,-86.0816,39.8052",01c-02,Indiana,Municipalities Geospatial Data,{u'name': u'City of Indianapolis and Marion County - IndyGIS'},"City of Indianapolis, Indiana, United States|Indiana, United States"
+City of Indianapolis and Marion County - IndyGIS,"[u'Bids', u'Bid Results', u'Bids and Quotes', u'OFM', u'Nonspatial']",http://data1-indygis.opendata.arcgis.com/datasets/9d95606037fa41b5957a369cc76e0f66,2015 Bid Results,"The bid tabulations listed below reflect grand totals only of the valid bids received. They may not reflect any added or deducted alternatives. Evaluations will be made by the project manager or his representative for correct price extensions, meeting specifications, etc. Once those specifications are completed, the department?s governing board or commission will award the bid to the lowest, responsive, responsible bidder meeting the bid?s specifications. The bids listed may only be the top three responsive bids. Please click on the bid number below to review the results from that particular bid.",2018-12-04T15:32:19.000Z,2018-12-04T15:37:49.148Z,http://data1-indygis.opendata.arcgis.com/datasets/9d95606037fa41b5957a369cc76e0f66,https://xmaps.indy.gov/ODP/Download/OFM/BidResults/2015 Bid Results.zip,"-180.0,-90.0,180.0,90.0",01c-02,Indiana,Municipalities Geospatial Data,{u'name': u'City of Indianapolis and Marion County - IndyGIS'},"City of Indianapolis, Indiana, United States|Indiana, United States"
+City of Indianapolis and Marion County - IndyGIS,"[u'Political', u'voting', u'School Board Districts', u'Voting Districts']",http://data1-indygis.opendata.arcgis.com/datasets/6f933ecf6b6b42fd9f5fb49f9dc2db3e_9,School Board Districts,"Polygon file
+representing the school board district boundaries in Indianapolis and Marion County,
+Indiana.
+Data projection: NAD 1983 StatePlane Indiana East FIPS 1301 (US Feet)",2018-11-27T15:02:08.000Z,2018-11-27T18:55:21.101Z,http://data1-indygis.opendata.arcgis.com/datasets/6f933ecf6b6b42fd9f5fb49f9dc2db3e_9,http://xmaps.indy.gov/arcgis/rest/services/OpenData/OpenData_Political/MapServer/9,"-86.3292,39.6322,-85.937,39.9278",01c-02,Indiana,Municipalities Geospatial Data,{u'name': u'City of Indianapolis and Marion County - IndyGIS'},"City of Indianapolis, Indiana, United States|Indiana, United States"
+City of Indianapolis and Marion County - IndyGIS,"[u'Election Results', u'Election Results Archive', u'Marion County Election Results', u'2008 Election Results', u'Indy Election Results', u'Political']",http://data1-indygis.opendata.arcgis.com/datasets/26af7b01da554c8fb7ba1720f4b4bcfb,2011 Municipal Election Results,"2011 Municipal Election Results
+
+
+
+Contest and precinct results are presented here in an
+     Excel document. Marion County reduced its number of precincts from 917
+     to 590 in December 2007. Therefore, the precinct results for those
+     elections occurring after December 2007 are not comparable with those
+     elections?occurring before December 2007. Marion County increased the number of precincts from
+     590 to 600 in December 2011. Therefore, the precinct results for those
+     elections occurring after December 2011 are not comparable with those
+     election occurring between December 2007 through December 2011.",2018-10-23T20:26:30.000Z,2018-11-16T19:25:40.125Z,http://data1-indygis.opendata.arcgis.com/datasets/26af7b01da554c8fb7ba1720f4b4bcfb,https://xmaps.indy.gov/ODP/Download/Elections/2011MunicipalElectionResults.xls,"-180.0,-90.0,180.0,90.0",01c-02,Indiana,Municipalities Geospatial Data,{u'name': u'City of Indianapolis and Marion County - IndyGIS'},"City of Indianapolis, Indiana, United States|Indiana, United States"
+City of Indianapolis and Marion County - IndyGIS,"[u'Election Results', u'Election Results Archive', u'Marion County Election Results', u'Indy Election Results', u'2008 Election Results', u'Political']",http://data1-indygis.opendata.arcgis.com/datasets/8ac7aad461524a80aa7c649469e44362,2008 General Election Results,"2008 General Election Results
+
+Contest and precinct results are presented here in an
+     Excel document. Marion County reduced its number of precincts from 917
+     to 590 in December 2007. Therefore, the precinct results for those
+     elections occurring after December 2007 are not comparable with those
+     elections?occurring before December 2007. Marion County increased the number of precincts from
+     590 to 600 in December 2011. Therefore, the precinct results for those
+     elections occurring after December 2011 are not comparable with those
+     election occurring between December 2007 through December 2011.",2018-10-23T19:57:32.000Z,2018-11-16T19:25:41.230Z,http://data1-indygis.opendata.arcgis.com/datasets/8ac7aad461524a80aa7c649469e44362,https://xmaps.indy.gov/ODP/Download/Elections/2008GeneralElectionResults.xls,"-180.0,-90.0,180.0,90.0",01c-02,Indiana,Municipalities Geospatial Data,{u'name': u'City of Indianapolis and Marion County - IndyGIS'},"City of Indianapolis, Indiana, United States|Indiana, United States"
+City of Indianapolis and Marion County - IndyGIS,"[u'Election Results', u'Election Results Archive', u'Marion County Election Results', u'Indy Election Results', u'2008 Election Results', u'Political']",http://data1-indygis.opendata.arcgis.com/datasets/f7b9d1ef02714fc3972651dc4cb556d1,2008 Special Election Results,"2008 Special Election Results
+
+Contest and precinct results are presented here in an
+     Excel document. Marion County reduced its number of precincts from 917
+     to 590 in December 2007. Therefore, the precinct results for those
+     elections occurring after December 2007 are not comparable with those
+     elections?occurring before December 2007. Marion County increased the number of precincts from
+     590 to 600 in December 2011. Therefore, the precinct results for those
+     elections occurring after December 2011 are not comparable with those
+     election occurring between December 2007 through December 2011.
+
+",2018-10-23T20:16:36.000Z,2018-11-16T19:25:41.630Z,http://data1-indygis.opendata.arcgis.com/datasets/f7b9d1ef02714fc3972651dc4cb556d1,https://xmaps.indy.gov/ODP/Download/Elections/2008SpecialElectionResults.xls,"-180.0,-90.0,180.0,90.0",01c-02,Indiana,Municipalities Geospatial Data,{u'name': u'City of Indianapolis and Marion County - IndyGIS'},"City of Indianapolis, Indiana, United States|Indiana, United States"
+City of Indianapolis and Marion County - IndyGIS,"[u'Election Results', u'Election Results Archive', u'Indy Election Results', u'Marion County Election Results', u'2008 Election Results', u'Political']",http://data1-indygis.opendata.arcgis.com/datasets/f8024ab0d2e84f72b6a7066bb7f4cca8,2008 Primary Election Results,"2008 Primary Election Results
+
+Contest and precinct results are presented here in an
+     Excel document. Marion County reduced its number of precincts from 917
+     to 590 in December 2007. Therefore, the precinct results for those
+     elections occurring after December 2007 are not comparable with those
+     elections?occurring before December 2007. Marion County increased the number of precincts from
+     590 to 600 in December 2011. Therefore, the precinct results for those
+     elections occurring after December 2011 are not comparable with those
+     election occurring between December 2007 through December 2011.",2018-10-23T20:07:44.000Z,2018-11-16T19:25:41.124Z,http://data1-indygis.opendata.arcgis.com/datasets/f8024ab0d2e84f72b6a7066bb7f4cca8,https://xmaps.indy.gov/ODP/Download/Elections/2008PrimaryElectionResults.xls,"-180.0,-90.0,180.0,90.0",01c-02,Indiana,Municipalities Geospatial Data,{u'name': u'City of Indianapolis and Marion County - IndyGIS'},"City of Indianapolis, Indiana, United States|Indiana, United States"
+City of Indianapolis and Marion County - IndyGIS,"[u'Bids', u'OFM', u'Bid Results', u'Bids and Quotes', u'Nonspatial']",http://data1-indygis.opendata.arcgis.com/datasets/01fcbfbdfc094f9d835f3f6c769ef3bd,2013 Bid Results,"The bid tabulations listed below reflect grand totals only of the valid bids received. They may not reflect any added or deducted alternatives. Evaluations will be made by the project manager or his representative for correct price extensions, meeting specifications, etc. Once those specifications are completed, the department?s governing board or commission will award the bid to the lowest, responsive, responsible bidder meeting the bid?s specifications. The bids listed may only be the top three responsive bids. Please click on the bid number below to review the results from that particular bid.",2018-12-04T14:23:22.000Z,2018-12-04T15:37:49.184Z,http://data1-indygis.opendata.arcgis.com/datasets/01fcbfbdfc094f9d835f3f6c769ef3bd,https://xmaps.indy.gov/ODP/Download/OFM/BidResults/2013 Bid Results.zip,"-180.0,-90.0,180.0,90.0",01c-02,Indiana,Municipalities Geospatial Data,{u'name': u'City of Indianapolis and Marion County - IndyGIS'},"City of Indianapolis, Indiana, United States|Indiana, United States"
+City of Indianapolis and Marion County - IndyGIS,"[u'Election Results', u'Election Results Archive', u'Marion County Election Results', u'Indy Election Results', u'2014 Election Results', u'Political']",http://data1-indygis.opendata.arcgis.com/datasets/0d8b6e50822a402dad1df6d438464e42,2014 General Election Results,"2014 General Election Results
+
+Contest and precinct results are presented here in an
+     Excel document. Marion County reduced its number of precincts from 917
+     to 590 in December 2007. Therefore, the precinct results for those
+     elections occurring after December 2007 are not comparable with those
+     elections?occurring before December 2007. Marion County increased the number of precincts from
+     590 to 600 in December 2011. Therefore, the precinct results for those
+     elections occurring after December 2011 are not comparable with those
+     election occurring between December 2007 through December 2011.",2018-11-15T21:15:44.000Z,2018-11-16T19:25:40.113Z,http://data1-indygis.opendata.arcgis.com/datasets/0d8b6e50822a402dad1df6d438464e42,https://xmaps.indy.gov/ODP/Download/Elections/2014GeneralElectionResults.xls,"-180.0,-90.0,180.0,90.0",01c-02,Indiana,Municipalities Geospatial Data,{u'name': u'City of Indianapolis and Marion County - IndyGIS'},"City of Indianapolis, Indiana, United States|Indiana, United States"
+City of Indianapolis and Marion County - IndyGIS,"[u'Election Results', u'Election Results Archive', u'Indy Election Results', u'Marion County Election Results', u'2010 Election Results', u'Political']",http://data1-indygis.opendata.arcgis.com/datasets/8794dc70ca504a17b88a5de6ca52eb98,2010 General Election Results,"2010 General Election ResultsContest and precinct results are presented here in an
+     Excel document. Marion County reduced its number of precincts from 917
+     to 590 in December 2007. Therefore, the precinct results for those
+     elections occurring after December 2007 are not comparable with those
+     elections?occurring before December 2007. Marion County increased the number of precincts from
+     590 to 600 in December 2011. Therefore, the precinct results for those
+     elections occurring after December 2011 are not comparable with those
+     election occurring between December 2007 through December 2011.",2018-10-23T20:04:49.000Z,2018-11-16T19:25:39.623Z,http://data1-indygis.opendata.arcgis.com/datasets/8794dc70ca504a17b88a5de6ca52eb98,https://xmaps.indy.gov/ODP/Download/Elections/2010GeneralElectionResults.xls,"-180.0,-90.0,180.0,90.0",01c-02,Indiana,Municipalities Geospatial Data,{u'name': u'City of Indianapolis and Marion County - IndyGIS'},"City of Indianapolis, Indiana, United States|Indiana, United States"
+City of Indianapolis and Marion County - IndyGIS,"[u'Election Results', u'Election Results Archive', u'Indy Election Results', u'Marion County Election Results', u'2015 Election Results', u'Political']",http://data1-indygis.opendata.arcgis.com/datasets/04af8238531d4f4eb20324b0cdd3fbc9,2015 Municipal Election Results,"2015 Municipal Election Results
+
+Contest and precinct results are presented here in an
+     Excel document. Marion County reduced its number of precincts from 917
+     to 590 in December 2007. Therefore, the precinct results for those
+     elections occurring after December 2007 are not comparable with those
+     elections?occurring before December 2007. Marion County increased the number of precincts from
+     590 to 600 in December 2011. Therefore, the precinct results for those
+     elections occurring after December 2011 are not comparable with those
+     election occurring between December 2007 through December 2011.",2018-11-15T21:27:59.000Z,2018-11-16T19:25:39.778Z,http://data1-indygis.opendata.arcgis.com/datasets/04af8238531d4f4eb20324b0cdd3fbc9,https://xmaps.indy.gov/ODP/Download/Elections/2015MunicipalElectionResults.xls,"-180.0,-90.0,180.0,90.0",01c-02,Indiana,Municipalities Geospatial Data,{u'name': u'City of Indianapolis and Marion County - IndyGIS'},"City of Indianapolis, Indiana, United States|Indiana, United States"
+City of Indianapolis and Marion County - IndyGIS,"[u'Bids', u'Bid Results', u'Bids and Quotes', u'OFM', u'Nonspatial']",http://data1-indygis.opendata.arcgis.com/datasets/4209a4b308574a969485abcef620fdc6,2016 Bid Results,"The bid tabulations listed below reflect grand totals only of the valid bids received. They may not reflect any added or deducted alternatives. Evaluations will be made by the project manager or his representative for correct price extensions, meeting specifications, etc. Once those specifications are completed, the department?s governing board or commission will award the bid to the lowest, responsive, responsible bidder meeting the bid?s specifications. The bids listed may only be the top three responsive bids. Please click on the bid number below to review the results from that particular bid.",2018-12-04T15:34:11.000Z,2018-12-04T15:37:48.903Z,http://data1-indygis.opendata.arcgis.com/datasets/4209a4b308574a969485abcef620fdc6,https://xmaps.indy.gov/ODP/Download/OFM/BidResults/2016 Bid Results.zip,"-180.0,-90.0,180.0,90.0",01c-02,Indiana,Municipalities Geospatial Data,{u'name': u'City of Indianapolis and Marion County - IndyGIS'},"City of Indianapolis, Indiana, United States|Indiana, United States"
+City of Indianapolis and Marion County - IndyGIS,"[u'Election Results', u'Indy Election Results', u'Marion County Election Results', u'2007 Election Results', u'Election Results Archive', u'Political']",http://data1-indygis.opendata.arcgis.com/datasets/2735c8ecda18427dab6eccec81419cb9,2007 General Election Results,"2007 Primary Election Results
+
+Contest and precinct results are presented here in an
+     Excel document. Marion County reduced its number of precincts from 917
+     to 590 in December 2007. Therefore, the precinct results for those
+     elections occurring after December 2007 are not comparable with those
+     elections?occurring before December 2007. Marion County increased the number of precincts from
+     590 to 600 in December 2011. Therefore, the precinct results for those
+     elections occurring after December 2011 are not comparable with those
+     election occurring between December 2007 through December 2011.",2018-10-23T15:24:57.000Z,2018-11-16T19:25:40.080Z,http://data1-indygis.opendata.arcgis.com/datasets/2735c8ecda18427dab6eccec81419cb9,https://xmaps.indy.gov/ODP/Download/Elections/2007GeneralElectionResults.xls,"-180.0,-90.0,180.0,90.0",01c-02,Indiana,Municipalities Geospatial Data,{u'name': u'City of Indianapolis and Marion County - IndyGIS'},"City of Indianapolis, Indiana, United States|Indiana, United States"

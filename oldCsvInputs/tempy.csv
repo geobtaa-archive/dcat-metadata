@@ -1,0 +1,6 @@
+portalName,URL,provenance,isPartOf,publisher,spatialCoverage
+12b-043,https://gisdata-dupage.opendata.arcgis.com/data.json,Chicago,Counties Geospatial Data,"DuPage County, Illinois","DuPage County, Illinois, United States|Illinois, United States"
+12b-097,https://data-lakecountyil.opendata.arcgis.com/data.json,Chicago,Counties Geospatial Data,"Lake County, Illinois","Lake County, Illinois, United States|Illinois, United States"
+12b-143,https://data-peoriacountygis.opendata.arcgis.com/data.json,Chicago,Counties Geospatial Data,"Peoria County, Illinois","Peoria County, Illinois, United States|Illinois, United States"
+02a-02,https://illinoisepaopendata-illinois-epa.opendata.arcgis.com/data.json,Illinois,State Agencies Geospatial Data,State of Illinois,"Illinois, United States"
+02c-01,https://data-evanston.opendata.arcgis.com/data.json,Illinois,Municipalities Geospatial Data,"City of Evanston, Illinois","City of Evanston, Illinois, United States|Illinois, United States"
