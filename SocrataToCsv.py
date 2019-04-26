@@ -64,7 +64,7 @@ def printReport (report_type, dictionary, fields):
 
 
 ### Opens a list of portals and urls ending in data/json. Needs to be a csv with column headers 'portalName' and 'URL'
-with open(directory + 'SocrataPortals.csv') as f:
+with open(directory + 'SocrataPortals_2.csv') as f:
     reader = csv.DictReader(f)
     for row in reader:
         portalName = row['portalName']
