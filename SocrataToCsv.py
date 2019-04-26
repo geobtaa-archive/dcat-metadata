@@ -24,10 +24,10 @@ from HTMLParser import HTMLParser
 ### Manual items to change!
 
 ## Set the date download of the older and newer jsons
-actionDate = 'yyyymmdd'
+actionDate = '20190426'
 
 ## names of the main directory containing folders named "jsons" and "reports"
-directory = r' '
+directory = '/Users/majew030/Desktop/dcat-metadata/'
 
 ##list of metadata fields desired for the final report
 fields = ["identifier", "title", "description", "issued", "landingPage"]
@@ -52,7 +52,7 @@ def strip_tags(html):
 
 ### function that checks if there are items added to a dictionary (ie. new, modified, or deleted items). If there are, prints results to a csv file with metadata elements as field names
 def printReport (report_type, dictionary, fields):
-    report = directory + "/Reports/%s_%s.csv" % (portalName, actionDate)
+    report = directory + "Reports/%s_%s.csv" % (portalName, actionDate)
     with open(report, 'wb') as outfile:
         csvout = csv.writer(outfile)
         csvout.writerow(fields)
@@ -64,7 +64,7 @@ def printReport (report_type, dictionary, fields):
 
 
 ### Opens a list of portals and urls ending in data/json. Needs to be a csv with column headers 'portalName' and 'URL'
-with open(directory + '/temp.csv') as f:
+with open(directory + 'SocrataPortals.csv') as f:
     reader = csv.DictReader(f)
     for row in reader:
         portalName = row['portalName']
@@ -75,7 +75,7 @@ with open(directory + '/temp.csv') as f:
         ## for each socrata data portal in the csv list...
         ## renames file paths based on portalName and manually provided dates
 
-        newjson = directory + '/Socrata/%s_%s.json' % (portalName, actionDate)
+        newjson = directory + 'Socrata/%s_%s.json' % (portalName, actionDate)
 
 
         ## Opens the url for an open data portal json and loads it into the script
@@ -98,18 +98,21 @@ with open(directory + '/temp.csv') as f:
         new_ids = {}
         newItemDict = {}
         for y in range(len(newdata["dataset"])):
-            for method in range(len(newdata["dataset"][y]['distribution'])):
-                if "method=export&format=Shapefile" in newdata["dataset"][y]['distribution'][method]['downloadURL']:
-                    identifier = newdata["dataset"][y]["identifier"]
-                    ### Makes a dictionary of identifiers in the newer json that have a "Shapefile" export option to be used to look for deleted items below
-                    new_ids[y] = identifier
-##                    if identifier not in original_ids.values():
-                    metadata = []
-                    for field in fields:
-                        fieldvalue = strip_tags(newdata["dataset"][y][field])
-                        fieldvalue = fieldvalue.encode('ascii', 'replace')
-                        metadata.append(fieldvalue)
-                    newItemDict[identifier] = metadata
+			try:
+				for method in range(len(newdata["dataset"][y]['distribution'])):
+					if "method=export&format=Shapefile" in newdata["dataset"][y]['distribution'][method]['downloadURL']:
+						identifier = newdata["dataset"][y]["identifier"]
+						### Makes a dictionary of identifiers in the newer json that have a "Shapefile" export option to be used to look for deleted items below
+						new_ids[y] = identifier
+	##                    if identifier not in original_ids.values():
+						metadata = []
+						for field in fields:
+							fieldvalue = strip_tags(newdata["dataset"][y][field])
+							fieldvalue = fieldvalue.encode('ascii', 'replace')
+							metadata.append(fieldvalue)
+						newItemDict[identifier] = metadata
+			except:
+				pass
 ##                ### If the spatial item identifier was in the new record, checks to see whether the modified date has changed. If yes, adds selected fields (with html tags and utf-8 characters removed) into a dictionary of modified items (modifiedItemDict)
 ##                    elif data["dataset"][original_ids.keys()[original_ids.values().index(identifier)]]["modified"] != newdata["dataset"][y]["modified"]:
 ##                            mod_metadata = []
