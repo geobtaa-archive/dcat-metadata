@@ -27,11 +27,11 @@ import decimal
 ### Manual items to change!
 
 ## Set the date download of the older and newer jsons
-ActionDate = '20190222'
-PreviousActionDate = '20190215'
+ActionDate = '20190524'
+PreviousActionDate = '20190405'
 
 ## names of the main directory containing folders named "Jsons" and "Reports"
-directory = '/Users/majew030/GitHUB/dcat-metadata/'
+directory = '/Users/majew030/Desktop/dcat-metadata/'
 
 ##list of metadata fields from the DCAT json schema for open data portals desired in the final report
 fieldnames = ["identifier", "code", "title", "alternativeTitle", "description", "genre", "subject", "format", "type", "geometryType", "dateIssued", "temporalCoverage", "Date", "spatialCoverage", "spatial", "provenance", "isPartOf", "publisher",  "creator", "landingPage", "downloadURL", "webService", "metadataURL", "serverType", "keywords"]
