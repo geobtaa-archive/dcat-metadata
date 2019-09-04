@@ -27,14 +27,14 @@ import decimal
 ### Manual items to change!
 
 ## Set the date download of the older and newer jsons
-ActionDate = '20190524'
-PreviousActionDate = '20190405'
+ActionDate = '20190904'
+PreviousActionDate = 'YYYYMMDD'
 
 ## names of the main directory containing folders named "Jsons" and "Reports"
 directory = '/Users/majew030/Desktop/dcat-metadata/'
 
 ##list of metadata fields from the DCAT json schema for open data portals desired in the final report
-fieldnames = ["identifier", "code", "title", "alternativeTitle", "description", "genre", "subject", "format", "type", "geometryType", "dateIssued", "temporalCoverage", "Date", "spatialCoverage", "spatial", "provenance", "isPartOf", "publisher",  "creator", "landingPage", "downloadURL", "webService", "metadataURL", "serverType", "keywords"]
+fieldnames = ["identifier", "code", "title", "alternativeTitle", "description", "genre", "subject", "format", "type", "geometryType", "dateIssued", "temporalCoverage", "Date", "spatialCoverage", "spatial", "provenance", "publisher",  "creator", "landingPage", "downloadURL", "webService", "metadataURL", "serverType", "keywords"]
 
 ##list of fields to use for the deletedItems report
 delFieldsReport = ['identifier', 'landingPage', 'portalName']
@@ -91,7 +91,11 @@ def metadataNewItems(newdata, newitem_ids):
         metadata = []
         metadata.append(identifier.rsplit('/', 1)[-1])
         metadata.append(portalName)
-        metadata.append(cleanData(newdata["dataset"][y]['title']))
+        try:
+        	metadata.append(cleanData(newdata["dataset"][y]['title']))
+        except:
+        	metadata.append(newdata["dataset"][y]['title'])
+
         altTitle = ""
         metadata.append(altTitle)
         metadata.append(cleanData(newdata["dataset"][y]['description']))
@@ -104,6 +108,7 @@ def metadataNewItems(newdata, newitem_ids):
         typeElement = ""
         downloadURL =  ""
         geometryType = ""
+        webService = ""
 
         distribution = newdata["dataset"][y]["distribution"]
         for dictionary in distribution:
@@ -113,12 +118,18 @@ def metadataNewItems(newdata, newitem_ids):
                 if dictionary["title"] == "Shapefile":
                     genre = "Geospatial data"
                     formatElement = "Shapefile"
-                    downloadURL = dictionary["downloadURL"]
+                    if downloadURL in dictionary:
+                    	downloadURL = dictionary["downloadURL"]
+                    else:
+                    	downloadURL = dictionary["accessURL"]
+
                     geometryType = "Vector"
 
                 ### If the Rest API is based on an ImageServer, change genre, type, and format to relate to imagery
                 if dictionary["title"] == "Esri Rest API":
                     #imageCheck = dictionary['accessURL'].rsplit('/', 1)[-1]
+                    webService = dictionary['accessURL']
+
                     if dictionary['accessURL'].rsplit('/', 1)[-1] == 'ImageServer':
                         genre = "Aerial imagery"
                         formatElement = 'Imagery'
@@ -134,20 +145,25 @@ def metadataNewItems(newdata, newitem_ids):
                 typeElement = "error"
                 downloadURL =  "error"
 
-                for dictionary in distribution:
-                    ### If one of the distributions is a pdf, change genre and format
-                    if ".pdf" in dictionary['accessURL']:
-                        genre = 'Flagged'
-                        formatElement = 'PDF'
-                        typeElement = ""
-                        downloadURL =  ""
+                try:
 
-                    ### If one of the distributions is a web map, change genre and format
-                    if "viewer.html?webmap" in dictionary['accessURL']:
-                        genre = 'Flagged'
-                        formatElement = 'Web map'
-                        typeElement = ""
-                        downloadURL =  ""
+					for dictionary in distribution:
+						### If one of the distributions is a pdf, change genre and format
+						if ".pdf" in dictionary['accessURL']:
+							genre = 'Flagged'
+							formatElement = 'PDF'
+							typeElement = ""
+							downloadURL =  ""
+
+						### If one of the distributions is a web map, change genre and format
+						if "viewer.html?webmap" in dictionary['accessURL']:
+							genre = 'Flagged'
+							formatElement = 'Web map'
+							typeElement = ""
+							downloadURL =  ""
+
+                except:
+                	continue
 
         ###If the item has both a Shapefile and Esri Rest API format, change type
         if "Esri Rest API" in format_types:
@@ -159,19 +175,25 @@ def metadataNewItems(newdata, newitem_ids):
             formatElement = '|'.join(format_types)
 
         ### Checks for patterns in spatial coordinates that frequently indicate an error and, if found, changes the genre to "Suspicious coordinates"
-        bbox = []
-        spatial = cleanData(newdata["dataset"][y]['spatial'])
-        typeDmal = decimal.Decimal
-        fix4 = typeDmal("0.0001")
-        for coord in spatial.split(","):
-            coordFix = typeDmal(coord).quantize(fix4)
-            bbox.append(str(coordFix))
-        count = 0
-        for coord in bbox:
-            if coord == '0.0000':
-                count += 1
-        if count >= 2:
-            genre = 'Suspicious coordinates'
+
+        try:
+
+			bbox = []
+			spatial = cleanData(newdata["dataset"][y]['spatial'])
+			typeDmal = decimal.Decimal
+			fix4 = typeDmal("0.0001")
+			for coord in spatial.split(","):
+				coordFix = typeDmal(coord).quantize(fix4)
+				bbox.append(str(coordFix))
+			count = 0
+			for coord in bbox:
+				if coord == '0.0000':
+					count += 1
+			if count >= 2:
+				genre = 'Suspicious coordinates'
+        except:
+        	spatial = ""
+
 
         metadata.append(genre)
         subject = ""
@@ -189,24 +211,32 @@ def metadataNewItems(newdata, newitem_ids):
         metadata.append(spatial)
 
         metadata.append(provenance)
-        metadata.append(isPartOf)
+#         metadata.append(isPartOf)
         metadata.append(publisher)
         creator = newdata["dataset"][y]["publisher"]
-        creator = creator['name'].encode('ascii', 'replace')
+        for pub in creator.values():
+        	creator = pub.encode('ascii', 'replace')
+
+#         creator = creator['source'].encode('ascii', 'replace')
         metadata.append(creator)
 
         metadata.append(cleanData(newdata["dataset"][y]['landingPage']))
         metadata.append(downloadURL)
-        metadata.append(cleanData(newdata["dataset"][y]['webService']))
+        metadata.append(webService)
+#         metadata.append(cleanData(newdata["dataset"][y]['webService']))
         metadataLink = ""
         metadata.append(metadataLink)
-        webService = cleanData(newdata["dataset"][y]['webService'])
+
+#         webService = cleanData(newdata["dataset"][y]['webService'])
 
         serviceType = ""
         serviceTypeList = ["FeatureServer", "MapServer", "ImageServer"]
         for server in serviceTypeList:
-            if server in webService:
-                serviceType = server
+        	try:
+        		if server in webService:
+        			serviceType = server
+        	except:
+        		print(identifier)
         metadata.append(serviceType)
 
         keywords = newdata["dataset"][y]["keyword"]
@@ -232,22 +262,22 @@ All_Deleted_Items = []
 Status_Report = {}
 
 ### Opens a list of portals and urls ending in /data.json from input CSV using column headers 'portalName' and 'URL'
-with open(directory + 'arcPortals.csv') as f:
+with open(directory + 'arcPortals_20190830.csv') as f:
     reader = csv.DictReader(f)
     for row in reader:
         ### Read in values from the portals list to be used within the script or as part of the metadata report
         portalName = row['portalName']
         url = row['URL']
         provenance = row['provenance']
-        isPartOf = row['isPartOf']
+#         isPartOf = row['isPartOf']
         publisher = row['publisher']
         spatialCoverage = row['spatialCoverage']
         print portalName, url
 
         ## for each open data portal in the csv list...
         ## renames file paths based on portalName and manually provided dates
-        oldjson = directory + 'Jsons/%s_%s.json' % (portalName, PreviousActionDate)
-        newjson = directory + 'Jsons/%s_%s.json' % (portalName, ActionDate)
+        oldjson = directory + '/Jsons/%s_%s.json' % (portalName, PreviousActionDate)
+        newjson = directory + '/Jsons/%s_%s.json' % (portalName, ActionDate)
 
 
         ## Opens the url for the ESRI open data portal json and loads it into the script
