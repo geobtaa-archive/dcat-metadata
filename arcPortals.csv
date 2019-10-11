@@ -46,5 +46,5 @@ portalName,URL,provenance,publisher,spatialCoverage
 08b-42091,https://data-montcopa.opendata.arcgis.com/data.json,Penn State,"Montgomery County, Pennsylvania","Montgomery County, Pennsylvania|Pennsylvania"
 08c-02,http://data-phl.opendata.arcgis.com/data.json,Penn State,"City of Philadelphia, Pennsylvania","Philadelphia, Pennsylvania|Pennsylvania"
 09c-01,http://data-southbend.opendata.arcgis.com/data.json,Purdue,"South Bend, Indiana","South Bend, Indiana|Ohio"
-07b-26161,https://data-washtenaw.opendata.arcgis.com/,Michigan State,"Washtenaw County, Michigan","Washtenaw County, Michigan|Michigan"
-07c-03,https://grdata-grandrapids.opendata.arcgis.com/,Michigan State,"Grand Rapids, Michigan","Grand Rapids, Michigan|Michigan"
+07b-26161,https://data-washtenaw.opendata.arcgis.com/data.json,Michigan State,"Washtenaw County, Michigan","Washtenaw County, Michigan|Michigan"
+07c-03,https://grdata-grandrapids.opendata.arcgis.com/data.json,Michigan State,"Grand Rapids, Michigan","Grand Rapids, Michigan|Michigan"
