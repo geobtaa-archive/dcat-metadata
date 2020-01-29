@@ -36,7 +36,7 @@ portalName,URL,provenance,publisher,spatialCoverage
 03b-19113,http://opendata-linncounty-gis.opendata.arcgis.com/data.json,Iowa,"Linn County, Iowa","Linn County, Iowa|Iowa"
 11b-39093,https://data-loraingis.opendata.arcgis.com/data.json,Ohio State,"Lorain County, Ohio","Lorain County, Ohio|Ohio"
 04a-01,http://data.imap.maryland.gov/data.json,Maryland,State of Maryland,Maryland
-05c-01,http://opendata.minneapolismn.gov/data.json,Minnesota,"City of Minneapolis, Minnesota",Minneapolis, Minnesota|Minnesota
+05c-01,http://opendata.minneapolismn.gov/data.json,Minnesota,"City of Minneapolis, Minnesota","Minneapolis, Minnesota|Minnesota"
 08b-42091,https://data-montcopa.opendata.arcgis.com/data.json,Penn State,"Montgomery County, Pennsylvania","Montgomery County, Pennsylvania|Pennsylvania"
 06b-26125,http://accessoakland.oakgov.com/data.json,Michigan State,"Oakland County, Michigan","Oakland County, Michigan|Michigan"
 04c-01,https://opendata.dc.gov/data.json,Maryland,"Washington, District of Columbia","Washington, District of Columbia|District of Columbia|Maryland|Virginia"
