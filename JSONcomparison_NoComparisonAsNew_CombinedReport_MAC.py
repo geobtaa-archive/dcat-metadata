@@ -21,17 +21,18 @@ import os
 import os.path
 from HTMLParser import HTMLParser
 import decimal
+import ssl
 
 ######################################
 
 ### Manual items to change!
 
 ## Set the date download of the older and newer jsons
-ActionDate = '20190904'
-PreviousActionDate = 'YYYYMMDD'
+ActionDate = '20200207'
+PreviousActionDate = '20200103'
 
 ## names of the main directory containing folders named "Jsons" and "Reports"
-directory = '/Users/majew030/Desktop/dcat-metadata/'
+directory = r'C:\\Users\\Emily\\Documents\\Grad School\\Map Library RA\\dcat-metadata\\'
 
 ##list of metadata fields from the DCAT json schema for open data portals desired in the final report
 fieldnames = ["identifier", "code", "title", "alternativeTitle", "description", "genre", "subject", "format", "type", "geometryType", "dateIssued", "temporalCoverage", "Date", "spatialCoverage", "spatial", "provenance", "publisher",  "creator", "landingPage", "downloadURL", "webService", "metadataURL", "serverType", "keywords"]
@@ -146,24 +147,23 @@ def metadataNewItems(newdata, newitem_ids):
                 downloadURL =  "error"
 
                 try:
+                    for dictionary in distribution:
+                        ### If one of the distributions is a pdf, change genre and format
+                        if ".pdf" in dictionary['accessURL']:
+                            genre = 'Flagged'
+                            formatElement = 'PDF'
+                            typeElement = ""
+                            downloadURL =  ""
 
-					for dictionary in distribution:
-						### If one of the distributions is a pdf, change genre and format
-						if ".pdf" in dictionary['accessURL']:
-							genre = 'Flagged'
-							formatElement = 'PDF'
-							typeElement = ""
-							downloadURL =  ""
-
-						### If one of the distributions is a web map, change genre and format
-						if "viewer.html?webmap" in dictionary['accessURL']:
-							genre = 'Flagged'
-							formatElement = 'Web map'
-							typeElement = ""
-							downloadURL =  ""
+                        ### If one of the distributions is a web map, change genre and format
+                        if "viewer.html?webmap" in dictionary['accessURL']:
+                            genre = 'Flagged'
+                            formatElement = 'Web map'
+                            typeElement = ""
+                            downloadURL =  ""
 
                 except:
-                	continue
+                    continue
 
         ###If the item has both a Shapefile and Esri Rest API format, change type
         if "Esri Rest API" in format_types:
@@ -177,22 +177,21 @@ def metadataNewItems(newdata, newitem_ids):
         ### Checks for patterns in spatial coordinates that frequently indicate an error and, if found, changes the genre to "Suspicious coordinates"
 
         try:
-
-			bbox = []
-			spatial = cleanData(newdata["dataset"][y]['spatial'])
-			typeDmal = decimal.Decimal
-			fix4 = typeDmal("0.0001")
-			for coord in spatial.split(","):
-				coordFix = typeDmal(coord).quantize(fix4)
-				bbox.append(str(coordFix))
-			count = 0
-			for coord in bbox:
-				if coord == '0.0000':
-					count += 1
-			if count >= 2:
-				genre = 'Suspicious coordinates'
+            bbox = []
+            spatial = cleanData(newdata["dataset"][y]['spatial'])
+            typeDmal = decimal.Decimal
+            fix4 = typeDmal("0.0001")
+            for coord in spatial.split(","):
+                coordFix = typeDmal(coord).quantize(fix4)
+                bbox.append(str(coordFix))
+            count = 0
+            for coord in bbox:
+                if coord == '0.0000':
+                    count += 1
+                if count >= 2:
+                    genre = 'Suspicious coordinates'
         except:
-        	spatial = ""
+            spatial = ""
 
 
         metadata.append(genre)
@@ -232,11 +231,11 @@ def metadataNewItems(newdata, newitem_ids):
         serviceType = ""
         serviceTypeList = ["FeatureServer", "MapServer", "ImageServer"]
         for server in serviceTypeList:
-        	try:
-        		if server in webService:
-        			serviceType = server
-        	except:
-        		print(identifier)
+            try:
+                if server in webService:
+                    serviceType = server
+            except:
+                print(identifier)
         metadata.append(serviceType)
 
         keywords = newdata["dataset"][y]["keyword"]
@@ -262,7 +261,7 @@ All_Deleted_Items = []
 Status_Report = {}
 
 ### Opens a list of portals and urls ending in /data.json from input CSV using column headers 'portalName' and 'URL'
-with open(directory + 'arcPortals_20190830.csv') as f:
+with open(directory + 'arcPortals.csv') as f:
     reader = csv.DictReader(f)
     for row in reader:
         ### Read in values from the portals list to be used within the script or as part of the metadata report
@@ -282,8 +281,12 @@ with open(directory + 'arcPortals_20190830.csv') as f:
 
         ## Opens the url for the ESRI open data portal json and loads it into the script
         ## Could also check whether a new json already exists with  os.path.isfile(newjson)...
-        response = urllib.urlopen(url)
-        newdata = json.load(response)
+        try:
+            response = urllib.urlopen(url)
+            newdata = json.load(response)
+        except ssl.CertificateError as e:
+            print e
+            pass
 
         ### Saves a copy of the json to be used for the next round of comparison/reporting
         with open(newjson, 'w') as outfile:
