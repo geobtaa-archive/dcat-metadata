@@ -10,7 +10,7 @@ from urllib2 import urlopen
 Deleted4Realz = {}
 fields = ['URL', 'HTMLlength', 'ItemState']
 
-with open('allDeletedItems_20190607.csv') as csvfile:
+with open('allDeletedItems_20191110.csv') as csvfile:
     readCSV = csv.reader(csvfile, delimiter=',')
     for row in readCSV:
         PageInfo = []
@@ -27,7 +27,7 @@ with open('allDeletedItems_20190607.csv') as csvfile:
         Deleted4Realz[row[0]] = PageInfo
 
 
-report = ('GBLDeleted_TestReport_20190607.csv')
+report = ('GBLDeleted_TestReport_20191110.csv')
 with open(report, 'wb') as outfile:
         csvout = csv.writer(outfile)
         csvout.writerow(fields)

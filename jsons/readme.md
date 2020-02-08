@@ -1,1 +1,0 @@
-This folder contains full JSON metadata records named by code and date of harvest.
