@@ -1,5 +1,5 @@
 portalName,URL,provenance,publisher,spatialCoverage,
-06a-02,https://gis-midnr.opendata.arcgis.com/data.json,Michigan State,Michigan DNR,Michigan,
+06a-01,https://gis-michigan.opendata.arcgis.com/data.json,Michigan State,State of Michigan,Michigan,
 03a-02,https://public-iowadot.opendata.arcgis.com/data.json,Iowa,State of Iowa,Iowa,
 01b-18163,https://dev-evansvilleapc.opendata.arcgis.com/data.json,Indiana,"City of Evansville & Vanderburgh County, Indiana","Evansville, Vanderburgh County, Indiana|Vanderburgh County, Indiana|Indiana",
 11b-39153,https://data-summitgis.opendata.arcgis.com/data.json,Ohio State,"Summit County, Ohio","Summit County, Ohio|Ohio",
