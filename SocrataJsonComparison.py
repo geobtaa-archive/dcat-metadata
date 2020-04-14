@@ -24,14 +24,14 @@ from HTMLParser import HTMLParser
 ### Manual items to change!
 
 ## Set the date download of the older and newer jsons
-previousActionDate = 'yyyymmdd'
-actionDate = 'yyyymmdd'
+previousActionDate = '20190426'
+actionDate = '20200414'
 
 ## names of the main directory containing folders named "Jsons" and "Reports"
-directory = r' '
+directory = r'Socrata'
 
 ##list of metadata fields desired for the final report
-fields = ["identifier", "title", "description", "issued", "landingPage"]
+fields = ["identifier", "title", "description", "keyword","issued", "landingPage"]
 
 #######################################
 
@@ -65,7 +65,7 @@ def printReport (report_type, dictionary, fields):
 
 
 ### Opens a list of portals and urls ending in data/json. Needs to be a csv with column headers 'portalName' and 'URL'
-with open(directory + '/SocrataPortalList.csv') as f:
+with open('SocrataPortals.csv') as f:
     reader = csv.DictReader(f)
     for row in reader:
         portalName = row['portalName']
@@ -76,8 +76,8 @@ with open(directory + '/SocrataPortalList.csv') as f:
         ## for each socrata data portal in the csv list...
         ## renames file paths based on portalName and manually provided dates
 
-        oldjson = directory + '/Socrata/%s_%s.json' % (portalName, previousActionDate)
-        newjson = directory + '/Socrata/%s_%s.json' % (portalName, actionDate)
+        oldjson = directory + '%s_%s.json' % (portalName, previousActionDate)
+        newjson = directory + '%s_%s.json' % (portalName, actionDate)
 
 
         ## Opens the url for an open data portal json and loads it into the script

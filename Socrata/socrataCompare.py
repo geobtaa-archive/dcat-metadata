@@ -21,20 +21,21 @@ import os
 import os.path
 from HTMLParser import HTMLParser
 import decimal
+import ssl
 
 ######################################
 
 ### Manual items to change!
 
 ## Set the date download of the older and newer jsons
-ActionDate = '20190419'
-PreviousActionDate = '20190419'
+ActionDate = '20200414'
+PreviousActionDate = '20190426'
 
 ## names of the main directory containing folders named "Jsons" and "Reports"
-directory = '/Users/majew030/Desktop/dcat-metadata/'
+directory = r''
 
 ##list of metadata fields from the DCAT json schema for open data portals desired in the final report
-fieldnames = ["identifier", "code", "title", "alternativeTitle", "description", "genre", "subject", "format", "type", "geometryType", "dateIssued", "temporalCoverage", "Date", "spatialCoverage", "spatial", "provenance", "isPartOf", "publisher",  "creator", "landingPage", "downloadURL", "keywords"]
+fieldnames = ["identifier", "code", "title", "alternativeTitle", "description", "genre", "subject", "format", "type", "geometryType", "dateIssued", "temporalCoverage", "Date", "spatialCoverage", "spatial", "provenance", "publisher",  "creator", "landingPage", "distribution"]
 
 ##list of fields to use for the deletedItems report
 delFieldsReport = ['identifier', 'landingPage', 'portalName']
@@ -79,28 +80,8 @@ def printReport (report, dictionary, fields):
 def getIdentifiers (data):
     json_ids = {}
     for x in range(len(data["dataset"])):
-    	for method in range(len(ndata["dataset"][y]['distribution'])):
-        	if "method=export&format=Shapefile" in newdata["dataset"][y]['distribution'][method]['downloadURL']:
-        		json_ids[x] = data["dataset"][x]["identifier"]
-   			return json_ids
-
-#
-#         new_ids = {}
-#         newItemDict = {}
-#         for y in range(len(newdata["dataset"])):
-#             for method in range(len(ndata["dataset"][y]['distribution'])):
-#                 if "method=export&format=Shapefile" in newdata["dataset"][y]['distribution'][method]['downloadURL']:
-#                     identifier = newdata["dataset"][y]["identifier"]
-#                     ### Makes a dictionary of identifiers in the newer json that have a "Shapefile" export option to be used to look for deleted items below
-#                     new_ids[y] = identifier
-# ##                    if identifier not in original_ids.values():
-#                     metadata = []
-#                     for field in fields:
-#                         fieldvalue = strip_tags(newdata["dataset"][y][field])
-#                         fieldvalue = fieldvalue.encode('ascii', 'replace')
-#                         metadata.append(fieldvalue)
-#                     newItemDict[identifier] = metadata
-
+        json_ids[x] = data["dataset"][x]["identifier"]
+    return json_ids
 
 
 ###function that returns a dictionary of selected metadata elements(with html tags and utf-8 characters removed) into a dictionary of new items (newItemDict) for each new item in a data portal. This includes blank fields '' for columns that will be filled in manually later. Includes an option to print a csv report of new items for each data portal
@@ -111,7 +92,11 @@ def metadataNewItems(newdata, newitem_ids):
         metadata = []
         metadata.append(identifier.rsplit('/', 1)[-1])
         metadata.append(portalName)
-        metadata.append(cleanData(newdata["dataset"][y]['title']))
+        try:
+             metadata.append(cleanData(newdata["dataset"][y]['title']))
+        except:
+             metadata.append(newdata["dataset"][y]['title'])
+
         altTitle = ""
         metadata.append(altTitle)
         metadata.append(cleanData(newdata["dataset"][y]['description']))
@@ -124,6 +109,7 @@ def metadataNewItems(newdata, newitem_ids):
         typeElement = ""
         downloadURL =  ""
         geometryType = ""
+        webService = ""
 
 #         distribution = newdata["dataset"][y]["distribution"]
 #         for dictionary in distribution:
@@ -133,72 +119,87 @@ def metadataNewItems(newdata, newitem_ids):
 #                 if dictionary["title"] == "Shapefile":
 #                     genre = "Geospatial data"
 #                     formatElement = "Shapefile"
-#                     downloadURL = dictionary["downloadURL"]
+#                     if downloadURL in dictionary:
+#                          downloadURL = dictionary["downloadURL"]
+#                     else:
+#                          downloadURL = dictionary["accessURL"]
+#
 #                     geometryType = "Vector"
 #
 #                 ### If the Rest API is based on an ImageServer, change genre, type, and format to relate to imagery
 #                 if dictionary["title"] == "Esri Rest API":
-#                     #imageCheck = dictionary['downloadURL'].rsplit('/', 1)[-1]
-#                     if dictionary['downloadURL'].rsplit('/', 1)[-1] == 'ImageServer':
+#                     #imageCheck = dictionary['accessURL'].rsplit('/', 1)[-1]
+#                     webService = dictionary['accessURL']
+#
+#                     if dictionary['accessURL'].rsplit('/', 1)[-1] == 'ImageServer':
 #                         genre = "Aerial imagery"
 #                         formatElement = 'Imagery'
 #                         typeElement = 'Image|Service'
 #                         #### Change this to Raster or Image?
 #                         geometryType = ""
 #
-#             ### If the distribution section of the metadata is not structured in a typical way
+#             If the distribution section of the metadata is not structured in a typical way
 #             except:
-#                 ### Set default error values for genre, format, type, and downloadURL
+#                 Set default error values for genre, format, type, and downloadURL
 #                 genre = "error"
 #                 formatElement = "error"
 #                 typeElement = "error"
 #                 downloadURL =  "error"
 #
-#                 for dictionary in distribution:
-#                     ### If one of the distributions is a pdf, change genre and format
-#                     if ".pdf" in dictionary['downloadURL']:
-#                         genre = 'Flagged'
-#                         formatElement = 'PDF'
-#                         typeElement = ""
-#                         downloadURL =  ""
+#                 try:
+#                     for dictionary in distribution:
+#                         If one of the distributions is a pdf, change genre and format
+#                         if ".pdf" in dictionary['accessURL']:
+#                             genre = 'Flagged'
+#                             formatElement = 'PDF'
+#                             typeElement = ""
+#                             downloadURL =  ""
 #
-#                     ### If one of the distributions is a web map, change genre and format
-#                     if "viewer.html?webmap" in dictionary['downloadURL']:
-#                         genre = 'Flagged'
-#                         formatElement = 'Web map'
-#                         typeElement = ""
-#                         downloadURL =  ""
+#                         If one of the distributions is a web map, change genre and format
+#                         if "viewer.html?webmap" in dictionary['accessURL']:
+#                             genre = 'Flagged'
+#                             formatElement = 'Web map'
+#                             typeElement = ""
+#                             downloadURL =  ""
+#                 except:
+#                     continue
 #
-#         ###If the item has both a Shapefile and Esri Rest API format, change type
+#         If the item has both a Shapefile and Esri Rest API format, change type
 #         if "Esri Rest API" in format_types:
 #             if "Shapefile" in format_types:
 #                 typeElement = "Dataset|Service"
-#         ### If the distribution section is well structured but doesn't include either a shapefile or imagery, add a list of format types and set genre to 'flagged
+#         If the distribution section is well structured but doesn't include either a shapefile or imagery, add a list of format types and set genre to 'flagged
 #         if formatElement == "":
 #             genre = 'Flagged'
 #             formatElement = '|'.join(format_types)
 #
-#         ### Checks for patterns in spatial coordinates that frequently indicate an error and, if found, changes the genre to "Suspicious coordinates"
-#         bbox = []
-#         spatial = cleanData(newdata["dataset"][y]['spatial'])
-#         typeDmal = decimal.Decimal
-#         fix4 = typeDmal("0.0001")
-#         for coord in spatial.split(","):
-#             coordFix = typeDmal(coord).quantize(fix4)
-#             bbox.append(str(coordFix))
-#         count = 0
-#         for coord in bbox:
-#             if coord == '0.0000':
-#                 count += 1
-#         if count >= 2:
-#             genre = 'Suspicious coordinates'
+#         Checks for patterns in spatial coordinates that frequently indicate an error and, if found, changes the genre to "Suspicious coordinates"
 #
-#         metadata.append(genre)
-#         subject = ""
-#         metadata.append(subject)
-#         metadata.append(formatElement)
-#         metadata.append(typeElement)
-#         metadata.append(geometryType)
+#         try:
+#             bbox = []
+#             spatial = cleanData(newdata["dataset"][y]['spatial'])
+#             typeDmal = decimal.Decimal
+#             fix4 = typeDmal("0.0001")
+#             for coord in spatial.split(","):
+#                 coordFix = typeDmal(coord).quantize(fix4)
+#                 bbox.append(str(coordFix))
+#             count = 0
+#             for coord in bbox:
+#                 if coord == '0.0000':
+#                     count += 1
+#             if count >= 2:
+#                 genre = 'Suspicious coordinates'
+#         except:
+#             spatial = ""
+
+
+
+        metadata.append(genre)
+        subject = ""
+        metadata.append(subject)
+        metadata.append(formatElement)
+        metadata.append(typeElement)
+        metadata.append(geometryType)
 
         metadata.append(cleanData(newdata["dataset"][y]['issued']))
         temporalCoverage = ""
@@ -209,25 +210,35 @@ def metadataNewItems(newdata, newitem_ids):
 #         metadata.append(spatial)
 
         metadata.append(provenance)
-        metadata.append(isPartOf)
+        metadata.append(distribution)
+#         metadata.append(isPartOf)
         metadata.append(publisher)
-        creator = newdata["dataset"][y]["publisher"]
-        creator = creator['name'].encode('ascii', 'replace')
+#         creator = newdata["dataset"][y]["publisher"]
+#         for pub in creator.values():
+#              creator = pub.encode('ascii', 'replace')
+
+#         creator = creator['source'].encode('ascii', 'replace')
         metadata.append(creator)
 
         metadata.append(cleanData(newdata["dataset"][y]['landingPage']))
         metadata.append(downloadURL)
+        metadata.append(webService)
 #         metadata.append(cleanData(newdata["dataset"][y]['webService']))
-#         metadataLink = ""
-#         metadata.append(metadataLink)
+        metadataLink = ""
+        metadata.append(metadataLink)
+
 #         webService = cleanData(newdata["dataset"][y]['webService'])
 
-#         serviceType = ""
-#         serviceTypeList = ["FeatureServer", "MapServer", "ImageServer"]
-#         for server in serviceTypeList:
-#             if server in webService:
-#                 serviceType = server
-#         metadata.append(serviceType)
+        serviceType = ""
+        serviceTypeList = ["FeatureServer", "MapServer", "ImageServer"]
+        for server in serviceTypeList:
+            try:
+                if server in webService:
+                    serviceType = server
+            except:
+                print(identifier)
+
+        metadata.append(serviceType)
 
 #         keywords = newdata["dataset"][y]["keyword"]
 #         unicode_keyword = []
@@ -259,9 +270,10 @@ with open(directory + 'SocrataPortals.csv') as f:
         portalName = row['portalName']
         url = row['URL']
         provenance = row['provenance']
-        isPartOf = row['isPartOf']
+#         isPartOf = row['isPartOf']
         publisher = row['publisher']
         spatialCoverage = row['spatialCoverage']
+        distribution = row['distribution']
         print portalName, url
 
         ## for each open data portal in the csv list...
@@ -272,8 +284,12 @@ with open(directory + 'SocrataPortals.csv') as f:
 
         ## Opens the url for the ESRI open data portal json and loads it into the script
         ## Could also check whether a new json already exists with  os.path.isfile(newjson)...
-        response = urllib.urlopen(url)
-        newdata = json.load(response)
+        try:
+            response = urllib.urlopen(url)
+            newdata = json.load(response)
+        except ssl.CertificateError as e:
+            print e
+            pass
 
         ### Saves a copy of the json to be used for the next round of comparison/reporting
         with open(newjson, 'w') as outfile:

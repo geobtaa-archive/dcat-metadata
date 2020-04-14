@@ -55,3 +55,4 @@ portalName,URL,provenance,publisher,spatialCoverage,
 07b-26161,https://data-washtenaw.opendata.arcgis.com/data.json,Michigan,"Washtenaw County, Michigan","Washtenaw County, Michigan|Michigan",
 05b-27167,https://share-wilkinco.opendata.arcgis.com/data.json,Minnesota,"Wilkin County, Minnesota","Wilkin County, Minnesota|Minnesota",
 04b-24021,https://gis-fcgmd.opendata.arcgis.com/data.json,Maryland,Counties geospatial data,"Frederick County, Maryland","Frederick County, Maryland|Maryland"
+07c-01,https://data.detroitmi.gov/data.json,Michigan,Municipalities geospatial data,"City of Detroit, Michigan","Detroit, Michigan|Michigan"
