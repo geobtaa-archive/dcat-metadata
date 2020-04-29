@@ -28,14 +28,14 @@ import ssl
 ### Manual items to change!
 
 ## Set the date download of the older and newer jsons
-ActionDate = '20200207'
-PreviousActionDate = '20200103'
+ActionDate = 'nil'
+PreviousActionDate = '202004023'
 
 ## names of the main directory containing folders named "Jsons" and "Reports"
-directory = r'C:\\Users\\Emily\\Documents\\Grad School\\Map Library RA\\dcat-metadata\\'
+directory = r''
 
 ##list of metadata fields from the DCAT json schema for open data portals desired in the final report
-fieldnames = ["identifier", "code", "title", "alternativeTitle", "description", "genre", "subject", "format", "type", "geometryType", "dateIssued", "temporalCoverage", "Date", "spatialCoverage", "spatial", "provenance", "publisher",  "creator", "landingPage", "downloadURL", "webService", "metadataURL", "serverType", "keywords"]
+fieldnames = ["Identifier", "Code", "Title", "alternativeTitle", "description", "genre", "subject", "format", "type", "geometryType", "dateIssued", "temporalCoverage", "Date", "spatialCoverage", "spatial", "provenance", "publisher",  "creator", "landingPage", "downloadURL", "webService", "metadataURL", "serverType", "keywords"]
 
 ##list of fields to use for the deletedItems report
 delFieldsReport = ['identifier', 'landingPage', 'portalName']
@@ -260,7 +260,7 @@ All_Deleted_Items = []
 Status_Report = {}
 
 ### Opens a list of portals and urls ending in /data.json from input CSV using column headers 'portalName' and 'URL'
-with open(directory + 'arcPortals.csv') as f:
+with open(directory + 'covidPortals.csv') as f:
     reader = csv.DictReader(f)
     for row in reader:
         ### Read in values from the portals list to be used within the script or as part of the metadata report
