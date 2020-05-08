@@ -28,8 +28,8 @@ import ssl
 ### Manual items to change!
 
 ## Set the date download of the older and newer jsons
-ActionDate = '20200207'
-PreviousActionDate = '20200103'
+ActionDate = '20200403'
+PreviousActionDate = '20200306'
 
 ## names of the main directory containing folders named "Jsons" and "Reports"
 directory = r'C:\\Users\\Emily\\Documents\\Grad School\\Map Library RA\\dcat-metadata\\'
@@ -239,6 +239,7 @@ def metadataNewItems(newdata, newitem_ids):
 
         keywords = newdata["dataset"][y]["keyword"]
         unicode_keyword = []
+        keyword_list = []
         for item in keywords:
             item = item.encode('ascii', 'replace')
             unicode_keyword.append(item)
