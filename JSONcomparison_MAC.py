@@ -28,14 +28,14 @@ import ssl
 ### Manual items to change!
 
 ## Set the date download of the older and newer jsons
-ActionDate = '20200403'
-PreviousActionDate = '20200306'
+ActionDate = '20200508'
+PreviousActionDate = '20200403'
 
 ## names of the main directory containing folders named "Jsons" and "Reports"
-directory = r'C:\\Users\\Emily\\Documents\\Grad School\\Map Library RA\\dcat-metadata\\'
+directory = r''
 
 ##list of metadata fields from the DCAT json schema for open data portals desired in the final report
-fieldnames = ["identifier", "code", "title", "alternativeTitle", "description", "genre", "subject", "format", "type", "geometryType", "dateIssued", "temporalCoverage", "Date", "spatialCoverage", "spatial", "provenance", "publisher",  "creator", "landingPage", "downloadURL", "webService", "metadataURL", "serverType", "keywords"]
+fieldnames = ["Identifier", "Code", "Title", "alternativeTitle", "description", "genre", "subject", "format", "type", "geometryType", "dateIssued", "temporalCoverage", "Date", "spatialCoverage", "spatial", "provenance", "publisher",  "creator", "landingPage", "downloadURL", "webService", "metadataURL", "serverType", "keywords"]
 
 ##list of fields to use for the deletedItems report
 delFieldsReport = ['identifier', 'landingPage', 'portalName']
