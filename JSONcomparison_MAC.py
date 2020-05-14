@@ -28,8 +28,8 @@ import ssl
 ### Manual items to change!
 
 ## Set the date download of the older and newer jsons
-ActionDate = 'nil'
-PreviousActionDate = '202004023'
+ActionDate = '20200508'
+PreviousActionDate = '20200403'
 
 ## names of the main directory containing folders named "Jsons" and "Reports"
 directory = r''
@@ -239,6 +239,7 @@ def metadataNewItems(newdata, newitem_ids):
 
         keywords = newdata["dataset"][y]["keyword"]
         unicode_keyword = []
+        keyword_list = []
         for item in keywords:
             item = item.encode('ascii', 'replace')
             unicode_keyword.append(item)
@@ -260,7 +261,7 @@ All_Deleted_Items = []
 Status_Report = {}
 
 ### Opens a list of portals and urls ending in /data.json from input CSV using column headers 'portalName' and 'URL'
-with open(directory + 'covidPortals.csv') as f:
+with open(directory + 'arcPortals.csv') as f:
     reader = csv.DictReader(f)
     for row in reader:
         ### Read in values from the portals list to be used within the script or as part of the metadata report
