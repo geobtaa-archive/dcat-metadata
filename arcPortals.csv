@@ -54,8 +54,8 @@ portalName,URL,provenance,publisher,spatialCoverage,
 05b-27163,https://data-wcmn.opendata.arcgis.com/data.json,Minnesota,"Washington County, Minnesota","Washington County, Minnesota|Minnesota",
 07b-26161,https://data-washtenaw.opendata.arcgis.com/data.json,Michigan,"Washtenaw County, Michigan","Washtenaw County, Michigan|Michigan",
 05b-27167,https://share-wilkinco.opendata.arcgis.com/data.json,Minnesota,"Wilkin County, Minnesota","Wilkin County, Minnesota|Minnesota",
-04b-24021,https://gis-fcgmd.opendata.arcgis.com/data.json,Maryland,Counties geospatial data,"Frederick County, Maryland","Frederick County, Maryland|Maryland"
-07c-01,https://data.detroitmi.gov/data.json,Michigan,Municipalities geospatial data,"City of Detroit, Michigan","Detroit, Michigan|Michigan"
+04b-24021,https://gis-fcgmd.opendata.arcgis.com/data.json,Maryland,"Frederick County, Maryland","Frederick County, Maryland|Maryland"
+07c-01,https://data.detroitmi.gov/data.json,Michigan,"City of Detroit, Michigan","Detroit, Michigan|Michigan"
 03a-04,https://open-iowa.opendata.arcgis.com/data.json,Iowa,State of Iowa,Iowa
 03c-02,https://gisopendata.siouxfalls.org/data.json,Iowa,"City of Sioux Falls, Iowa","Sioux Falls, Iowa|Iowa"
 12b-17031,https://hub-cookcountyil.opendata.arcgis.com/data.json,Chicago,"Cook County, Illinois","Cook County, Illinois|Illinois"
