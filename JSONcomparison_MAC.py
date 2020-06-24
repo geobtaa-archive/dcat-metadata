@@ -28,8 +28,8 @@ import ssl
 ### Manual items to change!
 
 ## Set the date download of the older and newer jsons
-ActionDate = '20200508'
-PreviousActionDate = '20200403'
+ActionDate = '20200602'
+PreviousActionDate = '20200508'
 
 ## names of the main directory containing folders named "Jsons" and "Reports"
 directory = r''

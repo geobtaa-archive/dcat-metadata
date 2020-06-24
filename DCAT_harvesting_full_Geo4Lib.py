@@ -16,12 +16,17 @@ Edited Dec 28 2018; January 8, 2019; Dec 26-31, 2019, Jan 22-29 2020
 
 import json
 import csv
+
 import urllib.request
 import os
 import os.path
 from html.parser import HTMLParser
 import decimal
+import ssl
 
+ctx = ssl.create_default_context()
+ctx.check_hostname = False
+ctx.verify_mode = ssl.CERT_NONE
 
 # In[2]:
 
@@ -29,8 +34,8 @@ import decimal
 ### Manual items to change!
 
 ## Set the date download of the older and newer jsons
-PreviousActionDate = 'nil'
-ActionDate = '20200424'
+PreviousActionDate = '20200508'
+ActionDate = '202000608'
 
 ##list of metadata fields from the DCAT json schema for open data portals desired in the final report
 fieldnames = ["identifier", "code", "originalTitle", "title", "description", "subject", "keyword", "format", "type", "geometryType", "dateIssued", "temporalCoverage", "solrYear", "spatialCoverage", "spatial", "provenance", "publisher",  "creator", "landingPage", "downloadURL", "featureServer", "mapServer", "imageServer"]
@@ -259,7 +264,7 @@ All_Deleted_Items = []
 Status_Report = {}
 
 ### Opens a list of portals and urls ending in /data.json from input CSV using column headers 'portalName', 'URL', "provenance", "publisher", and "spatialCoverage"
-with open('io.csv') as f:
+with open('arcportals.csv') as f:
     reader = csv.DictReader(f)
     for row in reader:
         ### Read in values from the portals list to be used within the script or as part of the metadata report
@@ -272,16 +277,16 @@ with open('io.csv') as f:
 
         ## for each open data portal in the csv list...
         ## renames file paths based on portalName and manually provided dates
-        oldjson = 'DCATjsons/%s_%s.json' % (portalName, PreviousActionDate)
-        newjson = 'DCATjsons/%s_%s.json' % (portalName, ActionDate)
+        oldjson = 'Jsons/%s_%s.json' % (portalName, PreviousActionDate)
+        newjson = 'Jsons/%s_%s.json' % (portalName, ActionDate)
 
-        try:
-            response = urllib.request.urlopen(url)
-            newdata = json.load(response)
+#         try:
+        response = urllib.request.urlopen(url, context=ctx)
+        newdata = json.load(response)
 
-        except:
-            print ("Data portal URL does not exist: " + url)
-            break
+#         except:
+#             print ("Data portal URL does not exist: " + url)
+#             break
 
 
         ### Saves a copy of the json to be used for the next round of comparison/reporting
