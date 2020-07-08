@@ -221,7 +221,7 @@ def metadataNewItems(newdata, newitem_ids):
         isPartOf = portalName
 
         status = "Active"
-        accuralMethod = "ArcGIS Hub"
+        accrualMethod = "ArcGIS Hub"
         dateAccessioned = ""
 
         rights = "Public"
@@ -234,7 +234,7 @@ def metadataNewItems(newdata, newitem_ids):
                     dateRange, solrYear, spatialCoverage, spatial, typeElement, geometryType,
                     formatElement, information, downloadURL, mapServer, featureServer,
                     imageServer, identifier, provenance, portalName, isPartOf, status,
-                    accuralMethod, dateAccessioned, rights, accessRights, suppressed, child]
+                    accrualMethod, dateAccessioned, rights, accessRights, suppressed, child]
 
         ### deletes data portols except genere = 'Geospatial data' or 'Aerial imagery'
         for i in range(len(metadataList)):
