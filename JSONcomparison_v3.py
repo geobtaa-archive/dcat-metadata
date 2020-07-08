@@ -35,7 +35,7 @@ directory = r'C:\Users\Zhouy\Desktop\dcat-metadata-master'
 fieldnames = ['Title', 'Alternative Title', 'Description', 'Language', 'Creator', 'Publisher', 'Genre',
               'Subject', 'Keyword', 'Date Issued', 'Temporal Coverage', 'Date Range', 'Solr Year', 'Spatial Coverage',
               'Bounding Box', 'Type', 'Geometry Type', 'Format', 'Information', 'Download', 'MapServer',
-              'FeatureServer', 'Image Server', 'Identifier', 'Provenance', 'Code', 'Is Part Of', 'Status',
+              'FeatureServer', 'ImageServer', 'Identifier', 'Provenance', 'Code', 'Is Part Of', 'Status',
               'Accrual Method', 'Date Accessioned', 'Rights', 'Access Rights', 'Suppressed', 'Child']
 
 ## list of fields to use for the deletedItems report
