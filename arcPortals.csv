@@ -60,3 +60,5 @@ portalName,URL,provenance,publisher,spatialCoverage
 03c-02,http://gisopendata.siouxfalls.org/data.json,Iowa,"City of Sioux Falls, Iowa","Sioux Falls, Iowa|Iowa"
 12b-17031,http://hub-cookcountyil.opendata.arcgis.com/data.json,Chicago,"Cook County, Illinois","Cook County, Illinois|Illinois"
 03a-02,http://public-iowadot.opendata.arcgis.com/data.json,Iowa,State of Iowa,Iowa
+13a-01,http://www.nebraskamap.gov/data.json,Nebraska,State of Nebraska,Nebraska
+12d-03,https://library-uchicago.opendata.arcgis.com/data.json,Chicago,University of Chicago,"Chicago, Illinois|Illinois"
