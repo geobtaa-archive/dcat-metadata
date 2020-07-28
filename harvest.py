@@ -3,9 +3,12 @@
 Original created on Wed Mar 15 09:18:12 2017
 Edited Dec 28 2018; January 8, 2019
 @author: kerni016
+
+Updated July 28, 2020
+Updated by Yijing Zhou @YijingZhou33
 """
 ## To run this script you need a csv with five columns (portalName, URL, provenance, publisher, and spatialCoverage) with details about ESRI open data portals to be checked for new records.
-## Need to define PreviousActionDate and ActionDate, directory path (containing PortalList.csv and folder "DCATjsons"), and list of fields desired in the printed report
+## Need to define PreviousActionDate and ActionDate, directory path (containing PortalList.csv, folder "jsons" and "reports"), and list of fields desired in the printed report
 ## The script currently prints two combined reports - one of new items and one with deleted items.  
 ## The script also prints a status report giving the total number of resources in the portal, as well as the numbers of added and deleted items. 
                                                                     
@@ -28,8 +31,11 @@ import re
 ActionDate = '20200728'
 PreviousActionDate = '20200701'
 
-## names of the main directory containing folders named "Jsons" and "Reports"
+## names of the main directory containing folders named "jsons" and "reports"
+## Windows:
 directory = r'D:\Library RA\GitHub\dcat-metadata-master'
+## MAC or Linux:
+## directory = r'D:/Library RA/GitHub/dcat-metadata-master'
 
 ## csv file contaning portal list
 portalFile = 'arcPortals.csv'
