@@ -32,12 +32,15 @@ PreviousActionDate = '20200414'
 ## names of the main directory containing folders named "Jsons" and "Reports"
 directory = r'D:\Library RA\GitHub\dcat-metadata-master\Socrata'
 
+## csv file contaning portal list
+portalFile = 'SocrataPortals.csv'
+
 ## list of metadata fields from the DCAT json schema for open data portals desired in the final report
 fieldnames = ['Title', 'Alternative Title', 'Description', 'Language', 'Creator', 'Publisher', 'Genre',
               'Subject', 'Date Issued', 'Temporal Coverage', 'Date Range', 'Solr Year', 'Spatial Coverage',
               'Type', 'Geometry Type', 'Format', 'Information', 'Download', 
               'Identifier', 'Provenance', 'Code', 'Is Part Of', 'Status',
-              'Accural Method', 'Date Accessioned', 'Rights', 'Suppressed', 'Child']
+              'Accrual Method', 'Date Accessioned', 'Rights', 'Suppressed', 'Child']
 
 ## list of fields to use for the deletedItems report
 delFieldsReport = ['identifier', 'landingPage', 'portalName']
@@ -174,7 +177,7 @@ Status_Report = {}
 
 ### Opens a list of portals and urls ending in /data.json from input CSV 
 ### using column headers 'portalName', 'URL', 'provenance', 'SpatialCoverage'
-with open('SocrataPortals.csv', newline='', encoding='utf-8') as f:
+with open(portalFile, newline='', encoding='utf-8') as f:
     reader = csv.DictReader(f)
     for row in reader:
         ### Read in values from the portals list to be used within the script or as part of the metadata report
@@ -187,8 +190,8 @@ with open('SocrataPortals.csv', newline='', encoding='utf-8') as f:
 
         ## for each open data portal in the csv list...
         ## renames file paths based on portalName and manually provided dates
-        oldjson = directory + '\\Jsons\\%s_%s.json' % (portalName, PreviousActionDate)
-        newjson = directory + '\\Jsons\\%s_%s.json' % (portalName, ActionDate)
+        oldjson = directory + '\\jsons\\%s_%s.json' % (portalName, PreviousActionDate)
+        newjson = directory + '\\jsons\\%s_%s.json' % (portalName, ActionDate)
         
         try:
             response =urllib.request.urlopen(url)
@@ -272,11 +275,11 @@ with open('SocrataPortals.csv', newline='', encoding='utf-8') as f:
         Status_Report [portalName] = status_metadata
             
 ### prints two csv spreadsheets with all items that are new or deleted since the last time the data portals were harvested                                
-newItemsReport = directory + "\\allNewItems_%s.csv" % (ActionDate)
+newItemsReport = directory + "\\reports\\allNewItems_%s.csv" % (ActionDate)
 printItemReport(newItemsReport, fieldnames, All_New_Items)
 
-delItemsReport = directory + "\\allDeletedItems_%s.csv" % (ActionDate)
+delItemsReport = directory + "\\reports\\allDeletedItems_%s.csv" % (ActionDate)
 printItemReport(delItemsReport, delFieldsReport, All_Deleted_Items)       
                 
-reportStatus = directory + "\\Reports\\portal_status_report_%s.csv" % (ActionDate) 
+reportStatus = directory + "\\reports\\portal_status_report_%s.csv" % (ActionDate) 
 printReport(reportStatus, Status_Report, statusFieldsReport)

@@ -1,42 +1,42 @@
 # DCAT Maintenance
-This repository is for tracking the BTAA GDP  harvesting activities from DCAT data portals. These portal platforms include ArcGIS Open Data Portals and Socrata.
-The scripts can also be used for any site with DCAT enabled, including some DKAN and CKAN sites.  However, an adjustment to the names of the harvested metadata fields may be required first.
+This repository is for tracking the BTAA GDP harvesting activities from DCAT data portals. These portal platforms include ArcGIS Open Data Portals and Socrata. To keep BTAA Geoportal search tool from returning broken links and to capture newly added resources due to the instability of data source, it is necessary to re-check data portals frequently. 
+
+The scripts can also be used for any site with DCAT enabled, including some DKAN and CKAN sites. However, an adjustment to the names of the harvested metadata fields may be required first.
 
 ## Python Scripts
-* ConvertJson2CsvFromLocalFile.py
-This script will transform a local DCAT JSON file into a CSV.
+- **JSONcomparison.py | JSONcomparison_MAC.py | SocrataJSONComparison.py** <br>
+    
+    This script will compare previously harvested JSON files with a hosted one. It will harvest a full copy of the current JSON files based on data portals stored in **arcPortals.csv** and produce three CSV reports for *NEW*, *DELETED* items and *PORTAL STATUS*.
 
-* Json2Csv_Py3.ipynb should be opened with Anaconda3 Jupyter Notebook.  Script is in-progress user input version of the Python 2.x Json2Csv.py script.  Further Markdown within Jupyter Notebook cells.
-
-* Socrata2Csv.py
-These scripts will harvest full hosted DCAT JSON files and convert them to CSV
-
-* JSON_comparison.py
-* SocrataJSON_comparison.py
-This script will compare previously harvested JSON files with a hosted one. It will harvest a full copy of the current JSON and produce CSV reports for NEW and DELETED items.
-
-* testJSON
-This script is for testing harvesting problems if the JSON is not being recognized
+- **DCAT_harvesting_full_Geo4Lib.ipynb** <br>
+    
+    This script should be opened with Anaconda3 Jupyter Notebook. It is a Jupyter Notebook version of **JSONcomparison.py** but with Markdown cells. 
 
 ## CSV Lists
-These list the collection code and the portal URL. The scripts that harvest from hosted JSONS require accompanying lists of where to harvest from. These are referenced in the section of the script commented as "Manual items to change!"
+These list the current and historical portal URL. The scripts above that harvest from hosted JSONS require accompanying lists of where to harvest from. These are referenced in the section of the script commented as *"Manual items to change!"*
 
+- **arcPortals.csv**
 
-* ArcPortals.csv
-* Mn Portals.csv
-* SocrataPortals.csv
-* temp.csv - useful for adding one or two portal addresses to harvest at a time.
+    This file is supposed to have five columns *(portalName, URL, provenance, publisher, and spatialCoverage)* with details about ESRI open data portals to be checked for new records.
+
+- **non-workingarcportals.csv**
+
+    This file document the portals which are no longer harvested. 
 
 
 ## Folders
 
-### Jsons
-This holds all harvested Jsons with the naming convention of collectioncode_YYYYMMDD.json
+- **Jsons**
 
-### Reports
-This holds all CSV reports of new and deleted items.
+    This holds all harvested JSONs with the naming convention of **portalName_YYYYMMDD.json**. Once running the python scripts, newly generated JSON files need to be uploaded. The date in the latest JSON filename is used to define *PreviousActionDate*. These are referenced in the section of the script commented as *"Manual items to change!"*
+
+- **Reports**
+    
+    This holds all CSV reports of new and deleted items and portal status reports :
+    - **allNewItems_YYYYMMDD.csv**
+    - **allDeletedItems_YYYYMMDD.csv**
+    - **portal_status_report_YYYYMMDD.csv**
+    
+    Once running the python scripts, newly generated CSV files need to be uploaded. Like JSONs, the date in the latest CSV filename is used to define *PreviousActionDate*. These are referenced in the section of the script commented as *"Manual items to change!"*
 
 
-
-### reports.log
-This is a running log of harvesting activities. Must be manually saved from operating system default log location.
