@@ -28,12 +28,12 @@ import re
 ### Manual items to change!
 
 ## set the date download of the older and newer jsons
-ActionDate = '20200728'
+ActionDate = '20200729'
 PreviousActionDate = '20200701'
 
 ## names of the main directory containing folders named "jsons" and "reports"
 ## Windows:
-directory = r'D:\Library RA\GitHub\dcat-metadata-master'
+directory = r'C:\Users\Zhouy\Documents\GitHub\dcat-metadata'
 ## MAC or Linux:
 ## directory = r'D:/Library RA/GitHub/dcat-metadata-master'
 
