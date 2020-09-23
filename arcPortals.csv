@@ -31,11 +31,11 @@ portalName,URL,provenance,publisher,spatialCoverage
 06b-26125,http://accessoakland.oakgov.com/data.json,Michigan State,"Oakland County, Michigan","Oakland County, Michigan|Michigan"
 08c-02,http://data-phl.opendata.arcgis.com/data.json,Penn State,"City of Philadelphia, Pennsylvania","Philadelphia, Pennsylvania|Pennsylvania"
 05b-27119,http://data-pcg.opendata.arcgis.com/data.json,Minnesota,"Polk County, Minnesota","Polk County, Minnesota|Minnesota"
-05b-27121,http://data-popecounty.opendata.arcgis.com/data.json,Minnesota,"Pope County, Minnesota","Pope County, Minnesota|Minnesota"
+05b-27121,http://hub-popecounty.hub.arcgis.com/data.json,Minnesota,"Pope County, Minnesota","Pope County, Minnesota|Minnesota"
 05b-27137,http://stlouiscountymndata-slcgis.opendata.arcgis.com/data.json,Minnesota,"St. Louis County, Minnesota","Saint Louis County, Minnesota|Minnesota"
 99-1000,http://coronavirus-resources.esri.com/data.json,,Esri,United States
 11b-39151,http://opendata.starkcountyohio.gov/data.json,Ohio State,"Stark County, Ohio, Ohio","Stark County, Ohio|Ohio"
-04b-24005,http://data-bc-gis.opendata.arcgis.com/data.json,Maryland,"Baltimore County, Maryland","Baltimore County, Maryland|Maryland"
+04b-24005,https://bcstat-bc-gis.hub.arcgis.com/data.json,Maryland,"Baltimore County, Maryland","Baltimore County, Maryland|Maryland"
 08b-42029,http://data1-chesco.opendata.arcgis.com/data.json,Penn State,"Chester County, Pennsylvania","Chester County, Pennsylvania|Pennsylvania"
 05b-27027,http://data-claycountymn.opendata.arcgis.com/data.json,Minnesota,"Clay County, Minnesota","Clay County, Minnesota|Minnesota"
 08b-42039,http://share-open-data-crawfordcountypa.opendata.arcgis.com/data.json,Penn State,"Crawford County, Pennsylvania","Crawford County, Pennsylvania|Pennsylvania"
