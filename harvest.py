@@ -6,9 +6,12 @@ Edited Dec 28 2018; January 8, 2019
 
 Updated July 28, 2020
 Updated by Yijing Zhou @YijingZhou33
+
+Updated October 6, 2020
+Updated by Ziying Cheng @Ziiiiing
 """
 ## To run this script you need a csv with five columns (portalName, URL, provenance, publisher, and spatialCoverage) with details about ESRI open data portals to be checked for new records.
-## Need to define PreviousActionDate and ActionDate, directory path (containing PortalList.csv, folder "jsons" and "reports"), and list of fields desired in the printed report
+## Need to define directory path (containing arcPortals.csv, folder "jsons" and "reports"), and list of fields desired in the printed report
 ## The script currently prints two combined reports - one of new items and one with deleted items.  
 ## The script also prints a status report giving the total number of resources in the portal, as well as the numbers of added and deleted items. 
                                                                     
@@ -22,18 +25,15 @@ from html.parser import HTMLParser
 import decimal
 import ssl
 import re
+import time
 
 ######################################
 
 ### Manual items to change!
 
-## set the date download of the older and newer jsons
-ActionDate = '20200729'
-PreviousActionDate = '20200701'
-
 ## names of the main directory containing folders named "jsons" and "reports"
 ## Windows:
-directory = r'C:\Users\Zhouy\Documents\GitHub\dcat-metadata'
+directory = r'E:\RA\dcat-metadata'
 ## MAC or Linux:
 ## directory = r'D:/Library RA/GitHub/dcat-metadata-master'
 
@@ -263,6 +263,12 @@ All_New_Items = []
 All_Deleted_Items = []
 Status_Report = {}
 
+## Generate the current local time with the format like 'YYYYMMDD' and save to the variable named 'ActionDate'
+ActionDate = time.strftime('%Y%m%d')
+
+## List all files in the 'jsons' folder under the current directory and store file names in the 'filenames' list 
+filenames = os.listdir('jsons')
+
 ### Opens a list of portals and urls ending in /data.json from input CSV 
 ### using column headers 'portalName', 'URL', 'provenance', 'SpatialCoverage'
 with open(portalFile, newline='', encoding='utf-8') as f:
@@ -276,13 +282,28 @@ with open(portalFile, newline='', encoding='utf-8') as f:
         spatialCoverage = row['spatialCoverage']
         print(portalName, url)
 
-        ## for each open data portal in the csv list...
+        ## For each open data portal in the csv list...
+        ## create an empty list to extract all previous action dates only from file names
+        dates = []
+
+        ## loop over all file names in 'filenames' list and find the json files for the selected portal
+        ## extract the previous action dates only from these files and store in the 'dates' list
+        for filename in filenames:
+            if filename.startswith(portalName):
+                ## format of filename is 'portalName_YYYYMMDD.json'
+                ## 'YYYYMMDD' is located from index -13(included) to index -5(excluded)
+                dates.append(filename[-13:-5]) 
+
+        ## find the latest action date from the 'dates' list
+        PreviousActionDate = max(dates)
+
         ## renames file paths based on portalName and manually provided dates
         oldjson = directory + '\\jsons\\%s_%s.json' % (portalName, PreviousActionDate)
         newjson = directory + '\\jsons\\%s_%s.json' % (portalName, ActionDate)
         
         try:
-            response =urllib.request.urlopen(url)
+            context = ssl._create_unverified_context()
+            response =urllib.request.urlopen(url, context=context)
             newdata = json.load(response)
         except ssl.CertificateError as e:
             print("Data portal URL does not exist: " + url)
