@@ -33,7 +33,7 @@ import time
 
 ## names of the main directory containing folders named "jsons" and "reports"
 ## Windows:
-directory = r'E:\RA\dcat-metadata'
+directory = r'E:\RA\GitHub\dcat-metadata'
 ## MAC or Linux:
 ## directory = r'D:/Library RA/GitHub/dcat-metadata-master'
 
@@ -168,7 +168,7 @@ def metadataNewItems(newdata, newitem_ids):
                             genre = "Aerial imagery"
                             formatElement = 'Imagery'
                             typeElement = 'Image|Service'
-                            geometryType = "Imagery"                       
+                            geometryType = "Image"                       
                     else:
                         genre = ""
                         formatElement = ""
