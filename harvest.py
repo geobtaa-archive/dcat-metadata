@@ -240,7 +240,7 @@ def metadataNewItems(newdata, newitem_ids):
                
         metadataList = [title, alternativeTitle, description, language, creator, publisher,
                     genre, subject, keyword_list, dateIssued, temporalCoverage,
-                    dateRange, solrYear, spatialCoverage, spatial, typeElement, geometryType,
+                    dateRange, solrYear, spatialCoverage, bbox, typeElement, geometryType,
                     formatElement, information, downloadURL, mapServer, featureServer,
                     imageServer, identifier, provenance, portalName, isPartOf, status,
                     accuralMethod, dateAccessioned, rights, accessRights, suppressed, child]
