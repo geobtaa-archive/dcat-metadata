@@ -2,7 +2,6 @@ portalName,URL,provenance,publisher,spatialCoverage
 06a-01,http://gis-michigan.opendata.arcgis.com/data.json,Michigan State,State of Michigan,Michigan
 05b-27163,http://data-wcmn.opendata.arcgis.com/data.json,Minnesota,"Washington County, Minnesota","Washington County, Minnesota|Minnesota"
 05b-27167,http://share-wilkinco.opendata.arcgis.com/data.json,Minnesota,"Wilkin County, Minnesota","Wilkin County, Minnesota|Minnesota"
-06a-01,http://gis-michigan.opendata.arcgis.com/data.json,Michigan State,State of Michigan,Michigan
 01b-18163,http://dev-evansvilleapc.opendata.arcgis.com/data.json,Indiana,"City of Evansville & Vanderburgh County, Indiana","Evansville, Vanderburgh County, Indiana|Vanderburgh County, Indiana|Indiana"
 11b-39153,http://data-summitgis.opendata.arcgis.com/data.json,Ohio State,"Summit County, Ohio","Summit County, Ohio|Ohio"
 08b-42133,http://data-yorkcountypa.opendata.arcgis.com/data.json,Penn State,"York County, Pennsylvania","York County, Pennsylvania|Pennsylvania"
