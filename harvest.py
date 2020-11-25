@@ -33,7 +33,7 @@ import time
 
 ## names of the main directory containing folders named "jsons" and "reports"
 ## Windows:
-directory = r'E:\RA\GitHub\dcat-metadata'
+directory = r'E:\RA\dcat-metadata_test_fix2'
 ## MAC or Linux:
 ## directory = r'D:/Library RA/GitHub/dcat-metadata-master'
 
@@ -190,13 +190,14 @@ def metadataNewItems(newdata, newitem_ids):
                 typeElement = "Dataset|Service"
         
         try:
-            bbox = []
+            bboxList = []
             spatial = cleanData(newdata["dataset"][y]['spatial'])
             typeDmal = decimal.Decimal
             fix4 = typeDmal("0.0001")
             for coord in spatial.split(","):
                 coordFix = typeDmal(coord).quantize(fix4)
-                bbox.append(str(coordFix))            
+                bboxList.append(str(coordFix))
+            bbox = ','.join(bboxList)
         except:
             spatial = ""     
         
@@ -293,6 +294,10 @@ with open(portalFile, newline='', encoding='utf-8') as f:
                 ## format of filename is 'portalName_YYYYMMDD.json'
                 ## 'YYYYMMDD' is located from index -13(included) to index -5(excluded)
                 dates.append(filename[-13:-5]) 
+
+        # remove action date from previous dates if any 
+        if ActionDate in dates:
+            dates.remove(ActionDate)
 
         ## find the latest action date from the 'dates' list
         PreviousActionDate = max(dates)
