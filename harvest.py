@@ -33,18 +33,18 @@ import time
 
 ## names of the main directory containing folders named "jsons" and "reports"
 ## Windows:
-## directory = r'E:\RA\dcat-metadata_test_fix2'
+directory = r'E:\RA\dcat-metadata_test_fix2'
 ## MAC or Linux:
-directory = r'/Users/zing/Desktop/RA/GitHub/dcat-metadata/'
+## directory = r'D:/Library RA/GitHub/dcat-metadata-master'
 
 ## csv file contaning portal list
-portalFile = 'arcPortals_test.csv'
+portalFile = 'arcPortals.csv'
 
 ## list of metadata fields from the DCAT json schema for open data portals desired in the final report
 fieldnames = ['Title', 'Alternative Title', 'Description', 'Language', 'Creator', 'Publisher', 'Genre',
               'Subject', 'Keyword', 'Date Issued', 'Temporal Coverage', 'Date Range', 'Solr Year', 'Spatial Coverage',
               'Bounding Box', 'Type', 'Geometry Type', 'Format', 'Information', 'Download', 'MapServer', 
-              'FeatureServer', 'ImageServer', 'Slug', 'Identifier', 'Provenance', 'Code', 'Is Part Of', 'Status',
+              'FeatureServer', 'ImageServer', 'Identifier', 'Provenance', 'Code', 'Is Part Of', 'Status',
               'Accrual Method', 'Date Accessioned', 'Rights', 'Access Rights', 'Suppressed', 'Child']
 
 ## list of fields to use for the deletedItems report
@@ -227,9 +227,7 @@ def metadataNewItems(newdata, newitem_ids):
         except:
                 print(identifier)
 
-
-        slug = identifier.rsplit('/', 1)[-1]
-        identifier_new = "https://hub.arcgis.com/datasets/" + slug   
+        identifier = identifier.rsplit('/', 1)[-1]   
         isPartOf = portalName
         
         status = "Active"
@@ -245,7 +243,7 @@ def metadataNewItems(newdata, newitem_ids):
                     genre, subject, keyword_list, dateIssued, temporalCoverage,
                     dateRange, solrYear, spatialCoverage, bbox, typeElement, geometryType,
                     formatElement, information, downloadURL, mapServer, featureServer,
-                    imageServer, slug, identifier_new, provenance, portalName, isPartOf, status,
+                    imageServer, identifier, provenance, portalName, isPartOf, status,
                     accuralMethod, dateAccessioned, rights, accessRights, suppressed, child]
         
         ### deletes data portols except genere = 'Geospatial data' or 'Aerial imagery'  
@@ -253,7 +251,7 @@ def metadataNewItems(newdata, newitem_ids):
             if metadataList[6] != "":
                 metadata.append(metadataList[i])
 
-        newItemDict[slug] = metadata
+        newItemDict[identifier] = metadata
         
         for k in list(newItemDict.keys()):
             if not newItemDict[k]:
@@ -305,8 +303,8 @@ with open(portalFile, newline='', encoding='utf-8') as f:
         PreviousActionDate = max(dates)
 
         ## renames file paths based on portalName and manually provided dates
-        oldjson = directory + '/jsons/%s_%s.json' % (portalName, PreviousActionDate)
-        newjson = directory + '/jsons/%s_%s.json' % (portalName, ActionDate)
+        oldjson = directory + '\\jsons\\%s_%s.json' % (portalName, PreviousActionDate)
+        newjson = directory + '\\jsons\\%s_%s.json' % (portalName, ActionDate)
         
         try:
             context = ssl._create_unverified_context()
@@ -391,11 +389,11 @@ with open(portalFile, newline='', encoding='utf-8') as f:
         Status_Report [portalName] = status_metadata
             
 ### prints two csv spreadsheets with all items that are new or deleted since the last time the data portals were harvested                                
-newItemsReport = directory + "/reports/allNewItems_%s.csv" % (ActionDate)
+newItemsReport = directory + "\\reports\\allNewItems_%s.csv" % (ActionDate)
 printItemReport(newItemsReport, fieldnames, All_New_Items)
 
-delItemsReport = directory + "/reports/allDeletedItems_%s.csv" % (ActionDate)
+delItemsReport = directory + "\\reports\\allDeletedItems_%s.csv" % (ActionDate)
 printItemReport(delItemsReport, delFieldsReport, All_Deleted_Items)       
                 
-reportStatus = directory + "/reports/portal_status_report_%s.csv" % (ActionDate) 
+reportStatus = directory + "\\reports\\portal_status_report_%s.csv" % (ActionDate) 
 printReport(reportStatus, Status_Report, statusFieldsReport)
