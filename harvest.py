@@ -191,6 +191,7 @@ def metadataNewItems(newdata, newitem_ids):
         
         try:
             bboxList = []
+            bbox = ''
             spatial = cleanData(newdata["dataset"][y]['spatial'])
             typeDmal = decimal.Decimal
             fix4 = typeDmal("0.0001")
@@ -308,21 +309,27 @@ with open(portalFile, newline='', encoding='utf-8') as f:
         oldjson = directory + '/jsons/%s_%s.json' % (portalName, PreviousActionDate)
         newjson = directory + '/jsons/%s_%s.json' % (portalName, ActionDate)
         
-        try:
-            context = ssl._create_unverified_context()
-            response =urllib.request.urlopen(url, context=context)
-            newdata = json.load(response)
-        except ssl.CertificateError as e:
-            print("Data portal URL does not exist: " + url)
-            break
-        
-        ### Saves a copy of the json to be used for the next round of comparison/reporting
-        with open(newjson, 'w', encoding='utf-8') as outfile:  
-            json.dump(newdata, outfile)
+
+        ## if newjson already exists, do not need to request again
+        if os.path.exists(newjson):
+            with open(newjson, 'r') as fr:
+                newdata = json.load(fr)
+        else:
+            try:
+                context = ssl._create_unverified_context()
+                response = urllib.request.urlopen(url, context=context)
+                newdata = json.load(response)
+            except ssl.CertificateError as e:
+                print("Data portal URL does not exist: " + url)
+                break
             
-            ### collects information about number of resources (total, new, and old) in each portal
-            status_metadata = []
-            status_metadata.append(portalName)
+            ### Saves a copy of the json to be used for the next round of comparison/reporting
+            with open(newjson, 'w', encoding='utf-8') as outfile:  
+                json.dump(newdata, outfile)
+                
+        ### collects information about number of resources (total, new, and old) in each portal
+        status_metadata = []
+        status_metadata.append(portalName)
                           
         ### Opens older copy of data/json downloaded from the specified Esri Open Data Portal.  
         ### If this file does not exist, treats every item in the portal as new.

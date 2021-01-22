@@ -1,7 +1,7 @@
 portalName,URL,provenance,publisher,spatialCoverage
 06a-01,http://gis-michigan.opendata.arcgis.com/data.json,Michigan State University,State of Michigan,Michigan
 05b-27163,http://data-wcmn.opendata.arcgis.com/data.json,University of Minnesota,"Washington County, Minnesota","Washington County, Minnesota|Minnesota"
-05b-27167,http://share-wilkinco.opendata.arcgis.com/data.json,University of Minnesota,"Wilkin County, Minnesota","Wilkin County, Minnesota|Minnesota"
+05b-27167,https://hub-wilkinco.hub.arcgis.com/data.json,University of Minnesota,"Wilkin County, Minnesota","Wilkin County, Minnesota|Minnesota"
 01b-18163,http://dev-evansvilleapc.opendata.arcgis.com/data.json,Indiana University,"City of Evansville & Vanderburgh County, Indiana","Evansville, Vanderburgh County, Indiana|Vanderburgh County, Indiana|Indiana"
 11b-39153,http://data-summitgis.opendata.arcgis.com/data.json,The Ohio State University,"Summit County, Ohio","Summit County, Ohio|Ohio"
 08b-42133,http://data-yorkcountypa.opendata.arcgis.com/data.json,Pennsylvania State University,"York County, Pennsylvania","York County, Pennsylvania|Pennsylvania"
@@ -18,7 +18,7 @@ portalName,URL,provenance,publisher,spatialCoverage
 05b-27017,http://data-carltoncounty.opendata.arcgis.com/data.json,University of Minnesota,Carlton County Minnesota,"Carlton County, Minnesota|Minnesota"
 05b-27019,http://data-carver.opendata.arcgis.com/data.json,University of Minnesota,"Carver County, Minnesota","Carver County, Minnesota|Minnesota"
 08b-42027,http://gisdata-centrecountygov.opendata.arcgis.com/data.json,Pennsylvania State University,"Centre County, Pennsylvania","Centre County, Pennsylvania|Pennsylvania"
-04c-02,http://gis-baltimore.opendata.arcgis.com/data.json,University of Maryland,"City of Baltimore, Maryland","City of Baltimore, Maryland|Maryland"
+04c-02,https://data.baltimorecity.gov/data.json,University of Maryland,"City of Baltimore, Maryland","City of Baltimore, Maryland|Maryland"
 12b-17043,http://gisdata-dupage.opendata.arcgis.com/data.json,University of Chicago,"DuPage County, Illinois","DuPage County, Illinois|Illinois"
 11b-39049,http://auditor-fca.opendata.arcgis.com/data.json,The Ohio State University,"Franklin County, Ohio","Franklin County, Ohio|Ohio"
 11a-01,http://ogrip-geohio.opendata.arcgis.com/data.json,The Ohio State University,State of Ohio,Ohio
@@ -29,13 +29,13 @@ portalName,URL,provenance,publisher,spatialCoverage
 05c-01,http://opendata.minneapolismn.gov/data.json,University of Minnesota,"City of Minneapolis, Minnesota","Minneapolis, Minnesota|Minnesota"
 06b-26125,http://accessoakland.oakgov.com/data.json,Michigan State University,"Oakland County, Michigan","Oakland County, Michigan|Michigan"
 08c-02,http://data-phl.opendata.arcgis.com/data.json,Pennsylvania State University,"City of Philadelphia, Pennsylvania","Philadelphia, Pennsylvania|Pennsylvania"
-05b-27119,http://data-pcg.opendata.arcgis.com/data.json,University of Minnesota,"Polk County, Minnesota","Polk County, Minnesota|Minnesota"
+05b-27119,https://hub-pcg.hub.arcgis.com/data.json,University of Minnesota,"Polk County, Minnesota","Polk County, Minnesota|Minnesota"
 05b-27121,http://hub-popecounty.hub.arcgis.com/data.json,University of Minnesota,"Pope County, Minnesota","Pope County, Minnesota|Minnesota"
 05b-27137,http://stlouiscountymndata-slcgis.opendata.arcgis.com/data.json,University of Minnesota,"St. Louis County, Minnesota","Saint Louis County, Minnesota|Minnesota"
 99-1000,http://coronavirus-resources.esri.com/data.json,,Esri,United States
 11b-39151,http://opendata.starkcountyohio.gov/data.json,The Ohio State University,"Stark County, Ohio, Ohio","Stark County, Ohio|Ohio"
 04b-24005,https://bcstat-bc-gis.hub.arcgis.com/data.json,University of Maryland,"Baltimore County, Maryland","Baltimore County, Maryland|Maryland"
-08b-42029,http://data1-chesco.opendata.arcgis.com/data.json,Pennsylvania State University,"Chester County, Pennsylvania","Chester County, Pennsylvania|Pennsylvania"
+08b-42029,https://chester-county-s-gis-hub-chesco.hub.arcgis.com/data.json,Pennsylvania State University,"Chester County, Pennsylvania","Chester County, Pennsylvania|Pennsylvania"
 05b-27027,http://data-claycountymn.opendata.arcgis.com/data.json,University of Minnesota,"Clay County, Minnesota","Clay County, Minnesota|Minnesota"
 08b-42039,http://share-open-data-crawfordcountypa.opendata.arcgis.com/data.json,Pennsylvania State University,"Crawford County, Pennsylvania","Crawford County, Pennsylvania|Pennsylvania"
 11b-39035,http://data-cuyahoga.opendata.arcgis.com/data.json,The Ohio State University,"Cuyahoga County, Ohio","Cuyahoga County, Ohio|Ohio"
