@@ -289,6 +289,7 @@ with open(portalFile, newline='', encoding='utf-8') as f:
         ## For each open data portal in the csv list...
         ## create an empty list to extract all previous action dates only from file names
         dates = []
+        PreviousActionDate = ''
 
         ## loop over all file names in 'filenames' list and find the json files for the selected portal
         ## extract the previous action dates only from these files and store in the 'dates' list
@@ -298,12 +299,16 @@ with open(portalFile, newline='', encoding='utf-8') as f:
                 ## 'YYYYMMDD' is located from index -13(included) to index -5(excluded)
                 dates.append(filename[-13:-5]) 
 
+
+
         # remove action date from previous dates if any 
         if ActionDate in dates:
             dates.remove(ActionDate)
 
+
         ## find the latest action date from the 'dates' list
-        PreviousActionDate = max(dates)
+        if dates:
+            PreviousActionDate = max(dates)
 
         ## renames file paths based on portalName and manually provided dates
         oldjson = directory + '/jsons/%s_%s.json' % (portalName, PreviousActionDate)

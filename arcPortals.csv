@@ -62,3 +62,21 @@ portalName,URL,provenance,publisher,spatialCoverage
 13a-01,http://www.nebraskamap.gov/data.json,University of Nebraska-Lincoln,State of Nebraska,Nebraska
 12d-03,https://library-uchicago.opendata.arcgis.com/data.json,University of Chicago,University of Chicago,"Chicago, Illinois|Illinois"
 99-1100,https://gis-for-racialequity.hub.arcgis.com/data.json,,Esri,United States
+10b-55003,https://data-ashlandcountywi.opendata.arcgis.com/data.json,University of Wisconsin-Madison,"Ashland County, Wisconsin",Ashland County
+10c-03,https://data-cityofmadison.opendata.arcgis.com/data.json,University of Wisconsin-Madison,"City of Madison, Wisconsin",City of Madison
+10c-04,https://rapidsdata-wisconsinrapids.opendata.arcgis.com/data.json,University of Wisconsin-Madison,"City of Wisconsin Rapids, Wisconsin",City of Wisconsin Rapids
+10b-55021,https://opendata-cclid.opendata.arcgis.com/data.json,University of Wisconsin-Madison,Columbia County Wisconsin Land Information Department,Columbia County
+10b-55025,https://gis-countyofdane.opendata.arcgis.com/data.json,University of Wisconsin-Madison,"Dane County, Wisconsin",Dane County
+10b-55025-01,https://data-carpc.opendata.arcgis.com/data.json,University of Wisconsin-Madison,,Dane County
+10b-55035-01,https://hub-eccounty.hub.arcgis.com/data.json,University of Wisconsin-Madison,"County of Eau Claire, Wisconsin",Eau Claire County
+10b-55079,https://gis-mclio.opendata.arcgis.com/data.json,University of Wisconsin-Madison,Milwaukee County GIS and Land Information,Milwaukee County
+10b-55087,https://data-ocgis.opendata.arcgis.com/data.json,University of Wisconsin-Madison,Outagamie County Land Information,Outagamie County
+10b-55093,https://data-piercecounty-wi.hub.arcgis.com/data.json,University of Wisconsin-Madison,"Pierce County, Wisconsin",Pierce County
+10b-55101,https://data-racinecounty.opendata.arcgis.com/data.json,University of Wisconsin-Madison,"Racine County Courthouse, Register of Deeds Land Description Department",Racine County
+10b-55111,https://data-saukgis.opendata.arcgis.com/data.json,University of Wisconsin-Madison,"Sauk County, Wisconsin",Sauk County
+10b-55109,https://gis-scccdd.opendata.arcgis.com/data.json,University of Wisconsin-Madison,"St. Croix Coutny, Wisconsin",St. Croix County
+10b-55125-01,https://data-vilas.opendata.arcgis.com/data.json,University of Wisconsin-Madison,Vilas County Land Information Office,Vilas County
+10b-55133,https://data-waukeshacounty.opendata.arcgis.com/data.json,University of Wisconsin-Madison,Waukesha County Land Information Office,Waukesha County
+10b-55135,https://data2017-04-05t135915451z-waupacacounty.opendata.arcgis.com/data.json,University of Wisconsin-Madison,Waupaca County Land Information,Waupaca County
+10b-55137,https://data-waushara.opendata.arcgis.com/data.json,University of Wisconsin-Madison,"Waushara County, Wisconsin",Waushara County
+10b-55141,https://opendata.woodcogis.com/data.json,University of Wisconsin-Madison,"Wood County, Wisconsin",Wood County
