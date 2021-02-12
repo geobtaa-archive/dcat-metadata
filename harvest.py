@@ -235,7 +235,7 @@ def metadataNewItems(newdata, newitem_ids):
         
         status = "Active"
         accuralMethod = "ArcGIS Hub"
-        dateAccessioned = ""
+        dateAccessioned = time.strftime('%Y-%m-%d')  # YYYY-MM-DD
                   
         rights = "Public"               
         accessRights = ""
