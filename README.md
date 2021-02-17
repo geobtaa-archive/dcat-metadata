@@ -31,7 +31,7 @@ The scripts can also be used for any site with DCAT enabled, including some DKAN
 
 1. download county and city boundary files (GeoJSON or Shapefile) online
 2. run `city_boundary.ipynb` or `county_boundary.ipynb` to create boundary GeoJSONs first
-   - if there exists regional data portals, you may need to run `merge_geojson.ipynb` to merge them together
+   - if there exists regional data portals, you may need to run `merge_geojsons.ipynb` to merge them together
    - Note that manual changes are required for `city_boundary.ipynb` based on attributes. 
 3. run `city_bbox.ipynb` or `county_bbox.ipynb` to create bounding box GeoJSONs
 
