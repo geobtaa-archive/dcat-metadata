@@ -10,6 +10,10 @@ Updated by Yijing Zhou @YijingZhou33
 Updated October 6, 2020
 Updated by Ziying Cheng @Ziiiiing
 
+Updated February 16, 2021
+Updated by Yijing Zhou @YijingZhou33
+-- populating spatial coverage based on bounding boxes
+
 """
 # To run this script you need a csv with five columns (portalName, URL, provenance, publisher, and spatialCoverage) with details about ESRI open data portals to be checked for new records.
 # Need to define directory path (containing arcPortals.csv, folder "jsons" and "reports"), and list of fields desired in the printed report
@@ -21,11 +25,18 @@ import csv
 import urllib
 import urllib.request
 import os
-import os.path
 from html.parser import HTMLParser
 import decimal
 import re
 import time
+import pandas as pd
+import geopandas as gpd
+from shapely.geometry import box
+import numpy as np
+from itertools import chain
+from itertools import repeat
+from functools import reduce
+import requests
 
 ######################################
 
@@ -52,6 +63,11 @@ delFieldsReport = ['identifier', 'landingPage', 'portalName']
 
 # list of fields to use for the portal status report
 statusFieldsReport = ['portalName', 'total', 'new_items', 'deleted_items']
+
+# dictionary using partial portal code to find out where the data portal belongs
+statedict = {'01': 'Indiana', '02': 'Illinois', '03': 'Iowa', '04': 'Maryland', '04c-01': 'District of Columbia',
+             '04f-01': '04f-01', '05': 'Minnesota', '06': 'Michigan', '07': 'Michigan', '08': 'Pennsylvania',
+             '09': 'Indiana', '10': 'Wisconsin', '11': 'Ohio', '12': 'Nebraska', '99': 'Esri'}
 #######################################
 
 
@@ -328,8 +344,8 @@ with open(portalFile, newline='', encoding='utf-8') as f:
         else:
             response = urllib.request.urlopen(url)
             if response.headers['content-type'] != 'application/json; charset=utf-8':
-                print("---------------------Data portal URL does not exist: ---------------------\n",
-                      url, "\n   --------------------------------------------------------------------------")
+                print("\n--------------------- Data portal URL does not exist: --------------------\n",
+                      portalName, url,  "\n--------------------------------------------------------------------------\n")
                 continue
             else:
                 newdata = json.load(response)
@@ -419,3 +435,339 @@ printItemReport(delItemsReport, delFieldsReport, All_Deleted_Items)
 reportStatus = directory + \
     "/reports/portal_status_report_%s.csv" % (ActionDate)
 printReport(reportStatus, Status_Report, statusFieldsReport)
+
+
+# ---------- Populating Spatial Coverage -----------
+
+""" set file path """
+df_csv = pd.read_csv(newItemsReport, encoding='unicode_escape')
+
+
+""" check if download link is valid """
+
+
+def check_download(df):
+    start_time = time.time()
+    sluglist = []
+    for _, row in df.iterrows():
+        url = row['Download']
+        slug = row['Slug']
+        try:
+            response = requests.get(url, timeout=3)
+            response.raise_for_status()
+            # check if it is a zipfile
+            if response.headers['content-type'] == 'application/json; charset=utf-8':
+                print(f'{slug}: Not a zipfile')
+            else:
+                print(f'{slug}: Success')
+                sluglist.append(slug)
+        # check HTTPError: 404(not found) or 500 (server error)
+        except requests.exceptions.HTTPError as errh:
+            print(f'{slug}: {errh}')
+        except requests.exceptions.RequestException as err:
+            print(f'{slug}: {err}')
+        except requests.exceptions.ConnectionError as errc:
+            print(f'{slug}: {errc}')
+        # check Timeout: it will retry connecting 3 times before throwing the error
+        except requests.exceptions.Timeout as errt:
+            attempts = 3
+            while attempts:
+                try:
+                    response = requests.get(url, timeout=3)
+                    break
+                except TimeoutError:
+                    attempts -= 1
+            print(f'{slug}: {errt}')
+    print('\n\n ---------- %s seconds ----------' % (time.time() - start_time))
+    return sluglist
+
+
+sluglist = check_download(df_csv)
+# only includes records with valid download link
+df_csv = df_csv[df_csv['Slug'].isin(sluglist)]
+
+
+""" split csv file if necessary """
+# if records come from Esri, the spatial coverage is considered as United States
+df_esri = df_csv[df_csv['Publisher'] == 'Esri'].reset_index(drop=True)
+df_csv = df_csv[df_csv['Publisher'] != 'Esri'].reset_index(drop=True)
+
+
+""" split state from column 'Publisher' """
+# -----------------------------------------
+# The portal code is the main indicator:
+# - 01 - Indiana
+# - 02 - Illinois
+# - 03 - Iowa
+# - 04 - Maryland
+# - 04c-01 - District of Columbia
+# - 04f-01 - Delaware, Philadelphia, Maryland, New Jersey
+# - 05 - Minnesota
+# - 06 - Michigan
+# - 07 - Michigan
+# - 08 - Pennsylvania
+# - 09 - Indiana
+# - 10 - Wisconsin
+# - 11 - Ohio
+# - 12 - Nebraska
+# - 99 - Esri
+# -----------------------------------------
+df_csv['State'] = [statedict[row['Code']] if row['Code'] in statedict.keys(
+) else statedict[row['Code'][0:2]] for _, row in df_csv.iterrows()]
+
+
+""" create bounding boxes for csv file """
+
+
+def format_coordinates(df, identifier):
+    # create regular bouding box coordinate pairs and round them to 2 decimal places
+    # manually generates the buffering zone
+    df = pd.concat([df, df['Bounding Box'].str.split(',', expand=True).astype(float).round(2)], axis=1).rename(
+        columns={0: 'minX', 1: 'minY', 2: 'maxX', 3: 'maxY'})
+
+    # check if there exists wrong coordinates and drop them
+    coordslist = ['minX', 'minY', 'maxX', 'maxY']
+    idlist = []
+    for _, row in df.iterrows():
+        for coord in coordslist:
+            # e.g. [-180.0000,-90.0000,180.0000,90.0000]
+            if abs(row[coord]) == 0 or abs(row[coord]) == 180:
+                idlist.append(row[identifier])
+        if (row.maxX - row.minX) > 10 or (row.maxY - row.minY) > 10:
+            idlist.append(row[identifier])
+
+    # create bounding box
+    df['Coordinates'] = df.apply(lambda row: box(
+        row.minX, row.minY, row.maxX, row.maxY), axis=1)
+    df['Roundcoords'] = df.apply(lambda row: ', '.join(
+        [str(i) for i in [row.minX, row.minY, row.maxX, row.maxY]]), axis=1)
+
+    # clean up unnecessary columns
+    df = df.drop(columns=coordslist).reset_index(drop=True)
+
+    df_clean = df[~df[identifier].isin(idlist)]
+    # remove records with wrong coordinates into a new dataframe
+    df_wrongcoords = df[df[identifier].isin(idlist)].drop(
+        columns=['State', 'Coordinates'])
+
+    return [df_clean, df_wrongcoords]
+
+
+df_csvlist = format_coordinates(df_csv, 'Slug')
+df_clean = df_csvlist[0]
+# df_wrongcoords = df_csvlist[1]
+
+
+""" convert csv and GeoJSON file into dataframe """
+gdf_rawdata = gpd.GeoDataFrame(df_clean, geometry=df_clean['Coordinates'])
+gdf_rawdata.crs = 'EPSG:4326'
+
+
+""" split dataframe and convert them into dictionary  """
+# -----------------------------------------
+# e.g.
+# splitdict = {'Minnesota': {'Roundcoords 1': df_1, 'Roundcoords 2': df_2},
+#              'Michigan':  {'Roundcoords 3': df_3, ...},
+#               ...}
+# -----------------------------------------
+splitdict = {}
+for state in list(gdf_rawdata['State'].unique()):
+    gdf_slice = gdf_rawdata[gdf_rawdata['State'] == state]
+    if state:
+        coordsdict = {}
+        for coord in list(gdf_slice['Roundcoords'].unique()):
+            coordsdict[coord] = gdf_slice[gdf_slice['Roundcoords']
+                                          == coord].drop(columns=['State', 'Roundcoords'])
+        splitdict[state] = coordsdict
+    else:
+        sluglist = gdf_slice['Code'].unique()
+        print("Can't find the bounding box file: ", sluglist)
+
+
+""" perform spatial join on each record """
+# -----------------------------------------
+# geopandas.sjoin provides the following the criteria used to match rows:
+# - intersects
+# - within
+# - contains
+# -----------------------------------------
+
+
+def split_placename(df, level):
+    formatlist = []
+    for _, row in df.iterrows():
+        # e.g. 'Baltimore County, Baltimore City'
+        # --> ['Baltimore County&Maryland', 'Baltimore City&Maryland']
+        if row[level] != 'nan':
+            placelist = row[level].split(', ')
+            formatname = ', '.join([(i + '&' + row['State'])
+                                    for i in placelist])
+        # e.g. 'nan'
+        # --> ['nan']
+        else:
+            formatname = 'nan'
+        formatlist.append(formatname)
+    return formatlist
+
+
+# spatial join: both city and county bounding box files
+def city_and_county_sjoin(gdf_rawdata, op, state):
+    bboxpath = os.path.join('geojsons', state, f'{state}_City_bbox.json')
+    gdf_basemap = gpd.read_file(bboxpath)
+    # spatial join
+    df_merged = gpd.sjoin(gdf_rawdata, gdf_basemap, op=op, how='left')[
+        ['City', 'County', 'State']].astype(str)
+    # merge column 'City', 'County' into one column 'op'
+    df_merged['City'] = split_placename(df_merged, 'City')
+    df_merged['County'] = split_placename(df_merged, 'County')
+    df_merged[op] = df_merged[['City', 'County']].agg(
+        ', '.join, axis=1).replace('nan, nan', 'nan')
+    # convert placename into list
+    oplist = df_merged[op].astype(str).values.tolist()
+    return oplist
+
+
+# spatial join: either city or county bounding box file
+def city_or_county_sjoin(gdf_rawdata, op, state, level):
+    bboxpath = os.path.join('geojsons', state, f'{state}_{level}_bbox.json')
+    gdf_basemap = gpd.read_file(bboxpath)
+    # spatial join
+    df_merged = gpd.sjoin(gdf_rawdata, gdf_basemap, op=op, how='left')[
+        [level, 'State']].astype(str)
+    # merge column level and 'State' into one column 'op'
+    df_merged[op] = df_merged.apply(lambda row: (
+        row[level] + '&' + row['State']) if str(row[level]) != 'nan' else 'nan', axis=1)
+    # convert placename into list
+    oplist = df_merged[op].astype(str).values.tolist()
+    return oplist
+
+
+""" remove duplicates and 'nan' from place name """
+
+
+def remove_nan(row):
+    # e.g. ['nan', 'Minneapolis, Minnesota', 'Hennepin County, Minnesota', 'Hennepin County, Minnesota']
+    # remove 'nan' and duplicates from list: ['Minneapolis, Minnesota, 'Hennepin County, Minnesota']
+    nonan = list(filter(lambda x: x != 'nan', row))
+    nodups = list(set(', '.join(nonan).split(', ')))
+    result = [i.replace('&', ', ') for i in nodups]
+    return result
+
+
+""" fetch the proper join bouding box files """
+operations = ['intersects', 'within', 'contains']
+
+
+def spatial_join(gdf_rawdata, state, length):
+    oplist = []
+    for op in operations:
+        bboxpath = os.path.join('geojsons', state, f'{state}_City_bbox.json')
+
+        # Disteict of Columbia doesn't have county boudning box file
+        if state == 'District of Columbia':
+            columbia = city_or_county_sjoin(gdf_rawdata, op, state, 'City')
+            pnamelist = remove_nan(columbia)
+
+        # check if there exists bounding box files
+        elif os.path.isfile(bboxpath):
+            city_county_state_list = city_and_county_sjoin(
+                gdf_rawdata, op, state)
+            county_state_list = city_or_county_sjoin(
+                gdf_rawdata, op, state, 'County')
+            pnamelist = city_county_state_list + county_state_list
+            pnamelist = remove_nan(pnamelist)
+
+        # missing bounding box file
+        else:
+            print('Missing city bounding box file: ', state)
+            continue
+
+        oplist.append(pnamelist)
+    # duplicate placename list for all rows with the same bounding box
+    allopslist = list(repeat(oplist, length))
+    # ultimately it returns a dataframe with placename related to matching operation
+    ## e.g. dataframe = {'intersects', 'within', 'contains'}
+    df_match = pd.DataFrame.from_records(allopslist, columns=operations)
+    return df_match
+
+
+""" merge place names generated by three matching operations to raw data """
+mergeddf = []
+# loop through splitdict based on key 'State'
+for state, gdfdict in splitdict.items():
+    # loop through records based on key 'Bounding Box'
+    for coord, gdf_split in gdfdict.items():
+        length = int(len(gdf_split))
+        df_comparison = spatial_join(gdf_split.iloc[[0]], state, length)
+        # append dataframe {'intersects', 'within', 'contains'} to raw data
+        gdf_sjoin = pd.concat([gdf_split.reset_index(
+            drop=True), df_comparison.reset_index(drop=True)], axis=1)
+        mergeddf.append(gdf_sjoin)
+
+# merge all dataframes with different bounding boxes into one
+gdf_merged = reduce(lambda left, right: left.append(right),
+                    mergeddf).reset_index(drop=True)
+
+# replace [''] with None
+for op in operations:
+    gdf_merged[op] = gdf_merged[op].apply(
+        lambda row: None if row == [''] else row)
+
+
+""" format spatial coverage based on GBL Metadata Template """
+# e.g. ['Camden County, New Jersey', 'Delaware County, Pennsylvania', 'Philadelphia County, Pennsylvania']
+
+
+def format_placename(colname):
+    inv_map = {}
+    plist = []
+
+    ## {'Camden County': 'New Jersey', 'Delaware County': 'Pennsylvania', 'Philadelphia County': 'Pennsylvania'}
+    namedict = dict(item.split(', ') for item in colname)
+
+    ## {'New Jersey': ['Camden County'], 'Pennsylvania': ['Delaware County', 'Philadelphia County']}
+    for k, v in namedict.items():
+        inv_map[v] = inv_map.get(v, []) + [k]
+
+    ## ['Camden County, New Jersey|New Jersey', 'Delaware County, Pennsylvania|Philadelphia County, Pennsylvania|Pennsylvania']
+    for k, v in inv_map.items():
+        pname = [elem + ', ' + k for elem in v]
+        pname.append(k)
+        plist.append('|'.join(pname))
+
+    # Camden County, New Jersey|New Jersey|Delaware County, Pennsylvania|Philadelphia County, Pennsylvania|Pennsylvania
+    return '|'.join(plist)
+
+
+""" select spatial coverage based on operaions """
+
+
+def populate_placename(df, identifier):
+    placenamelist = []
+    for _, row in df.iterrows():
+        if row['contains'] is None:
+            if row['intersects'] is None:
+                placename = ''
+            elif row['within'] is None:
+                placename = format_placename(row['intersects'])
+            else:
+                placename = format_placename(row['within'])
+        else:
+            placename = format_placename(row['contains'])
+        placenamelist.append(placename)
+    df['Spatial Coverage'] = placenamelist
+    return df.drop(columns=['intersects', 'within', 'contains', 'Coordinates', 'geometry'])
+
+
+df_bbox = populate_placename(gdf_merged, 'Slug')
+
+
+""" write to csv file """
+# check if there exists data portal from Esri
+if len(df_esri):
+    df_esri['Spatial Coverage'] = 'United States'
+
+dflist = [df_esri, df_bbox]
+df_final = pd.concat(filter(len, dflist), ignore_index=True)
+
+df_final.to_csv(newItemsReport, index=False)
