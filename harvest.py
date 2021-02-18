@@ -447,28 +447,49 @@ df_csv = pd.read_csv(newItemsReport, encoding='unicode_escape')
 
 
 def check_download(df):
+    totalcount = len(df.index)
+    countnotzip = countprivate = countok = count404 = count500 = countothercode = countconnection = counttimeout = 0
     start_time = time.time()
     sluglist = []
     for _, row in df.iterrows():
-        url = row['Download']
         slug = row['Slug']
+        if row['Format'] == 'Imagery':
+            url = row['ImageServer']
+        else:
+            url = row['Download']
         try:
+            # set timeout to avoid waiting for the server to response forever
             response = requests.get(url, timeout=3)
             response.raise_for_status()
             # check if it is a zipfile
             if response.headers['content-type'] == 'application/json; charset=utf-8':
+                countnotzip += 1
                 print(f'{slug}: Not a zipfile')
+            # check if we could access ImageServer
+            elif response.headers['Cache-Control'] == 'private':
+                countprivate += 1
+                print(f'{slug}: Could not access ImageServer')
             else:
+                countok += 1
                 print(f'{slug}: Success')
                 sluglist.append(slug)
         # check HTTPError: 404(not found) or 500 (server error)
         except requests.exceptions.HTTPError as errh:
+            if errh.response.status_code == 404:
+                count404 += 1
+            elif errh.response.status_code == 500:
+                count500 += 1
+            else:
+                countothercode += 1
             print(f'{slug}: {errh}')
         except requests.exceptions.RequestException as err:
+            counttimeout += 1
             print(f'{slug}: {err}')
         except requests.exceptions.ConnectionError as errc:
+            countconnection += 1
             print(f'{slug}: {errc}')
         # check Timeout: it will retry connecting 3 times before throwing the error
+        # but we'll still treat it as a valid record anyway
         except requests.exceptions.Timeout as errt:
             attempts = 3
             while attempts:
@@ -478,13 +499,26 @@ def check_download(df):
                 except TimeoutError:
                     attempts -= 1
             print(f'{slug}: {errt}')
-    print('\n\n ---------- %s seconds ----------' % (time.time() - start_time))
-    return sluglist
+            sluglist.append(slug)
+
+        errordict = {'OK': countok, 'Not a zipfile': countnotzip, 'Timeout Error': counttimeout,
+                     'Could not access ImageServer': countprivate, '404 Not Found': count404,
+                     '500 Server Error': count500, 'Other HTTP Errors': countothercode,
+                     'Connection Errors': countconnection}
+        msglist = [
+            f'{k}: {v}, {round(v/totalcount * 100.0, 2)}%' for k, v in errordict.items()]
+
+    print('\n---------- %s seconds ----------' % round((time.time() - start_time), 0),
+          '\n\n---------- Error Summary ----------',
+          '\nAll records: %s' % totalcount)
+    for msg in msglist:
+        print(msg)
+
+    # records with valid Download or ImageServer link (including read timeout records)
+    return df[df['Slug'].isin(sluglist)]
 
 
-sluglist = check_download(df_csv)
-# only includes records with valid download link
-df_csv = df_csv[df_csv['Slug'].isin(sluglist)]
+df_csv = check_download(df_csv)
 
 
 """ split csv file if necessary """
