@@ -443,67 +443,76 @@ printReport(reportStatus, Status_Report, statusFieldsReport)
 df_csv = pd.read_csv(newItemsReport, encoding='unicode_escape')
 
 
-""" check if download link is valid """
+""" check if link is valid """
 
 
-def check_download(df):
+def check_url(df, timeout):
     totalcount = len(df.index)
-    countnotzip = countprivate = countok = count404 = count500 = countothercode = countconnection = counttimeout = 0
+    countnotshp = countprivate = countok = count404 = count500 = countothercode = countconnection = counttimeout = 0
     start_time = time.time()
-    sluglist = []
+    oklist = []
+    checkagainlist = []
     for _, row in df.iterrows():
         slug = row['Slug']
+        # access the download link
         if row['Format'] == 'Imagery':
             url = row['ImageServer']
         else:
             url = row['Download']
         try:
             # set timeout to avoid waiting for the server to response forever
-            response = requests.get(url, timeout=3)
+            response = requests.get(
+                url, timeout=timeout, proxies=urllib.request.getproxies())
             response.raise_for_status()
-            # check if it is a zipfile
+            # vector data: check if it is a shapefile
+            # only keep the data source url
             if response.headers['content-type'] == 'application/json; charset=utf-8':
-                countnotzip += 1
-                print(f'{slug}: Not a zipfile')
-            # check if we could access ImageServer
+                countnotshp += 1
+                row['Download'] is None
+                oklist.append(slug)
+                print(f'{slug}: Not a shapefile')
+            # imagery Data: check if we could access ImageServer
+            # only keep the data source url
             elif response.headers['Cache-Control'] == 'private':
                 countprivate += 1
+                row['ImageServer'] is None
+                oklist.append(slug)
                 print(f'{slug}: Could not access ImageServer')
             else:
                 countok += 1
+                oklist.append(slug)
                 print(f'{slug}: Success')
-                sluglist.append(slug)
-        # check HTTPError: 404(not found) or 500 (server error)
+        # check HTTP error: 404 (not found) or 500 (server error)
         except requests.exceptions.HTTPError as errh:
+            # 404 error: drop this record
             if errh.response.status_code == 404:
                 count404 += 1
+            # 500 error: only keeps data source url
             elif errh.response.status_code == 500:
                 count500 += 1
+                row['Download'] is None
+                row['ImageServer'] is None
+                oklist.append(slug)
+            # other HTTP errors: only keeps data source url
             else:
                 countothercode += 1
+                row['Download'] is None
+                row['ImageServer'] is None
             print(f'{slug}: {errh}')
-        except requests.exceptions.RequestException as err:
-            counttimeout += 1
-            print(f'{slug}: {err}')
+        # check Connection error: need to be double-checked by increasing the timeout or even manually open it
         except requests.exceptions.ConnectionError as errc:
             countconnection += 1
+            checkagainlist.append(slug)
             print(f'{slug}: {errc}')
-        # check Timeout: it will retry connecting 3 times before throwing the error
-        # but we'll still treat it as a valid record anyway
+        # check Timeout error: need to be double-checked by increasing the timeout or even manually open it
         except requests.exceptions.Timeout as errt:
-            attempts = 3
-            while attempts:
-                try:
-                    response = requests.get(url, timeout=3)
-                    break
-                except TimeoutError:
-                    attempts -= 1
+            counttimeout += 1
+            checkagainlist.append(slug)
             print(f'{slug}: {errt}')
-            sluglist.append(slug)
 
-        errordict = {'OK': countok, 'Not a zipfile': countnotzip, 'Timeout Error': counttimeout,
+        errordict = {'OK': countok, 'Not a shapefile': countnotshp, 'Timeout Error': counttimeout,
                      'Could not access ImageServer': countprivate, '404 Not Found': count404,
-                     '500 Server Error': count500, 'Other HTTP Errors': countothercode,
+                     '500 Internal Server Error': count500, 'Other HTTP Errors': countothercode,
                      'Connection Errors': countconnection}
         msglist = [
             f'{k}: {v}, {round(v/totalcount * 100.0, 2)}%' for k, v in errordict.items()]
@@ -514,11 +523,23 @@ def check_download(df):
     for msg in msglist:
         print(msg)
 
-    # records with valid Download or ImageServer link (including read timeout records)
-    return df[df['Slug'].isin(sluglist)]
+    # records with valid urls & records need to be double-checked
+    return [df[df['Slug'].isin(oklist)], df[df['Slug'].isin(checkagainlist)]]
 
 
-df_csv = check_download(df_csv)
+df_total = check_url(df_csv, 3)
+df_ok = df_total[0]
+df_checkagain = df_total[1]
+
+# set the timeout as 10 seconds
+# if there still exists any records, manually check the download link to see if it works
+if len(df_checkagain):
+    df_checkagain = check_url(df_checkagain, 10)
+    df_checkok = df_checkagain[0]
+    df_manualcheck = df_checkagain[1]
+    df_manualcheck['Title'] = 'Manually check this link!'
+    df_csv = pd.concat([df_ok, df_checkok, df_manualcheck]
+                       ).reset_index(drop=True)
 
 
 """ split csv file if necessary """
