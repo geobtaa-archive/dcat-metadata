@@ -450,8 +450,9 @@ def check_url(df, timeout):
     totalcount = len(df.index)
     countnotshp = countprivate = countok = count404 = count500 = countothercode = countconnection = counttimeout = 0
     start_time = time.time()
-    oklist = []
-    checkagainlist = []
+    filesize = download = imageserver = None
+    filesizelist, downloadlist, imageserverlist, oklist, checkagainlist = (
+        [] for i in range(5))
     for _, row in df.iterrows():
         slug = row['Slug']
         # access the download link
@@ -466,19 +467,26 @@ def check_url(df, timeout):
             response.raise_for_status()
             # vector data: check if it is a shapefile
             # only keep the data source url
-            if response.headers['content-type'] == 'application/json; charset=utf-8':
+            if 'content-type' in response.headers and response.headers['content-type'] == 'application/json; charset=utf-8':
                 countnotshp += 1
-                row['Download'] is None
                 oklist.append(slug)
                 print(f'{slug}: Not a shapefile')
             # imagery Data: check if we could access ImageServer
             # only keep the data source url
-            elif response.headers['Cache-Control'] == 'private':
+            elif 'Cache-Control' in response.headers and response.headers['Cache-Control'] == 'private':
                 countprivate += 1
-                row['ImageServer'] is None
                 oklist.append(slug)
                 print(f'{slug}: Could not access ImageServer')
             else:
+                # if records with both vaild data source page and download link
+                # query the file size and keep both links
+                if 'content-length' in response.headers:
+                    filesize = str(
+                        round(int(response.headers['content-length']) / 1000000, 2)) + ' MB'
+                if row['Download'] is not None:
+                    download = row['Download']
+                if row['ImageServer'] is not None:
+                    imageserver = row['ImageServer']
                 countok += 1
                 oklist.append(slug)
                 print(f'{slug}: Success')
@@ -490,57 +498,62 @@ def check_url(df, timeout):
             # 500 error: only keeps data source url
             elif errh.response.status_code == 500:
                 count500 += 1
-                row['Download'] is None
-                row['ImageServer'] is None
                 oklist.append(slug)
             # other HTTP errors: only keeps data source url
             else:
                 countothercode += 1
-                row['Download'] is None
-                row['ImageServer'] is None
             print(f'{slug}: {errh}')
         # check Connection error: need to be double-checked by increasing the timeout or even manually open it
         except requests.exceptions.ConnectionError as errc:
+            download = row['Download']
+            imageserver = row['ImageServer']
             countconnection += 1
             checkagainlist.append(slug)
             print(f'{slug}: {errc}')
         # check Timeout error: need to be double-checked by increasing the timeout or even manually open it
         except requests.exceptions.Timeout as errt:
+            download = row['Download']
+            imageserver = row['ImageServer']
             counttimeout += 1
             checkagainlist.append(slug)
             print(f'{slug}: {errt}')
 
-        errordict = {'OK': countok, 'Not a shapefile': countnotshp, 'Timeout Error': counttimeout,
-                     'Could not access ImageServer': countprivate, '404 Not Found': count404,
-                     '500 Internal Server Error': count500, 'Other HTTP Errors': countothercode,
-                     'Connection Errors': countconnection}
-        msglist = [
-            f'{k}: {v}, {round(v/totalcount * 100.0, 2)}%' for k, v in errordict.items()]
+        filesizelist.append(filesize)
+        downloadlist.append(download)
+        imageserverlist.append(imageserver)
 
+    df['FileSize'] = filesizelist
+    df['Download'] = downloadlist
+    df['ImageServer'] = imageserverlist
+
+    errordict = {'OK': countok, 'Not a shapefile': countnotshp, 'Timeout Error': counttimeout,
+                 'Could not access ImageServer': countprivate, '404 Not Found': count404,
+                 '500 Internal Server Error': count500, 'Other HTTP Errors': countothercode,
+                 'Connection Errors': countconnection}
+    msglist = [
+        f'{k}: {v}, {round(v/totalcount * 100.0, 2)}%' for k, v in errordict.items()]
     print('\n---------- %s seconds ----------' % round((time.time() - start_time), 0),
           '\n\n---------- Error Summary ----------',
           '\nAll records: %s' % totalcount)
     for msg in msglist:
         print(msg)
 
-    # records with valid urls & records need to be double-checked
+    # records with runtime error need to be double-checked
     return [df[df['Slug'].isin(oklist)], df[df['Slug'].isin(checkagainlist)]]
 
 
 df_total = check_url(df_csv, 3)
-df_ok = df_total[0]
-df_checkagain = df_total[1]
+df_ok = df_total[0].reset_index(drop=True)
+df_checkagain = df_total[1].reset_index(drop=True)
 
 # set the timeout as 10 seconds
 # if there still exists any records, manually check the download link to see if it works
-if len(df_checkagain):
+if len(df_checkagain.index):
     df_checkagain = check_url(df_checkagain, 10)
-    df_checkok = df_checkagain[0]
-    df_manualcheck = df_checkagain[1]
+    df_checkok = df_checkagain[0].reset_index(drop=True)
+    df_manualcheck = df_checkagain[1].reset_index(drop=True)
     df_manualcheck['Title'] = 'Manually check this link!'
-    df_csv = pd.concat([df_ok, df_checkok, df_manualcheck]
-                       ).reset_index(drop=True)
-
+df_csv = pd.concat([df_ok, df_checkok, df_manualcheck]).reset_index(drop=True)
 
 """ split csv file if necessary """
 # if records come from Esri, the spatial coverage is considered as United States
