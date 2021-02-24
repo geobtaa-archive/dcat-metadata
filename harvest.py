@@ -14,6 +14,10 @@ Updated February 16, 2021
 Updated by Yijing Zhou @YijingZhou33
 -- populating spatial coverage based on bounding boxes
 
+Updated February 24, 2021<br>
+Updated by Yijing Zhou @YijingZhou33<br>
+-- Handling download link errors for newly added items
+
 """
 # To run this script you need a csv with five columns (portalName, URL, provenance, publisher, and spatialCoverage) with details about ESRI open data portals to be checked for new records.
 # Need to define directory path (containing arcPortals.csv, folder "jsons" and "reports"), and list of fields desired in the printed report
@@ -392,48 +396,29 @@ with open(portalFile, newline='', encoding='utf-8') as f:
             # If the record no longer exists, adds selected fields into a dictionary of deleted items (deletedItemDict)
             deletedItemDict = {}
 
-            # check deleted item's download link, if it is broken, delete it
+            # check deleted item's landing page, if it is broken, delete it
             for z in range(len(older_data["dataset"])):
                 identifier = older_data["dataset"][z]["identifier"]
-                slug = identifier.rsplit('/', 1)[-1]
                 if identifier not in newjson_ids.values():
                     distribution = older_data["dataset"][z]["distribution"]
                     for dictionary in distribution:
                         if dictionary["title"] == "Shapefile":
-                            if 'downloadURL' in dictionary.keys():
-                                accessURL = dictionary["downloadURL"].split('?')[
-                                    0]
-                            else:
-                                accessURL = dictionary["accessURL"].split('?')[
-                                    0]
+                            slug = identifier.rsplit('/', 1)[-1]
                         elif dictionary["title"] == "Esri Rest API":
                             if 'accessURL' in dictionary.keys():
                                 webService = dictionary['accessURL']
                                 if webService.rsplit('/', 1)[-1] == 'ImageServer':
-                                    accessURL = dictionary['accessURL']
+                                    slug = identifier.rsplit('/', 1)[-1]
                         else:
-                            accessURL = ''
+                            slug = ''
 
                     # only include records whose download link is either Shapefile or ImageServer
-                    if len(accessURL):
-                        try:
-                            response = requests.get(
-                                accessURL, timeout=10, proxies=urllib.request.getproxies())
-                            response.raise_for_status()
-                        # check HTTP error
-                        except requests.exceptions.HTTPError as errh:
-                            del_metadata = []
-                            del_metalist = [slug, identifier, portalName]
-                            for value in del_metalist:
-                                del_metadata.append(value)
-                            deletedItemDict[identifier] = del_metadata
-                            print(f'{slug}: {errh}')
-                        # check Connection error
-                        except requests.exceptions.ConnectionError as errc:
-                            print(f'{slug}: {errc}')
-                        # check Timeout error
-                        except requests.exceptions.Timeout as errt:
-                            print(f'{slug}: {errt}')
+                    if len(slug):
+                        del_metadata = []
+                        del_metalist = [slug, identifier, portalName]
+                        for value in del_metalist:
+                            del_metadata.append(value)
+                        deletedItemDict[identifier] = del_metadata
 
             All_Deleted_Items.append(deletedItemDict)
 
