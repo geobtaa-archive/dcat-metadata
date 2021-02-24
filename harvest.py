@@ -300,7 +300,7 @@ ActionDate = time.strftime('%Y%m%d')
 # List all files in the 'jsons' folder under the current directory and store file names in the 'filenames' list
 filenames = os.listdir('jsons')
 
-# Opens a list of portals and urls ending in /data.json from input CSV
+# Open a list of portals and urls ending in /data.json from input CSV
 # using column headers 'portalName', 'URL', 'provenance', 'SpatialCoverage'
 with open(portalFile, newline='', encoding='utf-8') as f:
     reader = csv.DictReader(f)
@@ -391,16 +391,49 @@ with open(portalFile, newline='', encoding='utf-8') as f:
             # Compares identifiers in the older json to the list of identifiers from the newer json.
             # If the record no longer exists, adds selected fields into a dictionary of deleted items (deletedItemDict)
             deletedItemDict = {}
+
+            # check deleted item's download link, if it is broken, delete it
             for z in range(len(older_data["dataset"])):
                 identifier = older_data["dataset"][z]["identifier"]
+                slug = identifier.rsplit('/', 1)[-1]
                 if identifier not in newjson_ids.values():
-                    del_metadata = []
-                    del_metalist = [identifier.rsplit(
-                        '/', 1)[-1], identifier, portalName]
-                    for value in del_metalist:
-                        del_metadata.append(value)
+                    distribution = older_data["dataset"][z]["distribution"]
+                    for dictionary in distribution:
+                        if dictionary["title"] == "Shapefile":
+                            if 'downloadURL' in dictionary.keys():
+                                accessURL = dictionary["downloadURL"].split('?')[
+                                    0]
+                            else:
+                                accessURL = dictionary["accessURL"].split('?')[
+                                    0]
+                        elif dictionary["title"] == "Esri Rest API":
+                            if 'accessURL' in dictionary.keys():
+                                webService = dictionary['accessURL']
+                                if webService.rsplit('/', 1)[-1] == 'ImageServer':
+                                    accessURL = dictionary['accessURL']
+                        else:
+                            accessURL = ''
 
-                    deletedItemDict[identifier] = del_metadata
+                    # only include records whose download link is either Shapefile or ImageServer
+                    if len(accessURL):
+                        try:
+                            response = requests.get(
+                                accessURL, timeout=10, proxies=urllib.request.getproxies())
+                            response.raise_for_status()
+                        # check HTTP error
+                        except requests.exceptions.HTTPError as errh:
+                            del_metadata = []
+                            del_metalist = [slug, identifier, portalName]
+                            for value in del_metalist:
+                                del_metadata.append(value)
+                            deletedItemDict[identifier] = del_metadata
+                            print(f'{slug}: {errh}')
+                        # check Connection error
+                        except requests.exceptions.ConnectionError as errc:
+                            print(f'{slug}: {errc}')
+                        # check Timeout error
+                        except requests.exceptions.Timeout as errt:
+                            print(f'{slug}: {errt}')
 
             All_Deleted_Items.append(deletedItemDict)
 
@@ -553,7 +586,8 @@ if len(df_checkagain.index):
     df_checkok = df_checkagain[0].reset_index(drop=True)
     df_manualcheck = df_checkagain[1].reset_index(drop=True)
     df_manualcheck['Title'] = 'Manually check this link!'
-df_csv = pd.concat([df_ok, df_checkok, df_manualcheck]).reset_index(drop=True)
+    df_csv = pd.concat([df_ok, df_checkok, df_manualcheck]
+                       ).reset_index(drop=True)
 
 """ split csv file if necessary """
 # if records come from Esri, the spatial coverage is considered as United States
