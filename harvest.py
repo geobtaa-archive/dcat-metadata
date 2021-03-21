@@ -15,7 +15,7 @@ Updated by Yijing Zhou @YijingZhou33
 -- populating spatial coverage based on bounding boxes
 
 Updated February 24, 2021<br>
-Updated by Yijing Zhou @YijingZhou33<br>
+Updated by Yijing Zhou @YijingZhou33
 -- Handling download link errors for newly added items
 
 """
@@ -69,9 +69,9 @@ delFieldsReport = ['identifier', 'landingPage', 'portalName']
 statusFieldsReport = ['portalName', 'total', 'new_items', 'deleted_items']
 
 # dictionary using partial portal code to find out where the data portal belongs
-statedict = {'01': 'Indiana', '02': 'Illinois', '03': 'Iowa', '04': 'Maryland', '04c-01': 'District of Columbia',
-             '04f-01': '04f-01', '05': 'Minnesota', '06': 'Michigan', '07': 'Michigan', '08': 'Pennsylvania',
-             '09': 'Indiana', '10': 'Wisconsin', '11': 'Ohio', '12': 'Nebraska', '99': 'Esri'}
+statedict = {'01': 'Indiana', '02': 'Illinois', '03': 'Iowa', '04': 'Maryland', '04c-01': 'District of Columbia', 
+             '04f-01': '04f-01', '05': 'Minnesota', '06': 'Michigan', '07': 'Michigan', '08': 'Pennsylvania', 
+             '09': 'Indiana', '10': 'Wisconsin', '11': 'Ohio', '12': 'Chicago', '13': 'Nebraska', '99': 'Esri'}
 #######################################
 
 
