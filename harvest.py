@@ -71,7 +71,7 @@ statusFieldsReport = ['portalName', 'total', 'new_items', 'deleted_items']
 # dictionary using partial portal code to find out where the data portal belongs
 statedict = {'01': 'Indiana', '02': 'Illinois', '03': 'Iowa', '04': 'Maryland', '04c-01': 'District of Columbia', 
              '04f-01': '04f-01', '05': 'Minnesota', '06': 'Michigan', '07': 'Michigan', '08': 'Pennsylvania', 
-             '09': 'Indiana', '10': 'Wisconsin', '11': 'Ohio', '12': 'Chicago', '13': 'Nebraska', '99': 'Esri'}
+             '09': 'Indiana', '10': 'Wisconsin', '11': 'Ohio', '12': 'Illinois', '13': 'Nebraska', '99': 'Esri'}
 #######################################
 
 
@@ -348,7 +348,7 @@ with open(portalFile, newline='', encoding='utf-8') as f:
         else:
             response = urllib.request.urlopen(url)
             if response.headers['content-type'] != 'application/json; charset=utf-8':
-                print("\n--------------------- Data portal URL does not exist: --------------------\n",
+                print("\n--------------------- Data portal URL does not exist --------------------\n",
                       portalName, url,  "\n--------------------------------------------------------------------------\n")
                 continue
             else:
@@ -462,7 +462,7 @@ df_csv = pd.read_csv(newItemsReport, encoding='unicode_escape')
 
 
 """ check if link is valid """
-
+print("\n--------------------- Check if link is valid --------------------\n")
 
 def check_url(df, timeout):
     totalcount = len(df.index)
@@ -500,7 +500,7 @@ def check_url(df, timeout):
                 # query the file size and keep both links
                 if 'content-length' in response.headers:
                     filesize = str(
-                        round(int(response.headers['content-length']) / 1000000, 2)) + ' MB'
+                        round(int(response.headers['content-length']) / 1000000, 4)) + ' MB'
                 if row['Download'] is not None:
                     download = row['Download']
                 if row['ImageServer'] is not None:
@@ -596,9 +596,12 @@ df_csv = df_csv[df_csv['Publisher'] != 'Esri'].reset_index(drop=True)
 # - 09 - Indiana
 # - 10 - Wisconsin
 # - 11 - Ohio
-# - 12 - Nebraska
+# - 12 - Illinois
+# - 13 - Nebraska
 # - 99 - Esri
 # -----------------------------------------
+print("\n--------------------- Populating spatial coverage based on bounding box: --------------------\n")
+
 df_csv['State'] = [statedict[row['Code']] if row['Code'] in statedict.keys(
 ) else statedict[row['Code'][0:2]] for _, row in df_csv.iterrows()]
 
@@ -858,3 +861,4 @@ dflist = [df_esri, df_bbox]
 df_final = pd.concat(filter(len, dflist), ignore_index=True)
 
 df_final.to_csv(newItemsReport, index=False)
+print("\n--------------------- Congrats! ╰(￣▽￣)╯ --------------------\n")
