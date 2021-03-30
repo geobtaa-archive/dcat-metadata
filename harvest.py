@@ -14,7 +14,7 @@ Updated February 16, 2021
 Updated by Yijing Zhou @YijingZhou33
 -- populating spatial coverage based on bounding boxes
 
-Updated February 24, 2021<br>
+Updated February 24, 2021
 Updated by Yijing Zhou @YijingZhou33
 -- Handling download link errors for newly added items
 
@@ -330,6 +330,8 @@ with open(portalFile, newline='', encoding='utf-8') as f:
                 dates.append(filename[-13:-5])
 
         # remove action date from previous dates if any
+        # in case the script is run several times in one single day
+        # so the actionDate JSONs can overwrite those generated earlier on the same day 
         if ActionDate in dates:
             dates.remove(ActionDate)
 
@@ -347,6 +349,7 @@ with open(portalFile, newline='', encoding='utf-8') as f:
                 newdata = json.load(fr)
         else:
             response = urllib.request.urlopen(url)
+            # check if data portal URL is broken
             if response.headers['content-type'] != 'application/json; charset=utf-8':
                 print("\n--------------------- Data portal URL does not exist --------------------\n",
                       portalName, url,  "\n--------------------------------------------------------------------------\n")
