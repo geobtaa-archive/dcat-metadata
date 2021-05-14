@@ -18,6 +18,10 @@ Updated February 24, 2021
 Updated by Yijing Zhou @YijingZhou33
 -- Handling download link errors for newly added items
 
+Updated May 13, 2021
+Updated by Ziying Cheng @Ziiiiing
+-- Updating 'Genre' field
+
 """
 # To run this script you need a csv with five columns (portalName, URL, provenance, publisher, and spatialCoverage) with details about ESRI open data portals to be checked for new records.
 # Need to define directory path (containing arcPortals.csv, folder "jsons" and "reports"), and list of fields desired in the printed report
@@ -48,9 +52,9 @@ import requests
 
 # names of the main directory containing folders named "jsons" and "reports"
 # Windows:
-directory = r'D:\Library RA\dcat-metadata'
+# directory = r'D:\Library RA\dcat-metadata'
 # MAC or Linux:
-# directory = r'/Users/zing/Desktop/RA/GitHub/dcat-metadata/'
+directory = r'/Users/zing/Desktop/RA/GitHub/dcat-metadata/'
 
 # csv file contaning portal list
 portalFile = 'arcPortals.csv'
@@ -182,7 +186,7 @@ def metadataNewItems(newdata, newitem_ids):
                 # If one of the distributions is a shapefile, change genre/format and get the downloadURL
                 format_types.append(dictionary["title"])
                 if dictionary["title"] == "Shapefile":
-                    genre = "Geospatial data"
+                    genre = "Datasets"
                     formatElement = "Shapefile"
                     if 'downloadURL' in dictionary.keys():
                         downloadURL = dictionary["downloadURL"].split('?')[0]
@@ -197,7 +201,7 @@ def metadataNewItems(newdata, newitem_ids):
                         webService = dictionary['accessURL']
 
                         if webService.rsplit('/', 1)[-1] == 'ImageServer':
-                            genre = "Aerial imagery"
+                            genre = "Imagery"
                             formatElement = 'Imagery'
                             typeElement = 'Image|Service'
                             geometryType = "Image"
@@ -266,8 +270,7 @@ def metadataNewItems(newdata, newitem_ids):
 
         status = "Active"
         accuralMethod = "ArcGIS Hub"
-        dateAccessioned = ""
-
+        dateAccessioned = time.strftime('%Y-%m-%d')
         rights = "Public"
         accessRights = ""
         suppressed = "FALSE"
@@ -862,6 +865,6 @@ if len(df_esri):
 
 dflist = [df_esri, df_bbox]
 df_final = pd.concat(filter(len, dflist), ignore_index=True)
-
 df_final.to_csv(newItemsReport, index=False)
 print("\n--------------------- Congrats! ╰(￣▽￣)╯ --------------------\n")
+
