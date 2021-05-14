@@ -271,7 +271,6 @@ def metadataNewItems(newdata, newitem_ids):
         status = "Active"
         accuralMethod = "ArcGIS Hub"
         dateAccessioned = time.strftime('%Y-%m-%d')
-
         rights = "Public"
         accessRights = ""
         suppressed = "FALSE"
@@ -866,6 +865,6 @@ if len(df_esri):
 
 dflist = [df_esri, df_bbox]
 df_final = pd.concat(filter(len, dflist), ignore_index=True)
-
 df_final.to_csv(newItemsReport, index=False)
 print("\n--------------------- Congrats! ╰(￣▽￣)╯ --------------------\n")
+
