@@ -1,20 +1,16 @@
 portalName,URL,provenance,publisher,spatialCoverage
 06a-01,http://gis-michigan.opendata.arcgis.com/data.json,Michigan State University,State of Michigan,Michigan
-05b-27163,http://data-wcmn.opendata.arcgis.com/data.json,University of Minnesota,"Washington County, Minnesota","Washington County, Minnesota|Minnesota"
 05b-27167,https://hub-wilkinco.hub.arcgis.com/data.json,University of Minnesota,"Wilkin County, Minnesota","Wilkin County, Minnesota|Minnesota"
 01b-18163,http://dev-evansvilleapc.opendata.arcgis.com/data.json,Indiana University,"City of Evansville & Vanderburgh County, Indiana","Evansville, Vanderburgh County, Indiana|Vanderburgh County, Indiana|Indiana"
 11b-39153,http://data-summitgis.opendata.arcgis.com/data.json,The Ohio State University,"Summit County, Ohio","Summit County, Ohio|Ohio"
 08b-42133,http://data-yorkcountypa.opendata.arcgis.com/data.json,Pennsylvania State University,"York County, Pennsylvania","York County, Pennsylvania|Pennsylvania"
 04b-24031,http://data2018-mcgov-gis.opendata.arcgis.com/data.json,University of Maryland,"Montgomery County, Maryland","Montgomery County, Maryland|Maryland"
-02c-01,http://data-evanston.opendata.arcgis.com/data.json,University of Illinois Urbana-Champaign,"City of Evanston, Illinois","Evanston, Cook County, Illinois|Cook County, Illinois|Illinois"
 01c-02,http://data.indy.gov/data.json,Indiana University,"City of Indianapolis and Marion County, Indiana","Indianapolis, Marion County, Indiana|Marion County, Indiana|Indiana"
 02b-17113,http://www.mcgis.org/data.json,University of Illinois Urbana-Champaign,"McLean County, Illinois","Bloomington, McLean County, Illinois|Normal, McLean County, Illinois|McLean County, Illinois|Illinois"
-02a-02,http://illinoisepaopendata-illinois-epa.opendata.arcgis.com/data.json,University of Illinois Urbana-Champaign,State of Illinois,Illinois
 04b-24013,http://data-carrollco-md.opendata.arcgis.com/data.json,University of Maryland,"Carroll County, Maryland","Carroll County, Maryland|Maryland"
 08b-42003,http://openac-alcogis.opendata.arcgis.com/data.json,Pennsylvania State University,"Allegheny County, Pennsylvania","Allegheny County, Pennsylvania|Pennsylvania"
 11b-39009,http://data-athgis.opendata.arcgis.com/data.json,The Ohio State University,"Athens County, Ohio","Athens County, Ohio|Ohio"
 05b-27011,http://data-bigstonecounty.opendata.arcgis.com/data.json,University of Minnesota,"Big Stone County, Minnesota","Big Stone County, Minnesota|Minnesota"
-04b-24009,http://data-calvertgis.opendata.arcgis.com/data.json,University of Maryland,"Calvert County, Maryland","Calvert County, Maryland|Maryland"
 05b-27017,http://data-carltoncounty.opendata.arcgis.com/data.json,University of Minnesota,Carlton County Minnesota,"Carlton County, Minnesota|Minnesota"
 05b-27019,http://data-carver.opendata.arcgis.com/data.json,University of Minnesota,"Carver County, Minnesota","Carver County, Minnesota|Minnesota"
 08b-42027,http://gisdata-centrecountygov.opendata.arcgis.com/data.json,Pennsylvania State University,"Centre County, Pennsylvania","Centre County, Pennsylvania|Pennsylvania"
@@ -31,7 +27,6 @@ portalName,URL,provenance,publisher,spatialCoverage
 08c-02,http://data-phl.opendata.arcgis.com/data.json,Pennsylvania State University,"City of Philadelphia, Pennsylvania","Philadelphia, Pennsylvania|Pennsylvania"
 05b-27119,https://hub-pcg.hub.arcgis.com/data.json,University of Minnesota,"Polk County, Minnesota","Polk County, Minnesota|Minnesota"
 05b-27121,http://hub-popecounty.hub.arcgis.com/data.json,University of Minnesota,"Pope County, Minnesota","Pope County, Minnesota|Minnesota"
-05b-27137,http://stlouiscountymndata-slcgis.opendata.arcgis.com/data.json,University of Minnesota,"St. Louis County, Minnesota","Saint Louis County, Minnesota|Minnesota"
 99-1000,http://coronavirus-resources.esri.com/data.json,,Esri,United States
 11b-39151,http://opendata.starkcountyohio.gov/data.json,The Ohio State University,"Stark County, Ohio, Ohio","Stark County, Ohio|Ohio"
 04b-24005,https://bcstat-bc-gis.hub.arcgis.com/data.json,University of Maryland,"Baltimore County, Maryland","Baltimore County, Maryland|Maryland"
