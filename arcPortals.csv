@@ -5,7 +5,6 @@ portalName,URL,provenance,publisher,spatialCoverage
 03a-02,http://public-iowadot.opendata.arcgis.com/data.json,University of Iowa,State of Iowa,Iowa
 03a-04,http://open-iowa.opendata.arcgis.com/data.json,University of Iowa,State of Iowa,Iowa
 03b-19113,http://opendata-linncounty-gis.opendata.arcgis.com/data.json,University of Iowa,"Linn County, Iowa","Linn County, Iowa|Iowa"
-03c-02,http://gisopendata.siouxfalls.org/data.json,University of Iowa,"City of Sioux Falls, Iowa","Sioux Falls, Iowa|Iowa"
 04a-01,http://data.imap.maryland.gov/data.json,University of Maryland,State of Maryland,Maryland
 04b-24005,https://bcstat-bc-gis.hub.arcgis.com/data.json,University of Maryland,"Baltimore County, Maryland","Baltimore County, Maryland|Maryland"
 04b-24013,http://data-carrollco-md.opendata.arcgis.com/data.json,University of Maryland,"Carroll County, Maryland","Carroll County, Maryland|Maryland"
