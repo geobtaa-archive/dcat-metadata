@@ -60,11 +60,11 @@ directory = r'/Users/zing/Desktop/RA/GitHub/dcat-metadata/'
 portalFile = 'arcPortals.csv'
 
 # list of metadata fields from the DCAT json schema for open data portals desired in the final report
-fieldnames = ['Title', 'Alternative Title', 'Description', 'Language', 'Creator', 'Publisher', 'Genre',
-              'Subject', 'Keyword', 'Date Issued', 'Temporal Coverage', 'Date Range', 'Solr Year', 'Spatial Coverage',
-              'Bounding Box', 'Type', 'Geometry Type', 'Format', 'Information', 'Download', 'MapServer',
-              'FeatureServer', 'ImageServer', 'Slug', 'Identifier', 'Provenance', 'Code', 'Is Part Of', 'Status',
-              'Accrual Method', 'Date Accessioned', 'Rights', 'Access Rights', 'Suppressed', 'Child']
+fieldnames = ['Title', 'Alternative Title', 'Description', 'Language', 'Creator', 'Publisher', 'Resource Class',
+              'ISO Topic Categories', 'Keyword', 'Date Issued', 'Temporal Coverage', 'Date Range', 'Spatial Coverage',
+              'Bounding Box', 'Resource Type', 'Format', 'Information', 'Download', 'MapServer',
+              'FeatureServer', 'ImageServer', 'ID', 'Identifier', 'Provider', 'Code', 'Member Of', 'Status',
+              'Accrual Method', 'Date Accessioned', 'Rights', 'Access Rights', 'Suppressed', 'Child Record']
 
 # list of fields to use for the deletedItems report
 delFieldsReport = ['identifier', 'landingPage', 'portalName']
@@ -166,18 +166,17 @@ def metadataNewItems(newdata, newitem_ids):
             description = description.replace(u"\u2019", "'").replace(u"\u201c", "\"").replace(u"\u201d", "\"").replace(
                 u"\u00a0", "").replace(u"\u00b7", "").replace(u"\u2022", "").replace(u"\u2013", "-").replace(u"\u200b", "")
 
-        language = "English"
+        language = "eng"
 
         creator = newdata["dataset"][y]["publisher"]
         for pub in creator.values():
             creator = pub.replace(u"\u2019", "'")
 
         format_types = []
-        genre = ""
+        resourceClass = ""
         formatElement = ""
-        typeElement = ""
         downloadURL = ""
-        geometryType = ""
+        resourceType = ""
         webService = ""
 
         distribution = newdata["dataset"][y]["distribution"]
@@ -186,14 +185,14 @@ def metadataNewItems(newdata, newitem_ids):
                 # If one of the distributions is a shapefile, change genre/format and get the downloadURL
                 format_types.append(dictionary["title"])
                 if dictionary["title"] == "Shapefile":
-                    genre = "Datasets"
+                    resourceClass = "Datasets"
                     formatElement = "Shapefile"
                     if 'downloadURL' in dictionary.keys():
                         downloadURL = dictionary["downloadURL"].split('?')[0]
                     else:
                         downloadURL = dictionary["accessURL"].split('?')[0]
 
-                    geometryType = "Vector"
+                    resourceType = "Vector data"
 
                 # If the Rest API is based on an ImageServer, change genre, type, and format to relate to imagery
                 if dictionary["title"] == "Esri Rest API":
@@ -201,29 +200,21 @@ def metadataNewItems(newdata, newitem_ids):
                         webService = dictionary['accessURL']
 
                         if webService.rsplit('/', 1)[-1] == 'ImageServer':
-                            genre = "Imagery"
+                            resourceClass = "Imagery"
                             formatElement = 'Imagery'
-                            typeElement = 'Image|Service'
-                            geometryType = "Image"
+                            resourceType = "Satellite imagery"
                     else:
-                        genre = ""
+                        resourceClass = ""
                         formatElement = ""
-                        typeElement = ""
                         downloadURL = ""
 
             # If the distribution section of the metadata is not structured in a typical way
             except:
-                genre = ""
+                resourceClass = ""
                 formatElement = ""
-                typeElement = ""
                 downloadURL = ""
-
                 continue
 
-        # If the item has both a Shapefile and Esri Rest API format, change type
-        if "Esri Rest API" in format_types:
-            if "Shapefile" in format_types:
-                typeElement = "Dataset|Service"
 
         try:
             bboxList = []
@@ -246,7 +237,6 @@ def metadataNewItems(newdata, newitem_ids):
         dateIssued = cleanData(newdata["dataset"][y]['issued'])
         temporalCoverage = ""
         dateRange = ""
-        solrYear = ""
 
         information = cleanData(newdata["dataset"][y]['landingPage'])
 
@@ -266,21 +256,21 @@ def metadataNewItems(newdata, newitem_ids):
 
         slug = identifier.rsplit('/', 1)[-1]
         identifier_new = "https://hub.arcgis.com/datasets/" + slug
-        isPartOf = portalName
+        memberOf = portalName
 
         status = "Active"
         accuralMethod = "ArcGIS Hub"
         dateAccessioned = time.strftime('%Y-%m-%d')
-        rights = "Public"
-        accessRights = ""
+        rights = ""
+        accessRights = "Public"
         suppressed = "FALSE"
         child = "FALSE"
 
         metadataList = [title, alternativeTitle, description, language, creator, publisher,
-                        genre, subject, keyword_list, dateIssued, temporalCoverage,
-                        dateRange, solrYear, spatialCoverage, bbox, typeElement, geometryType,
+                        resourceClass, subject, keyword_list, dateIssued, temporalCoverage,
+                        dateRange, spatialCoverage, bbox, resourceType,
                         formatElement, information, downloadURL, mapServer, featureServer,
-                        imageServer, slug, identifier_new, provenance, portalName, isPartOf, status,
+                        imageServer, slug, identifier_new, provenance, portalName, memberOf, status,
                         accuralMethod, dateAccessioned, rights, accessRights, suppressed, child]
 
         # deletes data portols except genere = 'Geospatial data' or 'Aerial imagery'
@@ -478,7 +468,7 @@ def check_url(df, timeout):
     filesizelist, downloadlist, imageserverlist, oklist, checkagainlist = (
         [] for i in range(5))
     for _, row in df.iterrows():
-        slug = row['Slug']
+        slug = row['ID']
         # access the download link
         if row['Format'] == 'Imagery':
             url = row['ImageServer']
@@ -546,7 +536,7 @@ def check_url(df, timeout):
         downloadlist.append(download)
         imageserverlist.append(imageserver)
 
-    df['FileSize'] = filesizelist
+    df['File Size'] = filesizelist
     df['Download'] = downloadlist
     df['ImageServer'] = imageserverlist
 
@@ -563,7 +553,7 @@ def check_url(df, timeout):
         print(msg)
 
     # records with runtime error need to be double-checked
-    return [df[df['Slug'].isin(oklist)], df[df['Slug'].isin(checkagainlist)]]
+    return [df[df['ID'].isin(oklist)], df[df['ID'].isin(checkagainlist)]]
 
 
 df_total = check_url(df_csv, 3)
@@ -649,7 +639,7 @@ def format_coordinates(df, identifier):
     return [df_clean, df_wrongcoords]
 
 
-df_csvlist = format_coordinates(df_csv, 'Slug')
+df_csvlist = format_coordinates(df_csv, 'ID')
 df_clean = df_csvlist[0]
 # df_wrongcoords = df_csvlist[1]
 
@@ -855,7 +845,7 @@ def populate_placename(df, identifier):
     return df.drop(columns=['intersects', 'within', 'contains', 'Coordinates', 'geometry'])
 
 
-df_bbox = populate_placename(gdf_merged, 'Slug')
+df_bbox = populate_placename(gdf_merged, 'ID')
 
 
 """ write to csv file """
