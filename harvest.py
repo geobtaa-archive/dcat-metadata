@@ -62,7 +62,7 @@ portalFile = 'arcPortals.csv'
 # list of metadata fields from the DCAT json schema for open data portals desired in the final report
 fieldnames = ['Title', 'Alternative Title', 'Description', 'Language', 'Creator', 'Publisher', 'Resource Class',
               'ISO Topic Categories', 'Keyword', 'Date Issued', 'Temporal Coverage', 'Date Range', 'Spatial Coverage',
-              'Bounding Box', 'Geometry Type', 'Format', 'Information', 'Download', 'MapServer',
+              'Bounding Box', 'Resource Type', 'Format', 'Information', 'Download', 'MapServer',
               'FeatureServer', 'ImageServer', 'ID', 'Identifier', 'Provider', 'Code', 'Member Of', 'Status',
               'Accrual Method', 'Date Accessioned', 'Rights', 'Access Rights', 'Suppressed', 'Child Record']
 
@@ -176,7 +176,7 @@ def metadataNewItems(newdata, newitem_ids):
         resourceClass = ""
         formatElement = ""
         downloadURL = ""
-        geometryType = ""
+        resourceType = ""
         webService = ""
 
         distribution = newdata["dataset"][y]["distribution"]
@@ -192,7 +192,7 @@ def metadataNewItems(newdata, newitem_ids):
                     else:
                         downloadURL = dictionary["accessURL"].split('?')[0]
 
-                    geometryType = "Vector"
+                    resourceType = "Vector data"
 
                 # If the Rest API is based on an ImageServer, change genre, type, and format to relate to imagery
                 if dictionary["title"] == "Esri Rest API":
@@ -202,7 +202,7 @@ def metadataNewItems(newdata, newitem_ids):
                         if webService.rsplit('/', 1)[-1] == 'ImageServer':
                             resourceClass = "Imagery"
                             formatElement = 'Imagery'
-                            geometryType = "Image"
+                            resourceType = "Satellite imagery"
                     else:
                         resourceClass = ""
                         formatElement = ""
@@ -268,7 +268,7 @@ def metadataNewItems(newdata, newitem_ids):
 
         metadataList = [title, alternativeTitle, description, language, creator, publisher,
                         resourceClass, subject, keyword_list, dateIssued, temporalCoverage,
-                        dateRange, spatialCoverage, bbox, geometryType,
+                        dateRange, spatialCoverage, bbox, resourceType,
                         formatElement, information, downloadURL, mapServer, featureServer,
                         imageServer, slug, identifier_new, provenance, portalName, memberOf, status,
                         accuralMethod, dateAccessioned, rights, accessRights, suppressed, child]
