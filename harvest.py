@@ -23,7 +23,7 @@ Updated by Ziying Cheng @Ziiiiing
 -- Updating 'Genre' field
 
 """
-# To run this script you need a csv with five columns (portalName, URL, provenance, publisher, and spatialCoverage) with details about ESRI open data portals to be checked for new records.
+# To run this script you need a csv with five columns (portalName, URL, provenance, titleSource, and spatialCoverage) with details about ESRI open data portals to be checked for new records.
 # Need to define directory path (containing arcPortals.csv, folder "jsons" and "reports"), and list of fields desired in the printed report
 # The script currently prints two combined reports - one of new items and one with deleted items.
 # The script also prints a status report giving the total number of resources in the portal, as well as the numbers of added and deleted items.
@@ -60,7 +60,7 @@ directory = r'/Users/zing/Desktop/RA/GitHub/dcat-metadata/'
 portalFile = 'arcPortals.csv'
 
 # list of metadata fields from the DCAT json schema for open data portals desired in the final report
-fieldnames = ['Title', 'Alternative Title', 'Description', 'Language', 'Creator', 'Publisher', 'Resource Class',
+fieldnames = ['Title', 'Alternative Title', 'Description', 'Language', 'Creator', 'Title Source', 'Resource Class',
               'ISO Topic Categories', 'Keyword', 'Date Issued', 'Temporal Coverage', 'Date Range', 'Spatial Coverage',
               'Bounding Box', 'Resource Type', 'Format', 'Information', 'Download', 'MapServer',
               'FeatureServer', 'ImageServer', 'ID', 'Identifier', 'Provider', 'Code', 'Member Of', 'Status',
@@ -167,7 +167,7 @@ def metadataNewItems(newdata, newitem_ids):
                 u"\u00a0", "").replace(u"\u00b7", "").replace(u"\u2022", "").replace(u"\u2013", "-").replace(u"\u200b", "")
 
         language = "eng"
-
+ 
         creator = newdata["dataset"][y]["publisher"]
         for pub in creator.values():
             creator = pub.replace(u"\u2019", "'")
@@ -266,7 +266,7 @@ def metadataNewItems(newdata, newitem_ids):
         suppressed = "FALSE"
         child = "FALSE"
 
-        metadataList = [title, alternativeTitle, description, language, creator, publisher,
+        metadataList = [title, alternativeTitle, description, language, creator, titleSource,
                         resourceClass, subject, keyword_list, dateIssued, temporalCoverage,
                         dateRange, spatialCoverage, bbox, resourceType,
                         formatElement, information, downloadURL, mapServer, featureServer,
@@ -306,7 +306,7 @@ with open(portalFile, newline='', encoding='utf-8') as f:
         portalName = row['portalName']
         url = row['URL']
         provenance = row['provenance']
-        publisher = row['publisher']
+        titleSource = row['titleSource']
         spatialCoverage = ''
         print(portalName, url)
 
@@ -572,11 +572,11 @@ if len(df_checkagain.index):
 
 """ split csv file if necessary """
 # if records come from Esri, the spatial coverage is considered as United States
-df_esri = df_csv[df_csv['Publisher'] == 'Esri'].reset_index(drop=True)
-df_csv = df_csv[df_csv['Publisher'] != 'Esri'].reset_index(drop=True)
+df_esri = df_csv[df_csv['Title Source'] == 'Esri'].reset_index(drop=True)
+df_csv = df_csv[df_csv['Title Source'] != 'Esri'].reset_index(drop=True)
 
 
-""" split state from column 'Publisher' """
+""" split state from column 'Title Source' """
 # -----------------------------------------
 # The portal code is the main indicator:
 # - 01 - Indiana
