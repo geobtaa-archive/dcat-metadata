@@ -195,7 +195,7 @@ def metadataNewItems(newdata, newitem_ids):
                     resourceType = "Vector data"
 
                 # If the Rest API is based on an ImageServer, change genre, type, and format to relate to imagery
-                if dictionary["title"] == "Esri Rest API":
+                if dictionary["title"] == "ArcGIS GeoService":
                     if 'accessURL' in dictionary.keys():
                         webService = dictionary['accessURL']
 
