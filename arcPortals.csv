@@ -1,4 +1,4 @@
-portalName,URL,provenance,publisher,spatialCoverage
+portalName,URL,provenance,titleSource,spatialCoverage
 01b-18163,http://dev-evansvilleapc.opendata.arcgis.com/data.json,Indiana University,"City of Evansville & Vanderburgh County, Indiana","Evansville, Vanderburgh County, Indiana|Vanderburgh County, Indiana|Indiana"
 01c-02,http://data.indy.gov/data.json,Indiana University,"City of Indianapolis and Marion County, Indiana","Indianapolis, Marion County, Indiana|Marion County, Indiana|Indiana"
 02b-17113,http://www.mcgis.org/data.json,University of Illinois Urbana-Champaign,"McLean County, Illinois","Bloomington, McLean County, Illinois|Normal, McLean County, Illinois|McLean County, Illinois|Illinois"
@@ -10,7 +10,6 @@ portalName,URL,provenance,publisher,spatialCoverage
 04b-24013,http://data-carrollco-md.opendata.arcgis.com/data.json,University of Maryland,"Carroll County, Maryland","Carroll County, Maryland|Maryland"
 04b-24021,http://gis-fcgmd.opendata.arcgis.com/data.json,University of Maryland,"Frederick County, Maryland","Frederick County, Maryland|Maryland"
 04b-24025,http://planning-harfordgis.opendata.arcgis.com/data.json,University of Maryland,"Harford County, Maryland","Harford County, Maryland|Maryland"
-04b-24031,http://data2018-mcgov-gis.opendata.arcgis.com/data.json,University of Maryland,"Montgomery County, Maryland","Montgomery County, Maryland|Maryland"
 04c-01,http://opendata.dc.gov/data.json,University of Maryland,"Washington, District of Columbia","Washington, District of Columbia|District of Columbia|Maryland|Virginia"
 04c-02,https://data.baltimorecity.gov/data.json,University of Maryland,"City of Baltimore, Maryland","City of Baltimore, Maryland|Maryland"
 04f-01,http://dvrpc-dvrpcgis.opendata.arcgis.com/data.json,University of Maryland,Delaware Valley Regional Planning Commission,"Delaware River, Delaware|Delaware|Philadelphia, Pennsylvania|Pennsylvania|Maryland|New Jersey"
