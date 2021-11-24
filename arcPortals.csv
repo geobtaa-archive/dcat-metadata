@@ -31,7 +31,7 @@ portalName,URL,provenance,titleSource,spatialCoverage
 06f-01,http://maps-semcog.opendata.arcgis.com/data.json,Michigan State University,"SEMCOG, Southeast Michigan Council of Governments",Michigan
 07b-26161,http://data-washtenaw.opendata.arcgis.com/data.json,University of Michigan,"Washtenaw County, Michigan","Washtenaw County, Michigan|Michigan"
 07c-01,http://data.detroitmi.gov/data.json,University of Michigan,"City of Detroit, Michigan","Detroit, Michigan|Michigan"
-07d-02,http://mbgna-umich.opendata.arcgis.com/data.json,University of Michigan,University of Michigan,"Ann Arbor, Michigan|Michigan"
+07d-02,https://mbgna-umich.hub.arcgis.com/data.json,University of Michigan,University of Michigan,"Ann Arbor, Michigan|Michigan"
 08b-42003,http://openac-alcogis.opendata.arcgis.com/data.json,Pennsylvania State University,"Allegheny County, Pennsylvania","Allegheny County, Pennsylvania|Pennsylvania"
 08b-42027,http://gisdata-centrecountygov.opendata.arcgis.com/data.json,Pennsylvania State University,"Centre County, Pennsylvania","Centre County, Pennsylvania|Pennsylvania"
 08b-42029,https://chester-county-s-gis-hub-chesco.hub.arcgis.com/data.json,Pennsylvania State University,"Chester County, Pennsylvania","Chester County, Pennsylvania|Pennsylvania"
