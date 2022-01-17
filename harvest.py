@@ -267,9 +267,9 @@ def metadataNewItems(newdata, newitem_ids):
 
         isPartOf = portalName
         if isPartOf in ["07d-02", "12d-03"]:
-            memberOf = "D-academic-institutions-geospatial-data"
+            memberOf = "dc8c18df-7d64-4ff4-a754-d18d0891187d"
         else:
-            memberOf = "a-b-c-local-government-open-data"
+            memberOf = "ba5cc745-21c5-4ae9-954b-72dd8db6815a"
 
         status = "Active"
         accuralMethod = "ArcGIS Hub"
