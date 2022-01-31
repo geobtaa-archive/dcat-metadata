@@ -22,8 +22,16 @@ Updated May 13, 2021
 Updated by Ziying Cheng @Ziiiiing
 -- Updating 'Genre' field
 
+Updated May 13, 2021
+Updated by Ziying Cheng @Ziiiiing
+-- Updating the csv report for retired items
+
+Updated Dec 31, 2021
+Updated by Ziying Cheng @Ziiiiing
+-- Updating the Provider, Member Of and Is Part Of fields
+
 """
-# To run this script you need a csv with five columns (portalName, URL, provenance, titleSource, and spatialCoverage) with details about ESRI open data portals to be checked for new records.
+# To run this script you need a csv with five columns (portalName, URL, provider, titleSource, and spatialCoverage) with details about ESRI open data portals to be checked for new records.
 # Need to define directory path (containing arcPortals.csv, folder "jsons" and "reports"), and list of fields desired in the printed report
 # The script currently prints two combined reports - one of new items and one with deleted items.
 # The script also prints a status report giving the total number of resources in the portal, as well as the numbers of added and deleted items.
@@ -54,7 +62,7 @@ import requests
 # Windows:
 # directory = r'D:\Library RA\dcat-metadata'
 # MAC or Linux:
-directory = r'/Users/zing/Desktop/RA/GitHub/dcat-metadata/'
+directory = r'/Users/zing/Desktop/dcat-dec/'
 
 # csv file contaning portal list
 portalFile = 'arcPortals.csv'
@@ -63,11 +71,11 @@ portalFile = 'arcPortals.csv'
 fieldnames = ['Title', 'Alternative Title', 'Description', 'Language', 'Creator', 'Title Source', 'Resource Class',
               'ISO Topic Categories', 'Keyword', 'Date Issued', 'Temporal Coverage', 'Date Range', 'Spatial Coverage',
               'Bounding Box', 'Resource Type', 'Format', 'Information', 'Download', 'MapServer',
-              'FeatureServer', 'ImageServer', 'ID', 'Identifier', 'Provider', 'Code', 'Member Of', 'Status',
+              'FeatureServer', 'ImageServer', 'ID', 'Identifier', 'Provider', 'Code', 'Member Of', 'Is Part Of', 'Status',
               'Accrual Method', 'Date Accessioned', 'Rights', 'Access Rights', 'Suppressed', 'Child Record']
 
 # list of fields to use for the deletedItems report
-delFieldsReport = ['identifier', 'landingPage', 'portalName']
+delFieldsReport = ['ID', 'document[b1g_dateRetired_s]', 'document[b1g_status_s]', 'document[publication_state]']
 
 # list of fields to use for the portal status report
 statusFieldsReport = ['portalName', 'total', 'new_items', 'deleted_items']
@@ -256,11 +264,17 @@ def metadataNewItems(newdata, newitem_ids):
 
         slug = identifier.rsplit('/', 1)[-1]
         identifier_new = "https://hub.arcgis.com/datasets/" + slug
-        memberOf = portalName
+
+        isPartOf = portalName
+        if isPartOf in ["07d-02", "12d-03"]:
+            memberOf = "dc8c18df-7d64-4ff4-a754-d18d0891187d"
+        else:
+            memberOf = "ba5cc745-21c5-4ae9-954b-72dd8db6815a"
 
         status = "Active"
         accuralMethod = "ArcGIS Hub"
         dateAccessioned = time.strftime('%Y-%m-%d')
+
         rights = ""
         accessRights = "Public"
         suppressed = "FALSE"
@@ -270,7 +284,7 @@ def metadataNewItems(newdata, newitem_ids):
                         resourceClass, subject, keyword_list, dateIssued, temporalCoverage,
                         dateRange, spatialCoverage, bbox, resourceType,
                         formatElement, information, downloadURL, mapServer, featureServer,
-                        imageServer, slug, identifier_new, provenance, portalName, memberOf, status,
+                        imageServer, slug, identifier_new, provider, portalName, memberOf, isPartOf, status,
                         accuralMethod, dateAccessioned, rights, accessRights, suppressed, child]
 
         # deletes data portols except genere = 'Geospatial data' or 'Aerial imagery'
@@ -298,14 +312,14 @@ ActionDate = time.strftime('%Y%m%d')
 filenames = os.listdir('jsons')
 
 # Open a list of portals and urls ending in /data.json from input CSV
-# using column headers 'portalName', 'URL', 'provenance', 'SpatialCoverage'
+# using column headers 'portalName', 'URL', 'provider', 'SpatialCoverage'
 with open(portalFile, newline='', encoding='utf-8') as f:
     reader = csv.DictReader(f)
     for row in reader:
         # Read in values from the portals list to be used within the script or as part of the metadata report
         portalName = row['portalName']
         url = row['URL']
-        provenance = row['provenance']
+        provider = row['Provider']
         titleSource = row['titleSource']
         spatialCoverage = ''
         print(portalName, url)
@@ -410,11 +424,7 @@ with open(portalFile, newline='', encoding='utf-8') as f:
 
                     # only include records whose download link is either Shapefile or ImageServer
                     if len(slug):
-                        del_metadata = []
-                        del_metalist = [slug, identifier, portalName]
-                        for value in del_metalist:
-                            del_metadata.append(value)
-                        deletedItemDict[identifier] = del_metadata
+                        deletedItemDict[slug] = [slug, time.strftime('%Y-%m-%d'), "['Inactive']", "['unpublished']"]
 
             All_Deleted_Items.append(deletedItemDict)
 
@@ -620,11 +630,11 @@ def format_coordinates(df, identifier):
             if abs(row[coord]) == 0 or abs(row[coord]) == 180:
                 idlist.append(row[identifier])
         if (row.maxX - row.minX) > 10 or (row.maxY - row.minY) > 10:
-            idlist.append(row[identifier])
+            idlist.append(row[identifier])    
 
-    # create bounding box
+    # create bounding box 
     df['Coordinates'] = df.apply(lambda row: box(
-        row.minX, row.minY, row.maxX, row.maxY), axis=1)
+        row.minX, row.minY, row.maxX, row.maxY) if str(row['Bounding Box']) != 'nan' else None, axis=1)
     df['Roundcoords'] = df.apply(lambda row: ', '.join(
         [str(i) for i in [row.minX, row.minY, row.maxX, row.maxY]]), axis=1)
 

@@ -1,4 +1,6 @@
-portalName,URL,provenance,titleSource,spatialCoverage
+portalName,URL,Provider,titleSource,spatialCoverage
+03a-03,https://geodata.iowa.gov/data.json,Iowa Geodata,Iowa Geodata,Iowa
+04b-24003,https://opendata.aacounty.org/,Anne Arundel County GIS Data,"Anne Arundel County, Maryland","Anne Arundel County, Maryland|Maryland"
 01b-18163,http://dev-evansvilleapc.opendata.arcgis.com/data.json,"Evansville, Vanderburgh County Open Data Portal","Evansville & Vanderburgh County, Indiana","Evansville, Vanderburgh County, Indiana|Vanderburgh County, Indiana|Indiana"
 01c-02,http://data.indy.gov/data.json,OpenIndy Data Portal,"Indianapolis and Marion County, Indiana","Indianapolis, Marion County, Indiana|Marion County, Indiana|Indiana"
 02b-17113,http://www.mcgis.org/data.json,McLean County GIS Consortium,"McLean County, Illinois","Bloomington, McLean County, Illinois|Normal, McLean County, Illinois|McLean County, Illinois|Illinois"
@@ -39,7 +41,7 @@ portalName,URL,provenance,titleSource,spatialCoverage
 08b-42043,http://data-dauphinco.opendata.arcgis.com/data.json,Dauphin County GIS Data Portal,"Dauphin County, Pennsylvania","Dauphin County, Pennsylvania|Pennsylvania"
 08b-42091,http://data-montcopa.opendata.arcgis.com/data.json,Montgomery County Open Data,"Montgomery County, Pennsylvania","Montgomery County, Pennsylvania|Pennsylvania"
 08b-42133,http://data-yorkcountypa.opendata.arcgis.com/data.json,"York County, PA GIS Open Data Portal","York County, Pennsylvania","York County, Pennsylvania|Pennsylvania"
-08c-02,http://data-phl.opendata.arcgis.com/data.json,Pennsylvania State University,"Philadelphia, Pennsylvania","Philadelphia, Pennsylvania|Pennsylvania"
+08c-02,http://data-phl.opendata.arcgis.com/data.json,Open Data PHLmaps,"City of Philadelphia, Pennsylvania","Philadelphia, Pennsylvania|Pennsylvania"
 09c-01,http://data-southbend.opendata.arcgis.com/data.json,"South Bend, IN Open Data","South Bend, Indiana","South Bend, Indiana|Ohio"
 10b-55003,https://data-ashlandcountywi.opendata.arcgis.com/data.json,"Ashland County, WI GIS Open Data Portal","Ashland County, Wisconsin","Ashland County, Wisconsin|Wisconsin"
 10b-55021,https://opendata-cclid.opendata.arcgis.com/data.json,"Land Records Data Portal of Columbia County, WI","Columbia County, Wisconsin","Columbia County, Wisconsin|Wisconsin"
