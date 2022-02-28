@@ -38,6 +38,7 @@ Updated by Ziying Cheng @Ziiiiing
 
 import json
 import csv
+from ssl import AlertDescription
 import urllib
 import urllib.request
 import os
@@ -62,7 +63,7 @@ import requests
 # Windows:
 # directory = r'D:\Library RA\dcat-metadata'
 # MAC or Linux:
-directory = r'/Users/zing/Desktop/dcat-dec/'
+directory = r'/Users/zing/Desktop/RA/GitHub/dcat-metadata'
 
 # csv file contaning portal list
 portalFile = 'arcPortals.csv'
@@ -146,6 +147,13 @@ def getIdentifiers(data):
         json_ids[x] = data["dataset"][x]["identifier"]
     return json_ids
 
+# UPDATE
+def getTitles(data):
+    json_titles = {}
+    for x in range(len(data["dataset"])):
+        json_titles[x] = data["dataset"][x]["title"]
+    return json_titles
+
 
 # function that returns a dictionary of selected metadata elements into a dictionary of new items (newItemDict) for each new item in a data portal.
 # This includes blank fields '' for columns that will be filled in manually later.
@@ -178,7 +186,10 @@ def metadataNewItems(newdata, newitem_ids):
  
         creator = newdata["dataset"][y]["publisher"]
         for pub in creator.values():
-            creator = pub.replace(u"\u2019", "'")
+            try:
+                creator = pub.replace(u"\u2019", "'")
+            except:
+                creator = pub
 
         format_types = []
         resourceClass = ""
@@ -343,7 +354,10 @@ with open(portalFile, newline='', encoding='utf-8') as f:
             dates.remove(ActionDate)
 
         # find the latest action date from the 'dates' list
-        PreviousActionDate = max(dates)
+        if dates:
+            PreviousActionDate = max(dates)
+        else:  # for brand new portals
+            PreviousActionDate='00000000'
 
         # renames file paths based on portalName and manually provided dates
         oldjson = directory + \
@@ -379,19 +393,31 @@ with open(portalFile, newline='', encoding='utf-8') as f:
                 older_data = json.load(data_file)
 
             # Makes a list of dataset identifiers in the older json
-            older_ids = getIdentifiers(older_data)
+            # older_ids = getIdentifiers(older_data)
+            # UPDATE: Makes a list of dataset title in the older json
+            older_titles = getTitles(older_data)
 
             # compares identifiers in the older json harvest of the data portal with identifiers in the new json,
             # creating dictionaries with
             # 1) a complete list of new json identifiers
             # 2) a list of just the items that appear in the new json but not the older one
-            newjson_ids = {}
-            newitem_ids = {}
+            # newjson_ids = {}
+            # newitem_ids = {}
 
+            # for y in range(len(newdata["dataset"])):
+            #     identifier = newdata["dataset"][y]["identifier"]
+            #     newjson_ids[y] = identifier
+            #     if identifier not in older_ids.values():
+            #         newitem_ids[y] = identifier
+            
+            # UPDATE
+            newjson_titles = {}
+            newitem_ids = {}
             for y in range(len(newdata["dataset"])):
                 identifier = newdata["dataset"][y]["identifier"]
-                newjson_ids[y] = identifier
-                if identifier not in older_ids.values():
+                title = newdata["dataset"][y]["title"]
+                newjson_titles[y] = title
+                if title not in older_titles.values():
                     newitem_ids[y] = identifier
 
             # Creates a dictionary of metadata elements for each new data portal item.
@@ -406,15 +432,17 @@ with open(portalFile, newline='', encoding='utf-8') as f:
             # If the record no longer exists, adds selected fields into a dictionary of deleted items (deletedItemDict)
             deletedItemDict = {}
 
-            # check deleted item's landing page, if it is broken, delete it
+
+            # UPDATE: check deleted item's landing page, if it is broken, delete it
             for z in range(len(older_data["dataset"])):
-                identifier = older_data["dataset"][z]["identifier"]
-                if identifier not in newjson_ids.values():
+                # identifier = older_data["dataset"][z]["identifier"]
+                title = older_data["dataset"][z]["title"]
+                if title not in newjson_titles.values():
                     distribution = older_data["dataset"][z]["distribution"]
                     for dictionary in distribution:
                         if dictionary["title"] == "Shapefile":
                             slug = identifier.rsplit('/', 1)[-1]
-                        elif dictionary["title"] == "Esri Rest API":
+                        elif dictionary["title"] == "ArcGIS GeoService":  # TODO:UPDATE HERE
                             if 'accessURL' in dictionary.keys():
                                 webService = dictionary['accessURL']
                                 if webService.rsplit('/', 1)[-1] == 'ImageServer':
@@ -429,7 +457,7 @@ with open(portalFile, newline='', encoding='utf-8') as f:
             All_Deleted_Items.append(deletedItemDict)
 
             # collects information for the status report
-            status_metalist = [len(newjson_ids), len(
+            status_metalist = [len(newjson_titles), len(
                 newitem_ids), len(deletedItemDict)]
             for value in status_metalist:
                 status_metadata.append(value)
@@ -450,7 +478,8 @@ with open(portalFile, newline='', encoding='utf-8') as f:
         Status_Report[portalName] = status_metadata
 
 # prints two csv spreadsheets with all items that are new or deleted since the last time the data portals were harvested
-newItemsReport = directory + "/reports/allNewItems_%s.csv" % (ActionDate)
+newItemsReport = directory + \
+    "/reports/allNewItems_%s.csv" % (ActionDate)
 printItemReport(newItemsReport, fieldnames, All_New_Items)
 
 delItemsReport = directory + "/reports/allDeletedItems_%s.csv" % (ActionDate)
@@ -464,7 +493,8 @@ printReport(reportStatus, Status_Report, statusFieldsReport)
 # ---------- Populating Spatial Coverage -----------
 
 """ set file path """
-df_csv = pd.read_csv(newItemsReport, encoding='unicode_escape')
+# df_csv = pd.read_csv(newItemsReport, encoding='unicode_escape')
+df_csv = pd.read_csv(newItemsReport)
 
 
 """ check if link is valid """
@@ -866,5 +896,49 @@ if len(df_esri):
 dflist = [df_esri, df_bbox]
 df_final = pd.concat(filter(len, dflist), ignore_index=True)
 df_final.to_csv(newItemsReport, index=False)
-print("\n--------------------- Congrats! ╰(￣▽￣)╯ --------------------\n")
 
+##############################################################
+# check duplicated items with same title and bounding box
+print("\n--------------------- Check duplicated items with same title and bounding box: --------------------\n")
+
+def check_duplicates(df):
+    # collect ID,alternativeTitle and bbox before checking duplicates
+    item_dict = {}
+    for _,row in df.iterrows():
+        ID = row['ID']
+        alternativeTitle = row['Alternative Title']
+        bbox = row['Bounding Box']
+        item_dict[ID] = alternativeTitle+'|'+bbox 
+
+    # flip k,v pairs
+    duplicate_dict = {}
+    for k,v in item_dict.items():
+        if v not in duplicate_dict:
+            duplicate_dict[v] = [k]
+        else:
+            duplicate_dict[v].append(k)
+
+    # drop unique items and find duplcated ones
+    drop_list = [k for k,v in duplicate_dict.items() if len(v)==1]
+    for k in drop_list:
+        del duplicate_dict[k]
+
+    # report duplicates
+    if duplicate_dict:
+        count = 0
+        for v in duplicate_dict.values():
+            # print out the duplicate info
+            count += 1
+            print('\n>>> Found duplicate #{}'.format(count))
+            print('\n'.join(v))
+            # add duplicates info to Title field
+            df.loc[df['ID'].isin(v), 'Title'] = 'Duplicate #{}'.format(count)
+    else:
+        print('\n>>> No duplicated items found')
+
+df_newitems = pd.read_csv(newItemsReport)
+check_duplicates(df_newitems)
+df_newitems.to_csv(newItemsReport, index=False)
+
+
+print("\n--------------------- Congrats! ╰(￣▽￣)╯ --------------------\n")
