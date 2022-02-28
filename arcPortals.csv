@@ -1,6 +1,6 @@
 portalName,URL,Provider,titleSource,spatialCoverage
 03a-03,https://geodata.iowa.gov/data.json,Iowa Geodata,Iowa Geodata,Iowa
-04b-24003,https://opendata.aacounty.org/,Anne Arundel County GIS Data,"Anne Arundel County, Maryland","Anne Arundel County, Maryland|Maryland"
+04b-24003,https://opendata.aacounty.org/data.json,Anne Arundel County GIS Data,"Anne Arundel County, Maryland","Anne Arundel County, Maryland|Maryland"
 01b-18163,http://dev-evansvilleapc.opendata.arcgis.com/data.json,"Evansville, Vanderburgh County Open Data Portal","Evansville & Vanderburgh County, Indiana","Evansville, Vanderburgh County, Indiana|Vanderburgh County, Indiana|Indiana"
 01c-02,http://data.indy.gov/data.json,OpenIndy Data Portal,"Indianapolis and Marion County, Indiana","Indianapolis, Marion County, Indiana|Marion County, Indiana|Indiana"
 02b-17113,http://www.mcgis.org/data.json,McLean County GIS Consortium,"McLean County, Illinois","Bloomington, McLean County, Illinois|Normal, McLean County, Illinois|McLean County, Illinois|Illinois"
@@ -19,7 +19,7 @@ portalName,URL,Provider,titleSource,spatialCoverage
 05b-27017,http://data-carltoncounty.opendata.arcgis.com/data.json,Carlton County Open Data,Carlton County Minnesota,"Carlton County, Minnesota|Minnesota"
 05b-27019,http://data-carver.opendata.arcgis.com/data.json,Carver County GIS Data,"Carver County, Minnesota","Carver County, Minnesota|Minnesota"
 05b-27027,http://data-claycountymn.opendata.arcgis.com/data.json,Clay County Open Data,"Clay County, Minnesota","Clay County, Minnesota|Minnesota"
-05b-27053,http://gis-hennepin.opendata.arcgis.com/data.json,Hennepin County GIS Data,"Hennepin County, Minnesota","Hennepin County, Minnesota|Minnesota"
+05b-27053,https://gis-hennepin.hub.arcgis.com//data.json,Hennepin County GIS Data,"Hennepin County, Minnesota","Hennepin County, Minnesota|Minnesota"
 05b-27057,http://getdata-hubbardcounty.opendata.arcgis.com/data.json,Hubbard County Open Geospatial Data,"Hubbard County, Minnesota","Hubbard County, Minnesota|Minnesota"
 05b-27119,https://hub-pcg.hub.arcgis.com/data.json,Polk County GIS Open Data,"Polk County, Minnesota","Polk County, Minnesota|Minnesota"
 05b-27121,http://hub-popecounty.hub.arcgis.com/data.json,Pope County Open Data,"Pope County, Minnesota","Pope County, Minnesota|Minnesota"
@@ -50,6 +50,7 @@ portalName,URL,Provider,titleSource,spatialCoverage
 10b-55035-01,https://hub-eccounty.hub.arcgis.com/data.json,Eau Claire County Geospatial Hub,"Eau Claire, Wisconsin","Eau Claire County, Wisconsin|Wisconsin"
 10b-55079,https://gis-mclio.opendata.arcgis.com/data.json,Milwaukee County GIS Download,"Milwaukee County, Wisconsin","Milwaukee County, Wisconsin|Wisconsin"
 10b-55087,https://data-ocgis.opendata.arcgis.com/data.json,Outagamie County GIS Download,"Outagamie County, Wisconsin","Outagamie County, Wisconsin|Wisconsin"
+10b-55059,https://dataportal.kenoshacounty.org/data.json,Kenosha County Data Portal,"Kenosha County, Wisconsin","Kenosha County, Wisconsin|Wisconsin"
 10b-55093,https://data-piercecounty-wi.hub.arcgis.com/data.json,Pierce County GIS Open Data Portal,"Pierce County, Wisconsin","Pierce County, Wisconsin|Wisconsin"
 10b-55101,https://data-racinecounty.opendata.arcgis.com/data.json,Racine County GIS Download,"Racine County, Wisconsin","Racine County, Wisconsin|Wisconsin"
 10b-55109,https://gis-scccdd.opendata.arcgis.com/data.json,St. Croix County GIS Download,"St. Croix County, Wisconsin","St. Croix County, Wisconsin|Wisconsin"
