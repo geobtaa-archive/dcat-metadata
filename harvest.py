@@ -30,6 +30,10 @@ Updated Dec 31, 2021
 Updated by Ziying Cheng @Ziiiiing
 -- Updating the Provider, Member Of and Is Part Of fields
 
+Updated Apr 17, 2022
+Updated by Ziying Cheng @Ziiiiing
+-- Updating the Theme, Duplicates, Title
+
 """
 # To run this script you need a csv with five columns (portalName, URL, provider, titleSource, and spatialCoverage) with details about ESRI open data portals to be checked for new records.
 # Need to define directory path (containing arcPortals.csv, folder "jsons" and "reports"), and list of fields desired in the printed report
@@ -65,12 +69,12 @@ import requests
 # MAC or Linux:
 directory = r'/Users/zing/Desktop/RA/GitHub/dcat-metadata'
 
-# csv file contaning portal list
+# csv file contaning portal list 
 portalFile = 'arcPortals.csv'
 
 # list of metadata fields from the DCAT json schema for open data portals desired in the final report
 fieldnames = ['Title', 'Alternative Title', 'Description', 'Language', 'Creator', 'Title Source', 'Resource Class',
-              'ISO Topic Categories', 'Keyword', 'Date Issued', 'Temporal Coverage', 'Date Range', 'Spatial Coverage',
+              'Theme', 'Keyword', 'Date Issued', 'Temporal Coverage', 'Date Range', 'Spatial Coverage',
               'Bounding Box', 'Resource Type', 'Format', 'Information', 'Download', 'MapServer',
               'FeatureServer', 'ImageServer', 'ID', 'Identifier', 'Provider', 'Code', 'Member Of', 'Is Part Of', 'Status',
               'Accrual Method', 'Date Accessioned', 'Rights', 'Access Rights', 'Suppressed', 'Child Record']
@@ -155,6 +159,30 @@ def getTitles(data):
     return json_titles
 
 
+def format_title(alternativeTitle, titleSource):
+    '''Auto-generate Title field be like alternativeTitle [titleSource(place name)] {year if exist in alternative title}'''
+    # find if year exist in alternativeTitle
+    year = ''  
+    year_range = re.findall(r'(\d{4})-(\d{4})', alternativeTitle)
+    single_year = re.match(r'.*([1-3][0-9]{3})', alternativeTitle)   
+    if year_range:   # if a 'yyyy-yyyy' exists
+        year = '-'.join(year_range[0])
+        alternativeTitle = alternativeTitle.replace(year, '').strip().rstrip(',')
+    elif single_year:  # or if a 'yyyy' exists
+        year = single_year.group(1)
+        alternativeTitle = alternativeTitle.replace(year, '').strip().rstrip(',')
+    
+    if titleSource == 'Esri':
+        title = alternativeTitle
+    else:
+        title = alternativeTitle + ' [{}]'.format(titleSource)
+        
+    if year:
+        title += ' {' + year +'}'
+        
+    return title
+
+
 # function that returns a dictionary of selected metadata elements into a dictionary of new items (newItemDict) for each new item in a data portal.
 # This includes blank fields '' for columns that will be filled in manually later.
 def metadataNewItems(newdata, newitem_ids):
@@ -164,7 +192,6 @@ def metadataNewItems(newdata, newitem_ids):
         identifier = v
         metadata = []
 
-        title = ""
         alternativeTitle = ""
         try:
             alternativeTitle = cleanData(newdata["dataset"][y]['title'])
@@ -248,7 +275,7 @@ def metadataNewItems(newdata, newitem_ids):
         except:
             spatial = ""
 
-        subject = ""
+        theme = ""
         keyword = newdata["dataset"][y]["keyword"]
         keyword_list = []
         keyword_list = '|'.join(keyword).replace(' ', '')
@@ -291,8 +318,10 @@ def metadataNewItems(newdata, newitem_ids):
         suppressed = "FALSE"
         child = "FALSE"
 
+        title = format_title(alternativeTitle, titleSource)
+
         metadataList = [title, alternativeTitle, description, language, creator, titleSource,
-                        resourceClass, subject, keyword_list, dateIssued, temporalCoverage,
+                        resourceClass, theme, keyword_list, dateIssued, temporalCoverage,
                         dateRange, spatialCoverage, bbox, resourceType,
                         formatElement, information, downloadURL, mapServer, featureServer,
                         imageServer, slug, identifier_new, provider, portalName, memberOf, isPartOf, status,
@@ -452,7 +481,7 @@ with open(portalFile, newline='', encoding='utf-8') as f:
 
                     # only include records whose download link is either Shapefile or ImageServer
                     if len(slug):
-                        deletedItemDict[slug] = [slug, time.strftime('%Y-%m-%d'), "['Inactive']", "['unpublished']"]
+                        deletedItemDict[slug] = [slug, time.strftime('%Y-%m-%d'), "Inactive", "['unpublished']"]
 
             All_Deleted_Items.append(deletedItemDict)
 
@@ -899,17 +928,37 @@ df_final.to_csv(newItemsReport, index=False)
 
 ##############################################################
 # check duplicated items with same title and bounding box
-print("\n--------------------- Check duplicated items with same title and bounding box: --------------------\n")
+print("\n--------------------- Check duplicated items with same title and bounding box or with same ID: --------------------\n")
 
 def check_duplicates(df):
     # collect ID,alternativeTitle and bbox before checking duplicates
     item_dict = {}
+    duplicate_ID = []
+    count = 0
     for _,row in df.iterrows():
         ID = row['ID']
         alternativeTitle = row['Alternative Title']
         bbox = row['Bounding Box']
-        item_dict[ID] = alternativeTitle+'|'+bbox 
-
+        
+        if ID not in item_dict:
+            item_dict[ID] = alternativeTitle+'|'+bbox 
+        elif ID not in duplicate_ID:  # found duplicated IDs
+            duplicate_ID.append(ID)
+            
+    # report duplicated IDs
+    if duplicate_ID:
+        print('\n>>> Found duplicates with the same ID:')
+        for i in range(len(duplicate_ID)):
+            count += 1
+            ID = duplicate_ID[i]
+            # print out the duplicate info
+            print('    [{}]: {}'.format(count, ID))
+            
+            # add duplicates info to Title field
+            df.loc[df['ID'] == ID, 'Title'] = 'Duplicate #{}'.format(count)
+    else:
+        print('\n>>> No duplicated ID found')
+    
     # flip k,v pairs
     duplicate_dict = {}
     for k,v in item_dict.items():
@@ -923,18 +972,20 @@ def check_duplicates(df):
     for k in drop_list:
         del duplicate_dict[k]
 
-    # report duplicates
+    # report duplicates with same bbox & alternative title
     if duplicate_dict:
-        count = 0
         for v in duplicate_dict.values():
             # print out the duplicate info
             count += 1
-            print('\n>>> Found duplicate #{}'.format(count))
+            print('\n>>> Found duplicate with different IDs #{}'.format(count))
             print('\n'.join(v))
             # add duplicates info to Title field
             df.loc[df['ID'].isin(v), 'Title'] = 'Duplicate #{}'.format(count)
     else:
-        print('\n>>> No duplicated items found')
+        print('\n>>> No duplicate with different IDs found')
+
+
+
 
 df_newitems = pd.read_csv(newItemsReport)
 check_duplicates(df_newitems)
