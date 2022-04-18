@@ -77,3 +77,9 @@ portalName,URL,Provider,titleSource,spatialCoverage
 13a-01,http://www.nebraskamap.gov/data.json,NebraskaMap,Nebraska,Nebraska
 99-1000,http://coronavirus-resources.esri.com/data.json,Esri COVID-19 Resources Hub,Esri,United States
 99-1100,https://gis-for-racialequity.hub.arcgis.com/data.json,Esri GIS For Racial Equity Hub,Esri,United States
+05b-27023,https://data-chippewa.opendata.arcgis.com/data.json,Chippewa County Open GIS Data,"Chippewa County, Minnesota","Chippewa County, Minnesota|Minnesota"
+13c-02,https://data-cityofgi.opendata.arcgis.com/data.json,City of Grand Island Public GIS Data Portal,"Grand Island, Nebraska","Grand Island, Nebraska|Nebraska"
+13c-01,https://data2-lincolnne.opendata.arcgis.com/data.json,Lincoln Open Data and Performance Management,"Lincoln, Nebraska","Lincoln, Nebraska|Nebraska"
+13a-04,https://data-outdoornebraska.opendata.arcgis.com//data.json,Nebraska Game & Parks Map and Data Portal,Nebraska,Nebraska
+13b-31055,https://data-dogis.opendata.arcgis.com/data.json,Omaha/Douglas County GIS Open Data Portal,"Omaha and Douglas County, Nebraska","Omaha County, Nebraska|Douglas County, Nebraska|Nebraska"
+13b-31153,https://gis.sarpy.gov/data.json,Sarpy County GIS Portal,"Sarpy County, Nebraska","Sarpy County, Nebraska|Nebraska"
