@@ -318,7 +318,20 @@ def metadataNewItems(newdata, newitem_ids):
         suppressed = "FALSE"
         child = "FALSE"
 
+        # auto-generate Title as alternativeTitle [titleSource] {YEAR if it exists in alternativeTitle}
         title = format_title(alternativeTitle, titleSource)
+        # auto-generate Temporal Coverage and Date Range
+        if re.search(r"\{(.*?)\}", title):     # if title has {YYYY} or {YYYY-YYYY}
+            temporalCoverage = re.search(r"\{(.*?)\}", title).group(1)
+            dateRange = temporalCoverage[:4] + '-' + temporalCoverage[-4:]
+        else:
+            temporalCoverage = 'Continually updated resource'
+
+        # if 'LiDAR' exists in Title or Description, add it to Resource Type
+        if 'LiDAR' in title or 'LiDAR' in description:
+            resourceType = 'LiDAR'
+
+
 
         metadataList = [title, alternativeTitle, description, language, creator, titleSource,
                         resourceClass, theme, keyword_list, dateIssued, temporalCoverage,
