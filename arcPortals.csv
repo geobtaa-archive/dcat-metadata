@@ -5,7 +5,6 @@ portalName,URL,Provider,titleSource,spatialCoverage
 01c-02,http://data.indy.gov/data.json,OpenIndy Data Portal,"Indianapolis and Marion County, Indiana","Indianapolis, Marion County, Indiana|Marion County, Indiana|Indiana"
 02b-17113,http://www.mcgis.org/data.json,McLean County GIS Consortium,"McLean County, Illinois","Bloomington, McLean County, Illinois|Normal, McLean County, Illinois|McLean County, Illinois|Illinois"
 03a-02,http://public-iowadot.opendata.arcgis.com/data.json,IowaDOT Open Data,Iowa,Iowa
-03a-04,http://open-iowa.opendata.arcgis.com/data.json,State of Iowa Open Spatial Data,Iowa,Iowa
 03b-19113,http://opendata-linncounty-gis.opendata.arcgis.com/data.json,"Linn County, Iowa Open Data Portal","Linn County, Iowa","Linn County, Iowa|Iowa"
 04a-01,http://data.imap.maryland.gov/data.json,Maryland iMap,Maryland,Maryland
 04b-24005,https://bcstat-bc-gis.hub.arcgis.com/data.json,Baltimore County Open Data Portal,"Baltimore County, Maryland","Baltimore County, Maryland|Maryland"
