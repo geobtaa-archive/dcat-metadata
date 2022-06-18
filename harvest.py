@@ -67,7 +67,7 @@ import requests
 # Windows:
 # directory = r'D:\Library RA\dcat-metadata'
 # MAC or Linux:
-directory = r'/Users/zing/Desktop/RA/GitHub/dcat-metadata'
+directory = r'/Users/majew030/GitHub/dcat-metadata'
 
 # csv file contaning portal list 
 portalFile = 'arcPortals.csv'
@@ -88,7 +88,7 @@ statusFieldsReport = ['portalName', 'total', 'new_items', 'deleted_items']
 # dictionary using partial portal code to find out where the data portal belongs
 statedict = {'01': 'Indiana', '02': 'Illinois', '03': 'Iowa', '04': 'Maryland', '04c-01': 'District of Columbia', 
              '04f-01': '04f-01', '05': 'Minnesota', '06': 'Michigan', '07': 'Michigan', '08': 'Pennsylvania', 
-             '09': 'Indiana', '10': 'Wisconsin', '11': 'Ohio', '12': 'Illinois', '13': 'Nebraska', '99': 'Esri'}
+             '09': 'Indiana', '10': 'Wisconsin', '11': 'Ohio', '12': 'Illinois', '13': 'Nebraska', '14':'New Jersey', '99': 'Esri'}
 #######################################
 
 

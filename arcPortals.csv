@@ -1,5 +1,5 @@
 portalName,URL,Provider,titleSource,spatialCoverage
-03a-03,https://geodata.iowa.gov/data.json,Iowa Geodata,Iowa Geodata,Iowa
+03a-03,https://geodata.iowa.gov/data.json,Iowa Geodata,Iowa,Iowa
 04b-24003,https://opendata.aacounty.org/data.json,Anne Arundel County GIS Data,"Anne Arundel County, Maryland","Anne Arundel County, Maryland|Maryland"
 01b-18163,http://dev-evansvilleapc.opendata.arcgis.com/data.json,"Evansville, Vanderburgh County Open Data Portal","Evansville & Vanderburgh County, Indiana","Evansville, Vanderburgh County, Indiana|Vanderburgh County, Indiana|Indiana"
 01c-02,http://data.indy.gov/data.json,OpenIndy Data Portal,"Indianapolis and Marion County, Indiana","Indianapolis, Marion County, Indiana|Marion County, Indiana|Indiana"
@@ -15,16 +15,13 @@ portalName,URL,Provider,titleSource,spatialCoverage
 04c-02,https://data.baltimorecity.gov/data.json,City of Baltimore GIS Open Data,"Baltimore, Maryland","City of Baltimore, Maryland|Maryland"
 04f-01,http://dvrpc-dvrpcgis.opendata.arcgis.com/data.json,Delaware Valley Regional Planning Commission (DVRPC),Delaware Valley,"Delaware River, Delaware|Delaware|Philadelphia, Pennsylvania|Pennsylvania|Maryland|New Jersey"
 05b-27011,http://data-bigstonecounty.opendata.arcgis.com/data.json,Big Stone County Open Data,"Big Stone County, Minnesota","Big Stone County, Minnesota|Minnesota"
-05b-27017,http://data-carltoncounty.opendata.arcgis.com/data.json,Carlton County Open Data,Carlton County Minnesota,"Carlton County, Minnesota|Minnesota"
 05b-27019,http://data-carver.opendata.arcgis.com/data.json,Carver County GIS Data,"Carver County, Minnesota","Carver County, Minnesota|Minnesota"
 05b-27027,http://data-claycountymn.opendata.arcgis.com/data.json,Clay County Open Data,"Clay County, Minnesota","Clay County, Minnesota|Minnesota"
 05b-27053,https://gis-hennepin.hub.arcgis.com//data.json,Hennepin County GIS Data,"Hennepin County, Minnesota","Hennepin County, Minnesota|Minnesota"
-05b-27057,http://getdata-hubbardcounty.opendata.arcgis.com/data.json,Hubbard County Open Geospatial Data,"Hubbard County, Minnesota","Hubbard County, Minnesota|Minnesota"
 05b-27119,https://hub-pcg.hub.arcgis.com/data.json,Polk County GIS Open Data,"Polk County, Minnesota","Polk County, Minnesota|Minnesota"
 05b-27121,http://hub-popecounty.hub.arcgis.com/data.json,Pope County Open Data,"Pope County, Minnesota","Pope County, Minnesota|Minnesota"
 05b-27123,http://data-ramseygis.opendata.arcgis.com/data.json,Ramsey County Open Data,"Ramsey County, Minnesota","Ramsey County, Minnesota|Minnesota"
 05b-27137,https://open-data-slcgis.hub.arcgis.com/data.json,Saint Louis County GIS & Mapping,"Saint Louis County, Minnesota","Saint Louis County, Minnesota|Minnesota"
-05b-27139,http://opendata.gis.co.scott.mn.us/data.json,Scott County Open Data,"Scott County, Minnesota","Scott County, Minnesota|Minnesota"
 05b-27167,https://hub-wilkinco.hub.arcgis.com/data.json,"Wilkin County, Minnesota Open Data","Wilkin County, Minnesota","Wilkin County, Minnesota|Minnesota"
 05c-01,http://opendata.minneapolismn.gov/data.json,Minneapolis Open Data,"Minneapolis, Minnesota","Minneapolis, Minnesota|Minnesota"
 06a-01,http://gis-michigan.opendata.arcgis.com/data.json,State of Michigan Open Data Portal,Michigan,Michigan
@@ -83,3 +80,4 @@ portalName,URL,Provider,titleSource,spatialCoverage
 13b-31055,https://data-dogis.opendata.arcgis.com/data.json,Omaha/Douglas County GIS Open Data Portal,"Omaha and Douglas County, Nebraska","Omaha County, Nebraska|Douglas County, Nebraska|Nebraska"
 13b-31153,https://gis.sarpy.gov/data.json,Sarpy County GIS Portal,"Sarpy County, Nebraska","Sarpy County, Nebraska|Nebraska"
 04b-24009,https://calvert-county-open-data-calvertgis.hub.arcgis.com/data.json,Calvert County Open GIS Data Portal,"Calvert County, Maryland","Calvert County, Maryland|Maryland"
+14a-01,https://njogis-newjersey.opendata.arcgis.com/data.json,New Jersey Geographic Information Network Open Data portal,New Jersey,New Jersey
